@@ -1,0 +1,13 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Contexte et enjeux}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Définitions et concepts clés}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Les technologies IoT dans les voitures}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Systèmes de communication et d’échange de données}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Capteurs et perception environnementale}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Aide à la conduite et systèmes ADAS}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Analyse des données et prise de décision}{6}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Les défis spécifiques liés à la sécurité des motos}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Particularités des motos sur la route}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Limitations des technologies IoT actuelles pour les motos}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Les limites de la technologie}{9}{section.4}%
