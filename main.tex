@@ -2,9 +2,10 @@
 \usepackage[french]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{microtype}
 \usepackage{csquotes}
 \usepackage{graphicx}
-\usepackage{hyperref} % Clickable links
+\usepackage[hidelinks]{hyperref}
 \usepackage[backend=biber,style=ieee,sorting=nyt]{biblatex}
 \usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
 \addbibresource{bibliography.bib}
@@ -15,12 +16,13 @@
 \begin{titlepage}
     \begin{center}
         {\Large \textbf{Université d'Évry Paris-Saclay}}\\[0.5cm]
-
-        {\huge \textbf{État de l'art - Mémoire de Master}}\\[1cm]
-
+        {\huge \textbf{État de l'art - Mémoire de Master}}\\[3cm]
+        {\huge \textbf{Dans quelle mesure les technologies IoT des voitures peuvent-elles être adaptées pour répondre aux besoins spécifiques de la sécurité des motos sur les routes ? }}\\[1cm]
         \textbf{Année universitaire :} \\[0.5cm]
         {\Large \textbf{2024/2025}}\\[1cm]
-                {\Large \textbf{Shana LEFEVRE}}\\[1cm]
+                {\Large \textbf{Shana LEFEVRE}}\\[2cm]
+                {\Large Maître d'apprentissage: \textbf{Clément LECLERCQ}}\\[0.5cm]
+                {\Large Tutrice enseignante: \textbf{Farida ZEHRAOUI}}\\[2cm]
                 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/logo_paris_saclay.png} 
@@ -28,18 +30,15 @@
     \end{center}
 \end{titlepage}
 
-% Table des matières
-\tableofcontents
+\tableofcontents % Table des matières
 \newpage
-
 
 \newpage
 \section{Introduction}
-
-
+%•	Présentation du sujet et de son importance.
 \subsection{Contexte et enjeux}
 %Abord IOT
-L'IoT \footnote{Internet des objets} a révolutionné de nombreux aspects de notre société: la santé, de l'agriculture à l'industrie 4.0, en passant par les transports et les communications.
+L'IoT\footnote{Internet des objets} a révolutionné de nombreux aspects de notre société: la santé, de l'agriculture à l'industrie 4.0, en passant par les transports et les communications.
 Les \textbf{technologies embarquées et connectées} désignent l’ensemble des systèmes électroniques intégrés aux véhicules (voitures et motos) permettant d’améliorer la sécurité, le confort et la connectivité. Ces technologies incluent :
 
 %enjeux -> sécurité routière
@@ -66,19 +65,22 @@ En termes d’accidents corporels et de mortalité sur la route, les conducteurs
 
 \subsection{Définitions et concepts clés}
 %••	IoT (Internet des Objets) appliqué aux transports.
+Qu'est-ce que l'IoT ?\\
 L'IoT est un réseau d’objets physiques connectés à Internet qui sont capables de collecter et d’échanger des données en temps réel. Ces objets peuvent être des capteurs, des appareils domestiques intelligents, des équipements industriels, des véhicules et bien plus encore. Ils font face à des défis et des enjeux importants comme l'exposition aux menaces de cyberattaques, l'uniformité des systèmes pour leur bon fonctionnement, la consommation d'énergie et enfin, le respect aux droits privés. \\
 • \textbf{Les capteurs et caméras} : détectent les obstacles, surveillent l’environnement et assistent à la conduite (ex. : radars, lidars, caméras 360°).\\
 • \textbf{Les systèmes d’aide à la conduite (ADAS)} : aident le conducteur en régulant la vitesse, le freinage d’urgence ou le maintien de trajectoire.\\
 • \textbf{Les modules de connectivité (4G, 5G, Wi-Fi, Bluetooth)} : permettent l’échange de données en temps réel entre le véhicule et d’autres systèmes, comme les infrastructures routières ou les smartphones.\\
 • \textbf{Les plateformes de gestion des données} : traitent les informations collectées pour fournir des services comme la navigation intelligente, l’alerte trafic ou la maintenance prédictive.\\
 Ces technologies sont essentielles pour le développement des véhicules intelligents et autonomes, ainsi que pour renforcer la sécurité des motards, souvent plus vulnérables sur la route.\\
-Les \textbf{communications V2V (Vehicle-to-Vehicle) et V2I (Vehicle-to-Infrastructure)} font partie des technologies de transport intelligent (ITS) qui permettent aux véhicules et aux infrastructures routières d’échanger des informations en temps réel.
+\vspace{0.5cm}
+
+Les \textbf{communications V2V (Vehicle-to-Vehicle) et V2I (Vehicle-to-Infrastructure)} font partie des technologies de transport intelligent (ITS)\footnote{infrastructure technology services} qui permettent aux véhicules et aux infrastructures routières d’échanger des informations en temps réel.
 
 
 \newpage
 \section{Les technologies IoT dans les voitures}
 
-
+%introduction
 Selon l’entreprise Objenious \cite{noauthor_revolution_2025}, l’Internet des Objets (IoT) constitue une révolution dans l’industrie automobile en rendant les véhicules plus intelligents et connectés. Depuis l’introduction de la norme européenne eCall en 2018, qui impose un système d’appel d’urgence automatique, les constructeurs ont intégré des technologies IoT pour développer des services innovants. Grâce aux réseaux haut débit comme la 4G et la 5G, les véhicules peuvent désormais collecter, envoyer et recevoir des données en temps réel, interagissant ainsi avec les infrastructures routières, les autres véhicules et les usagers.
 
 Le marché mondial de l’IoT dans le secteur automobile, estimé à 115,37 milliards de dollars en 2022, devrait atteindre 975,66 milliards de dollars d’ici 2032, avec un taux de croissance annuel composé (TCAC) de 23,8 \% sur cette période \cite{noauthor_taille_2023}.
@@ -113,14 +115,13 @@ Nolwen LE GUENNEC\cite{le_gennec_machine_2023} souligne que le développement de
 Les programmes informatiques consomment de l’énergie et l'impact environnemental de ces technologies doit être pris en compte.
 
 Grâce à la technologie IoT, les véhicules peuvent échanger des données. Voici les 3 modes de fonctionnement des STI\footnote{Système de Transport Intelligent}.\\
-- Communication véhicule à véhicule (V2V):\\
-Les véhicules équipés de l’IoT échangent des informations telles que leur vitesse et leur position. Cette communication permet de signaler des accidents ou des pannes, aidant les conducteurs à anticiper les problèmes de circulation et à se déplacer plus efficacement.
-- Communication véhicule à infrastructure (V2I):\\
+- \textbf{Communication véhicule à véhicule (V2V)}:\\
+Les véhicules équipés de l’IoT échangent des informations telles que leur vitesse et leur position. Cette communication permet de signaler des accidents ou des pannes, aidant les conducteurs à anticiper les problèmes de circulation et à se déplacer plus efficacement.\\
+- \textbf{Communication véhicule à infrastructure (V2I)}:\\
 Les véhicules connectés interagissent avec des éléments d’infrastructure routière comme les feux de circulation, les lampadaires et les caméras. 
 L’analyse de ces données peut conduire à des ajustements tels que la modification des limites de vitesse ou la facilitation du passage des véhicules de secours, améliorant ainsi la sécurité routière pour tous les usagers.\\
-- Communication infrastructure au véhicule (V2I):\\
+- \textbf{Communication infrastructure au véhicule (V2I)}:\\
 Les infrastructures routières transmettent des informations aux véhicules à proximité, permettant l’affichage en temps réel de données pertinentes pour les conducteurs.
-
 
 \begin{figure}[h]
     \centering
@@ -132,23 +133,36 @@ Les infrastructures routières transmettent des informations aux véhicules à p
 \subsection{Capteurs et perception environnementale}
 %•Caméras, LiDAR, radar, ultrasons.
 %•Fusion de capteurs et algorithmes d’IA pour la reconnaissance des objets (motos incluses).
-
-
-Les capteurs IoT intégrés surveillent l'état des composants du véhicule, la consommation de carburant et la température du moteur. 
-Ces données permettent de : \\
+L'évolution des véhicules intelligents repose sur des systèmes de capteurs avancés de capteurs et de perception environnementale.
+Ces technologies permettent aux véhicules de collecter, d'analyser et d'interpréter en temps réel leur environnement afin d'améliorer leur utilisation.
+Les principaux capteurs utilisés sont les caméras, les radars, les lidars et les ultrasons.
+Ces données permettent de :\\
 - Détecter les pannes. \\
 - Alerter les propriétaires en cas de dysfonctionnement. \\
 - Optimiser la maintenance. \\
 - Simplifier les procédures de réparation. \\
 - Gerer les flottes de véhicules. \\
-Par exemple, Lormauto, un constructeur français spécialisé dans le rétrofit de véhicules, utilise la connectivité cellulaire 4G pour optimiser l’expérience utilisateur. Cette technologie permet de transmettre de grands volumes d’informations et de surveiller l’état de santé des véhicules et de leurs batteries en temps réel.
 
+%Par exemple, Lormauto, un constructeur français spécialisé dans le rétrofit de véhicules, utilise la connectivité cellulaire 4G pour optimiser l’expérience utilisateur. Cette technologie permet de transmettre de grands volumes d’informations et de surveiller l’état de santé des véhicules et de leurs batteries en temps réel.
+
+La perception de l'environnement consiste à analyser et interpréter les données fournies par les capteurs pour prendre des décisions en temps réel. La décision repose sur des algorithmes avancés d'IA\footnote{Intelligence Artificielle} qui permettent de reconnaître les objets, d'anticiper les comportements et de réagir en conséquence. Ces technologies sont essentielles pour la conduite autonome et la sécurité des usagers de la route, y compris les motards.
+Pour cela, il faut combiner plusieurs informations:\\
+- Détecter et classer les objets. \\
+- Estimer leur vitesse et leur trajectoire. \\
+- Anticiper les risques et les collisions. \\
+- Améliorer la prise de décision.\\
+Les avancées en intelligence artificielle, en connectivité (5G, V2X) et en traitement des données continueront d’améliorer la perception environnementale des véhicules, ouvrant ainsi la voie à une mobilité plus sûre, plus fluide et plus autonome. 
 
 \subsection{Aide à la conduite et systèmes ADAS}
 %•Détection des obstacles et freinage automatique.
 %•Avertissements de collision et assistance au changement de voie.
-Dans un monde où la sécurité routière est une priorité, les systèmes avancés d’aide à la conduite (ADAS) révolutionnent la manière dont les véhicules interagissent avec leur environnement, réduisant ainsi les risques d’accidents et améliorant l’expérience de conduite.
-Selon le site du Gouvernement \cite{adas_gouv} "Ces technologies ouvrent la voie à des véhicules de plus en plus automatisés, mais ceux qui en sont équipés ne sont pas des véhicules dits « autonomes ». Les aides à la conduite ne remplacent pas le conducteur et ses obligations. Leur usage s’opère sous la surveillance permanente du conducteur, qui reste responsable de la tâche de conduite et de la maîtrise du véhicule"
+Dans un monde où la sécurité routière est une priorité, les systèmes avancés d’aide à la conduite (ADAS\footnote{Advanced Driver Assistance System}) révolutionnent la manière dont les véhicules interagissent avec leur environnement, réduisant ainsi les risques d’accidents et améliorant l’expérience de conduite.
+Selon le site du Gouvernement \cite{adas_gouv} "Ces technologies ouvrent la voie à des véhicules de plus en plus automatisés, mais ceux qui en sont équipés ne sont pas des véhicules dits « autonomes ». Les aides à la conduite ne remplacent pas le conducteur et ses obligations. Leur usage s’opère sous la surveillance permanente du conducteur, qui reste responsable de la tâche de conduite et de la maîtrise du véhicule."
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/ADAS_schéma.jpg} 
+    \caption{Voiture embarquant des systèmes ADAS\cite{continental_adas}}
+\end{figure}
 
 
 
@@ -228,8 +242,6 @@ Même si l'évolution et le progrès de cette technologie impressionnes et prés
 \newpage
 %limite de la tehnologie
 \section{Les limites de la technologie}
-
-
 
 
 

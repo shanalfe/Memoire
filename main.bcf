@@ -2372,12 +2372,13 @@
     <bcf:citekey order="5" intorder="1">donnees_echange</bcf:citekey>
     <bcf:citekey order="6" intorder="1">le_gennec_machine_2023</bcf:citekey>
     <bcf:citekey order="7" intorder="1">adas_gouv</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">le_parisien_radar_2019</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">ahmed_ali_synthese_2024</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">lenoir_cette_2024</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">texier_quand_2024</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">consumer_skepticim</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">continental_adas</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">le_parisien_radar_2019</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">ahmed_ali_synthese_2024</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">lenoir_cette_2024</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">texier_quand_2024</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">consumer_skepticim</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

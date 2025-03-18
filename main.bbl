@@ -119,6 +119,33 @@
       \verb https://newsroom.aaa.com/2022/05/consumer-skepticism-toward-active-driving-features-justified/
       \endverb
     \endentry
+    \entry{continental_adas}{report}{}
+      \name{author}{1}{}{%
+        {{hash=c5d0929d82609e65e9b07abcfb9ef328}{%
+           family={Frisoni},
+           familyi={F\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{fullhash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{bibnamehash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{authorbibnamehash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{authornamehash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{authorfullhash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ADAS Sensors and Computing Hardware for 360° perception}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://conti-engineering.com/areas-of-expertise/automotive/adas/
+      \endverb
+      \verb{url}
+      \verb https://conti-engineering.com/areas-of-expertise/automotive/adas/
+      \endverb
+    \endentry
     \entry{noauthor_revolution_2025}{misc}{}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
