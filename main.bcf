@@ -2375,10 +2375,11 @@
     <bcf:citekey order="8" intorder="1">continental_adas</bcf:citekey>
     <bcf:citekey order="9" intorder="1">le_parisien_radar_2019</bcf:citekey>
     <bcf:citekey order="10" intorder="1">ahmed_ali_synthese_2024</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">lenoir_cette_2024</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">texier_quand_2024</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">consumer_skepticim</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">iot_accessoire_moto</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">lenoir_cette_2024</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">texier_quand_2024</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">consumer_skepticim</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

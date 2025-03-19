@@ -284,6 +284,32 @@
       \verb https://youtu.be/qfuVpTghT-w
       \endverb
     \endentry
+    \entry{iot_accessoire_moto}{report}{}
+      \name{author}{1}{}{%
+        {{hash=95116ecd84c8e4e43c29629b68775bbd}{%
+           family={Rider},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{fullhash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{bibnamehash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{authorbibnamehash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{authornamehash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{authorfullhash}{95116ecd84c8e4e43c29629b68775bbd}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Exploration de l'Internet des objets (IOT) dans les applications pour motos}
+      \field{type}{techreport}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb hhttps://web.ridingmoto.com/fr/L%27Internet-des-objets-dans-les-applications-pour-motos/
+      \endverb
+      \verb{url}
+      \verb hhttps://web.ridingmoto.com/fr/L%27Internet-des-objets-dans-les-applications-pour-motos/
+      \endverb
+    \endentry
     \entry{la_securite_routiere_accidentalite_2024}{report}{}
       \name{author}{1}{}{%
         {{hash=e116f104cbf62ca5fb91f737ef4d3e30}{%

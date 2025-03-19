@@ -47,6 +47,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty

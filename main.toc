@@ -9,5 +9,5 @@
 \contentsline {subsection}{\numberline {2.4}Analyse des données et prise de décision}{6}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Les défis spécifiques liés à la sécurité des motos}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Particularités des motos sur la route}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Limitations des technologies IoT actuelles pour les motos}{8}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Les limites de la technologie}{9}{section.4}%
+\contentsline {subsection}{\numberline {3.2}Les technologies IoT actuelles pour les motos}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Limitations des technologies IoT actuelles pour les motos}{8}{subsection.3.3}%
