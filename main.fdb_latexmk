@@ -1,26 +1,29 @@
 # Fdb version 4
-["biber /Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main"] 1742418513.78995 "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bcf" "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bbl" "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main" 1742418564.02408 0
-  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bcf" 1742418563.91149 109103 7a51795fefa332235eb4b54f0aa8715b "pdflatex"
-  "bibliography.bib" 1742418472.1143 7183 071bb667fb6039219b5f9b60c4fb4fb6 ""
+["biber /Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main"] 1742627733.26743 "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bcf" "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bbl" "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main" 1742628066.78571 0
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bcf" 1742628066.67764 109560 5729b4c0dfc224a35d974a65918a4060 "pdflatex"
+  "bibliography.bib" 1742627549.09845 8357 857983a1001340fdf6f6a708bd55749f ""
   (generated)
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bbl"
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.blg"
   (rewritten before read)
-["pdflatex"] 1742418562.44042 "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.tex" "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" "main" 1742418564.02439 0
+["pdflatex"] 1742628064.96763 "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.tex" "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" "main" 1742628066.786 0
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/ADAS_schéma.jpg" 1742289513.27776 221221 0ca415390ab809df88f0d467f931700e ""
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/aras_moto.jpeg" 1742505280.94636 50969 63dd0d5ec07a0f4143c8b966bfc538a1 ""
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/camambert_accidents_differents_vehicules.png" 1740318337.76826 107589 1638d2308d5351e8169fa6736dc2ab15 ""
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/diag_etat_georide.png" 1742456762.06712 113485 f0810e6a318316ac2fd6ced5a46a33ae ""
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/evolution_mortalite_securite_routiere_france.png" 1740317848.57893 54849 76264238a20de2674ac67c48002aa2fc ""
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/graph1_yannLeCun.png" 1740641448.21288 118651 f21796a94393f13b0c7ea8f2bb0dd3bf ""
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/graph2_yannLeCun.jpg" 1740641747.94157 30101 6a575229b744742577215c16a75661e7 ""
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/logo_paris_saclay.png" 1742197253.73015 105056 880e2ba8ef2d8ffcdf47de6536043956 ""
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/schema_v2.png" 1742627344.31946 409307 95d1e73c0e4170bfc7aabdbd01e8770a ""
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/schéma_cycle_vie_donneées.png" 1740469509.80024 42414 0279ef902837f0623c261df185adb684 ""
   "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/schéma_systeme_communication_donnees.png" 1742204462.74939 134727 1746f5976f323b0dba9e85c6732df588 ""
-  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux" 1742418563.90843 5872 64f0709a1060fa904ca309dd947eeb32 "pdflatex"
-  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bbl" 1742418516.34705 15701 ea351de4a07ea9f47891c11f19d04315 "biber /Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main"
-  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.out" 1742418563.91045 3107 af37d0b1cc15c908d498a1574432ee52 "pdflatex"
-  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.run.xml" 1742418563.91253 2403 c8b2976831c4be44013021630354e8fd "pdflatex"
-  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.tex" 1742418562.21949 24603 0dfe6c1ed8825eb4b2ec3ccc4177ec89 ""
-  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.toc" 1742418563.91263 1257 63b7703eb820c10f1bea5abe9867dfa0 "pdflatex"
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux" 1742628066.67428 7135 7abb2dfe088e6802b9791ed87c3bfc34 "pdflatex"
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bbl" 1742627736.27814 22191 3b3e044b001c684a0472a14826558f64 "biber /Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main"
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.out" 1742628066.67657 3107 af37d0b1cc15c908d498a1574432ee52 "pdflatex"
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.run.xml" 1742628066.67834 2403 c8b2976831c4be44013021630354e8fd "pdflatex"
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.tex" 1742628062.44389 31893 64f0661b4650edcce5ff61348e62876a ""
+  "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.toc" 1742628066.67843 1258 12edc4826e34f7af6bbf36b6e41728b6 "pdflatex"
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -98,6 +101,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty" 1663185836 62761 3c92d495a9e03d7254b9a3266aa17164 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def" 1663965824 19448 1e988b341dda20961a6b931bcde55519 ""

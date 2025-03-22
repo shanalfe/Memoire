@@ -87,6 +87,56 @@
       \field{title}{Synthèse d’un observateur neuro-adaptatif hybride pour l’estimation de la dynamique latérale d’un véhicule autonome terrestre}
       \field{year}{2024}
     \endentry
+    \entry{bmw_adas}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e438ab818a828e32f8d06ba05aaf7be0}{%
+           family={BmwMotorrad},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{fullhash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{bibnamehash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{authorbibnamehash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{authornamehash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{authorfullhash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Packtalk Pro}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://www.bmw-motorrad.fr/fr/engineering/automated-shift-assistant.html
+      \endverb
+      \verb{url}
+      \verb https://www.bmw-motorrad.fr/fr/engineering/automated-shift-assistant.html
+      \endverb
+    \endentry
+    \entry{cardo}{report}{}
+      \name{author}{1}{}{%
+        {{hash=ca898a635a8375daa7bc3c1ed216ba43}{%
+           family={Cardo},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{fullhash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{bibnamehash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{authorbibnamehash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{authornamehash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{authorfullhash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Packtalk Pro}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://cardosystems.com/fr/products/packtalk-pro
+      \endverb
+      \verb{url}
+      \verb https://cardosystems.com/fr/products/packtalk-pro
+      \endverb
+    \endentry
     \entry{consumer_skepticim}{report}{}
       \name{author}{1}{}{%
         {{hash=d5561f8a497e99e56f07a5c8baee9a9b}{%
@@ -117,6 +167,33 @@
       \endverb
       \verb{url}
       \verb https://newsroom.aaa.com/2022/05/consumer-skepticism-toward-active-driving-features-justified/
+      \endverb
+    \endentry
+    \entry{moto_adas}{report}{}
+      \name{author}{1}{}{%
+        {{hash=2ed873ba34a395178646e65816e26289}{%
+           family={ExpertMoto},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ed873ba34a395178646e65816e26289}
+      \strng{fullhash}{2ed873ba34a395178646e65816e26289}
+      \strng{bibnamehash}{2ed873ba34a395178646e65816e26289}
+      \strng{authorbibnamehash}{2ed873ba34a395178646e65816e26289}
+      \strng{authornamehash}{2ed873ba34a395178646e65816e26289}
+      \strng{authorfullhash}{2ed873ba34a395178646e65816e26289}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Moto : Systèmes d’aide à la conduite (ADAS) les plus courants}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://motards.net/articles/accessoires-moto/moto-adas/
+      \endverb
+      \verb{url}
+      \verb https://motards.net/articles/accessoires-moto/moto-adas/
       \endverb
     \endentry
     \entry{continental_adas}{report}{}
@@ -196,6 +273,35 @@
       \field{type}{phdthesis}
       \field{year}{2023}
     \endentry
+    \entry{moto_aras}{report}{}
+      \name{author}{1}{}{%
+        {{hash=f2ae060b06da3b8742e082bc6ba661d1}{%
+           family={Lefevre},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{fullhash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{bibnamehash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{authorbibnamehash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{authornamehash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{authorfullhash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{ARAS ou les systèmes d’aides à la conduite spécifiques au motard}
+      \field{type}{techreport}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://motards.net/articles/accessoires-moto/moto-adas/
+      \endverb
+      \verb{url}
+      \verb https://motards.net/articles/accessoires-moto/moto-adas/
+      \endverb
+    \endentry
     \entry{lenoir_cette_2024}{misc}{}
       \name{author}{1}{}{%
         {{hash=4aeb943c99b212fc7e67c06864a7b969}{%
@@ -225,6 +331,58 @@
       \endverb
       \verb{url}
       \verb https://www.phonandroid.com/cette-moto-electrique-promet-une-securite-maximale-grace-a-lia.html
+      \endverb
+    \endentry
+    \entry{liberty_rider}{report}{}
+      \name{author}{1}{}{%
+        {{hash=467f369386f5a0f0ff2fbf1d16bf05ea}{%
+           family={LibertyRider},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{fullhash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{bibnamehash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{authorbibnamehash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{authornamehash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{authorfullhash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Packtalk Pro}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://liberty-rider.com/fr
+      \endverb
+      \verb{url}
+      \verb https://liberty-rider.com/fr
+      \endverb
+    \endentry
+    \entry{joberty_blog}{report}{}
+      \name{author}{1}{}{%
+        {{hash=dad7ed0dba9f632dfe411cf10f0fcd35}{%
+           family={Luxoft},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{fullhash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{bibnamehash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{authorbibnamehash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{authornamehash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{authorfullhash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{The present and future of autonomous driving: how do cars interact with roads and signs?}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.joberty.com/blog/the-present-and-future-of-autonomous-driving-how-do-cars-interact-with-roads-and-signs/
+      \endverb
+      \verb{url}
+      \verb https://www.joberty.com/blog/the-present-and-future-of-autonomous-driving-how-do-cars-interact-with-roads-and-signs/
       \endverb
     \endentry
     \entry{journal_de_quebec_motocycliste_nodate}{article}{}

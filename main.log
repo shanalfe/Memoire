@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  19 MAR 2025 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  22 MAR 2025 08:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -112,7 +112,14 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-)) (/usr/local/texlive/2024/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count280
+\float@exts=\toks24
+\float@box=\box52
+\@float@everytoks=\toks25
+\@floatcapt=\box53
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language90
 LaTeX Info: Redefining \_ on input line 43.
@@ -164,11 +171,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count280
+\c@section@level=\count281
 )
 \@linkdim=\dimen154
-\Hy@linkcounter=\count281
-\Hy@pagecounter=\count282
+\Hy@linkcounter=\count282
+\Hy@pagecounter=\count283
  (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -176,7 +183,7 @@ Now handling font encoding PD1 ...
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count283
+\Hy@SavedSpaceFactor=\count284
  (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -189,7 +196,7 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count284
+\c@Hy@tempcnt=\count285
  (/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -201,7 +208,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count285
+\Fld@menulength=\count286
 \Field@Width=\dimen156
 \Fld@charsize=\dimen157
 Package hyperref Info: Hyper figures OFF on input line 6063.
@@ -215,9 +222,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count286
-\c@Item=\count287
-\c@Hfootnote=\count288
+\Hy@abspage=\count287
+\c@Item=\count288
+\c@Hfootnote=\count289
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -226,8 +233,8 @@ File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count289
-\c@bookmark@seq@number=\count290
+\Fld@listcount=\count290
+\c@bookmark@seq@number=\count291
  (/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -240,55 +247,55 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count291
+\lrq@indent=\count292
  (/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count292
-\c@listtotal=\count293
-\c@listcount=\count294
-\c@liststart=\count295
-\c@liststop=\count296
-\c@citecount=\count297
-\c@citetotal=\count298
-\c@multicitecount=\count299
-\c@multicitetotal=\count300
-\c@instcount=\count301
-\c@maxnames=\count302
-\c@minnames=\count303
-\c@maxitems=\count304
-\c@minitems=\count305
-\c@citecounter=\count306
-\c@maxcitecounter=\count307
-\c@savedcitecounter=\count308
-\c@uniquelist=\count309
-\c@uniquename=\count310
-\c@refsection=\count311
-\c@refsegment=\count312
-\c@maxextratitle=\count313
-\c@maxextratitleyear=\count314
-\c@maxextraname=\count315
-\c@maxextradate=\count316
-\c@maxextraalpha=\count317
-\c@abbrvpenalty=\count318
-\c@highnamepenalty=\count319
-\c@lownamepenalty=\count320
-\c@maxparens=\count321
-\c@parenlevel=\count322
-\blx@tempcnta=\count323
-\blx@tempcntb=\count324
-\blx@tempcntc=\count325
-\c@blx@maxsection=\count326
-\blx@maxsegment@0=\count327
-\blx@notetype=\count328
-\blx@parenlevel@text=\count329
-\blx@parenlevel@foot=\count330
-\blx@sectionciteorder@0=\count331
-\blx@sectionciteorderinternal@0=\count332
-\blx@entrysetcounter=\count333
-\blx@biblioinstance=\count334
+\c@tabx@nest=\count293
+\c@listtotal=\count294
+\c@listcount=\count295
+\c@liststart=\count296
+\c@liststop=\count297
+\c@citecount=\count298
+\c@citetotal=\count299
+\c@multicitecount=\count300
+\c@multicitetotal=\count301
+\c@instcount=\count302
+\c@maxnames=\count303
+\c@minnames=\count304
+\c@maxitems=\count305
+\c@minitems=\count306
+\c@citecounter=\count307
+\c@maxcitecounter=\count308
+\c@savedcitecounter=\count309
+\c@uniquelist=\count310
+\c@uniquename=\count311
+\c@refsection=\count312
+\c@refsegment=\count313
+\c@maxextratitle=\count314
+\c@maxextratitleyear=\count315
+\c@maxextraname=\count316
+\c@maxextradate=\count317
+\c@maxextraalpha=\count318
+\c@abbrvpenalty=\count319
+\c@highnamepenalty=\count320
+\c@lownamepenalty=\count321
+\c@maxparens=\count322
+\c@parenlevel=\count323
+\blx@tempcnta=\count324
+\blx@tempcntb=\count325
+\blx@tempcntc=\count326
+\c@blx@maxsection=\count327
+\blx@maxsegment@0=\count328
+\blx@notetype=\count329
+\blx@parenlevel@text=\count330
+\blx@parenlevel@foot=\count331
+\blx@sectionciteorder@0=\count332
+\blx@sectionciteorderinternal@0=\count333
+\blx@entrysetcounter=\count334
+\blx@biblioinstance=\count335
 \labelnumberwidth=\skip52
 \labelalphawidth=\skip53
 \biblabelsep=\skip54
@@ -300,9 +307,9 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language91
-\c@mincomprange=\count335
-\c@maxcomprange=\count336
-\c@mincompwidth=\count337
+\c@mincomprange=\count336
+\c@maxcomprange=\count337
+\c@mincompwidth=\count338
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -312,74 +319,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count338
-\c@savedafterword=\count339
-\c@annotator=\count340
-\c@savedannotator=\count341
-\c@author=\count342
-\c@savedauthor=\count343
-\c@bookauthor=\count344
-\c@savedbookauthor=\count345
-\c@commentator=\count346
-\c@savedcommentator=\count347
-\c@editor=\count348
-\c@savededitor=\count349
-\c@editora=\count350
-\c@savededitora=\count351
-\c@editorb=\count352
-\c@savededitorb=\count353
-\c@editorc=\count354
-\c@savededitorc=\count355
-\c@foreword=\count356
-\c@savedforeword=\count357
-\c@holder=\count358
-\c@savedholder=\count359
-\c@introduction=\count360
-\c@savedintroduction=\count361
-\c@namea=\count362
-\c@savednamea=\count363
-\c@nameb=\count364
-\c@savednameb=\count365
-\c@namec=\count366
-\c@savednamec=\count367
-\c@translator=\count368
-\c@savedtranslator=\count369
-\c@shortauthor=\count370
-\c@savedshortauthor=\count371
-\c@shorteditor=\count372
-\c@savedshorteditor=\count373
-\c@labelname=\count374
-\c@savedlabelname=\count375
-\c@institution=\count376
-\c@savedinstitution=\count377
-\c@lista=\count378
-\c@savedlista=\count379
-\c@listb=\count380
-\c@savedlistb=\count381
-\c@listc=\count382
-\c@savedlistc=\count383
-\c@listd=\count384
-\c@savedlistd=\count385
-\c@liste=\count386
-\c@savedliste=\count387
-\c@listf=\count388
-\c@savedlistf=\count389
-\c@location=\count390
-\c@savedlocation=\count391
-\c@organization=\count392
-\c@savedorganization=\count393
-\c@origlocation=\count394
-\c@savedoriglocation=\count395
-\c@origpublisher=\count396
-\c@savedorigpublisher=\count397
-\c@publisher=\count398
-\c@savedpublisher=\count399
-\c@language=\count400
-\c@savedlanguage=\count401
-\c@origlanguage=\count402
-\c@savedoriglanguage=\count403
-\c@pageref=\count404
-\c@savedpageref=\count405
+\c@afterword=\count339
+\c@savedafterword=\count340
+\c@annotator=\count341
+\c@savedannotator=\count342
+\c@author=\count343
+\c@savedauthor=\count344
+\c@bookauthor=\count345
+\c@savedbookauthor=\count346
+\c@commentator=\count347
+\c@savedcommentator=\count348
+\c@editor=\count349
+\c@savededitor=\count350
+\c@editora=\count351
+\c@savededitora=\count352
+\c@editorb=\count353
+\c@savededitorb=\count354
+\c@editorc=\count355
+\c@savededitorc=\count356
+\c@foreword=\count357
+\c@savedforeword=\count358
+\c@holder=\count359
+\c@savedholder=\count360
+\c@introduction=\count361
+\c@savedintroduction=\count362
+\c@namea=\count363
+\c@savednamea=\count364
+\c@nameb=\count365
+\c@savednameb=\count366
+\c@namec=\count367
+\c@savednamec=\count368
+\c@translator=\count369
+\c@savedtranslator=\count370
+\c@shortauthor=\count371
+\c@savedshortauthor=\count372
+\c@shorteditor=\count373
+\c@savedshorteditor=\count374
+\c@labelname=\count375
+\c@savedlabelname=\count376
+\c@institution=\count377
+\c@savedinstitution=\count378
+\c@lista=\count379
+\c@savedlista=\count380
+\c@listb=\count381
+\c@savedlistb=\count382
+\c@listc=\count383
+\c@savedlistc=\count384
+\c@listd=\count385
+\c@savedlistd=\count386
+\c@liste=\count387
+\c@savedliste=\count388
+\c@listf=\count389
+\c@savedlistf=\count390
+\c@location=\count391
+\c@savedlocation=\count392
+\c@organization=\count393
+\c@savedorganization=\count394
+\c@origlocation=\count395
+\c@savedoriglocation=\count396
+\c@origpublisher=\count397
+\c@savedorigpublisher=\count398
+\c@publisher=\count399
+\c@savedpublisher=\count400
+\c@language=\count401
+\c@savedlanguage=\count402
+\c@origlanguage=\count403
+\c@savedoriglanguage=\count404
+\c@pageref=\count405
+\c@savedpageref=\count406
 \shorthandwidth=\skip60
 \shortjournalwidth=\skip61
 \shortserieswidth=\skip62
@@ -403,19 +410,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count406
-\c@textcitetotal=\count407
-\c@textcitemaxnames=\count408
-\c@biburlbigbreakpenalty=\count409
-\c@biburlbreakpenalty=\count410
-\c@biburlnumpenalty=\count411
-\c@biburlucpenalty=\count412
-\c@biburllcpenalty=\count413
+\c@textcitecount=\count407
+\c@textcitetotal=\count408
+\c@textcitemaxnames=\count409
+\c@biburlbigbreakpenalty=\count410
+\c@biburlbreakpenalty=\count411
+\c@biburlnumpenalty=\count412
+\c@biburlucpenalty=\count413
+\c@biburllcpenalty=\count414
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count414
+\c@smartand=\count415
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -433,8 +440,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count415
-\c@bbx:relatedtotal=\count416
+\c@bbx:relatedcount=\count416
+\c@bbx:relatedtotal=\count417
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -444,10 +451,10 @@ Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count417
-\c@cbx@tempcntb=\count418
-\c@cbx@tempcntc=\count419
-\c@cbx@tempcntd=\count420
+\c@cbx@tempcnta=\count418
+\c@cbx@tempcntb=\count419
+\c@cbx@tempcntc=\count420
+\c@cbx@tempcntd=\count421
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -475,8 +482,8 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2024-02-20 L3 programming layer (loader) 
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count421
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count422
+\l__pdf_internal_box=\box54
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2024-02-20 L3 programming layer (loader) 
@@ -491,9 +498,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count422
-\Gm@cntv=\count423
-\c@Gm@tempcnt=\count424
+\Gm@cnth=\count423
+\Gm@cntv=\count424
+\c@Gm@tempcnt=\count425
 \Gm@bindingoffset=\dimen158
 \Gm@wd@mp=\dimen159
 \Gm@odd@mp=\dimen160
@@ -502,7 +509,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen163
 \Gm@layouthoffset=\dimen164
 \Gm@layoutvoffset=\dimen165
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks26
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -511,39 +518,39 @@ Package csquotes Info: Redefining alias 'default' -> 'french'.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Info: Redefining \degres on input line 14.
-LaTeX Info: Redefining \up on input line 14.
-LaTeX Info: Redefining \microtypecontext on input line 14.
-Package microtype Info: Applying patch `item' on input line 14.
-Package microtype Info: Applying patch `toc' on input line 14.
-Package microtype Info: Applying patch `eqnum' on input line 14.
-Package microtype Info: Applying patch `footnote' on input line 14.
-Package microtype Info: Applying patch `verbatim' on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Info: Redefining \degres on input line 15.
+LaTeX Info: Redefining \up on input line 15.
+LaTeX Info: Redefining \microtypecontext on input line 15.
+Package microtype Info: Applying patch `item' on input line 15.
+Package microtype Info: Applying patch `toc' on input line 15.
+Package microtype Info: Applying patch `eqnum' on input line 15.
+Package microtype Info: Applying patch `footnote' on input line 15.
+Package microtype Info: Applying patch `verbatim' on input line 15.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 14.
+LaTeX Info: Redefining \showhyphens on input line 15.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -551,24 +558,24 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count425
+\scratchcounter=\count426
 \scratchdimen=\dimen166
-\scratchbox=\box53
-\nofMPsegments=\count426
-\nofMParguments=\count427
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count428
+\scratchbox=\box55
+\nofMPsegments=\count427
+\nofMParguments=\count428
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count429
 \MPscratchDim=\dimen167
-\MPnumerator=\count429
-\makeMPintoPDFobject=\count430
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count430
+\makeMPintoPDFobject=\count431
+\everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 15.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.out) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -586,8 +593,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bbl)
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
+Package biblatex Info: Reference section=0 on input line 15.
+Package biblatex Info: Reference segment=0 on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -626,7 +633,7 @@ Package biblatex Info: Reference segment=0 on input line 14.
 <images/logo_paris_saclay.png, id=52, 2569.6pt x 1161.33875pt>
 File: images/logo_paris_saclay.png Graphic file (type png)
 <use images/logo_paris_saclay.png>
-Package pdftex.def Info: images/logo_paris_saclay.png  used on input line 28.
+Package pdftex.def Info: images/logo_paris_saclay.png  used on input line 29.
 (pdftex.def)             Requested size: 298.75264pt x 135.01309pt.
 [1
 
@@ -643,7 +650,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \newpage
+l.35 \newpage
               [1]
 <images/evolution_mortalite_securite_routiere_france.png, id=84, 386.44376pt x 172.645pt>
 File: images/evolution_mortalite_securite_routiere_france.png Graphic file (type png)
@@ -655,48 +662,76 @@ File: images/camambert_accidents_differents_vehicules.png Graphic file (type png
 <use images/camambert_accidents_differents_vehicules.png>
 Package pdftex.def Info: images/camambert_accidents_differents_vehicules.png  used on input line 59.
 (pdftex.def)             Requested size: 298.75264pt x 59.17255pt.
- [2 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/evolution_mortalite_securite_routiere_france.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/camambert_accidents_differents_vehicules.png>] [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<images/schéma_cycle_vie_donneées.png, id=111, 398.48875pt x 121.45375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
+
+ []
+
+[2 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/evolution_mortalite_securite_routiere_france.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/camambert_accidents_differents_vehicules.png>]
+<images/schema_v2.png, id=102, 1284.8pt x 775.89874pt>
+File: images/schema_v2.png Graphic file (type png)
+<use images/schema_v2.png>
+Package pdftex.def Info: images/schema_v2.png  used on input line 83.
+(pdftex.def)             Requested size: 298.75264pt x 180.41827pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+[3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/schema_v2.png>]
+<images/schéma_cycle_vie_donneées.png, id=115, 398.48875pt x 121.45375pt>
 File: images/schéma_cycle_vie_donneées.png Graphic file (type png)
 <use images/schéma_cycle_vie_donneées.png>
-Package pdftex.def Info: images/schéma_cycle_vie_donneées.png  used on input line 104.
+Package pdftex.def Info: images/schéma_cycle_vie_donneées.png  used on input line 115.
 (pdftex.def)             Requested size: 298.75264pt x 91.05856pt.
  [4 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/schéma_cycle_vie_donneées.png>]
-<images/schéma_systeme_communication_donnees.png, id=124, 586.19pt x 306.14375pt>
+<images/schéma_systeme_communication_donnees.png, id=128, 586.19pt x 306.14375pt>
 File: images/schéma_systeme_communication_donnees.png Graphic file (type png)
 <use images/schéma_systeme_communication_donnees.png>
-Package pdftex.def Info: images/schéma_systeme_communication_donnees.png  used on input line 128.
-(pdftex.def)             Requested size: 298.75264pt x 156.02379pt.
+Package pdftex.def Info: images/schéma_systeme_communication_donnees.png  used on input line 139.
+(pdftex.def)             Requested size: 384.1096pt x 200.60269pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--145
+Underfull \hbox (badness 10000) in paragraph at lines 151--160
 
  []
 
 [5 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/schéma_systeme_communication_donnees.png>]
-<images/ADAS_schéma.jpg, id=135, 1927.2pt x 1084.05pt>
+<images/ADAS_schéma.jpg, id=138, 1927.2pt x 1084.05pt>
 File: images/ADAS_schéma.jpg Graphic file (type jpg)
 <use images/ADAS_schéma.jpg>
-Package pdftex.def Info: images/ADAS_schéma.jpg  used on input line 163.
+Package pdftex.def Info: images/ADAS_schéma.jpg  used on input line 178.
 (pdftex.def)             Requested size: 298.75264pt x 168.04256pt.
-<images/graph1_yannLeCun.png, id=139, 232.87pt x 155.58125pt>
+<images/graph1_yannLeCun.png, id=142, 232.87pt x 155.58125pt>
 File: images/graph1_yannLeCun.png Graphic file (type png)
 <use images/graph1_yannLeCun.png>
-Package pdftex.def Info: images/graph1_yannLeCun.png  used on input line 182.
+Package pdftex.def Info: images/graph1_yannLeCun.png  used on input line 197.
 (pdftex.def)             Requested size: 298.75264pt x 199.61809pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/graph2_yannLeCun.jpg, id=140, 455.7025pt x 307.1475pt>
+<images/graph2_yannLeCun.jpg, id=143, 455.7025pt x 307.1475pt>
 File: images/graph2_yannLeCun.jpg Graphic file (type jpg)
 <use images/graph2_yannLeCun.jpg>
-Package pdftex.def Info: images/graph2_yannLeCun.jpg  used on input line 191.
+Package pdftex.def Info: images/graph2_yannLeCun.jpg  used on input line 206.
 (pdftex.def)             Requested size: 298.75264pt x 201.36351pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/ADAS_schéma.jpg>] [7 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/graph1_yannLeCun.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/graph2_yannLeCun.jpg>] [8] [9]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 265.
+[6 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/ADAS_schéma.jpg>] [7 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/graph1_yannLeCun.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/graph2_yannLeCun.jpg>] [8]
+<images/diag_etat_georide.png, id=171, 459.7175pt x 500.87125pt>
+File: images/diag_etat_georide.png Graphic file (type png)
+<use images/diag_etat_georide.png>
+Package pdftex.def Info: images/diag_etat_georide.png  used on input line 244.
+(pdftex.def)             Requested size: 298.75264pt x 325.51659pt.
+ [9] [10 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/diag_etat_georide.png>]
+<images/aras_moto.jpeg, id=195, 1284.8pt x 574.145pt>
+File: images/aras_moto.jpeg Graphic file (type jpg)
+<use images/aras_moto.jpeg>
+Package pdftex.def Info: images/aras_moto.jpeg  used on input line 262.
+(pdftex.def)             Requested size: 298.75264pt x 133.50485pt.
+ [11 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/aras_moto.jpeg>] [12]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 315.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -704,7 +739,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10] (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux)
+ [13] (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -716,18 +751,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20984 strings out of 474116
- 372581 string characters out of 5743682
- 1944187 words of memory out of 5000000
- 42926 multiletter control sequences out of 15000+600000
- 573196 words of font info for 134 fonts, out of 8000000 for 9000
+ 21117 strings out of 474116
+ 375296 string characters out of 5743682
+ 1951187 words of memory out of 5000000
+ 43029 multiletter control sequences out of 15000+600000
+ 573595 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,81p,1324b,1869s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (11 pages, 1030057 bytes).
+Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (14 pages, 1589752 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 33417 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 33432 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
 \usepackage{csquotes}
+\usepackage{float} % Ajoute ce package dans le préambule
 \usepackage{hyphenat}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
@@ -39,8 +40,7 @@
 \subsection{Contexte et enjeux}
 %Abord IOT
 L'IoT\footnote{Internet des objets} a révolutionné de nombreux aspects de notre société: la santé, de l'agriculture à l'industrie 4.0, en passant par les transports et les communications.
-Les \textbf{technologies embarquées et connectées} désignent l’ensemble des systèmes électroniques intégrés aux véhicules (voitures et motos) permettant d’améliorer la sécurité, le confort et la connectivité. Ces technologies incluent :
-
+Les \textbf{technologies embarquées et connectées} désignent l’ensemble des systèmes électroniques intégrés aux véhicules (voitures et motos) permettant d’améliorer la sécurité, le confort et la connectivité. Ces technologies incluent : les systèmes de communication, les capteurs, les caméras, les radars, les lidars, les systèmes d’aide à la conduite (ADAS) et les plateformes de gestion des données.\\
 %enjeux -> sécurité routière
 L’accidentalité routière en France reste un enjeu majeur de sécurité publique, avec des milliers d’accidents chaque année causant des pertes humaines et matérielles importantes. Malgré les avancées en matière de prévention et de réglementation, les comportements à risque et les conditions de circulation continuent d’alimenter cette problématique.
 En France, il y a environ 2,3 à 2,5 millions de motards\cite{actiEouteNbMotardFr}, ce qui représente 2\%  du trafic.
@@ -60,7 +60,9 @@ Grâce au graphe précédent, on constate qu’il y a une diminution sensible du
     \caption{ONISR Données relatives aux accidents corporels enregistrés par les forces de l'ordre, en France métropolitaine.}
 \end{figure}
 
-En termes d’accidents corporels et de mortalité sur la route, les conducteurs de deux-roues sont les plus impactés. Le conducteur n’étant pas protégé par une carrosserie, il est plus vulnérable en cas d’accident. Le motard doit s’équiper de façon rigoureuse afin de limiter les blessures corporelles causées par le choc.
+En termes d’accidents corporels et de mortalité sur la route, les conducteurs de deux-roues sont les plus impactés. Le conducteur n’étant pas protégé par une carrosserie, il est plus vulnérable en cas d’accident. Le motard doit s’équiper de façon rigoureuse afin de limiter les blessures corporelles causées par le choc.\\
+%enjeux -> technologies
+C'est un défi majeur pour les autorités et les constructeurs de véhicules de trouver des solutions pour réduire le nombre d'accidents et améliorer la sécurité des usagers de la route, en particulier des motards. Les technologies IoT offrent des opportunités pour répondre à ces enjeux en améliorant la détection des obstacles, la perception environnementale, l'aide à la conduite et l'analyse des données pour une meilleure prise de décision.\\
 
 
 \subsection{Définitions et concepts clés}
@@ -74,7 +76,16 @@ L'IoT est un réseau d’objets physiques connectés à Internet qui sont capabl
 Ces technologies sont essentielles pour le développement des véhicules intelligents et autonomes, ainsi que pour renforcer la sécurité des motards, souvent plus vulnérables sur la route.\\
 \vspace{0.5cm}
 
-Les \textbf{communications V2V (Vehicle-to-Vehicle) et V2I (Vehicle-to-Infrastructure)} font partie des technologies de transport intelligent (ITS)\footnote{infrastructure technology services} qui permettent aux véhicules et aux infrastructures routières d’échanger des informations en temps réel.
+Les \textbf{communications V2V (e) et V2I (Vehicle-to-Infrastructure)} font partie des technologies de transport intelligent (ITS)\footnote{infrastructure technology services} qui permettent aux véhicules et aux infrastructures routières comme les feux de signalisation, les pannaux d’échanger des informations en temps réel.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/schema_v2.png} 
+    \caption{La communication V2X}
+\end{figure}
+
+Cette communication offre des mises à jour en temps réel sur les conditions de circulation, les accidents, la météo et la disponibilité des places de stationnement, améliorant ainsi la sécurité et l’efficacité des trajets\cite{joberty_blog}.\\
+
 
 
 \newpage
@@ -125,10 +136,14 @@ Les infrastructures routières transmettent des informations aux véhicules à p
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/schéma_systeme_communication_donnees.png} 
-    \caption{Tableau du système de communication V2X d'Innovauto}
+    \includegraphics[width=0.9\textwidth]{images/schéma_systeme_communication_donnees.png} 
+    \caption{Tableau comparatif du système de communication V2X d'Innovauto}
 \end{figure}
 
+La technologie basée sur les opérateurs mobiles permet une communication avec un serveur distant, mais ne prend pas en charge directement la communication entre véhicules et infrastructures.\\
+Le ITS-G5 (Wi-Fi) fonctionne sur la bande 5,9 GHz et permet une communication locale et directe entre les véhicules, les infrastructures et les piétons.\\
+Le C-V2X (Cellular-V2X) combine les deux approches, offrant à la fois une communication via les réseaux mobiles et une communication directe entre les véhicules et infrastructures.\\
+Le C-V2X est la solution la plus complète, intégrant les avantages des réseaux mobiles et de la communication directe, ce qui le rend plus adapté aux véhicules autonomes et à la gestion du trafic intelligent.
 
 \subsection{Capteurs et perception environnementale}
 %•Caméras, LiDAR, radar, ultrasons.
@@ -200,15 +215,11 @@ La pente passe par trois points sur quatre. Par conséquent, il faut trouver un 
 %Conclusion Technologie voitures IOT
 En somme, l’IoT révolutionne l’industrie automobile en offrant des véhicules plus sûrs, plus efficaces et mieux entretenus, tout en ouvrant la voie à de nouvelles innovations dans le domaine de la mobilité.
 
-
-
 %conférence
 La mobilité autonome vise à garantir un confort et une fluidité optimaux, ce qui nécessite un système de surveillance pour mesurer diverses variables. Cela se fait principalement par l'utilisation de capteurs embarqués.
 L'orientation et la direction de la roue jouent un rôle crucial, tout comme la mesure des longitudes et l'utilisation d'unités de mesure inertielle (IMU). La mesure de la vitesse latérale, en revanche, requiert des capteurs très coûteux d'après la conférence\cite{ahmed_ali_synthese_2024} de Sofiane AHMED ALI.
 Pour réduire le nombre de capteurs nécessaires et, par conséquent, les coûts de développement, on peut utiliser des observateurs basés sur des modèles mathématiques pour déterminer les états du véhicule. Cette approche prometteuse présente toutefois des inconvénients, tels que la dynamique latérale du véhicule et les forces latérales agissant sur lui.
 L'utilisation de capteurs visuels présente des défis supplémentaires. Ces capteurs peuvent allonger le processus de collecte de données et introduire des délais dans la transmission des images, ayant ainsi un impact majeur sur le système.
-
-
 
 
 \newpage
@@ -226,10 +237,49 @@ Ces particularités expliquent pourquoi la sécurité des motos sur la route est
 
 \subsection{Les technologies IoT actuelles pour les motos}
 %georide 
-Aujourd'hui, de nouvelles marques, applications\cite{iot_accessoire_moto} apparaissent sur le marché de la moto. Georide, une start-up française qui propose une solution de géolocalisation et de suivi des motos. Grâce à un boîtier connecté, les motards peuvent suivre en temps réel leur trajet, leur vitesse et leur consommation de carburant. L’application mobile fournit des statistiques détaillées sur les performances du véhicule et des alertes en cas de vol ou de panne. Georide propose également des fonctionnalités de partage de trajet et de communauté pour les motards, renforçant ainsi la sécurité et la convivialité de l’expérience de conduite.
+Aujourd'hui, de nouvelles marques, applications\cite{iot_accessoire_moto} apparaissent sur le marché de la moto. Cela créé également un écosystème permettant aux propriétaires de deux-roues de s'équiper sans avoir beaucoup de frais. Georide, une start-up française qui propose une solution de géolocalisation et de suivi des motos. Grâce à un boîtier connecté, les proches des motards peuvent suivre en temps réel leur trajet. Le boitité est connecté à un réseau et il a la capacité à détecter une chute puis de contacter l'assistance. 
+L’application mobile fournit des statistiques détaillées sur les performances du véhicule et des alertes en cas de vol ou de panne. Georide propose également des fonctionnalités de partage de trajet et de communauté pour les motards, renforçant ainsi la sécurité et la convivialité de l’expérience de conduite.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/diag_etat_georide.png} 
+    \caption{Diagramme d'action du boitier Géoride}
+\end{figure}
+
 %Sena, cardo
-Une autre 
-%application localisation
+Des dispositifs de communication sans fil sont également disponibles pour les motards. Sena et Cardo\cite{cardo} proposent des systèmes de communication mains libres qui permettent aux motards de rester connectés tout en conduisant. Ces appareils se fixent sur le casque et offrent des fonctionnalités telles que la communication intercom, la musique en streaming et les appels téléphoniques. Ils sont compatibles avec les smartphones et les systèmes de navigation, améliorant ainsi la sécurité et le confort des motards sur la route. Les dernières mise à jour concernent la détection de collision. Concernant le Packtalk Pro de chez Cardo, il est équipé de capteurs qui permettent de détecter une chute et d'envoyer un message d'urgence à un contact prédéfini.
+
+%application
+D'autres technologies sont plus accessibles comme celle qui est liée au téléphone. En effet, il existe des applications mobiles qui permettent de suivre son trajet, de partager sa position en temps réel et de recevoir des alertes en cas de danger. Ces applications sont souvent gratuites et faciles à utiliser et peuvent être prise en charge par les assurances, c'est le cas de Liberty Rider \cite{liberty_rider}. Cette application utilise les capteurs du smartphone pour détecter les chutes et envoyer automatiquement un message d'alerte à un contact d’urgence. Elle propose également des fonctionnalités de navigation, de partage de trajet et de statistiques de conduite, améliorant ainsi la sécurité et la convivialité de l’expérience de conduite. D'autres applications comme Calimoto, 65 Degrés sont également disponibles et offrent des fonctionnalités similaires pour les motards.
+
+%BMW
+Pour des motos plus modernes, par exemple BMW propose des motos connectées\cite{bmw_adas}. La moto est équipée de l’option « Connectivity » qui permet de connecter le smartphone à la moto via Bluetooth. L’écran TFT affiche les informations de navigation, les appels téléphoniques et la musique en streaming. La moto peut également être contrôlée via l’application mobile BMW Motorrad Connected, offrant des fonctionnalités de suivi, de maintenance et de partage de trajet. Ces technologies améliorent la sécurité et le confort des motards en leur permettant de rester connectés tout en conduisant.
+%ADAS MOTO
+Concernant les systèmes ADAS des motos\cite{moto_adas}, il y a des systèmes de freinage ABS,\footnote{Évite le blocage des roues.} de contrôle de traction et de suspension électronique qui sont de plus en plus courants sur les motos modernes. Ces technologies améliorent la stabilité, la maniabilité et la sécurité des motards en ajustant automatiquement les paramètres du véhicule en fonction des conditions de conduite. "De plus, tous les ADAS sur les voitures ne sont pas compatibles et ne seront pas d’une grande utilité sur les motos." d'après l'article de Moto-Net \cite{moto_adas}.
+D'après une étude britannique, la technologie ADAS permet de réduire de 20 à 30\%\cite{moto_aras} les accidents de la route. Cependant, ces systèmes ne sont pas encore généralisés sur les motos et leur efficacité dépend de leur intégration et de leur compatibilité avec les spécificités de la conduite à deux-roues. La technologie équivalente à ADAS et ARAS\footnote{Advanced Rider Assistance System} est en cours de développement pour les motos et devrait être déployée dans les prochaines années.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/aras_moto.jpeg} 
+    \caption{Moto avec la technologie ARAS}
+\end{figure}
+
+%poursuivre avec la suite des tecnhologie
+%radar adaptatif
+Les radars adaptatifs, déjà utilisés dans l’automobile, font progressivement leur apparition sur les motos haut de gamme. Ce système utilise des capteurs radar pour :\\
+- Maintenir une distance de sécurité avec les véhicules qui précèdent.\\
+- Avertir le conducteur en cas de risque de collision.\\
+- Adapter automatiquement la vitesse et la distance de freinage.\\
+Des constructeurs comme Ducati, BMW et KTM intègrent désormais ce type de radar sur certains modèles, améliorant ainsi l’expérience de conduite, notamment sur autoroute.
+
+
+
+%possibiliter de continuer les gaz lors de glissade
+%abs spécifique moto
+
+%conclusion
+L’intégration de ces technologies dans les motos modernes montre que l’innovation continue d’évoluer pour protéger les motards. Entre les radars adaptatifs, la gestion des gaz en cas de perte d’adhérence et l’ABS spécifique, ces avancées offrent une meilleure stabilité, un freinage plus efficace et une anticipation des dangers sur la route. L’avenir pourrait encore voir l’émergence de nouvelles solutions, comme la communication V2X (Véhicule à Tout) pour améliorer l’interaction entre motos, voitures et infrastructures routières.
+
+Avec ces innovations, la moto de demain ne sera pas seulement plus rapide et plus performante, mais surtout plus sûre et plus intelligente. 
 
 \subsection{Limitations des technologies IoT actuelles pour les motos}
 %•	Problèmes de détection par les capteurs des voitures autonomes.
