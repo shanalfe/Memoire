@@ -2372,21 +2372,22 @@
     <bcf:citekey order="5" intorder="1">noauthor_taille_2023</bcf:citekey>
     <bcf:citekey order="6" intorder="1">donnees_echange</bcf:citekey>
     <bcf:citekey order="7" intorder="1">le_gennec_machine_2023</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">adas_gouv</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">continental_adas</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">le_parisien_radar_2019</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">ahmed_ali_synthese_2024</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">iot_accessoire_moto</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">cardo</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">liberty_rider</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">bmw_adas</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">moto_adas</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">iot_capteur</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">adas_gouv</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">continental_adas</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">le_parisien_radar_2019</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">ahmed_ali_synthese_2024</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">iot_accessoire_moto</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">cardo</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">liberty_rider</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">bmw_adas</bcf:citekey>
     <bcf:citekey order="17" intorder="1">moto_adas</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">moto_aras</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">lenoir_cette_2024</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">texier_quand_2024</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">consumer_skepticim</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">moto_adas</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">moto_aras</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">lenoir_cette_2024</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">texier_quand_2024</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">consumer_skepticim</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

@@ -18,7 +18,7 @@
     \begin{center}
         {\Large \textbf{Université d'Évry Paris-Saclay}}\\[0.5cm]
         {\huge \textbf{État de l'art - Mémoire de Master}}\\[3cm]
-        {\huge \textbf{Dans quelle mesure les technologies IoT des voitures peuvent-elles être adaptées pour répondre aux besoins spécifiques de la sécurité des motos sur les routes ? }}\\[1cm]
+        {\huge \textbf{Dans quelles mesures les technologies IoT des voitures peuvent-elles être adaptées pour répondre aux besoins spécifiques de la sécurité des motos sur les routes ? }}\\[1cm]
         \textbf{Année universitaire :} \\[0.5cm]
         {\Large \textbf{2024/2025}}\\[1cm]
                 {\Large \textbf{Shana LEFEVRE}}\\[2cm]
@@ -76,7 +76,7 @@ L'IoT est un réseau d’objets physiques connectés à Internet qui sont capabl
 Ces technologies sont essentielles pour le développement des véhicules intelligents et autonomes, ainsi que pour renforcer la sécurité des motards, souvent plus vulnérables sur la route.\\
 \vspace{0.5cm}
 
-Les \textbf{communications V2V (e) et V2I (Vehicle-to-Infrastructure)} font partie des technologies de transport intelligent (ITS)\footnote{infrastructure technology services} qui permettent aux véhicules et aux infrastructures routières comme les feux de signalisation, les pannaux d’échanger des informations en temps réel.
+Les \textbf{communications V2V (e) et V2I (Vehicle-to-Infrastructure)} font partie des technologies de transport intelligent (ITS)\footnote{infrastructure technology services} qui permettent aux véhicules et aux infrastructures routières comme les feux de signalisation, les panneaux d’échanger des informations en temps réel.
 
 \begin{figure}[H]
     \centering
@@ -149,6 +149,7 @@ Le C-V2X est la solution la plus complète, intégrant les avantages des réseau
 %•Caméras, LiDAR, radar, ultrasons.
 %•Fusion de capteurs et algorithmes d’IA pour la reconnaissance des objets (motos incluses).
 L'évolution des véhicules intelligents repose sur des systèmes de capteurs avancés de capteurs et de perception environnementale.
+"Un capteur IoT est un dispositif qui mesure une ou plusieurs variables physiques de l'environnement et envoie les données à un réseau ou à une plateforme IoT pour une utilisation ultérieure." selon le site de l'entreprise IoT\cite{iot_capteur}.
 Ces technologies permettent aux véhicules de collecter, d'analyser et d'interpréter en temps réel leur environnement afin d'améliorer leur utilisation.
 Les principaux capteurs utilisés sont les caméras, les radars, les lidars et les ultrasons.
 Ces données permettent de :\\
@@ -166,7 +167,7 @@ Pour cela, il faut combiner plusieurs informations:\\
 - Estimer leur vitesse et leur trajectoire. \\
 - Anticiper les risques et les collisions. \\
 - Améliorer la prise de décision.\\
-Les avancées en intelligence artificielle, en connectivité (5G, V2X) et en traitement des données continueront d’améliorer la perception environnementale des véhicules, ouvrant ainsi la voie à une mobilité plus sûre, plus fluide et plus autonome. 
+Les avancées en IA\footnote{Intelligence Artificielle} en connectivité comme la 5G et la V2X et en traitement des données continueront d’améliorer la perception environnementale des véhicules permettant ainsi la voie à une mobilité plus sûre.
 
 \subsection{Aide à la conduite et systèmes ADAS}
 %•Détection des obstacles et freinage automatique.
@@ -185,7 +186,7 @@ Selon le site du Gouvernement \cite{adas_gouv} "Ces technologies ouvrent la voie
 \subsection{Analyse des données et prise de décision}
 %•	Cloud computing et edge computing pour le traitement en temps réel.
 %•	Machine Learning et IA pour l’anticipation des comportements routiers.
-L'entreprise Valeo a conçu un radar Lidar « Scala ». D'après LeParisien \cite{le_parisien_radar_2019}, l'entreprise, en 2020 produit 200 000 exemplaires par an. Cette technologie permet à ce que la voiture conduit sans l'intervention d'un humain.
+L'entreprise Valeo a conçu un radar Lidar « Scala ». D'après LeParisien \cite{le_parisien_radar_2019}, l'entreprise, en 2020 produit 200 000 exemplaires par an. Cette technologie permet à ce que la voiture conduise sans l'intervention d'un humain.
 
 
 %yan Le Cun
@@ -228,31 +229,36 @@ L'utilisation de capteurs visuels présente des défis supplémentaires. Ces cap
 \subsection{Particularités des motos sur la route}
 %•	Moins de visibilité et plus de vulnérabilité en cas d’accident.
 %•	Dynamique de conduite différente des voitures (accélération rapide, inclinaison dans les virages).
-Les motos présentent plusieurs particularités sur la route qui influencent leur sécurité et leur interaction avec les autres véhicules.
-Une moto, c'est petit et ne possède que deux roues. Cela implique alors qu'elle est encore moins visible, surtout dans les angles morts d'un autre véhicule. Les motos sont agiles, possèdent une forte accélération et donc sûrement imprévisibles. Cela augmente le risque de collisions et les motos peuvent surprendre les autres usagers de la route. Sa configuration expose directement le conducteur deux-roues lors d'un accident par son manque de carrosserie. Les conditions météorologiques et la surface de la route jouent un rôle important dans l'adhérence des véhicules. Les conséquences sont beaucoup plus importantes pour un deux-roues car la chute est inévitable.
+Les motos présentent plusieurs particularités sur la route qui impactent leur sécurité et leur interaction avec les autres véhicules.
+Une moto, c'est un véhicule de petite taille monté sur deux roues. Cela implique alors qu'elle est encore moins visible, surtout dans les angles morts d'un autre véhicule. Les motos sont agiles, possèdent une forte accélération et leur trajectoire est souvent imprévisible. Cela augmente le risque de collisions et les motos peuvent surprendre les autres usagers de la route. De plus sa configuration expose directement le conducteur deux-roues lors d'un accident par son manque de carrosserie. Les conditions météorologiques et la surface de la route jouent un rôle important dans l'adhérence des véhicules. Les conséquences matérielles et corporelles sont beaucoup plus importantes pour un deux-roues car la chute est inévitable.
 La puissance de la machine demande beaucoup d'anticipation et une conduite plus exigente face à tous les dangers.
 
 \vspace{0.5cm} %conclusion
-Ces particularités expliquent pourquoi la sécurité des motos sur la route est un enjeu majeur et nécessitent des adaptations spécifiques dans les systèmes de détection et d’assistance à la conduite. 
+Ces particularités expliquent pourquoi la sécurité des motos sur la route est un enjeu majeur et nécessite des adaptations spécifiques dans les systèmes de détection et d’assistance à la conduite. 
 
 \subsection{Les technologies IoT actuelles pour les motos}
 %georide 
-Aujourd'hui, de nouvelles marques, applications\cite{iot_accessoire_moto} apparaissent sur le marché de la moto. Cela créé également un écosystème permettant aux propriétaires de deux-roues de s'équiper sans avoir beaucoup de frais. Georide, une start-up française qui propose une solution de géolocalisation et de suivi des motos. Grâce à un boîtier connecté, les proches des motards peuvent suivre en temps réel leur trajet. Le boitité est connecté à un réseau et il a la capacité à détecter une chute puis de contacter l'assistance. 
-L’application mobile fournit des statistiques détaillées sur les performances du véhicule et des alertes en cas de vol ou de panne. Georide propose également des fonctionnalités de partage de trajet et de communauté pour les motards, renforçant ainsi la sécurité et la convivialité de l’expérience de conduite.
+Aujourd'hui, de nouvelles marques, applications\cite{iot_accessoire_moto} apparaissent sur le marché de la moto. Cela créé également un écosystème permettant aux propriétaires de deux-roues de s'équiper à moindre frais. Une des applications que nous pouvons exploiter sur le marché est Georide. Géoride une start-up française qui propose une solution de géolocalisation et de suivi des motos. Grâce à un boîtier connecté, les proches des motards peuvent suivre en temps réel leur trajet. Le boitité est connecté à un réseau et il a la capacité à détecter une chute puis de contacter l'assistance. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/diag_etat_georide.png} 
-    \caption{Diagramme d'action du boitier Géoride}
+    \caption{Diagramme d'action du boitier Géoride concernant la sécurité du motard}
+\end{figure}
+L’application mobile fournit des statistiques détaillées sur les performances du véhicule et des alertes en cas de vol ou de panne. Georide propose également des fonctionnalités de partage de trajet, des notifications sur l'entretien de la moto comme le graissage de chaine renforçant ainsi la sécurité et la convivialité de l’expérience de conduite.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/notification_georide.jpg} 
+    \caption{Exemple de notification de l'application Georide}
 \end{figure}
 
 %Sena, cardo
 Des dispositifs de communication sans fil sont également disponibles pour les motards. Sena et Cardo\cite{cardo} proposent des systèmes de communication mains libres qui permettent aux motards de rester connectés tout en conduisant. Ces appareils se fixent sur le casque et offrent des fonctionnalités telles que la communication intercom, la musique en streaming et les appels téléphoniques. Ils sont compatibles avec les smartphones et les systèmes de navigation, améliorant ainsi la sécurité et le confort des motards sur la route. Les dernières mise à jour concernent la détection de collision. Concernant le Packtalk Pro de chez Cardo, il est équipé de capteurs qui permettent de détecter une chute et d'envoyer un message d'urgence à un contact prédéfini.
 
 %application
-D'autres technologies sont plus accessibles comme celle qui est liée au téléphone. En effet, il existe des applications mobiles qui permettent de suivre son trajet, de partager sa position en temps réel et de recevoir des alertes en cas de danger. Ces applications sont souvent gratuites et faciles à utiliser et peuvent être prise en charge par les assurances, c'est le cas de Liberty Rider \cite{liberty_rider}. Cette application utilise les capteurs du smartphone pour détecter les chutes et envoyer automatiquement un message d'alerte à un contact d’urgence. Elle propose également des fonctionnalités de navigation, de partage de trajet et de statistiques de conduite, améliorant ainsi la sécurité et la convivialité de l’expérience de conduite. D'autres applications comme Calimoto, 65 Degrés sont également disponibles et offrent des fonctionnalités similaires pour les motards.
+D'autres technologies sont plus accessibles comme celle qui est liée au téléphone. En effet, il existe des applications mobiles qui permettent de suivre son trajet, de partager sa position en temps réel et de recevoir des alertes en cas de danger. Ces applications sont souvent gratuites et faciles à utiliser et peuvent être prises en charge par les assurances: c'est le cas de Liberty Rider \cite{liberty_rider}. Cette application utilise les capteurs du smartphone pour détecter les chutes et envoyer automatiquement un message d'alerte à un contact d’urgence. Elle propose également des fonctionnalités de navigation, de partage de trajet et de statistiques de conduite, améliorant ainsi la sécurité et la convivialité de l’expérience de conduite. D'autres applications comme Calimoto, 65 Degrés sont également disponibles et offrent des fonctionnalités similaires pour les motards.
 
 %BMW
-Pour des motos plus modernes, par exemple BMW propose des motos connectées\cite{bmw_adas}. La moto est équipée de l’option « Connectivity » qui permet de connecter le smartphone à la moto via Bluetooth. L’écran TFT affiche les informations de navigation, les appels téléphoniques et la musique en streaming. La moto peut également être contrôlée via l’application mobile BMW Motorrad Connected, offrant des fonctionnalités de suivi, de maintenance et de partage de trajet. Ces technologies améliorent la sécurité et le confort des motards en leur permettant de rester connectés tout en conduisant.
+Pour des motos plus modernes, par exemple, BMW propose des motos connectées\cite{bmw_adas}. La moto est équipée de l’option « Connectivity » qui permet de connecter le smartphone à la moto via Bluetooth. L’écran TFT affiche les informations de navigation, les appels téléphoniques et la musique en streaming. La moto peut également être contrôlée via l’application mobile BMW Motorrad Connected, offrant des fonctionnalités de suivi, de maintenance et de partage de trajet. Ces technologies améliorent la sécurité et le confort des motards en leur permettant de rester connectés tout en conduisant.
 %ADAS MOTO
 Concernant les systèmes ADAS des motos\cite{moto_adas}, il y a des systèmes de freinage ABS,\footnote{Évite le blocage des roues.} de contrôle de traction et de suspension électronique qui sont de plus en plus courants sur les motos modernes. Ces technologies améliorent la stabilité, la maniabilité et la sécurité des motards en ajustant automatiquement les paramètres du véhicule en fonction des conditions de conduite. "De plus, tous les ADAS sur les voitures ne sont pas compatibles et ne seront pas d’une grande utilité sur les motos." d'après l'article de Moto-Net \cite{moto_adas}.
 D'après une étude britannique, la technologie ADAS permet de réduire de 20 à 30\%\cite{moto_aras} les accidents de la route. Cependant, ces systèmes ne sont pas encore généralisés sur les motos et leur efficacité dépend de leur intégration et de leur compatibilité avec les spécificités de la conduite à deux-roues. La technologie équivalente à ADAS et ARAS\footnote{Advanced Rider Assistance System} est en cours de développement pour les motos et devrait être déployée dans les prochaines années.
@@ -286,10 +292,10 @@ Avec ces innovations, la moto de demain ne sera pas seulement plus rapide et plu
 %	•	Communication insuffisante entre motos et véhicules connectés.
 %	•	Difficultés d’adaptation des infrastructures intelligentes aux besoins des motards.
 
-
+%problème de détection
 Le progrès côté deux-roues est très interessant et évolue.
-La Verge TS Ultra est une moto électrique \cite{lenoir_cette_2024} haut de gamme intégrant des technologies avancées pour assurer une sécurité maximale à son pilote. Présentée lors du CES 2024, cette superbike est équipée du système Starmatter Vision, qui comprend six caméras et deux radars haute résolution, offrant une vision à 360 degrés de son environnement. Grâce à l’intelligence artificielle et au machine learning, la TS Ultra analyse en temps réel les risques potentiels et alerte le conducteur, notamment lors des changements de voie. Un écran agrandi sur le réservoir affiche des informations claires, comme la vue arrière lors de l’activation du clignotant. Côté performances, la moto dispose d’une batterie de 20,2 kWh alimentant un moteur de plus de 204 chevaux, permettant une accélération de 0 à 100 km/h en 2,5 secondes et une vitesse maximale limitée à 200 km/h. L’autonomie annoncée est de 375 km en conditions optimales, avec une recharge rapide possible en 25 minutes. La Verge TS Ultra est disponible à partir de 54 880 euros avec des livraisons prévues pour le quatrième trimestre 2024.
-Les technologies qu'embarquent les motos sont à la pointe mais coûtent très cher et ne sont pas encore accessibles à tous.
+La Verge TS Ultra est une moto électrique \cite{lenoir_cette_2024} haut de gamme intégrant des technologies avancées pour assurer une sécurité maximale à son pilote. Présentée lors du CES 2024, cette superbike est équipée du système Starmatter Vision, qui comprend six caméras et deux radars haute résolution, offrant une vision à 360 degrés de son environnement. Grâce à l’intelligence artificielle et au machine learning, la TS Ultra analyse en temps réel les risques potentiels et alerte le conducteur, notamment lors des changements de voie. Un écran agrandi sur le réservoir affiche des informations claires, comme la vue arrière lors de l’activation du clignotant. Côté performances, la moto dispose d’une batterie de 20,2 kWh alimentant un moteur de plus de 204 chevaux, permettant une accélération de 0 à 100 km/h en 2,5 secondes et une vitesse maximale limitée à 200 km/h. L’autonomie annoncée est de 375 km en conditions optimales, avec une recharge rapide possible en 25 minutes. La Verge TS Ultra est disponible à partir de 54 880 euros.
+Les technologies qu'embarquent les motos sont à la pointe mais coûtent très chères et ne sont pas encore accessibles à tous.
 \\
 %yamaha
 Yamaha, en collaboration avec Netflix, a donné vie à la moto futuriste Y/AI \cite{texier_quand_2024} , initialement imaginée dans la série animée “Tokyo Override”. Cette moto, inspirée de la Yamaha YZR-M1 du MotoGP présente un design avant-gardiste avec des roues sans rayons semi-transparentes émettant une lueur bleue en mouvement. Son moteur est dissimulé dans la structure reliant les roues, offrant une esthétique épurée. Les guidons, fixés sur les côtés des fourches avant et reliés par une arche, renforcent son allure futuriste. Ce prototype a été exposé au Motor Expo 2024 en Thaïlande, illustrant la vision de Yamaha sur l’intégration de l’intelligence artificielle dans les motos de demain.
@@ -303,12 +309,18 @@ Les réseaux sociaux nous informent en temps réel des événements qui se déro
 Récemment, j'ai lu un article\cite{journal_de_quebec_motocycliste_nodate} daté du jeudi 1er août 2024, relatant un incident survenu en avril dernier. Il s'agit d'un motocycliste de 28 ans, percuté par une voiture en conduite autonome, une Tesla Model S de 2022. Selon les données recueillies, la voiture aurait effectué une embardée après avoir perçu un bruit, ce qui a conduit à la collision. Le fabricant rappelle que ces véhicules ne sont pas entièrement autonomes et que le conducteur doit toujours être prêt à reprendre le contrôle en cas de problème. Selon l'Administration de la sécurité routière des États-Unis, 75 autres accidents impliquant des voitures autonomes ont été recensés. 
 La semaine dernière, Elon Musk, PDG de Tesla, a déclaré que d'ici la fin de l'année, les systèmes de "conduite autonome" devraient être capables de fonctionner sans la supervision constante de son conducteur.
 
-
+\vspace{0.5cm} %conclusion
 %transition
-Même si l'évolution et le progrès de cette technologie impressionnes et présente de bons résultats, elle de nombreuses limites et n'est pas encore au point. Quelles sont les limites ? Quels sont les dangers ?
+Même si l'évolution et le progrès de cette technologie impressionnent et présentent de bons résultats, elle montrent de nombreuses limites et n'est pas encore au point. Quels sont les limites et les dangers ? \\
 
 
-
+\newpage
+\section{Conclusion}
+Bien que l’IoT offre de nombreuses opportunités pour améliorer la sécurité et l’efficacité des transports, il présente également des limites et des défis à relever. Ces limites peuvent lier à la technologie, la réglementation, la sécurité et à la confidentialité des données.\\
+Chaques pays a sa propre réglementation et il est difficile de mettre en place une norme commune. Les constructeurs doivent donc s'adapter à chaque marché et respecter les lois en vigueur.\\
+La sécurité des données est un enjeu majeur pour les véhicules connectés. Les données collectées par les capteurs et les systèmes embarqués peuvent être sensibles et nécessitent une protection adéquate contre les cyberattaques et les violations de la vie privée.\\
+Enfin, l'interopérabilité entre les différents systèmes et véhicules est essentielle pour garantir une communication efficace et une coordination optimale entre les usagers de la route. Les technologies IoT offrent des solutions pour relever ces défis, mais leur mise en œuvre nécessite une collaboration étroite entre les constructeurs, les autorités et les utilisateurs pour garantir une mobilité plus sûre, plus intelligente et plus durable.
+Pour conclure, chaque véhicule a des besoins spécifiques et le défi et de trouver des solutions adaptées à chaque type de véhicule. Les technologies IoT offrent des opportunités pour répondre à ces enjeux.\\
 
 
 \newpage

@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.blg'
-[42] biber-darwin:340> INFO - === Sat Mar 22, 2025, 08:15:36
-[159] Biber.pm:419> INFO - Reading '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bcf'
-[208] Biber.pm:979> INFO - Found 21 citekeys in bib section 0
-[216] Biber.pm:4419> INFO - Processing section 0
-[222] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[223] bibtex.pm:1713> INFO - LaTeX decoding ...
-[235] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[291] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[291] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[291] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'fr-FR'
-[291] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
-[305] bbl.pm:660> INFO - Writing '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.bbl' with encoding 'UTF-8'
-[309] bbl.pm:763> INFO - Output to /Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.bbl
-[309] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_YZc2/f4d088b3f9f145b5c3058da33afd57d4_67167.utf8, line 213, warning: undefined macro "fev"
-[309] Biber.pm:133> INFO - WARNINGS: 1
+[49] biber-darwin:340> INFO - === Sat Mar 22, 2025, 10:41:04
+[193] Biber.pm:419> INFO - Reading '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bcf'
+[256] Biber.pm:979> INFO - Found 22 citekeys in bib section 0
+[266] Biber.pm:4419> INFO - Processing section 0
+[273] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[275] bibtex.pm:1713> INFO - LaTeX decoding ...
+[291] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[369] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[369] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[370] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'fr-FR'
+[370] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[385] bbl.pm:660> INFO - Writing '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.bbl' with encoding 'UTF-8'
+[391] bbl.pm:763> INFO - Output to /Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.bbl
+[391] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_w4mF/f4d088b3f9f145b5c3058da33afd57d4_2997.utf8, line 213, warning: undefined macro "fev"
+[391] Biber.pm:133> INFO - WARNINGS: 1

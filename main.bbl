@@ -496,6 +496,35 @@
       \field{type}{techreport}
       \field{year}{2024}
     \endentry
+    \entry{iot_capteur}{report}{}
+      \name{author}{1}{}{%
+        {{hash=64ef3bd7c69dea342bbde7b10a602a40}{%
+           family={Systemm},
+           familyi={S\bibinitperiod},
+           given={IP},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{fullhash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{bibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authorbibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authornamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authorfullhash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Qu'est-ce qu'un capteur connecté IoT ?}
+      \field{type}{techreport}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.ip-systemes.com/quest-ce-quun-capteur-connect-iot.html
+      \endverb
+      \verb{url}
+      \verb https://www.ip-systemes.com/quest-ce-quun-capteur-connect-iot.html
+      \endverb
+    \endentry
     \entry{noauthor_taille_2023}{report}{}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
