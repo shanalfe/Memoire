@@ -1,0 +1,577 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{actiEouteNbMotardFr}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=57e4dbe432323e6af1e412bb4d95907c}{%
+           family={ActiRoute},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Français}%
+      }
+      \strng{namehash}{57e4dbe432323e6af1e412bb4d95907c}
+      \strng{fullhash}{57e4dbe432323e6af1e412bb4d95907c}
+      \strng{bibnamehash}{57e4dbe432323e6af1e412bb4d95907c}
+      \strng{authorbibnamehash}{57e4dbe432323e6af1e412bb4d95907c}
+      \strng{authornamehash}{57e4dbe432323e6af1e412bb4d95907c}
+      \strng{authorfullhash}{57e4dbe432323e6af1e412bb4d95907c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quel est le nombre de motards en France ?}
+      \verb{urlraw}
+      \verb https://permisdeconduire.actiroute.com/categories/moto/permis-a/nombre-de-motards
+      \endverb
+      \verb{url}
+      \verb https://permisdeconduire.actiroute.com/categories/moto/permis-a/nombre-de-motards
+      \endverb
+    \endentry
+    \entry{adas_gouv}{report}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{ADAS (Advanced Driver Assistance System) - Les aides à la conduite des véhicules}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://www.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-en-voiture/equipement-de-la-voiture/adas
+      \endverb
+      \verb{url}
+      \verb https://www.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-en-voiture/equipement-de-la-voiture/adas
+      \endverb
+    \endentry
+    \entry{ahmed_ali_synthese_2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=07c87a8b8eabf46ce31bb7616f034204}{%
+           family={AHMED\bibnamedelima ALI},
+           familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Sofiane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Français}%
+      }
+      \list{location}{1}{%
+        {IBGBI}%
+      }
+      \strng{namehash}{07c87a8b8eabf46ce31bb7616f034204}
+      \strng{fullhash}{07c87a8b8eabf46ce31bb7616f034204}
+      \strng{bibnamehash}{07c87a8b8eabf46ce31bb7616f034204}
+      \strng{authorbibnamehash}{07c87a8b8eabf46ce31bb7616f034204}
+      \strng{authornamehash}{07c87a8b8eabf46ce31bb7616f034204}
+      \strng{authorfullhash}{07c87a8b8eabf46ce31bb7616f034204}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Synthèse d’un observateur neuro-adaptatif hybride pour l’estimation de la dynamique latérale d’un véhicule autonome terrestre}
+      \field{year}{2024}
+    \endentry
+    \entry{bmw_adas}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e438ab818a828e32f8d06ba05aaf7be0}{%
+           family={BmwMotorrad},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{fullhash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{bibnamehash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{authorbibnamehash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{authornamehash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \strng{authorfullhash}{e438ab818a828e32f8d06ba05aaf7be0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Packtalk Pro}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://www.bmw-motorrad.fr/fr/engineering/automated-shift-assistant.html
+      \endverb
+      \verb{url}
+      \verb https://www.bmw-motorrad.fr/fr/engineering/automated-shift-assistant.html
+      \endverb
+    \endentry
+    \entry{cardo}{report}{}
+      \name{author}{1}{}{%
+        {{hash=ca898a635a8375daa7bc3c1ed216ba43}{%
+           family={Cardo},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{fullhash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{bibnamehash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{authorbibnamehash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{authornamehash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \strng{authorfullhash}{ca898a635a8375daa7bc3c1ed216ba43}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Packtalk Pro}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://cardosystems.com/fr/products/packtalk-pro
+      \endverb
+      \verb{url}
+      \verb https://cardosystems.com/fr/products/packtalk-pro
+      \endverb
+    \endentry
+    \entry{consumer_skepticim}{report}{}
+      \name{author}{1}{}{%
+        {{hash=d5561f8a497e99e56f07a5c8baee9a9b}{%
+           family={Edmonds},
+           familyi={E\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Anglais}%
+      }
+      \strng{namehash}{d5561f8a497e99e56f07a5c8baee9a9b}
+      \strng{fullhash}{d5561f8a497e99e56f07a5c8baee9a9b}
+      \strng{bibnamehash}{d5561f8a497e99e56f07a5c8baee9a9b}
+      \strng{authorbibnamehash}{d5561f8a497e99e56f07a5c8baee9a9b}
+      \strng{authornamehash}{d5561f8a497e99e56f07a5c8baee9a9b}
+      \strng{authorfullhash}{d5561f8a497e99e56f07a5c8baee9a9b}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Consumer Skepticism Toward Autonomous Driving Features Justified}
+      \field{type}{techreport}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://newsroom.aaa.com/2022/05/consumer-skepticism-toward-active-driving-features-justified/
+      \endverb
+      \verb{url}
+      \verb https://newsroom.aaa.com/2022/05/consumer-skepticism-toward-active-driving-features-justified/
+      \endverb
+    \endentry
+    \entry{moto_adas}{report}{}
+      \name{author}{1}{}{%
+        {{hash=2ed873ba34a395178646e65816e26289}{%
+           family={ExpertMoto},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ed873ba34a395178646e65816e26289}
+      \strng{fullhash}{2ed873ba34a395178646e65816e26289}
+      \strng{bibnamehash}{2ed873ba34a395178646e65816e26289}
+      \strng{authorbibnamehash}{2ed873ba34a395178646e65816e26289}
+      \strng{authornamehash}{2ed873ba34a395178646e65816e26289}
+      \strng{authorfullhash}{2ed873ba34a395178646e65816e26289}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Moto : Systèmes d’aide à la conduite (ADAS) les plus courants}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://motards.net/articles/accessoires-moto/moto-adas/
+      \endverb
+      \verb{url}
+      \verb https://motards.net/articles/accessoires-moto/moto-adas/
+      \endverb
+    \endentry
+    \entry{continental_adas}{report}{}
+      \name{author}{1}{}{%
+        {{hash=c5d0929d82609e65e9b07abcfb9ef328}{%
+           family={Frisoni},
+           familyi={F\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{fullhash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{bibnamehash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{authorbibnamehash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{authornamehash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \strng{authorfullhash}{c5d0929d82609e65e9b07abcfb9ef328}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ADAS Sensors and Computing Hardware for 360° perception}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://conti-engineering.com/areas-of-expertise/automotive/adas/
+      \endverb
+      \verb{url}
+      \verb https://conti-engineering.com/areas-of-expertise/automotive/adas/
+      \endverb
+    \endentry
+    \entry{noauthor_revolution_2025}{misc}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{La révolution de l’{IoT} dans l’industrie automobile}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://objenious.com/blogpost/iot-dans-lindustrie-automobile/
+      \endverb
+      \verb{url}
+      \verb https://objenious.com/blogpost/iot-dans-lindustrie-automobile/
+      \endverb
+    \endentry
+    \entry{donnees_echange}{report}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{title}{Le cheminement de la donnée}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://www.innovauto.org/systemes-embarques/le-cheminement-de-la-donnee
+      \endverb
+      \verb{url}
+      \verb https://www.innovauto.org/systemes-embarques/le-cheminement-de-la-donnee
+      \endverb
+    \endentry
+    \entry{le_gennec_machine_2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=7c697ac8e7ae2344a84607a03cd3d0d8}{%
+           family={Le\bibnamedelima Gennec},
+           familyi={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Nolwen},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c697ac8e7ae2344a84607a03cd3d0d8}
+      \strng{fullhash}{7c697ac8e7ae2344a84607a03cd3d0d8}
+      \strng{bibnamehash}{7c697ac8e7ae2344a84607a03cd3d0d8}
+      \strng{authorbibnamehash}{7c697ac8e7ae2344a84607a03cd3d0d8}
+      \strng{authornamehash}{7c697ac8e7ae2344a84607a03cd3d0d8}
+      \strng{authorfullhash}{7c697ac8e7ae2344a84607a03cd3d0d8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Machine {Learning} et {Véhicule} autonome : le défi d’une gouvernance des données personnelles automobiles}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+    \endentry
+    \entry{moto_aras}{report}{}
+      \name{author}{1}{}{%
+        {{hash=f2ae060b06da3b8742e082bc6ba661d1}{%
+           family={Lefevre},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{fullhash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{bibnamehash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{authorbibnamehash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{authornamehash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \strng{authorfullhash}{f2ae060b06da3b8742e082bc6ba661d1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{ARAS ou les systèmes d’aides à la conduite spécifiques au motard}
+      \field{type}{techreport}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://motards.net/articles/accessoires-moto/moto-adas/
+      \endverb
+      \verb{url}
+      \verb https://motards.net/articles/accessoires-moto/moto-adas/
+      \endverb
+    \endentry
+    \entry{lenoir_cette_2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4aeb943c99b212fc7e67c06864a7b969}{%
+           family={Lenoir},
+           familyi={L\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Français}%
+      }
+      \strng{namehash}{4aeb943c99b212fc7e67c06864a7b969}
+      \strng{fullhash}{4aeb943c99b212fc7e67c06864a7b969}
+      \strng{bibnamehash}{4aeb943c99b212fc7e67c06864a7b969}
+      \strng{authorbibnamehash}{4aeb943c99b212fc7e67c06864a7b969}
+      \strng{authornamehash}{4aeb943c99b212fc7e67c06864a7b969}
+      \strng{authorfullhash}{4aeb943c99b212fc7e67c06864a7b969}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{Cette moto électrique promet une sécurité maximale grâce à l’{IA}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.phonandroid.com/cette-moto-electrique-promet-une-securite-maximale-grace-a-lia.html
+      \endverb
+      \verb{url}
+      \verb https://www.phonandroid.com/cette-moto-electrique-promet-une-securite-maximale-grace-a-lia.html
+      \endverb
+    \endentry
+    \entry{liberty_rider}{report}{}
+      \name{author}{1}{}{%
+        {{hash=467f369386f5a0f0ff2fbf1d16bf05ea}{%
+           family={LibertyRider},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{fullhash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{bibnamehash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{authorbibnamehash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{authornamehash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \strng{authorfullhash}{467f369386f5a0f0ff2fbf1d16bf05ea}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Packtalk Pro}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://liberty-rider.com/fr
+      \endverb
+      \verb{url}
+      \verb https://liberty-rider.com/fr
+      \endverb
+    \endentry
+    \entry{joberty_blog}{report}{}
+      \name{author}{1}{}{%
+        {{hash=dad7ed0dba9f632dfe411cf10f0fcd35}{%
+           family={Luxoft},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{fullhash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{bibnamehash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{authorbibnamehash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{authornamehash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \strng{authorfullhash}{dad7ed0dba9f632dfe411cf10f0fcd35}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{The present and future of autonomous driving: how do cars interact with roads and signs?}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.joberty.com/blog/the-present-and-future-of-autonomous-driving-how-do-cars-interact-with-roads-and-signs/
+      \endverb
+      \verb{url}
+      \verb https://www.joberty.com/blog/the-present-and-future-of-autonomous-driving-how-do-cars-interact-with-roads-and-signs/
+      \endverb
+    \endentry
+    \entry{journal_de_quebec_motocycliste_nodate}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a9f10d7654c3e4ae11d7c68773b47fee}{%
+           family={Name},
+           familyi={N\bibinitperiod},
+           given={Author},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9f10d7654c3e4ae11d7c68773b47fee}
+      \strng{fullhash}{a9f10d7654c3e4ae11d7c68773b47fee}
+      \strng{bibnamehash}{a9f10d7654c3e4ae11d7c68773b47fee}
+      \strng{authorbibnamehash}{a9f10d7654c3e4ae11d7c68773b47fee}
+      \strng{authornamehash}{a9f10d7654c3e4ae11d7c68773b47fee}
+      \strng{authorfullhash}{a9f10d7654c3e4ae11d7c68773b47fee}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal de Québec}
+      \field{note}{Accessed: 2024-08-01}
+      \field{title}{Title of the article}
+      \field{year}{2024}
+    \endentry
+    \entry{le_parisien_radar_2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1bd3ee457af4d7a673e550b89166002e}{%
+           family={Parisien},
+           familyi={P\bibinitperiod},
+           given={Le},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Français}%
+      }
+      \list{publisher}{1}{%
+        {Youtube}%
+      }
+      \strng{namehash}{1bd3ee457af4d7a673e550b89166002e}
+      \strng{fullhash}{1bd3ee457af4d7a673e550b89166002e}
+      \strng{bibnamehash}{1bd3ee457af4d7a673e550b89166002e}
+      \strng{authorbibnamehash}{1bd3ee457af4d7a673e550b89166002e}
+      \strng{authornamehash}{1bd3ee457af4d7a673e550b89166002e}
+      \strng{authorfullhash}{1bd3ee457af4d7a673e550b89166002e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Le radar {Lidar} {Scala} de {Valeo}, l’œil des voitures autonomes}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://youtu.be/qfuVpTghT-w
+      \endverb
+      \verb{url}
+      \verb https://youtu.be/qfuVpTghT-w
+      \endverb
+    \endentry
+    \entry{iot_accessoire_moto}{report}{}
+      \name{author}{1}{}{%
+        {{hash=95116ecd84c8e4e43c29629b68775bbd}{%
+           family={Rider},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{fullhash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{bibnamehash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{authorbibnamehash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{authornamehash}{95116ecd84c8e4e43c29629b68775bbd}
+      \strng{authorfullhash}{95116ecd84c8e4e43c29629b68775bbd}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Exploration de l'Internet des objets (IOT) dans les applications pour motos}
+      \field{type}{techreport}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb hhttps://web.ridingmoto.com/fr/L%27Internet-des-objets-dans-les-applications-pour-motos/
+      \endverb
+      \verb{url}
+      \verb hhttps://web.ridingmoto.com/fr/L%27Internet-des-objets-dans-les-applications-pour-motos/
+      \endverb
+    \endentry
+    \entry{la_securite_routiere_accidentalite_2024}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e116f104cbf62ca5fb91f737ef4d3e30}{%
+           family={routière},
+           familyi={r\bibinitperiod},
+           given={La},
+           giveni={L\bibinitperiod},
+           prefix={sécurité},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Français}%
+      }
+      \strng{namehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{fullhash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{bibnamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authorbibnamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authornamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authorfullhash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \field{sortinit}{r}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Accidentalité routière 2023 en {France}}
+      \field{type}{techreport}
+      \field{year}{2024}
+    \endentry
+    \entry{iot_capteur}{report}{}
+      \name{author}{1}{}{%
+        {{hash=64ef3bd7c69dea342bbde7b10a602a40}{%
+           family={Systemm},
+           familyi={S\bibinitperiod},
+           given={IP},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{fullhash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{bibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authorbibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authornamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authorfullhash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Qu'est-ce qu'un capteur connecté IoT ?}
+      \field{type}{techreport}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.ip-systemes.com/quest-ce-quun-capteur-connect-iot.html
+      \endverb
+      \verb{url}
+      \verb https://www.ip-systemes.com/quest-ce-quun-capteur-connect-iot.html
+      \endverb
+    \endentry
+    \entry{noauthor_taille_2023}{report}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Taille du marché mondial de l'{IoT} automobile, prévisions 2022 – 2032.}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sphericalinsights.com/fr/reports/automotive-iot-market
+      \endverb
+      \verb{url}
+      \verb https://www.sphericalinsights.com/fr/reports/automotive-iot-market
+      \endverb
+    \endentry
+    \entry{texier_quand_2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0158754ebbd0e60653d464750b3cb3ca}{%
+           family={Texier},
+           familyi={T\bibinitperiod},
+           given={Kévin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Français}%
+      }
+      \strng{namehash}{0158754ebbd0e60653d464750b3cb3ca}
+      \strng{fullhash}{0158754ebbd0e60653d464750b3cb3ca}
+      \strng{bibnamehash}{0158754ebbd0e60653d464750b3cb3ca}
+      \strng{authorbibnamehash}{0158754ebbd0e60653d464750b3cb3ca}
+      \strng{authornamehash}{0158754ebbd0e60653d464750b3cb3ca}
+      \strng{authorfullhash}{0158754ebbd0e60653d464750b3cb3ca}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Quand l'intelligence artificielle ({IA}) et {Yamaha} redéfinissent la moto du futur}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.motoplanete.com/actualite-moto/articles/18335/quand-l-intelligence-artificielle-ia-et-yamaha-redefinissent-la-moto-du-futur/page.html
+      \endverb
+      \verb{url}
+      \verb https://www.motoplanete.com/actualite-moto/articles/18335/quand-l-intelligence-artificielle-ia-et-yamaha-redefinissent-la-moto-du-futur/page.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
