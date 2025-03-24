@@ -2384,10 +2384,11 @@
     <bcf:citekey order="17" intorder="1">moto_adas</bcf:citekey>
     <bcf:citekey order="18" intorder="1">moto_adas</bcf:citekey>
     <bcf:citekey order="19" intorder="1">moto_aras</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">lenoir_cette_2024</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">texier_quand_2024</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">consumer_skepticim</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">aras_bosh</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">lenoir_cette_2024</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">texier_quand_2024</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">consumer_skepticim</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

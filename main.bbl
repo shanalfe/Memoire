@@ -103,7 +103,7 @@
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Packtalk Pro}
+      \field{title}{L’ASSISTANT DE PASSAGE DE RAPPORTS AUTOMATIQUE (ASA)}
       \field{type}{techreport}
       \verb{urlraw}
       \verb https://www.bmw-motorrad.fr/fr/engineering/automated-shift-assistant.html
@@ -349,7 +349,7 @@
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Packtalk Pro}
+      \field{title}{Liberty Rider}
       \field{type}{techreport}
       \verb{urlraw}
       \verb https://liberty-rider.com/fr
@@ -510,6 +510,7 @@
       \strng{authorbibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
       \strng{authornamehash}{64ef3bd7c69dea342bbde7b10a602a40}
       \strng{authorfullhash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -523,6 +524,35 @@
       \endverb
       \verb{url}
       \verb https://www.ip-systemes.com/quest-ce-quun-capteur-connect-iot.html
+      \endverb
+    \endentry
+    \entry{aras_bosh}{report}{}
+      \name{author}{1}{}{%
+        {{hash=64ef3bd7c69dea342bbde7b10a602a40}{%
+           family={Systemm},
+           familyi={S\bibinitperiod},
+           given={IP},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{fullhash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{bibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authorbibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authornamehash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \strng{authorfullhash}{64ef3bd7c69dea342bbde7b10a602a40}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bosch dévoile son nouveau système radar pour motos : freinage, assistance et prévention des accidents}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.mobilite-verte.com/news/article-1422.html
+      \endverb
+      \verb{url}
+      \verb https://www.mobilite-verte.com/news/article-1422.html
       \endverb
     \endentry
     \entry{noauthor_taille_2023}{report}{}
