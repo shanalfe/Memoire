@@ -72,7 +72,14 @@ C'est un défi majeur pour les autorités et les constructeurs de véhicules de 
 %••	IoT (Internet des Objets) appliqué aux transports.
 Qu'est-ce que l'IoT ?\\
 L'IoT est un réseau d’objets physiques connectés à Internet qui sont capables de collecter et d’échanger des données en temps réel. Ces objets peuvent être des capteurs, des appareils domestiques intelligents, des équipements industriels, des véhicules et bien plus encore. Ils font face à des défis et des enjeux importants comme l'exposition aux menaces de cyberattaques, l'uniformité des systèmes pour leur bon fonctionnement, la consommation d'énergie et enfin, le respect aux droits privés. \\
-• \textbf{Les capteurs et caméras} : détectent les obstacles, surveillent l’environnement et assistent à la conduite (ex. : radars, lidars, caméras 360°).\\
+• \textbf{Les capteurs et caméras} : détectent les obstacles, surveillent l’environnement et assistent à la conduite (ex. : radars, lidars, caméras 360°). Selon dDruid\cite{capteur} un capteur IoT est un "composant électronique qui transforme les variations physiques ou environnementales en signaux électriques exploitables pour surveiller, contrôler ou interagir avec des systèmes connectés".
+Les principaux types de capteurs d'IoT sont: les capteurs de température et d'humidité, les capteurs de mouvement et de présence, les capteurs de lumière et de luminosité, les capteurs de gaz et de qualité de l’airCapteurs de pression et de force et enfin les capteurs de proximité et de distance.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/capteur.png} 
+    \caption{Intéraction des capteurs}
+\end{figure}
+Ils fonctionnent de manière autonome tout intégrant des réseaux connectés. Les éléments à identifier en premier lieu sont donc : leur taille, leur consommation d’énergie, leur capacité de traitement local, leur autonomie, leur capacité de communication.\\
 • \textbf{Les systèmes d’aide à la conduite (ADAS)} : aident le conducteur en régulant la vitesse, le freinage d’urgence ou le maintien de trajectoire.\\
 • \textbf{Les modules de connectivité (4G, 5G, Wi-Fi, Bluetooth)} : permettent l’échange de données en temps réel entre le véhicule et d’autres systèmes, comme les infrastructures routières ou les smartphones.\\
 • \textbf{Les plateformes de gestion des données} : traitent les informations collectées pour fournir des services comme la navigation intelligente, l’alerte trafic ou la maintenance prédictive.\\
@@ -268,6 +275,7 @@ Pour des motos plus modernes, par exemple, BMW propose des motos connectées\cit
 Concernant les systèmes ADAS des motos\cite{moto_adas}, il y a des systèmes de freinage ABS,\footnote{Évite le blocage des roues.} de contrôle de traction et de suspension électronique qui sont de plus en plus courants sur les motos modernes. Ces technologies améliorent la stabilité, la maniabilité et la sécurité des motards en ajustant automatiquement les paramètres du véhicule en fonction des conditions de conduite. "De plus, tous les ADAS sur les voitures ne sont pas compatibles et ne seront pas d’une grande utilité sur les motos." d'après l'article de Moto-Net \cite{moto_adas}.
 D'après une étude britannique, la technologie ADAS permet de réduire de 20 à 30\%\cite{moto_aras} les accidents de la route. Cependant, ces systèmes ne sont pas encore généralisés sur les motos et leur efficacité dépend de leur intégration et de leur compatibilité avec les spécificités de la conduite à deux-roues. La technologie équivalente à ADAS et ARAS\footnote{Advanced Rider Assistance System} est en cours de développement pour les motos et devrait être déployée dans les prochaines années.
 Selon Geoff Liersch, président de la division Deux-roues et sports motorisés chez Bosch, "nous voulons améliorer la sécurité sans retirer le plaisir de la conduite"\cite{aras_bosh}.
+Le système ARAS utilise des radars avant et arrière qui communiquent en permanence avec l’Unité de contrôle du moteur (ECU) et divers capteurs.
 
 \begin{figure}[H]
     \centering
@@ -280,16 +288,29 @@ Selon Geoff Liersch, président de la division Deux-roues et sports motorisés c
 Les radars adaptatifs, déjà utilisés dans l’automobile, font progressivement leur apparition sur les motos haut de gamme. Ce système utilise des capteurs radar pour :\\
 - Maintenir une distance de sécurité avec les véhicules qui précèdent.\\
 - Avertir le conducteur en cas de risque de collision.\\
+- Ajuste le freinage en fonction de l'inclinaison.\\
 - Adapter automatiquement la vitesse et la distance de freinage.\\
+- Détection d'angles morts.\\
 Des constructeurs comme Ducati, BMW et KTM intègrent désormais ce type de radar sur certains modèles, améliorant ainsi l’expérience de conduite, notamment sur autoroute.
 
 %perspectives
 Plusieurs nouvelles aides et alertes sont en cours de développement pour les motos. Parmi elles, on retrouve :\\
-- Group Ride Assist : aide à la conduite en groupe.\\
-- Régulateur de vitesse adaptatif + Stop and Go : maintien automatique de la distance de sécurité.\\
-- Emergency Brake Assist: freinage d’urgence en cas de risque de collision.\\
-- Rear Collision Warning: détecte si un véhicule s'approche trop près par l'arrière et active les feux de détresse en cas de risque de collision. 
+- Group Ride Assist : Aide à la conduite en groupe.\\
+- Régulateur de vitesse adaptatif + Stop and Go : Maintien automatique de la distance de sécurité.\\
+- Emergency Brake Assist: Freinage d’urgence en cas de risque de collision.\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/ktm_detecteur_dev.png} 
+    \caption{Moto avec la technologie ARAS pour un freinage d'urgence}
+\end{figure}
+- Rear Collision Warning: Détecte si un véhicule s'approche trop près par l'arrière et active les feux de détresse en cas de risque de collision. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/ktm_detecteur.png} 
+    \caption{Moto avec la technologie ARAS pour alerter en cas de collision arrière}
+\end{figure}
 
+"L'objectif est d'avoir cette technologie pour une dizaine d'euros par moto. Cela pourrait réellement avoir un impact significatif sur la réduction des accidents." d'après Geoff Liersch.
 %possibiliter de continuer les gaz lors de glissade
 %abs spécifique moto
 
@@ -322,9 +343,7 @@ La semaine dernière, Elon Musk, PDG de Tesla, a déclaré que d'ici la fin de l
 
 \vspace{0.5cm} %conclusion
 %transition
-Même si l'évolution et le progrès de cette technologie impressionnent et présentent de bons résultats, elle montrent de nombreuses limites et n'est pas encore au point. Quels sont les limites et les dangers ? \\
-
-
+Même si l'évolution et le progrès de cette technologie impressionnent et présentent de bons résultats, elle montrent de nombreuses limites et n'est pas encore au point. Quels sont les limites et les dangers ?\\
 \newpage
 \section{Conclusion}
 Bien que l’IoT offre de nombreuses opportunités pour améliorer la sécurité et l’efficacité des transports, il présente également des limites et des défis à relever. Ces limites peuvent lier à la technologie, la réglementation, la sécurité et à la confidentialité des données.\\
