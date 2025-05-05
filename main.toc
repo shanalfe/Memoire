@@ -1,14 +1,17 @@
 \babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Contexte et enjeux}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Définitions et concepts clés}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Les technologies IoT dans les voitures}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Systèmes de communication et d’échange de données}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Capteurs et perception environnementale}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Aide à la conduite et systèmes ADAS}{7}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Analyse des données et prise de décision}{7}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Les défis spécifiques liés à la sécurité des motos}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Particularités des motos sur la route}{10}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Les technologies IoT actuelles pour les motos}{10}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Limitations des technologies IoT actuelles pour les motos}{14}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Conclusion}{15}{section.4}%
+\contentsline {section}{\numberline {1}Fiche de bilan et de syntèse}{2}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Contexte et enjeux}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Définitions et concepts clés}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}État de l'art}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Les technologies IoT dans les voitures}{7}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Systèmes de communication et d’échange de données}{7}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Capteurs et perception environnementale}{8}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Aide à la conduite et systèmes ADAS}{9}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Analyse des données et prise de décision}{9}{subsubsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.2}Les défis spécifiques liés à la sécurité des motos}{12}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Particularités des motos sur la route}{12}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Les technologies IoT actuelles pour les motos}{12}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Limitations des technologies IoT actuelles pour les motos}{16}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Conclusion}{17}{subsection.3.3}%
+\contentsline {section}{Références}{19}{section*.2}%
