@@ -10,13 +10,27 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[backend=biber,style=ieee,sorting=nyt]{biblatex}
 \usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{fancyhdr}
 \addbibresource{bibliography.bib}
 
 \begin{document}
 
 \begin{titlepage}
     \begin{center}
-    \includegraphics[width=0.8\textwidth]{images/logo_paris_saclay.png} 
+        
+        \begin{figure}[h]
+            \centering
+            \begin{minipage}[c]{0.45\textwidth}
+                \centering
+                \includegraphics[width=1\textwidth]{images/logo_paris_saclay.png}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[c]{0.45\textwidth}
+                \centering
+                \includegraphics[width=1\textwidth]{images/logo_kappasante.jpg}
+            \end{minipage}
+        \end{figure}
+   
 
         {\Large \textbf{Université d'Évry Paris-Saclay}}\\[0.5cm]
         {\Large \textbf{Mémoire de Master MIAGE}}\\[2cm]
@@ -24,24 +38,28 @@
         {\huge \textbf{Dans quelles mesures les technologies IoT des voitures peuvent-elles être adaptées pour répondre aux besoins spécifiques de la sécurité des motos sur les routes ? }}\\[1cm]
         {\Large\textbf{Année universitaire :}} \\[0.5cm]
         {\Large \textbf{2024/2025}}\\[1cm]
-                {\Large \textbf{Shana LEFEVRE}}\\[2cm]
-                {\Large Maître d'apprentissage: \textbf{Clément LECLERCQ}}\\[0.5cm]
-                {\Large Tutrice enseignante: \textbf{Farida ZEHRAOUI}}\\[0.5cm]
-                \begin{figure}[h]
-    \centering
-\end{figure}
+        {\Large \textbf{Shana LEFEVRE}}\\[2cm]
+        {\Large Maître d'apprentissage: \textbf{Clément LECLERCQ}}\\[0.5cm]
+        {\Large Tutrice enseignante: \textbf{Farida ZEHRAOUI}}\\[3cm]
+        {\Large{4 rue Cléry, 75002 Paris}} \\
+        {\Large{23 Bd François Mitterrand, 91000 Évry-Courcouronnes}} \\[0.5cm]
     \end{center}
 \end{titlepage}
+
 
 \tableofcontents % Table des matières
 
 %inclusion des différents chapitres
+\newpage
+\include{remerciements/remerciements.tex}
 \newpage
 \include{fiche_bilan/fiche_bilan.tex}
 \newpage
 \include{introduction/introduction.tex}
 \newpage
 \include{etat_art/etat_art.tex}
+\newpage
+\include{coeur_memoire/coeur_memoire.tex}
 \newpage
 \printbibliography
 \addcontentsline{toc}{section}{Références}
