@@ -3,26 +3,20 @@
 \contentsline {subsection}{\numberline {1.1}Présentation de l'activité en entreprise}{2}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}L'entreprise d'accueil}{2}{subsubsection.1.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.2}Le maître d'apprentissage}{2}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Résumé des travaux proposés par l'entreprise}{2}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}Travaux effectués en entreprise}{2}{subsubsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.2}Présentation et synthese du sujet de mémoire de l'apprenti}{2}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Présentation du sujet de mémoire sur lesquels les apports sont novateurs}{2}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Ce qui est déjà connu sur le sujet traités dans le mémoire}{2}{subsubsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.3}Ce que mon travail de mémoire apporte de nouveau}{2}{subsubsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}Utilisation potentielle des travaux de votre sujet de mémoire}{2}{subsubsection.1.2.4}%
-\contentsline {subsubsection}{\numberline {1.2.5}Principales perspectives des travaux}{2}{subsubsection.1.2.5}%
-\contentsline {section}{\numberline {2}Introduction}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Contexte et enjeux}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Définitions et concepts clés}{4}{subsection.2.2}%
-\contentsline {section}{\numberline {3}État de l'art}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Les technologies IoT dans les voitures}{7}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Systèmes de communication et d’échange de données}{7}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Capteurs et perception environnementale}{8}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Aide à la conduite et systèmes ADAS}{9}{subsubsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}Analyse des données et prise de décision}{9}{subsubsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.2}Les défis spécifiques liés à la sécurité des motos}{12}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Particularités des motos sur la route}{12}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Les technologies IoT actuelles pour les motos}{12}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Limitations des technologies IoT actuelles pour les motos}{16}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Conclusion}{17}{subsection.3.3}%
-\contentsline {section}{Références}{19}{section*.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Résumé des travaux proposés par l'entreprise}{3}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Travaux effectués en entreprise}{3}{subsubsection.1.1.4}%
+\contentsline {section}{\numberline {2}Introduction}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Contexte et enjeux}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Définitions et concepts clés}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}État de l'art}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Les technologies IoT dans les voitures}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Systèmes de communication et d’échange de données}{8}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Capteurs et perception environnementale}{9}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Aide à la conduite et systèmes ADAS}{10}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Analyse des données et prise de décision}{10}{subsubsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.2}Les défis spécifiques liés à la sécurité des motos}{13}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Particularités des motos sur la route}{13}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Les technologies IoT actuelles pour les motos}{13}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Limitations des technologies IoT actuelles pour les motos}{17}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Conclusion}{18}{subsection.3.3}%
+\contentsline {section}{Références}{20}{section*.2}%
