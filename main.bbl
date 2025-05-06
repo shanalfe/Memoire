@@ -112,6 +112,31 @@
       \verb https://www.bmw-motorrad.fr/fr/engineering/automated-shift-assistant.html
       \endverb
     \endentry
+    \entry{aras_bosh_site_off}{report}{}
+      \name{author}{1}{}{%
+        {{hash=2688fb24eef34c742d3ca21e642a4235}{%
+           family={Bosch},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{fullhash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{bibnamehash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{authorbibnamehash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{authornamehash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{authorfullhash}{2688fb24eef34c742d3ca21e642a4235}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Advanced Rider Assistance Systems (ARAS)}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://www.bosch-mobility.com/en/solutions/assistance-systems/advanced-rider-assistance-systems-2w/
+      \endverb
+      \verb{url}
+      \verb https://www.bosch-mobility.com/en/solutions/assistance-systems/advanced-rider-assistance-systems-2w/
+      \endverb
+    \endentry
     \entry{aras_bosh}{report}{}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
