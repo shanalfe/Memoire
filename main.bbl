@@ -202,6 +202,35 @@
       \verb https://ddruid.io/capteurs-iot/
       \endverb
     \endentry
+    \entry{voiture_electrique}{report}{}
+      \name{author}{1}{}{%
+        {{hash=065c22f0ceeec747288544f464883db6}{%
+           family={Ecuvillon},
+           familyi={E\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{065c22f0ceeec747288544f464883db6}
+      \strng{fullhash}{065c22f0ceeec747288544f464883db6}
+      \strng{bibnamehash}{065c22f0ceeec747288544f464883db6}
+      \strng{authorbibnamehash}{065c22f0ceeec747288544f464883db6}
+      \strng{authornamehash}{065c22f0ceeec747288544f464883db6}
+      \strng{authorfullhash}{065c22f0ceeec747288544f464883db6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Performance des voitures électriques : Puissance, autonomie et durabilité}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://mieux-consommer.ilek.fr/mobilite/performance-voiture-electrique/#:~:text=Puissance%20des%20voitures%20électriques%20%3A%20kW%20et%20chevaux&text=Contrairement%20aux%20voitures%20thermiques%2C%20où,courante%20sur%20les%20modèles%20standards.
+      \endverb
+      \verb{url}
+      \verb https://mieux-consommer.ilek.fr/mobilite/performance-voiture-electrique/#:~:text=Puissance%20des%20voitures%20%C3%A9lectriques%20%3A%20kW%20et%20chevaux&text=Contrairement%20aux%20voitures%20thermiques%2C%20o%C3%B9,courante%20sur%20les%20mod%C3%A8les%20standards.
+      \endverb
+    \endentry
     \entry{consumer_skepticim}{report}{}
       \name{author}{1}{}{%
         {{hash=d5561f8a497e99e56f07a5c8baee9a9b}{%
@@ -552,6 +581,7 @@
       \strng{authorbibnamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
       \strng{authornamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
       \strng{authorfullhash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \field{extraname}{1}
       \field{sortinit}{r}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
@@ -560,6 +590,36 @@
       \field{title}{Accidentalité routière 2023 en {France}}
       \field{type}{techreport}
       \field{year}{2024}
+    \endentry
+    \entry{trajectoire_securite}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e116f104cbf62ca5fb91f737ef4d3e30}{%
+           family={routière},
+           familyi={r\bibinitperiod},
+           given={La},
+           giveni={L\bibinitperiod},
+           prefix={sécurité},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{fullhash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{bibnamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authorbibnamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authornamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authorfullhash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \field{extraname}{2}
+      \field{sortinit}{r}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{La trajectoire de sécurité}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://www.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-moto/mieux-conduire-moto/la-trajectoire-de
+      \endverb
+      \verb{url}
+      \verb https://www.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-moto/mieux-conduire-moto/la-trajectoire-de
+      \endverb
     \endentry
     \entry{iot_capteur}{report}{}
       \name{author}{1}{}{%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  6 MAY 2025 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  12 MAY 2025 15:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -771,18 +771,106 @@ File: images/graph2_yannLeCun.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/graph2_yannLeCun.jpg  used on input line 119.
 (pdftex.def)             Requested size: 298.75264pt x 201.36351pt.
  [12 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/graph1_yannLeCun.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/graph2_yannLeCun.jpg>] [13]
-<images/diag_etat_georide.png, id=268, 459.7175pt x 500.87125pt>
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
+
+ []
+
+<etat_art/images/trajectoire_securité.jpg, id=268, 569.12625pt x 788.9475pt>
+File: etat_art/images/trajectoire_securité.jpg Graphic file (type jpg)
+<use etat_art/images/trajectoire_securité.jpg>
+Package pdftex.def Info: etat_art/images/trajectoire_securité.jpg  used on input line 152.
+(pdftex.def)             Requested size: 170.71393pt x 236.64995pt.
+<etat_art/images/morvan.png, id=269, 1651.16875pt x 712.6625pt>
+File: etat_art/images/morvan.png Graphic file (type png)
+<use etat_art/images/morvan.png>
+Package pdftex.def Info: etat_art/images/morvan.png  used on input line 158.
+(pdftex.def)             Requested size: 256.07741pt x 110.51591pt.
+[14 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/images/trajectoire_securité.jpg>]
+<images/diag_etat_georide.png, id=277, 459.7175pt x 500.87125pt>
 File: images/diag_etat_georide.png Graphic file (type png)
 <use images/diag_etat_georide.png>
-Package pdftex.def Info: images/diag_etat_georide.png  used on input line 156.
+Package pdftex.def Info: images/diag_etat_georide.png  used on input line 170.
 (pdftex.def)             Requested size: 298.75264pt x 325.51659pt.
-<images/notification_georide.jpg, id=269, 1129.21875pt x 1342.01375pt>
+<images/notification_georide.jpg, id=278, 1129.21875pt x 1342.01375pt>
 File: images/notification_georide.jpg Graphic file (type jpg)
 <use images/notification_georide.jpg>
-Package pdftex.def Info: images/notification_georide.jpg  used on input line 162.
+Package pdftex.def Info: images/notification_georide.jpg  used on input line 176.
 (pdftex.def)             Requested size: 213.39568pt x 253.59279pt.
- [14 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/diag_etat_georide.png>] [15 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/notification_georide.jpg>]
-<images/aras_moto.jpeg, id=295, 1284.8pt x 574.145pt>
+ [15 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/images/morvan.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/diag_etat_georide.png>] [16 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/notification_georide.jpg>]
+<images/aras_moto.jpeg, id=306, 1284.8pt x 574.145pt>
 File: images/aras_moto.jpeg Graphic file (type jpg)
 <use images/aras_moto.jpeg>
-Package pdftex.def Info: images/aras_moto.jpeg  u
+Package pdftex.def Info: images/aras_moto.jpeg  used on input line 198.
+(pdftex.def)             Requested size: 298.75264pt x 133.50485pt.
+<images/ktm_detecteur_dev.png, id=307, 571.13374pt x 378.41376pt>
+File: images/ktm_detecteur_dev.png Graphic file (type png)
+<use images/ktm_detecteur_dev.png>
+Package pdftex.def Info: images/ktm_detecteur_dev.png  used on input line 219.
+(pdftex.def)             Requested size: 298.75264pt x 197.94266pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--221
+
+ []
+
+[17 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/aras_moto.jpeg>]
+<images/ktm_detecteur.png, id=318, 534.99875pt x 362.35374pt>
+File: images/ktm_detecteur.png Graphic file (type png)
+<use images/ktm_detecteur.png>
+Package pdftex.def Info: images/ktm_detecteur.png  used on input line 225.
+(pdftex.def)             Requested size: 298.75264pt x 202.35274pt.
+ [18 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/ktm_detecteur_dev.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/ktm_detecteur.png>] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+[20])
+Underfull \hbox (badness 10000) in paragraph at lines 279--60
+
+ []
+
+[21]
+\openout2 = `coeur_memoire/coeur_memoire.aux'.
+
+ (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/coeur_memoire.tex) [22
+
+
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 64.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [23
+
+
+] [24] (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/remerciements/remerciements.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/fiche_bilan/fiche_bilan.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/introduction/introduction.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/etat_art.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/coeur_memoire.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 356930C4B701F8D0F1FFA22E24F952ED;5422.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 21578 strings out of 474116
+ 390731 string characters out of 5743682
+ 1952187 words of memory out of 5000000
+ 43397 multiletter control sequences out of 15000+600000
+ 573775 words of font info for 143 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,8n,81p,1293b,1869s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (25 pages, 5672062 bytes).
+PDF statistics:
+ 496 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 33573 words of extra memory for PDF output out of 35830 (max. 10000000)
+
