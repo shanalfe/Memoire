@@ -479,6 +479,34 @@
       \verb https://www.joberty.com/blog/the-present-and-future-of-autonomous-driving-how-do-cars-interact-with-roads-and-signs/
       \endverb
     \endentry
+    \entry{moto_autonome}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e5f2f99e53aa65edff59ae8f122b92f4}{%
+           family={Motorrad},
+           familyi={M\bibinitperiod},
+           given={BMW},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{fullhash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{bibnamehash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{authorbibnamehash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{authornamehash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{authorfullhash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{L'innovation de A à Z}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.bmw-motorrad.fr/fr/engineering/innovation/innovation.html
+      \endverb
+      \verb{url}
+      \verb https://www.bmw-motorrad.fr/fr/engineering/innovation/innovation.html
+      \endverb
+    \endentry
     \entry{journal_de_quebec_motocycliste_nodate}{article}{}
       \name{author}{1}{}{%
         {{hash=a9f10d7654c3e4ae11d7c68773b47fee}{%

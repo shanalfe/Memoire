@@ -18,8 +18,8 @@
 \contentsline {subsection}{\numberline {4.2}Les défis spécifiques liés à la sécurité des motos}{14}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Particularités des motos sur la route}{14}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Les technologies IoT actuelles pour les motos}{15}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}L'exploitation des données pour les motos}{19}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Limitations des technologies IoT actuelles pour les motos}{19}{subsubsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.3}Conclusion}{21}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Mémoire}{22}{section.5}%
-\contentsline {section}{Références}{24}{section*.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}L'exploitation des données pour les motos}{20}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Limitations des technologies IoT actuelles pour les motos}{20}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}Conclusion}{22}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Mémoire}{23}{section.5}%
+\contentsline {section}{Références}{25}{section*.2}%
