@@ -151,6 +151,33 @@
       \verb https://www.mobilite-verte.com/news/article-1422.html
       \endverb
     \endentry
+    \entry{reunionProjet2025}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=490fb9b1fca8a005daf7fa2745fd6d7d}{%
+           family={BOUBEZOUL},
+           familyi={B\bibinitperiod},
+           given={Abderrahmane},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Nantes}%
+      }
+      \strng{namehash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{fullhash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{bibnamehash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{authorbibnamehash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{authornamehash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{authorfullhash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{month}{6}
+      \field{title}{3ème réunion plénière du projet}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
     \entry{cardo}{report}{}
       \name{author}{1}{}{%
         {{hash=ca898a635a8375daa7bc3c1ed216ba43}{%

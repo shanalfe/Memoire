@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  29 MAY 2025 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  15 JUL 2025 16:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,7 +641,7 @@ Package biblatex Info: Reference segment=0 on input line 16.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/logo_paris_saclay.png, id=100, 1027.84pt x 516.93124pt>
+<images/logo_paris_saclay.png, id=104, 1027.84pt x 516.93124pt>
 File: images/logo_paris_saclay.png Graphic file (type png)
 <use images/logo_paris_saclay.png>
 Package pdftex.def Info: images/logo_paris_saclay.png  used on input line 25.
@@ -650,7 +650,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 26.
-<images/logo_kappasante.jpg, id=101, 803.0pt x 361.35pt>
+<images/logo_kappasante.jpg, id=105, 803.0pt x 361.35pt>
 File: images/logo_kappasante.jpg Graphic file (type jpg)
 <use images/logo_kappasante.jpg>
 Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 30.
@@ -675,12 +675,12 @@ l.53 \newpage
 \openout2 = `fiche_bilan/fiche_bilan.aux'.
 
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/fiche_bilan/fiche_bilan.tex
-<fiche_bilan/fiche_bilan_images/organigramme_info.png, id=144, 136.3275pt x 169.506pt>
+<fiche_bilan/fiche_bilan_images/organigramme_info.png, id=149, 136.3275pt x 169.506pt>
 File: fiche_bilan/fiche_bilan_images/organigramme_info.png Graphic file (type png)
 <use fiche_bilan/fiche_bilan_images/organigramme_info.png>
 Package pdftex.def Info: fiche_bilan/fiche_bilan_images/organigramme_info.png  used on input line 35.
 (pdftex.def)             Requested size: 170.71393pt x 212.28287pt.
-<fiche_bilan/fiche_bilan_images/intégration_jpa.png, id=146, 104.3097pt x 132.495pt>
+<fiche_bilan/fiche_bilan_images/intégration_jpa.png, id=151, 104.3097pt x 132.495pt>
 File: fiche_bilan/fiche_bilan_images/intégration_jpa.png Graphic file (type png)
 <use fiche_bilan/fiche_bilan_images/intégration_jpa.png>
 Package pdftex.def Info: fiche_bilan/fiche_bilan_images/intégration_jpa.png  used on input line 43.
@@ -693,12 +693,12 @@ Package pdftex.def Info: fiche_bilan/fiche_bilan_images/intégration_jpa.png  u
 \openout2 = `introduction/introduction.aux'.
 
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/introduction/introduction.tex
-<images/evolution_mortalite_securite_routiere_france.png, id=171, 386.44376pt x 172.645pt>
+<images/evolution_mortalite_securite_routiere_france.png, id=176, 386.44376pt x 172.645pt>
 File: images/evolution_mortalite_securite_routiere_france.png Graphic file (type png)
 <use images/evolution_mortalite_securite_routiere_france.png>
 Package pdftex.def Info: images/evolution_mortalite_securite_routiere_france.png  used on input line 14.
 (pdftex.def)             Requested size: 298.75264pt x 133.46918pt.
-<images/camambert_accidents_differents_vehicules.png, id=172, 516.93124pt x 102.3825pt>
+<images/camambert_accidents_differents_vehicules.png, id=177, 516.93124pt x 102.3825pt>
 File: images/camambert_accidents_differents_vehicules.png Graphic file (type png)
 <use images/camambert_accidents_differents_vehicules.png>
 Package pdftex.def Info: images/camambert_accidents_differents_vehicules.png  used on input line 22.
@@ -713,13 +713,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
 
  </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/evolution_mortalite_securite_routiere_france.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/camambert_accidents_differents_vehicules.png>]
-<images/capteur.png, id=188, 548.0475pt x 496.85625pt>
+<images/capteur.png, id=193, 548.0475pt x 496.85625pt>
 File: images/capteur.png Graphic file (type png)
 <use images/capteur.png>
 Package pdftex.def Info: images/capteur.png  used on input line 39.
 (pdftex.def)             Requested size: 213.39568pt x 193.46231pt.
  [7 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/capteur.png>]
-<images/schema_v2.png, id=197, 1284.8pt x 775.89874pt>
+<images/schema_v2.png, id=202, 1284.8pt x 775.89874pt>
 File: images/schema_v2.png Graphic file (type png)
 <use images/schema_v2.png>
 Package pdftex.def Info: images/schema_v2.png  used on input line 53.
@@ -733,7 +733,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 \openout2 = `etat_art/etat_art.aux'.
 
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/etat_art.tex
-<images/schéma_cycle_vie_donneées.png, id=209, 398.48875pt x 121.45375pt>
+<images/schéma_cycle_vie_donneées.png, id=214, 398.48875pt x 121.45375pt>
 File: images/schéma_cycle_vie_donneées.png Graphic file (type png)
 <use images/schéma_cycle_vie_donneées.png>
 Package pdftex.def Info: images/schéma_cycle_vie_donneées.png  used on input line 27.
@@ -743,7 +743,7 @@ Package pdftex.def Info: images/schéma_cycle_vie_donneées.png  used on input
 
 
  </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/schéma_cycle_vie_donneées.png>]
-<images/schéma_systeme_communication_donnees.png, id=222, 586.19pt x 306.14375pt>
+<images/schéma_systeme_communication_donnees.png, id=227, 586.19pt x 306.14375pt>
 File: images/schéma_systeme_communication_donnees.png Graphic file (type png)
 <use images/schéma_systeme_communication_donnees.png>
 Package pdftex.def Info: images/schéma_systeme_communication_donnees.png  used on input line 51.
@@ -754,18 +754,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--73
  []
 
 [10 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/schéma_systeme_communication_donnees.png>]
-<images/ADAS_schéma.jpg, id=235, 1927.2pt x 1084.05pt>
+<images/ADAS_schéma.jpg, id=240, 1927.2pt x 1084.05pt>
 File: images/ADAS_schéma.jpg Graphic file (type jpg)
 <use images/ADAS_schéma.jpg>
 Package pdftex.def Info: images/ADAS_schéma.jpg  used on input line 91.
 (pdftex.def)             Requested size: 298.75264pt x 168.04256pt.
  [11 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/ADAS_schéma.jpg>]
-<images/graph1_yannLeCun.png, id=251, 232.87pt x 155.58125pt>
+<images/graph1_yannLeCun.png, id=256, 232.87pt x 155.58125pt>
 File: images/graph1_yannLeCun.png Graphic file (type png)
 <use images/graph1_yannLeCun.png>
 Package pdftex.def Info: images/graph1_yannLeCun.png  used on input line 110.
 (pdftex.def)             Requested size: 298.75264pt x 199.61809pt.
-<images/graph2_yannLeCun.jpg, id=252, 455.7025pt x 307.1475pt>
+<images/graph2_yannLeCun.jpg, id=257, 455.7025pt x 307.1475pt>
 File: images/graph2_yannLeCun.jpg Graphic file (type jpg)
 <use images/graph2_yannLeCun.jpg>
 Package pdftex.def Info: images/graph2_yannLeCun.jpg  used on input line 119.
@@ -775,67 +775,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
-<etat_art/images/trajectoire_securité.jpg, id=268, 569.12625pt x 788.9475pt>
+<etat_art/images/trajectoire_securité.jpg, id=273, 569.12625pt x 788.9475pt>
 File: etat_art/images/trajectoire_securité.jpg Graphic file (type jpg)
 <use etat_art/images/trajectoire_securité.jpg>
 Package pdftex.def Info: etat_art/images/trajectoire_securité.jpg  used on input line 152.
 (pdftex.def)             Requested size: 170.71393pt x 236.64995pt.
-<etat_art/images/morvan.png, id=269, 1651.16875pt x 712.6625pt>
+<etat_art/images/morvan.png, id=274, 1651.16875pt x 712.6625pt>
 File: etat_art/images/morvan.png Graphic file (type png)
 <use etat_art/images/morvan.png>
 Package pdftex.def Info: etat_art/images/morvan.png  used on input line 158.
 (pdftex.def)             Requested size: 256.07741pt x 110.51591pt.
 [14 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/images/trajectoire_securité.jpg>]
-<images/diag_etat_georide.png, id=277, 459.7175pt x 500.87125pt>
+<images/diag_etat_georide.png, id=282, 459.7175pt x 500.87125pt>
 File: images/diag_etat_georide.png Graphic file (type png)
 <use images/diag_etat_georide.png>
 Package pdftex.def Info: images/diag_etat_georide.png  used on input line 171.
 (pdftex.def)             Requested size: 298.75264pt x 325.51659pt.
  [15 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/images/morvan.png>]
-<images/notification_georide.jpg, id=285, 1129.21875pt x 1342.01375pt>
+<etat_art/images/témoignage géoride.png, id=290, 758.835pt x 331.2375pt>
+File: etat_art/images/témoignage géoride.png Graphic file (type png)
+<use etat_art/images/témoignage géoride.png>
+Package pdftex.def Info: etat_art/images/témoignage géoride.png  used on input line 177.
+(pdftex.def)             Requested size: 298.75264pt x 130.41028pt.
+<images/notification_georide.jpg, id=291, 1129.21875pt x 1342.01375pt>
 File: images/notification_georide.jpg Graphic file (type jpg)
 <use images/notification_georide.jpg>
-Package pdftex.def Info: images/notification_georide.jpg  used on input line 177.
+Package pdftex.def Info: images/notification_georide.jpg  used on input line 183.
 (pdftex.def)             Requested size: 213.39568pt x 253.59279pt.
- [16 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/diag_etat_georide.png>] [17 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/notification_georide.jpg>]
-<images/aras_moto.jpeg, id=311, 1284.8pt x 574.145pt>
+ [16 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/diag_etat_georide.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/images/témoignage géoride.png>] [17 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/notification_georide.jpg>]
+<images/aras_moto.jpeg, id=320, 1284.8pt x 574.145pt>
 File: images/aras_moto.jpeg Graphic file (type jpg)
 <use images/aras_moto.jpeg>
-Package pdftex.def Info: images/aras_moto.jpeg  used on input line 199.
+Package pdftex.def Info: images/aras_moto.jpeg  used on input line 205.
 (pdftex.def)             Requested size: 298.75264pt x 133.50485pt.
-<images/ktm_detecteur_dev.png, id=312, 571.13374pt x 378.41376pt>
+<images/ktm_detecteur_dev.png, id=321, 571.13374pt x 378.41376pt>
 File: images/ktm_detecteur_dev.png Graphic file (type png)
 <use images/ktm_detecteur_dev.png>
-Package pdftex.def Info: images/ktm_detecteur_dev.png  used on input line 220.
+Package pdftex.def Info: images/ktm_detecteur_dev.png  used on input line 226.
 (pdftex.def)             Requested size: 298.75264pt x 197.94266pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--222
+Underfull \hbox (badness 10000) in paragraph at lines 220--228
 
  []
 
 [18 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/aras_moto.jpeg>]
-<images/ktm_detecteur.png, id=323, 534.99875pt x 362.35374pt>
+<images/ktm_detecteur.png, id=331, 534.99875pt x 362.35374pt>
 File: images/ktm_detecteur.png Graphic file (type png)
 <use images/ktm_detecteur.png>
-Package pdftex.def Info: images/ktm_detecteur.png  used on input line 226.
+Package pdftex.def Info: images/ktm_detecteur.png  used on input line 232.
 (pdftex.def)             Requested size: 298.75264pt x 202.35274pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--233
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
-<etat_art/images/bmw.jpeg, id=325, 1927.2pt x 1084.05pt>
+<etat_art/images/bmw.jpeg, id=333, 1927.2pt x 1084.05pt>
 File: etat_art/images/bmw.jpeg Graphic file (type jpg)
 <use etat_art/images/bmw.jpeg>
-Package pdftex.def Info: etat_art/images/bmw.jpeg  used on input line 240.
+Package pdftex.def Info: etat_art/images/bmw.jpeg  used on input line 246.
 (pdftex.def)             Requested size: 298.75264pt x 168.04256pt.
 [19 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/ktm_detecteur_dev.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/ktm_detecteur.png>] [20 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/images/bmw.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 [21])
-Underfull \hbox (badness 10000) in paragraph at lines 292--60
+Underfull \hbox (badness 10000) in paragraph at lines 301--60
 
  []
 
@@ -864,24 +869,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 356930C4B701F8D0F1FFA22E24F952ED;5422.
+(rerunfilecheck)             Checksum: C39BF191112CB9751B277CCE1ED4366D;5589.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21593 strings out of 474116
- 391141 string characters out of 5743682
+ 21607 strings out of 474116
+ 391694 string characters out of 5743682
  1952187 words of memory out of 5000000
- 43407 multiletter control sequences out of 15000+600000
+ 43418 multiletter control sequences out of 15000+600000
  573846 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,81p,1293b,1869s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (26 pages, 6112192 bytes).
+Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (26 pages, 6237172 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 416 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 33578 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 33591 words of extra memory for PDF output out of 35830 (max. 10000000)
 
