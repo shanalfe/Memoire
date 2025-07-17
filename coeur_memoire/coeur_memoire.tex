@@ -4,7 +4,13 @@ Plusieurs IOT existent sur les voitures et fonctionnent parfaitement sur les mot
 
 % faire des schémas avec les trajectoires pour souvelver les problèmes
 
-\subsection{Pratique de la route}
+\subsection{Pratique de la route - Analyse comparative des besoins de sécurité entre voitures et motos}
+
+%Analyse des différences fondamentales : protection physique, stabilité, visibilité, comportements routiers.
+%	•	Quelles fonctionnalités IoT des voitures sont difficilement transférables ?
+%	•	Quelles fonctionnalités sont transférables mais nécessitent adaptation ?
+%	•	Mise en évidence des lacunes spécifiques aux motos.
+
 Ayant également la casquette d'un usager de la route, j'ai pu expérimenter, pratiquer le deux roues sous plusieurs aspects : \
 \begin{itemize}
     \item Les trajets quotidiens,
@@ -18,5 +24,96 @@ Concernant les balades entre amis, l'effet de groupe à tendance à surestimer s
 Enfin les road trip, c'est beaucoup de fatigue. La fatigue augmente le temps de réaction. Il faut absolument avoir toutes ses capacités pour pouvoir réagir à toutes situations.
 La plupart des usagers lorsque la route est mouillé, la prudence est au maximal (vitesse réduite, peu d'angle, anticipation).
 
+\vspace{0.5cm}
+%TRAJECTOIRES SECURITÉ
+Voici des illustrations des trajectoires de sécurité. C'est un thème qui est très abordé par la sécurité routière, les gendarmes ainsi que les usagers des deux-roues. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{coeur_memoire/schéma/trajectoire_sécurité_1.png} 
+    \caption{Trajectoire de sécurité utilisée sans obstacle}
+\end{figure}
+L'objectif ici est de s'ouvrir la visibilité
+
+Voici maintenant la trajectoire idéale dès qu'il y a un autre usager sur la route.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{coeur_memoire/schéma/trajectoire_sécurité_4.png} 
+    \caption{Trajectoire de sécurité utilisée avec un autre usager}
+\end{figure}
+Instinctivement, le motard va se rapprocher à l'extérieur du virage pour s'éloigner du danger.
+Que se passe-t-il si la route ne le permet pas. Ci-dessous le même virage avec des obstacles, des dégradations de la route qui rend l'impossibilité la trajectoire parfaite ou ne permet pas de continuer la trajectoire en toute sécurité représenté en bleu. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{coeur_memoire/schéma/trajectoire_sécurité_2.png} 
+    \caption{Trajectoire de sécurité utilisée avec un autre usager}
+\end{figure}
+Ajoutons maintenant la trajectoire idéale:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{coeur_memoire/schéma/trajectoire_sécurité_3.png} 
+    \caption{Trajectoire de sécurité utilisée avec un autre usager}
+\end{figure}
+Cette trajectoire permet d'améliorer l'adhérence des pneus, cependant, elle expose fortement au danger pouvant arriver en face. En effet, si un véhicule arrive en face, le motard n'a pas le temps de réagir et de se décaler. Il est donc important de prendre en compte les conditions de la route, la visibilité et les autres usagers pour adapter sa trajectoire. Pour pouvoir ajuster la trajectoire, la vitesse de déplacement est à prendre en compte. En effet, plus la moto va vite et plus la trajectoire sera difficile à ajuster.
+
+Voici d'autres exemples avec plusieurs solutions, avec chacune leur avantages et inconvénients.
+
+\begin{figure}[H]
+  \centering
+  
+  \begin{subcaptionbox}{Trajectoire possible 1\label{fig:img1}}[0.4\linewidth]
+    {\includegraphics[width=\linewidth]{coeur_memoire/schéma/trajectoire_sécurité_7.png}}
+  \end{subcaptionbox}
+  \hfill
+  \begin{subcaptionbox}{Trajectoire possible 2\label{fig:img2}}[0.4\linewidth]
+    {\includegraphics[width=\linewidth]{coeur_memoire/schéma/trajectoire_sécurité_6.png}}
+  \end{subcaptionbox}
+  
+  \vspace{0.5cm}
+  
+  \begin{subcaptionbox}{Trajectoire possible 3\label{fig:img3}}[0.4\linewidth]
+    {\includegraphics[width=\linewidth]{coeur_memoire/schéma/trajectoire_sécurité_5.png}}
+  \end{subcaptionbox}
+  
+  \caption{Autres exemples de trajectoires de sécurité}
+  \label{fig:mosaique}
+\end{figure}
+
+Commentons :\
+\begin{itemize}
+    \item La trajectoire 1 est la plus sécurisée, mais elle nécessite une bonne visibilité et une route en bon état. Elle permet de s'éloigner du danger en cas d'usager en face.
+    \item La trajectoire 2 est plus risquée, car elle rapproche le motard du danger, mais elle peut être nécessaire si la route est dégradée ou si la visibilité est limitée.
+    \item La trajectoire 3 est la plus risquée, car elle expose le motard au danger en face, mais elle peut être nécessaire si la route est très dégradée ou si la visibilité est très limitée.
+\end{itemize}
+
+Le défi ici c'est de pouvoir adapter la trajectoire en temps réel, en fonction de la vitesse, de l'angle d'inclinaison, des conditions de la route et des autres usagers. Les technologies IoT peuvent jouer un rôle clé dans cette adaptation en fournissant des données en temps réel sur l'environnement et en permettant une communication entre les différents usagers de la route. La meilleure trajectoire sera celle où le motard se sentira le plus  en sécurité. Cela dépend de son expérience, de ses capacités cependant il y a beaucoup de possibilités.
+
+%PLAISIR
+\vspace{0.5cm}
+Le plaisir de conduire une moto réside dans la sensation de liberté qu'elle procure. Cependant, cette liberté s'accompagne de responsabilités, notamment en matière de sécurité. Les technologies IoT peuvent contribuer à améliorer cette sécurité tout en préservant le plaisir de conduite.
+
+\vspace{0.5cm}
 \
 Adapter l'IOT représente un défis car il faut prendre en compte de nombreux paramètres (environnement, comportement des usagers, etc.) et s'assurer que les solutions proposées sont adaptées à chaque situation.
+
+\newpage
+\subsection{ Étude critique des technologies IoT existantes (voitures vs motos)}
+%i avec un regard critique et des cas concrets.
+%Analyse de cas réels où les technologies IoT ont été adaptées à la moto (Airbags connectés, gilets intelligents, casques IoT, etc.).
+	%	Freins techniques : taille réduite, alimentation électrique, exposition météo, vibrations, etc.
+
+
+\subsection{ Propositions d’adaptations technologiques}
+%	•	Systèmes de communication V2X (Vehicle-to-Everything) pour motos : miniaturisation, portabilité.
+%	•	Capteurs embarqués sur la moto et sur le pilote (gilet, casque, smartphone).
+%	•	Intégration d’IA pour la détection du risque en temps réel : freinage d’urgence, angle d’inclinaison, anticipation de collision. => a voir
+%	•	Systèmes d’alerte connectés avec autres usagers (voitures, infrastructures).
+%	•	Possibilité d’un écosystème IoT dédié aux motos, interopérable avec celui des voitures. => à voir si ca existe déja
+
+\subsection{ Étude de faisabilité et limites}
+	%•	Quels obstacles (coût, poids, énergie, connectivité, acceptabilité des motards) à l’implémentation ?
+	%•	Quelles pistes pour la recherche ou le développement industriel ?
+	%•	(une maquette fonctionnelle, un prototype conceptuel, ou même une étude de cas simulée)
+    % ouverture défi environnemental
+\subsection{Apport personnel et positionnement}
+%	•	proposer qqch de nouveau ou différemment par rapport à l’existant.
+%	•	Une vision d’ensemble : comment ta réflexion contribue à combler le fossé technologique entre sécurité voiture vs moto.
