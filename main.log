@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  17 JUL 2025 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  17 JUL 2025 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -545,6 +545,22 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip80
 \f@nch@O@olf=\skip81
 \f@nch@O@orf=\skip82
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -553,39 +569,39 @@ Package csquotes Info: Redefining alias 'default' -> 'french'.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/remerciements/remerciements.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/fiche_bilan/fiche_bilan.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/introduction/introduction.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/etat_art.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/coeur_memoire.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Info: Redefining \degres on input line 17.
-LaTeX Info: Redefining \up on input line 17.
-LaTeX Info: Redefining \microtypecontext on input line 17.
-Package microtype Info: Applying patch `item' on input line 17.
-Package microtype Info: Applying patch `toc' on input line 17.
-Package microtype Info: Applying patch `eqnum' on input line 17.
-Package microtype Info: Applying patch `footnote' on input line 17.
-Package microtype Info: Applying patch `verbatim' on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Info: Redefining \degres on input line 31.
+LaTeX Info: Redefining \up on input line 31.
+LaTeX Info: Redefining \microtypecontext on input line 31.
+Package microtype Info: Applying patch `item' on input line 31.
+Package microtype Info: Applying patch `toc' on input line 31.
+Package microtype Info: Applying patch `eqnum' on input line 31.
+Package microtype Info: Applying patch `footnote' on input line 31.
+Package microtype Info: Applying patch `verbatim' on input line 31.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 17.
+LaTeX Info: Redefining \showhyphens on input line 31.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -615,7 +631,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 31.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.out) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -633,8 +649,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bbl)
-Package biblatex Info: Reference section=0 on input line 17.
-Package biblatex Info: Reference segment=0 on input line 17.
+Package biblatex Info: Reference section=0 on input line 31.
+Package biblatex Info: Reference segment=0 on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -673,16 +689,16 @@ Package biblatex Info: Reference segment=0 on input line 17.
 <images/logo_paris_saclay.png, id=120, 1027.84pt x 516.93124pt>
 File: images/logo_paris_saclay.png Graphic file (type png)
 <use images/logo_paris_saclay.png>
-Package pdftex.def Info: images/logo_paris_saclay.png  used on input line 26.
+Package pdftex.def Info: images/logo_paris_saclay.png  used on input line 40.
 (pdftex.def)             Requested size: 192.0548pt x 96.58519pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 27.
+(Font)              <7> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 27.
+(Font)              <5> on input line 41.
 <images/logo_kappasante.jpg, id=121, 803.0pt x 361.35pt>
 File: images/logo_kappasante.jpg Graphic file (type jpg)
 <use images/logo_kappasante.jpg>
-Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 31.
+Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 45.
 (pdftex.def)             Requested size: 192.0548pt x 86.42252pt.
 [1
 
@@ -694,7 +710,7 @@ Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 31.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \newpage
+l.68 \newpage
               [1]
 \openout2 = `remerciements/remerciements.aux'.
 
@@ -753,7 +769,7 @@ File: images/schema_v2.png Graphic file (type png)
 Package pdftex.def Info: images/schema_v2.png  used on input line 53.
 (pdftex.def)             Requested size: 298.75264pt x 180.41827pt.
  [7 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/capteur.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--73
 
  []
 
@@ -829,7 +845,7 @@ Package pdftex.def Info: images/diag_etat_georide.png  used on input line 178.
 File: etat_art/images/témoignage géoride.png Graphic file (type png)
 <use etat_art/images/témoignage géoride.png>
 Package pdftex.def Info: etat_art/images/témoignage géoride.png  used on input line 184.
-(pdftex.def)             Requested size: 298.75264pt x 130.41028pt.
+(pdftex.def)             Requested size: 384.1096pt x 167.67036pt.
 <images/notification_georide.jpg, id=317, 1129.21875pt x 1342.01375pt>
 File: images/notification_georide.jpg Graphic file (type jpg)
 <use images/notification_georide.jpg>
@@ -873,7 +889,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
  []
 
 [21])
-Underfull \hbox (badness 10000) in paragraph at lines 308--61
+Underfull \hbox (badness 10000) in paragraph at lines 308--75
 
  []
 
@@ -884,46 +900,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--61
 <coeur_memoire/schéma/trajectoire_sécurité_1.png, id=397, 353.32pt x 369.38pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_1.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_1.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_1.png  used on input line 32.
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_1.png  used on input line 39.
 (pdftex.def)             Requested size: 170.71393pt x 178.47272pt.
 <coeur_memoire/schéma/trajectoire_sécurité_4.png, id=398, 500.87125pt x 486.81876pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_4.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_4.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_4.png  used on input line 40.
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_4.png  used on input line 47.
 (pdftex.def)             Requested size: 170.71393pt x 165.92473pt.
  [23
 
 
 
  </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_1.png>]
-<coeur_memoire/schéma/trajectoire_sécurité_2.png, id=405, 471.7625pt x 449.68pt>
+<coeur_memoire/schéma/trajectoire_sécurité_2.png, id=406, 471.7625pt x 449.68pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_2.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_2.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_2.png  used on input line 47.
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_2.png  used on input line 54.
 (pdftex.def)             Requested size: 170.71393pt x 162.72177pt.
-<coeur_memoire/schéma/trajectoire_sécurité_3.png, id=406, 559.08875pt x 537.00626pt>
+<coeur_memoire/schéma/trajectoire_sécurité_3.png, id=407, 559.08875pt x 537.00626pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_3.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_3.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_3.png  used on input line 53.
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_3.png  used on input line 60.
 (pdftex.def)             Requested size: 170.71393pt x 163.97102pt.
  [24 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_4.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_2.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_3.png>]
-<coeur_memoire/schéma/trajectoire_sécurité_7.png, id=418, 496.85625pt x 494.84875pt>
+<coeur_memoire/schéma/trajectoire_sécurité_7.png, id=419, 366.36874pt x 389.455pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_7.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_7.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_7.png  used on input line 64.
-(pdftex.def)             Requested size: 170.71393pt x 170.02078pt.
-<coeur_memoire/schéma/trajectoire_sécurité_6.png, id=419, 571.13374pt x 565.11125pt>
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_7.png  used on input line 71.
+(pdftex.def)             Requested size: 170.71393pt x 181.47502pt.
+<coeur_memoire/schéma/trajectoire_sécurité_6.png, id=420, 571.13374pt x 565.11125pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_6.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_6.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_6.png  used on input line 68.
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_6.png  used on input line 75.
 (pdftex.def)             Requested size: 170.71393pt x 168.91383pt.
-<coeur_memoire/schéma/trajectoire_sécurité_5.png, id=420, 481.8pt x 519.9425pt>
+<coeur_memoire/schéma/trajectoire_sécurité_5.png, id=421, 481.8pt x 519.9425pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_5.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_5.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_5.png  used on input line 74.
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_5.png  used on input line 81.
 (pdftex.def)             Requested size: 170.71393pt x 184.22783pt.
  [25 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_7.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_6.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_5.png>] [26]) [27]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 65.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 79.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -946,18 +962,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23097 strings out of 474116
- 423004 string characters out of 5743682
- 1952187 words of memory out of 5000000
- 44878 multiletter control sequences out of 15000+600000
- 574802 words of font info for 148 fonts, out of 8000000 for 9000
+ 23594 strings out of 474116
+ 430001 string characters out of 5743682
+ 1953187 words of memory out of 5000000
+ 45343 multiletter control sequences out of 15000+600000
+ 575796 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,81p,1293b,1869s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (30 pages, 6783534 bytes).
+Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (30 pages, 6773256 bytes).
 PDF statistics:
- 585 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
+ 588 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
  126 named destinations out of 1000 (max. 500000)
- 35711 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 37759 words of extra memory for PDF output out of 42996 (max. 10000000)
 
