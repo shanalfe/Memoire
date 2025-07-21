@@ -2398,6 +2398,7 @@
     <bcf:citekey order="31" intorder="1">consumer_skepticim</bcf:citekey>
     <bcf:citekey order="32" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
     <bcf:citekey order="33" intorder="1">marche_capteur_lidar</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">vitesse_virage_mcnews</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

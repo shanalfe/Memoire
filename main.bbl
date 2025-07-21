@@ -534,6 +534,33 @@
       \verb https://www.joberty.com/blog/the-present-and-future-of-autonomous-driving-how-do-cars-interact-with-roads-and-signs/
       \endverb
     \endentry
+    \entry{vitesse_virage_mcnews}{report}{}
+      \name{author}{1}{}{%
+        {{hash=3bc4646539c30238002f18b13e7171da}{%
+           family={MCNEWS},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bc4646539c30238002f18b13e7171da}
+      \strng{fullhash}{3bc4646539c30238002f18b13e7171da}
+      \strng{bibnamehash}{3bc4646539c30238002f18b13e7171da}
+      \strng{authorbibnamehash}{3bc4646539c30238002f18b13e7171da}
+      \strng{authornamehash}{3bc4646539c30238002f18b13e7171da}
+      \strng{authorfullhash}{3bc4646539c30238002f18b13e7171da}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{ALERTS TO HELP RIDERS CORNER PROPERLY}
+      \field{type}{techreport}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.motorcyclenews.net/alerts-to-help-riders-corner-properly
+      \endverb
+      \verb{url}
+      \verb https://www.motorcyclenews.net/alerts-to-help-riders-corner-properly
+      \endverb
+    \endentry
     \entry{moto_autonome}{report}{}
       \name{author}{1}{}{%
         {{hash=e5f2f99e53aa65edff59ae8f122b92f4}{%
