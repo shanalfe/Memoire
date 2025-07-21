@@ -203,6 +203,34 @@
       \verb https://cardosystems.com/fr/products/packtalk-pro
       \endverb
     \endentry
+    \entry{marche_capteur_lidar}{report}{}
+      \name{author}{1}{}{%
+        {{hash=39723e6f4e14263866a50d0348e0a2cf}{%
+           family={Consulting},
+           familyi={C\bibinitperiod},
+           given={PW},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{fullhash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{bibnamehash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{authorbibnamehash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{authornamehash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{authorfullhash}{39723e6f4e14263866a50d0348e0a2cf}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Marché des sytèmes de capteurs LIDAR}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://pmarketresearch.com/it/lidar-sensor-systems-market
+      \endverb
+      \verb{url}
+      \verb https://pmarketresearch.com/it/lidar-sensor-systems-market
+      \endverb
+    \endentry
     \entry{capteur}{report}{}
       \name{author}{1}{}{%
         {{hash=f7c6b7a0fd685b5f960fa2eff4af3b44}{%
