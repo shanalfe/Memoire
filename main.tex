@@ -15,6 +15,8 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{listings}
+\usepackage{amsmath} % dans le préambule
+\usepackage{tcolorbox} % dans le préambule
 \usepackage{xcolor} % Pour la coloration syntaxique
 
 
@@ -92,7 +94,15 @@
 \include{etat_art/etat_art.tex}
 \newpage
 \include{coeur_memoire/coeur_memoire.tex}
+
 \newpage
 \printbibliography
 \addcontentsline{toc}{section}{Références}
+
+\newpage
+\appendix
+\section*{Annexes}
+\addcontentsline{toc}{section}{Annexes} 
+\include{annexe/annexe1.tex} %Entretien avec Hichem Ariou
+
 \end{document}

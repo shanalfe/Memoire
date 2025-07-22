@@ -28,3 +28,5 @@
 \contentsline {subsection}{\numberline {5.4} Étude de faisabilité et limites}{33}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Apport personnel et positionnement}{33}{subsection.5.5}%
 \contentsline {section}{Références}{35}{section*.33}%
+\contentsline {section}{Annexes}{36}{section*.34}%
+\contentsline {section}{\numberline {A}Échange avec Hichem Arioui}{37}{appendix.A}%
