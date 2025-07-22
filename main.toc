@@ -25,6 +25,6 @@
 \contentsline {subsection}{\numberline {5.1}Pratique de la route - Analyse comparative des besoins de sécurité entre voitures et motos}{24}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2} Étude critique des technologies IoT existantes (voitures vs motos)}{30}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3} Propositions d’adaptations technologiques}{31}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4} Étude de faisabilité et limites}{32}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Apport personnel et positionnement}{32}{subsection.5.5}%
-\contentsline {section}{Références}{34}{section*.33}%
+\contentsline {subsection}{\numberline {5.4} Étude de faisabilité et limites}{33}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Apport personnel et positionnement}{33}{subsection.5.5}%
+\contentsline {section}{Références}{35}{section*.33}%

@@ -112,6 +112,72 @@
       \verb https://www.bmw-motorrad.fr/fr/engineering/automated-shift-assistant.html
       \endverb
     \endentry
+    \entry{aras_bosh_site_off}{report}{}
+      \name{author}{1}{}{%
+        {{hash=2688fb24eef34c742d3ca21e642a4235}{%
+           family={Bosch},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{fullhash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{bibnamehash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{authorbibnamehash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{authornamehash}{2688fb24eef34c742d3ca21e642a4235}
+      \strng{authorfullhash}{2688fb24eef34c742d3ca21e642a4235}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Advanced Rider Assistance Systems (ARAS)}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://www.bosch-mobility.com/en/solutions/assistance-systems/advanced-rider-assistance-systems-2w/
+      \endverb
+      \verb{url}
+      \verb https://www.bosch-mobility.com/en/solutions/assistance-systems/advanced-rider-assistance-systems-2w/
+      \endverb
+    \endentry
+    \entry{aras_bosh}{report}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeltitlesource}{title}
+      \field{title}{Bosch dévoile son nouveau système radar pour motos : freinage, assistance et prévention des accidents}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.mobilite-verte.com/news/article-1422.html
+      \endverb
+      \verb{url}
+      \verb https://www.mobilite-verte.com/news/article-1422.html
+      \endverb
+    \endentry
+    \entry{reunionProjet2025}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=490fb9b1fca8a005daf7fa2745fd6d7d}{%
+           family={BOUBEZOUL},
+           familyi={B\bibinitperiod},
+           given={Abderrahmane},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Nantes}%
+      }
+      \strng{namehash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{fullhash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{bibnamehash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{authorbibnamehash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{authornamehash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \strng{authorfullhash}{490fb9b1fca8a005daf7fa2745fd6d7d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{month}{6}
+      \field{title}{3ème réunion plénière du projet}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
     \entry{cardo}{report}{}
       \name{author}{1}{}{%
         {{hash=ca898a635a8375daa7bc3c1ed216ba43}{%
@@ -135,6 +201,89 @@
       \endverb
       \verb{url}
       \verb https://cardosystems.com/fr/products/packtalk-pro
+      \endverb
+    \endentry
+    \entry{marche_capteur_lidar}{report}{}
+      \name{author}{1}{}{%
+        {{hash=39723e6f4e14263866a50d0348e0a2cf}{%
+           family={Consulting},
+           familyi={C\bibinitperiod},
+           given={PW},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{fullhash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{bibnamehash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{authorbibnamehash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{authornamehash}{39723e6f4e14263866a50d0348e0a2cf}
+      \strng{authorfullhash}{39723e6f4e14263866a50d0348e0a2cf}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Marché des sytèmes de capteurs LIDAR}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://pmarketresearch.com/it/lidar-sensor-systems-market
+      \endverb
+      \verb{url}
+      \verb https://pmarketresearch.com/it/lidar-sensor-systems-market
+      \endverb
+    \endentry
+    \entry{capteur}{report}{}
+      \name{author}{1}{}{%
+        {{hash=f7c6b7a0fd685b5f960fa2eff4af3b44}{%
+           family={Ddruid},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7c6b7a0fd685b5f960fa2eff4af3b44}
+      \strng{fullhash}{f7c6b7a0fd685b5f960fa2eff4af3b44}
+      \strng{bibnamehash}{f7c6b7a0fd685b5f960fa2eff4af3b44}
+      \strng{authorbibnamehash}{f7c6b7a0fd685b5f960fa2eff4af3b44}
+      \strng{authornamehash}{f7c6b7a0fd685b5f960fa2eff4af3b44}
+      \strng{authorfullhash}{f7c6b7a0fd685b5f960fa2eff4af3b44}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tout savoir sur les capteurs IoT}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://ddruid.io/capteurs-iot/
+      \endverb
+      \verb{url}
+      \verb https://ddruid.io/capteurs-iot/
+      \endverb
+    \endentry
+    \entry{voiture_electrique}{report}{}
+      \name{author}{1}{}{%
+        {{hash=065c22f0ceeec747288544f464883db6}{%
+           family={Ecuvillon},
+           familyi={E\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{065c22f0ceeec747288544f464883db6}
+      \strng{fullhash}{065c22f0ceeec747288544f464883db6}
+      \strng{bibnamehash}{065c22f0ceeec747288544f464883db6}
+      \strng{authorbibnamehash}{065c22f0ceeec747288544f464883db6}
+      \strng{authornamehash}{065c22f0ceeec747288544f464883db6}
+      \strng{authorfullhash}{065c22f0ceeec747288544f464883db6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Performance des voitures électriques : Puissance, autonomie et durabilité}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://mieux-consommer.ilek.fr/mobilite/performance-voiture-electrique/#:~:text=Puissance%20des%20voitures%20électriques%20%3A%20kW%20et%20chevaux&text=Contrairement%20aux%20voitures%20thermiques%2C%20où,courante%20sur%20les%20modèles%20standards.
+      \endverb
+      \verb{url}
+      \verb https://mieux-consommer.ilek.fr/mobilite/performance-voiture-electrique/#:~:text=Puissance%20des%20voitures%20%C3%A9lectriques%20%3A%20kW%20et%20chevaux&text=Contrairement%20aux%20voitures%20thermiques%2C%20o%C3%B9,courante%20sur%20les%20mod%C3%A8les%20standards.
       \endverb
     \endentry
     \entry{consumer_skepticim}{report}{}
@@ -385,6 +534,61 @@
       \verb https://www.joberty.com/blog/the-present-and-future-of-autonomous-driving-how-do-cars-interact-with-roads-and-signs/
       \endverb
     \endentry
+    \entry{vitesse_virage_mcnews}{report}{}
+      \name{author}{1}{}{%
+        {{hash=3bc4646539c30238002f18b13e7171da}{%
+           family={MCNEWS},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bc4646539c30238002f18b13e7171da}
+      \strng{fullhash}{3bc4646539c30238002f18b13e7171da}
+      \strng{bibnamehash}{3bc4646539c30238002f18b13e7171da}
+      \strng{authorbibnamehash}{3bc4646539c30238002f18b13e7171da}
+      \strng{authornamehash}{3bc4646539c30238002f18b13e7171da}
+      \strng{authorfullhash}{3bc4646539c30238002f18b13e7171da}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{ALERTS TO HELP RIDERS CORNER PROPERLY}
+      \field{type}{techreport}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.motorcyclenews.net/alerts-to-help-riders-corner-properly
+      \endverb
+      \verb{url}
+      \verb https://www.motorcyclenews.net/alerts-to-help-riders-corner-properly
+      \endverb
+    \endentry
+    \entry{moto_autonome}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e5f2f99e53aa65edff59ae8f122b92f4}{%
+           family={Motorrad},
+           familyi={M\bibinitperiod},
+           given={BMW},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{fullhash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{bibnamehash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{authorbibnamehash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{authornamehash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \strng{authorfullhash}{e5f2f99e53aa65edff59ae8f122b92f4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{L'innovation de A à Z}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.bmw-motorrad.fr/fr/engineering/innovation/innovation.html
+      \endverb
+      \verb{url}
+      \verb https://www.bmw-motorrad.fr/fr/engineering/innovation/innovation.html
+      \endverb
+    \endentry
     \entry{journal_de_quebec_motocycliste_nodate}{article}{}
       \name{author}{1}{}{%
         {{hash=a9f10d7654c3e4ae11d7c68773b47fee}{%
@@ -487,6 +691,7 @@
       \strng{authorbibnamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
       \strng{authornamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
       \strng{authorfullhash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \field{extraname}{1}
       \field{sortinit}{r}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
@@ -495,6 +700,36 @@
       \field{title}{Accidentalité routière 2023 en {France}}
       \field{type}{techreport}
       \field{year}{2024}
+    \endentry
+    \entry{trajectoire_securite}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e116f104cbf62ca5fb91f737ef4d3e30}{%
+           family={routière},
+           familyi={r\bibinitperiod},
+           given={La},
+           giveni={L\bibinitperiod},
+           prefix={sécurité},
+           prefixi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{fullhash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{bibnamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authorbibnamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authornamehash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \strng{authorfullhash}{e116f104cbf62ca5fb91f737ef4d3e30}
+      \field{extraname}{2}
+      \field{sortinit}{r}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{La trajectoire de sécurité}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://www.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-moto/mieux-conduire-moto/la-trajectoire-de
+      \endverb
+      \verb{url}
+      \verb https://www.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-moto/mieux-conduire-moto/la-trajectoire-de
+      \endverb
     \endentry
     \entry{iot_capteur}{report}{}
       \name{author}{1}{}{%
@@ -510,7 +745,6 @@
       \strng{authorbibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
       \strng{authornamehash}{64ef3bd7c69dea342bbde7b10a602a40}
       \strng{authorfullhash}{64ef3bd7c69dea342bbde7b10a602a40}
-      \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -524,35 +758,6 @@
       \endverb
       \verb{url}
       \verb https://www.ip-systemes.com/quest-ce-quun-capteur-connect-iot.html
-      \endverb
-    \endentry
-    \entry{aras_bosh}{report}{}
-      \name{author}{1}{}{%
-        {{hash=64ef3bd7c69dea342bbde7b10a602a40}{%
-           family={Systemm},
-           familyi={S\bibinitperiod},
-           given={IP},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{64ef3bd7c69dea342bbde7b10a602a40}
-      \strng{fullhash}{64ef3bd7c69dea342bbde7b10a602a40}
-      \strng{bibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
-      \strng{authorbibnamehash}{64ef3bd7c69dea342bbde7b10a602a40}
-      \strng{authornamehash}{64ef3bd7c69dea342bbde7b10a602a40}
-      \strng{authorfullhash}{64ef3bd7c69dea342bbde7b10a602a40}
-      \field{extraname}{2}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Bosch dévoile son nouveau système radar pour motos : freinage, assistance et prévention des accidents}
-      \field{type}{techreport}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://www.mobilite-verte.com/news/article-1422.html
-      \endverb
-      \verb{url}
-      \verb https://www.mobilite-verte.com/news/article-1422.html
       \endverb
     \endentry
     \entry{noauthor_taille_2023}{report}{}

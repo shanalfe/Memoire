@@ -14,6 +14,22 @@
 \usepackage{fancyhdr}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor} % Pour la coloration syntaxique
+
+
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{gray!10},
+  basicstyle=\ttfamily\small,
+  frame=single,
+  breaklines=true,
+  captionpos=b,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray!70!black},
+  stringstyle=\color{teal},
+  language=Python,
+}
+\lstset{style=mystyle}
 
 \newif\ifshowcomments
 \showcommentstrue  % <-- active les commentaires
