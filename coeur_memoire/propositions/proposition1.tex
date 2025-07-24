@@ -1,4 +1,5 @@
 \todo{parler également de l'accélération}
+
 Pour pouvoir proposer de nouvelles fonctionnalités de prévention, il faut optimiser le tableau de bord. Il faut créer des logos communs à tous pour avoir le même langage. 
 
 \todo{ajout d'un tableau de bord connecté avec des capteurs et des alertes en temps réel.}
@@ -14,11 +15,67 @@ Comme illustré dans la Figure~\ref{fig:trajectoire_securite_difficulte}, le pro
 
 
 
-\todo{mettre le diagramme}
 
-\todo{Détailler le code}
+
+
+
+
+
+\todo{voir pour faire une petite ligne de code ?}
+
+\underline{Contexte:} En balade dans le 77, un motard roule sur une départementale. Dans cette situation, il est équipé d'un boitié GPS qui récupère ses coordonnées en temps réel. Il arrive dans une portion de virages limitée à 70 km/h nommée "Les 17 virages", près d'Arbonne-La-Forêt. Cette série de virages est dangeureuse car la route n'est pas bonne, n'est pas large et l'adhérence n'est pas optimale. De plus, il y a un virage dangereux à l'équerre qui surgit au milieu de cette série. La trajectoire de sécurité est fortement recommandé. Par expérience, avoisiner les 70 km/h est déjà bien au vue de la portion qui y est technique. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png} 
+    \caption{Point GPS des 17 virages.}
+\end{figure}
+
+\todo{photo des 17 virages}
+
+
+
+Les coordnnées GPS sont : 48.385171, 2.563108.
+
+\todo{mettre le diagramme}
+Voici le diagramme d'action de cette fonctionnalité:\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png} 
+    \caption{Diagramme d'action du Système de prévention de virages dangereux}
+\end{figure}
+
+Pour réaliser un bout de code sur cette fonctionnalité, j'ai décidé d'utiliser ces bibliothèques :\\
+• osmnx\cite{osm_doc} : permet d’interroger OSM (OpenStreetMap) et de récupérer des graphes routiers.\\
+•	geodesic (de geopy \cite{geopy}) : mesure la distance réelle (en mètres) entre 2 points GPS.\\
+
+L'interêt de calculer la courbure de la courbe est de pouvoir anticiper le virage et par conséquent, adapter la vitesse pour optimiser l'adhérence, la trajectoire où l'on se sentira le plus en sécurité. \\
+Le calcul de la courbure permettra d'identifier un virage s'il est dangereux à partir de données GPS cartographiques pour enfin adapter le comportement du système embarqué (alerte, adaptation de trajectoire, assistance..).
+Donc la courbure mesure à quel point une route peut changer de direction sur une courte distance, ici, dans un virage.\\
+Une route droite a une courbure environ égale à 0. Une route qui tourne fort (virage serré) a une courbure élevée.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+Route & Rayon du virage & Courbure (simplifiée) & Risque \\
+\hline
+ligne droite & infini & 0 & faible \\
+Virage large autoroute & 500 m & Faible (0.01) & faible \\
+Virage serré en montagne & 30 m & Forte (0.1–0.2) & Élevé \\
+\hline
+\end{tabular}
+\caption{Exemple en pratique}
+\end{table}
+
+Un virage serré avec une courbure > 0.1 est souvent dangereux à +60 km/h, surtout à moto.
+L'avantage d'avoir un calcul automatique et en amont, cela permet de prévenir avant même d'être dans le virage. Il peut remplacer un panneau quand celui-ci n'est pas visible.
+
+
 
 \begin{tcolorbox}[title=Calcul de la courbure]
+a, b et c sont trois points dans la courbe.\\
 a + b = distance réelle parcourue en suivant la route \\
 c = distance directe entre le début et la fin (comme si on traçait une corde)
 \[
@@ -26,8 +83,19 @@ curvature = abs((a + b - c) / (a + b))
 \]
 \end{tcolorbox}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png} 
+    \caption{Schéma présentant une moto avant un virage}
+\end{figure}
 
-\todo{voir pour faire une petite ligne de code ?}
+
+\todo{illustration, développement}
+
+\todo{Détailler le code}
+
 \lstinputlisting[language=Python]{coeur_memoire/programme1.py}
+
+\todo{Déscription de l'exmple}
 
 \todo{Mettre le budget pour développer la faisabilité}

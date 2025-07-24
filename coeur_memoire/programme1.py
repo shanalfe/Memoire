@@ -4,16 +4,16 @@ from geopy.distance import geodesic
 import numpy as np
 
 # Simule une position GPS (latitude, longitude) - a remplacer par GPS reel
-current_pos = (45.354, 6.036)  # Exemple dans les Alpes
+position_actuelle = (48.385171, 2.563108)  
 
 # Vitesse actuelle du vehicule (a connecter au ton GPS ou simulateur)
-current_speed_kmh = 70
+vitesse_vehicule = 55
 
 # Rayon de recherche autour du vehicule (en metres)
-search_radius = 200
+rayon_recherche = 1000
 
 # Chargement du reseau routier autour de la position
-G = ox.graph_from_point(current_pos, dist=search_radius, network_type='drive')
+G = ox.graph_from_point(position_actuelle, dist=rayon_recherche, network_type='all')
 
 # Convertir en geometrie de routes (lignes)
 edges = ox.graph_to_gdfs(G, nodes=False)
@@ -38,12 +38,12 @@ for _, row in edges.iterrows():
     curvature = compute_curvature(row.geometry)
     if curvature > 0.1:  # seuil de virage (a ajuster)
         # Estimer la vitesse recommandee (exemple simpliste)
-        recommended_speed = max(20, 80 - curvature * 200)
+        vitesse_recommandee = max(20, 80 - curvature * 200)
 
-        if current_speed_kmh > recommended_speed:
+        if vitesse_vehicule > vitesse_recommandee:
             print("[ALERTE] Virage dangereux d\u00e9tect\u00e9 !")
-            print(f"Vitesse actuelle : {current_speed_kmh} km/h")
-            print(f"Vitesse conseill\u00e9e : {int(recommended_speed)} km/h")
+            print(f"Vitesse actuelle : {vitesse_vehicule} km/h")
+            print(f"Vitesse conseill\u00e9e : {int(vitesse_recommandee)} km/h")
         else:
             print("Virage d\u00e9tect\u00e9, vitesse correcte.")
         break
