@@ -70,17 +70,27 @@ Virage serré en montagne & 30 m & Forte (0.1–0.2) & Élevé \\
 \end{table}
 
 Un virage serré avec une courbure > 0.1 est souvent dangereux à +60 km/h, surtout à moto.
-L'avantage d'avoir un calcul automatique et en amont, cela permet de prévenir avant même d'être dans le virage. Il peut remplacer un panneau quand celui-ci n'est pas visible.
+Plusieurs études indiquent que les rayons < 50 m sont classés comme virages dangereux pour les motos. À plus de 60 km/h, une moto doit pencher à plus de 35°à 40° dans le virage ce qui augmente énormément le risque de chute, surtout s’il y a du gravier, pluie, vent latéral…
+L’estimation “courbure > 0.1 = danger > 60 km/h” est une règle empirique, basée sur des données de sécurité moto reonnues, des normes d'ingénierie routière et des approximations géométriques issues de GPS.
+
+
+L'avantage d'avoir un calcul automatique et en amont, cela permet de prévenir avant même d'être dans le virage. Il peut remplacer un panneau quand celui-ci n'est pas visible. Elle ne remplace pas une analyse dynamique complète mais elle est suffisante pour alerter automatiquement le pilote ce qui est exactement l’objectif du système.
 
 
 
 \begin{tcolorbox}[title=Calcul de la courbure]
+Courbure mathématique\cite{formule_curvature} d’un virage:
+\[
+courbure\_virage = \kappa = \frac{1}{R}
+\]
+où R est le rayon du virage\\
+Forme simplifiée de la courbure basée sur la déviation par rapport à une ligne droite.\\
 a, b et c sont trois points dans la courbe.\\
-a + b = distance réelle parcourue en suivant la route \\
-c = distance directe entre le début et la fin (comme si on traçait une corde)
 \[
 curvature = abs((a + b - c) / (a + b))
 \]
+a + b = distance réelle parcourue en suivant la route \\
+c = distance directe entre le début et la fin (comme si on traçait une corde)
 \end{tcolorbox}
 
 \begin{figure}[H]
@@ -98,4 +108,8 @@ curvature = abs((a + b - c) / (a + b))
 
 \todo{Déscription de l'exmple}
 
-\todo{Mettre le budget pour développer la faisabilité}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-25 à 14.24.23.png} 
+    \caption{Génération d'un tableau de bord possible avec l'IA.}
+\end{figure}
