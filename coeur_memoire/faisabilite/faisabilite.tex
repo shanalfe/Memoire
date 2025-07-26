@@ -19,3 +19,32 @@ Abonnement cartes HD (HERE, TomTom, etc.) &    10–30€ par mois   \\
 Interface casque ou écran moto (HUD/haptique) au besoin & 100–300€ \\
 \hline
 \end{tabular}
+
+\vspace{0.5cm}
+Afin d'avoir un GPS précis et réactif. Il doit être accompané de la technologie IMU. IMU permet de compenser la latence et les imprécisions GPS en fournissant la vitesse angulaire (gyroscope) pour la courbure des virages, l'orientation (magnétomètre) et l'accélération linéaire (accéléromètre) pour les freinage. L'IMU peut fonctionner à 100-1000 Hz ce qui permet d'améliorer fortement le temps de réaction. Ces points sont crutiaux pour une fonctionnalité comme la notre, la prédiction d'abord de virages dangereux. La marge d'erreur n'est pas permise.
+
+Voici un tableau comparatif:\\
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Propriétés} & \textbf{GPS} & \textbf{GPS + IMU} \\
+\hline
+Précision position & Environ 3 à 5 m & Bonne \\
+Temps de réaction & Lent (de 0,5 à 1 seconde) & Rapide (<0,1 seconde)\\
+Fiabilité en virage & Faible & Haute \\
+Sensibilité du signal & Oui & Moins critique \\
+\hline
+\end{tabular}
+
+\todo{développer la partie loi + internationnal}
+L'utilisation du GPS est très réglementé, surtout dans les pays. 
+
+\todo{défi affichage en respectant la loi}
+L'utilisation du GPS est autorisé quand celui-ci ne gêne ni la visibilité, ni la conduite d'après Code de la route français – Art. R412-6\cite{loi_code_de_la_route}.
+
+\todo{rgpd}
+Le GPS va recueillir des données, suivre l'usager. Pour approfondir et améliorer le système, des données seront collectées par conséquent, le consentement explicite du motard est nécessaire. Il faut également ajouter une déclaration ou une politique de confidentialité claire.
+
+\todo{proposition rédaction }
+
+
+\todo{choix, marque du produit}
