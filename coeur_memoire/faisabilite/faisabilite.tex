@@ -36,7 +36,13 @@ Sensibilité du signal & Oui & Moins critique \\
 \end{tabular}
 
 \todo{développer la partie loi + internationnal}
-L'utilisation du GPS est très réglementé, surtout dans les pays. 
+L'utilisation du GPS est très réglementé, surtout dans les pays. Le défi ici c'est de se demander comment peut-on développer des technologies, des innovations qui respectent les règles, la confidentialité des usagers des pays concernés.\\
+
+Par exemple :\\
+La Chine autorise le GPS mais avec un accès limité à certains services cartographiques. Dans plusieurs pays comme l'Autriche, l'Allemagne n'autorise pas les GPS avec les avertisseurs ou détecteurs de radar. Au Japon, le GPS est autorisé mais certains appareils RF\footnote{Radio Fréquence : Ce sont des dispositifs qui émettent et recçoivent des ondes radio pour communiquer entre 3 kHz et 300 GHz.} sont interdits.
+
+
+
 
 \todo{défi affichage en respectant la loi}
 L'utilisation du GPS est autorisé quand celui-ci ne gêne ni la visibilité, ni la conduite d'après Code de la route français – Art. R412-6\cite{loi_code_de_la_route}.
@@ -44,7 +50,11 @@ L'utilisation du GPS est autorisé quand celui-ci ne gêne ni la visibilité, ni
 \todo{rgpd}
 Le GPS va recueillir des données, suivre l'usager. Pour approfondir et améliorer le système, des données seront collectées par conséquent, le consentement explicite du motard est nécessaire. Il faut également ajouter une déclaration ou une politique de confidentialité claire.
 
-\todo{proposition rédaction }
-
+\todo{proposition rédaction rgpd}
+Il faudra collecter que les données nécessaires position, vitesse, horodatage. Les données doivent être stockées dans une base de données sécurisées et chifrées.
 
 \todo{choix, marque du produit}
+Voici des propositions de composants que nous pouvons utiliser : 	\\
+•	u-blox NEO-M8N : excellent rapport qualité/prix, ~40 € \\
+•	u-blox ZED-F9P : haute précision RTK, mais cher (~200–250 €) \\
+•	SparkFun GPS + IMU : combine ZED-F9P + BNO080 (IMU)\\
