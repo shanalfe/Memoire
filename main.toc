@@ -27,6 +27,6 @@
 \contentsline {subsection}{\numberline {5.3} Propositions d’adaptations technologiques}{31}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4} Étude de faisabilité et limites}{40}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Apport personnel et positionnement}{41}{subsection.5.5}%
-\contentsline {section}{Références}{43}{section*.46}%
-\contentsline {section}{Annexes}{44}{section*.47}%
-\contentsline {section}{\numberline {A}Échange avec Hichem Arioui}{45}{appendix.A}%
+\contentsline {section}{Références}{44}{section*.47}%
+\contentsline {section}{Annexes}{45}{section*.48}%
+\contentsline {section}{\numberline {A}Échange avec Hichem Arioui}{46}{appendix.A}%

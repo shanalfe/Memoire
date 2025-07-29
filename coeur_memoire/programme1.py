@@ -9,9 +9,9 @@ import math
 
 # Simule une position GPS (latitude, longitude) - 17 Virages
 # ok virage 60
-position_actuelle = (48.385171, 2.563108)  
+#position_actuelle = (48.385171, 2.563108)  
 #ok ligne droite
-#position_actuelle = (48.514114, 2.320894) 
+position_actuelle = (48.514114, 2.320894) 
 #position_actuelle = (48.380441, 2.565690) 
 # ok virage serre
 #position_actuelle = (48.371103, 2.560765) 
@@ -20,7 +20,7 @@ position_actuelle = (48.385171, 2.563108)
 #position_actuelle = (48.335448, 2.595849) 
 
 # Vitesse actuelle du vehicule (a connecter au ton GPS ou simulateur)
-vitesse_vehicule = 70
+vitesse_vehicule = 90
 
 # Rayon de recherche autour du vehicule (en metres)
 rayon_recherche = 1000

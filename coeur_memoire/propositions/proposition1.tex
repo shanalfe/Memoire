@@ -14,7 +14,6 @@ Cette fonctionnalité est très interessante mais elle empêche une bonne visibi
 Comme illustré dans la Figure~\ref{fig:trajectoire_securite_difficulte}, le processus ne pourra pas adapter sur des virages dit "imparfaits".
 
 
-\todo{voir pour faire une petite ligne de code ?}
 
 \underline{Contexte:} En balade dans le 77, un motard roule sur une départementale. Dans cette situation, il est équipé d'un boitié GPS qui récupère ses coordonnées en temps réel. Il arrive dans une portion de virages limitée à 70 km/h nommée "Les 17 virages", près d'Arbonne-La-Forêt. Cette série de virages est dangeureuse car la route n'est pas bonne, n'est pas large et l'adhérence n'est pas optimale. De plus, il y a un virage dangereux à l'équerre qui surgit au milieu de cette série. La trajectoire de sécurité est fortement recommandé. Par expérience, avoisiner les 70 km/h est déjà bien au vue de la portion qui y est technique.
 
@@ -28,7 +27,7 @@ Comme illustré dans la Figure~\ref{fig:trajectoire_securite_difficulte}, le pro
 
 
 
-Les coordnnées GPS sont : 48.385171, 2.563108.
+Les coordonnées GPS sont : 48.385171, 2.563108.
 
 \todo{mettre le diagramme}
 Voici le diagramme d'action de cette fonctionnalité:\\
@@ -121,59 +120,64 @@ Voici le code qui permet de récupérer une localisation GPS (latitude, longitud
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png} 
-    \caption{Réseau routier interprété par le programme pour la postion 48.385171, 2.563108}
+    \caption{Réseau routier interprété par le programme pour la postion 48.385171, 2.563108.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png} 
-    \caption{Carte du traceur}
+    \caption{Carte du traceur Géoride arrivant sur la position 48.385171, 2.563108.}
 \end{figure}
 
-\todo{résultat}
-Suite de la mise en situation réelle. Les passages étudiés ont été réalisé bien avant l'expérience, par conséquent, il n'y a aucune notion de vitesse. Chaques passages ont été faits sur la capacité au moment t de l'usager. Voici un premier passage à 51 km/h.
+\todo{mettre les points p1, p2, p3 sur la carte pour se donner une idée}
+
+Pour la mise en situation réelle, les passages étudiés ont été réalisés bien avant l'expérience, par conséquent, il n'y a aucune notion de vitesse. Chaques passages ont été faits sur la capacité au moment "t" de l'usager et capturés avec une caméra embarquée. Voici un premier passage à 51 km/h.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png} 
-    \caption{Premier passage dans Les 17 virages}
+    \caption{Premier passage dans Les 17 virages aux points GPS 48.385171, 2.563108.}
 \end{figure}
 
 Résultat du premier passage avec le programme :
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.32.png} 
-    \caption{Premier passage dans Les 17 virages}
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png} 
+    \caption{Premier passage dans Les 17 virages aux points GPS 48.385171, 2.563108.}
 \end{figure}
-
-Voici maintenant un second passage réalisé un peu plus vite.
+On voit que le passage se fait à 51 km/h et que la valeur de la courbure est de 0.0006. C'est un léger virage. La vitesse estimée pour se virage est de 60 km/h. Donc il n'y aura pas d'alerte. Voici maintenant un second passage réalisé un peu plus vite.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png} 
-    \caption{Deuxième passage dans Les 17 virages}
+    \caption{Deuxième passage dans Les 17 virages aux points GPS 48.385171, 2.563108.}
 \end{figure}
-
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png} 
-    \caption{Deuxième passage dans Les 17 virages}
+    \caption{Deuxième passage dans Les 17 virages aux points GPS  48.385171, 2.563108.}
 \end{figure}
 
-Le deuxième passage est réalisé plus rapidemment (sans excès de vitesse), cependant, la vitesse est trop "rapide" et nécessite de meilleures capacités pour le passer. Il faut que le motard soit à un niveau bien intermédiaire. Comme l'objectif du programme est de faire de la prévention, j'ai décidé de baser sur un niveau de débutant. Pour conclure, il y a un message qui apparaît.\\
-Prenons un dernier exemple avec un nouvel endroit en ligne droite.
+Le deuxième passage est réalisé plus rapidemment (sans excès de vitesse), cependant, la vitesse est trop "rapide" pour ce virage avec une courbure de 0.0006 et il nécessite de meilleures capacités pour le passer. Il faut que le motard soit à un niveau intermédiaire. Comme l'objectif du programme est de faire de la prévention, j'ai décidé de me baser sur un niveau de débutant. Pour conclure, il y a un message qui apparaîtra.\\
+Prenons un dernier exemple avec une nouvelle situation, une ligne droite.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png} 
-    \caption{Réseau routier}
+    \caption{Réseau routier interprété par le programme aux points GPS 48.514114, 2.320894.}
 \end{figure}
-Nous avons comme résultat :
+Pour cette simulation au terminale, je décide de mettre deux vitesses, une à 80 km/h et une autre à 90 km/h. Ici je ne prends pas en compte la limitation de vitesse. Nous avons comme résultats :
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png} 
-    \caption{Résultat en ligne droite pour les coordonnées 48.514114, 2.320894}
+    \caption{Résultat en ligne droite pour les coordonnées 48.514114, 2.320894 à 80 km/h}
 \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 20.02.18.png} 
+    \caption{Résultat en ligne droite pour les coordonnées 48.514114, 2.320894 à 90 km/h.}
+\end{figure}
+Pour conclure, comme l'usager évolue sur une ligne droite, une courbure ayant comme valeur 0 ou proche de 0, il n'y aura pas de message d'erreur qui s'affiche.
 
-L'idée maintenant est de prévenir l'usager d'un logo universel. Évidemment, la disposition sera optimisée pour chaque écran. Nous pouvons également y ajouter un bip sonore, cela évitera de fixer en permanance le tableau de bord.
+Pour prévenir l'usager, je propose d'utiliser un logo universel. Évidemment, la disposition sera optimisée pour chaque écran. Nous pouvons également y ajouter un bip sonore, cela évitera de fixer en permanance le tableau de bord. Le son est désactivable pour les personnes plus à l'aise.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png} 
