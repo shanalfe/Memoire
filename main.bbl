@@ -19,6 +19,28 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{geopy}{report}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://geopy.readthedocs.io/en/stable/
+      \endverb
+      \verb{url}
+      \verb https://geopy.readthedocs.io/en/stable/
+      \endverb
+    \endentry
+    \entry{formule_curvature}{report}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Curvature
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Curvature
+      \endverb
+    \endentry
     \entry{actiEouteNbMotardFr}{misc}{}
       \name{author}{1}{}{%
         {{hash=57e4dbe432323e6af1e412bb4d95907c}{%
@@ -612,6 +634,19 @@
       \field{title}{Title of the article}
       \field{year}{2024}
     \endentry
+    \entry{osm_doc}{report}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeltitlesource}{title}
+      \field{title}{OSMnx 2.0.5}
+      \field{type}{techreport}
+      \verb{urlraw}
+      \verb https://osmnx.readthedocs.io/en/stable/
+      \endverb
+      \verb{url}
+      \verb https://osmnx.readthedocs.io/en/stable/
+      \endverb
+    \endentry
     \entry{le_parisien_radar_2019}{misc}{}
       \name{author}{1}{}{%
         {{hash=1bd3ee457af4d7a673e550b89166002e}{%
@@ -729,6 +764,34 @@
       \endverb
       \verb{url}
       \verb https://www.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-moto/mieux-conduire-moto/la-trajectoire-de
+      \endverb
+    \endentry
+    \entry{loi_code_de_la_route}{report}{}
+      \name{author}{1}{}{%
+        {{hash=83bb5f043646668b2e269cf8bca6d572}{%
+           family={Sénat},
+           familyi={S\bibinitperiod},
+           given={JO},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{83bb5f043646668b2e269cf8bca6d572}
+      \strng{fullhash}{83bb5f043646668b2e269cf8bca6d572}
+      \strng{bibnamehash}{83bb5f043646668b2e269cf8bca6d572}
+      \strng{authorbibnamehash}{83bb5f043646668b2e269cf8bca6d572}
+      \strng{authornamehash}{83bb5f043646668b2e269cf8bca6d572}
+      \strng{authorfullhash}{83bb5f043646668b2e269cf8bca6d572}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Conditions d'application de l'article R. 412-6 du code de la route modifié par l'article 15 du décret n° 2008-754 du 30 juillet 2008}
+      \field{type}{techreport}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://www.senat.fr/questions/base/2010/qSEQ100212204.html#:~:text=412%2D6%20du%20code%20de%20la%20route%20oblige%20le%20conducteur,%2C%20à%20l'article%20R.
+      \endverb
+      \verb{url}
+      \verb https://www.senat.fr/questions/base/2010/qSEQ100212204.html#:~:text=412%2D6%20du%20code%20de%20la%20route%20oblige%20le%20conducteur,%2C%20%C3%A0%20l'article%20R.
       \endverb
     \endentry
     \entry{iot_capteur}{report}{}

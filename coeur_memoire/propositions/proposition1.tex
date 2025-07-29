@@ -80,7 +80,7 @@ où R est le rayon du virage\\
 Forme simplifiée de la courbure basée sur la déviation par rapport à une ligne droite.\\
 a, b et c sont trois points dans la courbe.\\
 \[
-curvature = abs((a + b - c) / (a + b))
+courbure = \left| \frac{a + b - c}{a + b} \right|
 \]
 a + b = distance réelle parcourue en suivant la route \\
 c = distance directe entre le début et la fin (comme si on traçait une corde)
@@ -95,10 +95,40 @@ c = distance directe entre le début et la fin (comme si on traçait une corde)
 
 \todo{illustration, développement}
 
-\todo{Détailler le code}
+\todo{Détailler le code et les formules de vitesse}
+La vitesse recommandée se calcule grace à la courbure.
+\begin{tcolorbox}[title=Vitesse recommandée]
+Calcul de la vitesse recommandée :
+\[
+vitesse_{\text{recommandée}} = \max(20, 80-\text{curvature} \times 200)
+\]
+Le "20" permet d'éviter une vitesse trop basse. Ici, on la limite à 20 km/h.
 
+\end{tcolorbox}
+
+En dessous de 20km/h, il y a peu d'intêret. Même les plus grosses épingles peuvent se prendre à 20km/h. À cette vitesse, il n'y a pas d'effet gyroscopique\footnote{C'est la capacité (tendance) d'un corps en rotation à maintenir une direction constante de son axe de rotation selon le Larousse.}.
+Cependant, j'ai plutôt choisi de m'orienter sur des conditions simples pour catégoriser l'intensité du virage pour y associer une vitesse "maximale" qui peut être utilisée sans danger.\\
+Voici comment j'ai classé la valeur de la courbure en fonction de la vitesse idéale: \\
+•	< 0.0005 → ligne droite → 80 km/h \\
+•	de 0.0005 à 0.002 → léger virage → 60 km/h\\
+•	>= 0.002 → virage serré → 30 km/h
+
+
+\vspace{0.5cm}
+Voici le code qui permet de récupérer une localisation GPS (latitude, longitude), qui calcule la valeur de la courbure pour après estimer une vitesse de sécurité.
 \lstinputlisting[language=Python]{coeur_memoire/programme1.py}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png} 
+    \caption{Réseau routier interprété par le programme pour la postion 48.385171, 2.563108}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png} 
+    \caption{Carte du traceur}
+\end{figure}
 
 \todo{résultat}
 Suite de la mise en situation réelle. Les passages étudiés ont été réalisé bien avant l'expérience, par conséquent, il n'y a aucune notion de vitesse. Chaques passages ont été faits sur la capacité au moment t de l'usager. Voici un premier passage à 51 km/h.
@@ -111,7 +141,7 @@ Suite de la mise en situation réelle. Les passages étudiés ont été réalis�
 Résultat du premier passage avec le programme :
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 16.23.05.png} 
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.32.png} 
     \caption{Premier passage dans Les 17 virages}
 \end{figure}
 
@@ -125,11 +155,23 @@ Voici maintenant un second passage réalisé un peu plus vite.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-24 à 16.20.18.png} 
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png} 
     \caption{Deuxième passage dans Les 17 virages}
 \end{figure}
 
-Le deuxième passage est réalisé plus rapidemment (sans excès de vitesse), cependant, la vitesse est trop "rapide" et nécessite de meilleures capacités pour le passer. Il faut que le motard soit à un niveau bien intermédiaire. Comme l'objectif du programme est de faire de la prévention, j'ai décidé de baser sur un niveau de débutant. Pour conclure, il y a un message qui apparaît.
+Le deuxième passage est réalisé plus rapidemment (sans excès de vitesse), cependant, la vitesse est trop "rapide" et nécessite de meilleures capacités pour le passer. Il faut que le motard soit à un niveau bien intermédiaire. Comme l'objectif du programme est de faire de la prévention, j'ai décidé de baser sur un niveau de débutant. Pour conclure, il y a un message qui apparaît.\\
+Prenons un dernier exemple avec un nouvel endroit en ligne droite.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png} 
+    \caption{Réseau routier}
+\end{figure}
+Nous avons comme résultat :
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png} 
+    \caption{Résultat en ligne droite pour les coordonnées 48.514114, 2.320894}
+\end{figure}
 
 L'idée maintenant est de prévenir l'usager d'un logo universel. Évidemment, la disposition sera optimisée pour chaque écran. Nous pouvons également y ajouter un bip sonore, cela évitera de fixer en permanance le tableau de bord.
 \begin{figure}[H]
@@ -138,3 +180,7 @@ L'idée maintenant est de prévenir l'usager d'un logo universel. Évidemment, l
     \caption{Génération d'un tableau de bord possible avec l'IA.}
 \end{figure}
 
+Il pourrait être interessant de poursuivre le développement sur une action sur les freins afin de ralentir légèrement la moto ou bien empêcher ou couper l'accélération. C'est une piste interessante mais cependant, il faut prendre en concidération plusieurs facteurs : \\
+• Ne pas surprendre le motard,\\
+• Ne pas dimunuer l'adhérence des pneus,\\
+• Ne pas inflencer sur la trajectoire de sécurité, or la vitesse joue un rôle crutial dans la trajectoire.

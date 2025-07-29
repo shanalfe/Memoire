@@ -15,6 +15,7 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{listings}
+\usepackage[normalem]{ulem}
 \usepackage{amsmath} % dans le préambule
 \usepackage{tcolorbox} % dans le préambule
 \usepackage{xcolor} % Pour la coloration syntaxique
@@ -33,9 +34,13 @@
 }
 \lstset{style=mystyle}
 
+\newif\ifconfidentiel
+\confidentielfalse  % <-- active le mode confidentiel
+
 \newif\ifshowcomments
 \showcommentstrue  % <-- active les commentaires
-% \showcommentsfalse  % <-- désactive les commentaires
+%\showcommentsfalse  % <-- désactive les commentaires
+
 \ifshowcomments
   \newcommand{\commentaire}[1]{\textcolor{red}{\textbf{[Commentaire: #1]}}}
   \newcommand{\shana}[1]{\textcolor{blue}{\textbf{[Shana: #1]}}}

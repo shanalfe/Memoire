@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  23 JUL 2025 00:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  29 JUL 2025 16:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -585,78 +585,89 @@ File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box57
+\UL@hyphenbox=\box58
+\UL@skip=\skip83
+\UL@hook=\toks28
+\UL@height=\dimen178
+\UL@pe=\count438
+\UL@pixel=\dimen179
+\ULC@box=\box59
+Package: ulem 2019/11/18
+\ULdepth=\dimen180
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip83
+\@mathmargin=\skip84
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks28
-\ex@=\dimen178
+\@emptytoks=\toks29
+\ex@=\dimen181
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen179
+\pmbraise@=\dimen182
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count438
+\inf@bad=\count439
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count439
-\leftroot@=\count440
+\uproot@=\count440
+\leftroot@=\count441
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count441
-\DOTSCASE@=\count442
+\classnum@=\count442
+\DOTSCASE@=\count443
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box57
-\strutbox@=\box58
+\Mathstrutbox@=\box60
+\strutbox@=\box61
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen180
+\big@size=\dimen183
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count443
+\macc@depth=\count444
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count444
+\c@MaxMatrixCols=\count445
 \dotsspace@=\muskip21
-\c@parentequation=\count445
-\dspbrk@lvl=\count446
-\tag@help=\toks29
-\row@=\count447
-\column@=\count448
-\maxfields@=\count449
-\andhelp@=\toks30
-\eqnshift@=\dimen181
-\alignsep@=\dimen182
-\tagshift@=\dimen183
-\tagwidth@=\dimen184
-\totwidth@=\dimen185
-\lineht@=\dimen186
-\@envbody=\toks31
-\multlinegap=\skip84
-\multlinetaggap=\skip85
-\mathdisplay@stack=\toks32
+\c@parentequation=\count446
+\dspbrk@lvl=\count447
+\tag@help=\toks30
+\row@=\count448
+\column@=\count449
+\maxfields@=\count450
+\andhelp@=\toks31
+\eqnshift@=\dimen184
+\alignsep@=\dimen185
+\tagshift@=\dimen186
+\tagwidth@=\dimen187
+\totwidth@=\dimen188
+\lineht@=\dimen189
+\@envbody=\toks32
+\multlinegap=\skip85
+\multlinetaggap=\skip86
+\mathdisplay@stack=\toks33
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
  (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen187
-\pgfutil@tempdimb=\dimen188
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen190
+\pgfutil@tempdimb=\dimen191
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box59
+\pgfutil@abb=\box62
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
@@ -664,31 +675,31 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks34
-\pgfkeys@temptoks=\toks35
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks36
+\pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen189
-\pgf@y=\dimen190
-\pgf@xa=\dimen191
-\pgf@ya=\dimen192
-\pgf@xb=\dimen193
-\pgf@yb=\dimen194
-\pgf@xc=\dimen195
-\pgf@yc=\dimen196
-\pgf@xd=\dimen197
-\pgf@yd=\dimen198
+\pgf@x=\dimen192
+\pgf@y=\dimen193
+\pgf@xa=\dimen194
+\pgf@ya=\dimen195
+\pgf@xb=\dimen196
+\pgf@yb=\dimen197
+\pgf@xc=\dimen198
+\pgf@yc=\dimen199
+\pgf@xd=\dimen256
+\pgf@yd=\dimen257
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count450
-\c@pgf@countb=\count451
-\c@pgf@countc=\count452
-\c@pgf@countd=\count453
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count454
+\c@pgf@counta=\count451
+\c@pgf@countb=\count452
+\c@pgf@countc=\count453
+\c@pgf@countd=\count454
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count455
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -699,59 +710,59 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count455
-\pgfsyssoftpath@bigbuffer@items=\count456
+\pgfsyssoftpath@smallbuffer@items=\count456
+\pgfsyssoftpath@bigbuffer@items=\count457
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen199
-\pgfmath@count=\count457
-\pgfmath@box=\box60
-\pgfmath@toks=\toks40
-\pgfmath@stack@operand=\toks41
-\pgfmath@stack@operation=\toks42
+\pgfmath@dimen=\dimen258
+\pgfmath@count=\count458
+\pgfmath@box=\box63
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count458
+\c@pgfmathroundto@lastzeros=\count459
 )) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen256
-\pgf@picmaxx=\dimen257
-\pgf@picminy=\dimen258
-\pgf@picmaxy=\dimen259
-\pgf@pathminx=\dimen260
-\pgf@pathmaxx=\dimen261
-\pgf@pathminy=\dimen262
-\pgf@pathmaxy=\dimen263
-\pgf@xx=\dimen264
-\pgf@xy=\dimen265
-\pgf@yx=\dimen266
-\pgf@yy=\dimen267
-\pgf@zx=\dimen268
-\pgf@zy=\dimen269
+\pgf@picminx=\dimen259
+\pgf@picmaxx=\dimen260
+\pgf@picminy=\dimen261
+\pgf@picmaxy=\dimen262
+\pgf@pathminx=\dimen263
+\pgf@pathmaxx=\dimen264
+\pgf@pathminy=\dimen265
+\pgf@pathmaxy=\dimen266
+\pgf@xx=\dimen267
+\pgf@xy=\dimen268
+\pgf@yx=\dimen269
+\pgf@yy=\dimen270
+\pgf@zx=\dimen271
+\pgf@zy=\dimen272
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen270
-\pgf@path@lasty=\dimen271
+\pgf@path@lastx=\dimen273
+\pgf@path@lasty=\dimen274
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen272
-\pgf@shorten@start@additional=\dimen273
+\pgf@shorten@end@additional=\dimen275
+\pgf@shorten@start@additional=\dimen276
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box61
-\pgf@hbox=\box62
-\pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count459
+\pgfpic=\box64
+\pgf@hbox=\box65
+\pgf@layerbox@main=\box66
+\pgf@picture@serial@count=\count460
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen274
+\pgflinewidth=\dimen277
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen275
-\pgf@pt@y=\dimen276
-\pgf@pt@temp=\dimen277
+\pgf@pt@x=\dimen278
+\pgf@pt@y=\dimen279
+\pgf@pt@temp=\dimen280
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -760,17 +771,17 @@ File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen278
+\pgfarrowsep=\dimen281
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen279
-\pgf@sys@shading@range@num=\count460
-\pgf@shadingcount=\count461
+\pgf@max=\dimen282
+\pgf@sys@shading@range@num=\count461
+\pgf@shadingcount=\count462
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box64
+\pgfexternal@startupbox=\box67
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -781,38 +792,38 @@ File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box65
+\pgfnodeparttextbox=\box68
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen280
-\pgf@nodesepend=\dimen281
+\pgf@nodesepstart=\dimen283
+\pgf@nodesepend=\dimen284
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks43
-\verbatim@line=\toks44
+\every@verbatim=\toks44
+\verbatim@line=\toks45
 \verbatim@in@stream=\read5
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (/usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box66
-\tcb@upperbox=\box67
-\tcb@lowerbox=\box68
-\tcb@phantombox=\box69
-\c@tcbbreakpart=\count462
-\c@tcblayer=\count463
-\c@tcolorbox@number=\count464
-\l__tcobox_tmpa_box=\box70
-\l__tcobox_tmpa_dim=\dimen282
-\tcb@temp=\box71
-\tcb@temp=\box72
-\tcb@temp=\box73
+\tcb@titlebox=\box69
+\tcb@upperbox=\box70
+\tcb@lowerbox=\box71
+\tcb@phantombox=\box72
+\c@tcbbreakpart=\count463
+\c@tcblayer=\count464
+\c@tcolorbox@number=\count465
+\l__tcobox_tmpa_box=\box73
+\l__tcobox_tmpa_dim=\dimen285
 \tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
@@ -823,39 +834,39 @@ Package csquotes Info: Redefining alias 'default' -> 'french'.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/remerciements/remerciements.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/fiche_bilan/fiche_bilan.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/introduction/introduction.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/etat_art.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/coeur_memoire.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/annexe/annexe1.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Info: Redefining \degres on input line 50.
-LaTeX Info: Redefining \up on input line 50.
-LaTeX Info: Redefining \microtypecontext on input line 50.
-Package microtype Info: Applying patch `item' on input line 50.
-Package microtype Info: Applying patch `toc' on input line 50.
-Package microtype Info: Applying patch `eqnum' on input line 50.
-Package microtype Info: Applying patch `footnote' on input line 50.
-Package microtype Info: Applying patch `verbatim' on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Info: Redefining \degres on input line 55.
+LaTeX Info: Redefining \up on input line 55.
+LaTeX Info: Redefining \microtypecontext on input line 55.
+Package microtype Info: Applying patch `item' on input line 55.
+Package microtype Info: Applying patch `toc' on input line 55.
+Package microtype Info: Applying patch `eqnum' on input line 55.
+Package microtype Info: Applying patch `footnote' on input line 55.
+Package microtype Info: Applying patch `verbatim' on input line 55.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 50.
+LaTeX Info: Redefining \showhyphens on input line 55.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -869,24 +880,24 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count465
-\scratchdimen=\dimen283
-\scratchbox=\box75
-\nofMPsegments=\count466
-\nofMParguments=\count467
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count468
-\MPscratchDim=\dimen284
-\MPnumerator=\count469
-\makeMPintoPDFobject=\count470
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count466
+\scratchdimen=\dimen286
+\scratchbox=\box78
+\nofMPsegments=\count467
+\nofMParguments=\count468
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count469
+\MPscratchDim=\dimen287
+\MPnumerator=\count470
+\makeMPintoPDFobject=\count471
+\everyMPtoPDFconversion=\toks47
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 55.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.out) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -904,8 +915,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bbl)
-Package biblatex Info: Reference section=0 on input line 50.
-Package biblatex Info: Reference segment=0 on input line 50.
+Package biblatex Info: Reference section=0 on input line 55.
+Package biblatex Info: Reference segment=0 on input line 55.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -941,16 +952,16 @@ Package biblatex Info: Reference segment=0 on input line 50.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count471
+\c@lstlisting=\count472
 <images/logo_paris_saclay.png, id=131, 1027.84pt x 516.93124pt>
 File: images/logo_paris_saclay.png Graphic file (type png)
 <use images/logo_paris_saclay.png>
-Package pdftex.def Info: images/logo_paris_saclay.png  used on input line 59.
+Package pdftex.def Info: images/logo_paris_saclay.png  used on input line 64.
 (pdftex.def)             Requested size: 192.0548pt x 96.58519pt.
 <images/logo_kappasante.jpg, id=132, 803.0pt x 361.35pt>
 File: images/logo_kappasante.jpg Graphic file (type jpg)
 <use images/logo_kappasante.jpg>
-Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 64.
+Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 69.
 (pdftex.def)             Requested size: 192.0548pt x 86.42252pt.
 [1
 
@@ -962,7 +973,7 @@ Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 64.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 \newpage
+l.92 \newpage
               [1]
 \openout2 = `remerciements/remerciements.aux'.
 
@@ -1021,7 +1032,7 @@ File: images/schema_v2.png Graphic file (type png)
 Package pdftex.def Info: images/schema_v2.png  used on input line 53.
 (pdftex.def)             Requested size: 298.75264pt x 180.41827pt.
  [7 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/images/capteur.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 57--92
+Underfull \hbox (badness 10000) in paragraph at lines 57--97
 
  []
 
@@ -1146,7 +1157,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
  []
 
 [21] [22])
-Underfull \hbox (badness 10000) in paragraph at lines 308--94
+Underfull \hbox (badness 10000) in paragraph at lines 308--99
 
  []
 
@@ -1220,20 +1231,46 @@ File: coeur_memoire/graphique/utilisation_moto.png Graphic file (type png)
 <use coeur_memoire/graphique/utilisation_moto.png>
 Package pdftex.def Info: coeur_memoire/graphique/utilisation_moto.png  used on input line 113.
 (pdftex.def)             Requested size: 170.71393pt x 68.76257pt.
- [27 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_7.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_6.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_5.png>] [28 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/graphique/age.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/graphique/nb_annees_permis.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/graphique/nb_km_an.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/graphique/utilisation_moto.png>] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-[30] (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/propositions/proposition1.tex
+ [27 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_7.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_6.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/trajectoire_sécurité_5.png>] [28 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/graphique/age.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/graphique/nb_annees_permis.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/graphique/nb_km_an.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/graphique/utilisation_moto.png>] [29] [30] (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/propositions/proposition1.tex
 <coeur_memoire/images/aegis.png, id=482, 521.95pt x 326.21875pt>
 File: coeur_memoire/images/aegis.png Graphic file (type png)
 <use coeur_memoire/images/aegis.png>
-Package pdftex.def Info: coeur_memoire/images/aegis.png  used on input line 9.
+Package pdftex.def Info: coeur_memoire/images/aegis.png  used on input line 10.
 (pdftex.def)             Requested size: 298.75264pt x 186.72313pt.
  [31 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/aegis.png>]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 31.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 31.
+<coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png, id=492, 392.46625pt x 338.26375pt>
+File: coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png Graphic file (type png)
+<use coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png>
+Package pdftex.def Info: coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png  used on input line 23.
+(pdftex.def)             Requested size: 298.75264pt x 257.50635pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+
+ []
+
+<coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png, id=493, 698.61pt x 739.76375pt>
+File: coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png Graphic file (type png)
+<use coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png>
+Package pdftex.def Info: coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png  used on input line 38.
+(pdftex.def)             Requested size: 341.43437pt x 361.5505pt.
+[32 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
+
+ []
+
+[33 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
+
+ []
+
+<coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png, id=512, 663.47874pt x 497.86pt>
+File: coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png Graphic file (type png)
+<use coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png>
+Package pdftex.def Info: coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png  used on input line 91.
+(pdftex.def)             Requested size: 298.75264pt x 224.17926pt.
+[34 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 119.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 119.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1241,38 +1278,116 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/programme1.py [32])) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/faisabilite/faisabilite.tex) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/apport_personnel/apport_personnel.tex)) [33] [34
+ (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/programme1.py [35] [36])
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png, id=633, 956.57375pt x 913.4125pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png  used on input line 123.
+(pdftex.def)             Requested size: 256.07741pt x 244.5201pt.
+<coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png, id=634, 1075.01625pt x 629.35126pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png  used on input line 129.
+(pdftex.def)             Requested size: 256.07741pt x 149.91422pt.
+<coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png, id=635, 1659.19875pt x 936.49875pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png  used on input line 137.
+(pdftex.def)             Requested size: 256.07741pt x 144.52705pt.
+ [37 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png>]
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.32.png, id=656, 460.72125pt x 104.39pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.32.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.32.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.32.png  used on input line 144.
+(pdftex.def)             Requested size: 256.07741pt x 58.02155pt.
+<coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png, id=657, 1670.24pt x 939.51pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png  used on input line 151.
+(pdftex.def)             Requested size: 256.07741pt x 144.03127pt.
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png, id=658, 486.81876pt x 108.405pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png  used on input line 158.
+(pdftex.def)             Requested size: 256.07741pt x 57.02264pt.
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png, id=659, 959.585pt x 758.835pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png  used on input line 166.
+(pdftex.def)             Requested size: 256.07741pt x 202.50294pt.
+ [38 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.32.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png>]
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png, id=672, 484.81125pt x 128.48pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png  used on input line 172.
+(pdftex.def)             Requested size: 256.07741pt x 67.86665pt.
+<coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png, id=673, 848.16875pt x 855.195pt>
+File: coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png Graphic file (type png)
+<use coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png>
+Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png  used on input line 179.
+(pdftex.def)             Requested size: 256.07741pt x 258.19164pt.
+ [39 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png> </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png>]) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/faisabilite/faisabilite.tex
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+[40 </Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
 
 
-] [35] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 57--62
+
+ []
+
+) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/apport_personnel/apport_personnel.tex)) [41] [42
+
+
+] [43] [44]
 \openout2 = `annexe/annexe1.aux'.
 
- (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/annexe/annexe1.tex [37
+ (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/annexe/annexe1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--43
 
-] [38] [39]) [40] [41] (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/remerciements/remerciements.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/fiche_bilan/fiche_bilan.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/introduction/introduction.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/etat_art.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/coeur_memoire.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/annexe/annexe1.aux))
+ []
+
+[45
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 43--95
+
+ []
+
+[46] [47] [48]
+Underfull \hbox (badness 10000) in paragraph at lines 95--103
+
+ []
+
+) [49] (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.aux (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/remerciements/remerciements.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/fiche_bilan/fiche_bilan.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/introduction/introduction.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/etat_art/etat_art.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/coeur_memoire/coeur_memoire.aux) (/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/annexe/annexe1.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 03D46408D724E9E6B4E64EDAA1F53290;7432.
+(rerunfilecheck)             Checksum: 006D20D0A403C16B84809907C994481B;7432.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35801 strings out of 474116
- 683350 string characters out of 5743682
- 2339187 words of memory out of 5000000
- 57223 multiletter control sequences out of 15000+600000
- 576873 words of font info for 169 fonts, out of 8000000 for 9000
+ 36104 strings out of 474116
+ 693040 string characters out of 5743682
+ 2345187 words of memory out of 5000000
+ 57430 multiletter control sequences out of 15000+600000
+ 577855 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,10n,87p,11537b,2296s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (42 pages, 7154837 bytes).
+ 83i,10n,87p,2780b,2298s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on "/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.pdf" (50 pages, 17834331 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 614 compressed objects within 7 object streams
- 197 named destinations out of 1000 (max. 500000)
- 38324 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 932 PDF objects out of 1000 (max. 8388607)
+ 752 compressed objects within 8 object streams
+ 283 named destinations out of 1000 (max. 500000)
+ 40432 words of extra memory for PDF output out of 42996 (max. 10000000)
 

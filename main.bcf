@@ -2399,6 +2399,10 @@
     <bcf:citekey order="32" intorder="1">journal_de_quebec_motocycliste_nodate</bcf:citekey>
     <bcf:citekey order="33" intorder="1">marche_capteur_lidar</bcf:citekey>
     <bcf:citekey order="34" intorder="1">vitesse_virage_mcnews</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">osm_doc</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">geopy</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">formule_curvature</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">loi_code_de_la_route</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
