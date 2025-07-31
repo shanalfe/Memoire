@@ -5,7 +5,7 @@ Pour pouvoir proposer de nouvelles fonctionnalités de prévention, il faut opti
 \todo{ajout d'un tableau de bord connecté avec des capteurs et des alertes en temps réel.}
 L'idée serait d'intégrer dans les motos une puce GPS qui serait capable d'avertir en cas de virage dangeureux. L'alerte (sonore via un intercom et voyant au tableau de bord) serait envoyée via le tableau de bord connecté si la vitesse est supérieure à la vitesse recommandée. Cette vitesse sera calculée via la valeur de la courbure du virage. Des chercheurs Alex Liniger et Simon Hecker ont développé un prototype , Aegis Rider AG\cite{vitesse_virage_mcnews} permettant de prendre la meilleure trajectoire. Cependant, ce dernier ne prend pas en compte les autres facteurs de la route (autres usagers, état de la chaussée, etc.). Comme démontré ci-dessous, la trace bleu indiquant la trajectoire de sécurité et le compteur de vitesse masquent la qualité de la route par conséquent, le motard ne pourra pas anticiper les dangers de la route (gravillon, trous, ....). À l'heure d'aujourd'hui, cette solution reste extrêmement complexe. Ma solution permettra de fonctionner dans la pluspart des cas.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{coeur_memoire/images/aegis.png} 
     \caption{Prototype Aegis Rider AG pour la détection de virages dangereux.}
@@ -13,28 +13,14 @@ L'idée serait d'intégrer dans les motos une puce GPS qui serait capable d'aver
 Cette fonctionnalité est très interessante mais elle empêche une bonne visibilité de la surface de la route et elle peut fausser une prise de décision.
 Comme illustré dans la Figure~\ref{fig:trajectoire_securite_difficulte}, le processus ne pourra pas adapter sur des virages dit "imparfaits".
 
+\subsubsection{Programme d'alerte de virages}
+Le programme permet de savoir si la vitesse à l'instant t est trop rapide pour le virage. Je me base sur la valeur de la courbure.
 
-
-\underline{Contexte:} En balade dans le 77, un motard roule sur une départementale. Dans cette situation, il est équipé d'un boitié GPS qui récupère ses coordonnées en temps réel. Il arrive dans une portion de virages limitée à 70 km/h nommée "Les 17 virages", près d'Arbonne-La-Forêt. Cette série de virages est dangeureuse car la route n'est pas bonne, n'est pas large et l'adhérence n'est pas optimale. De plus, il y a un virage dangereux à l'équerre qui surgit au milieu de cette série. La trajectoire de sécurité est fortement recommandé. Par expérience, avoisiner les 70 km/h est déjà bien au vue de la portion qui y est technique.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png} 
-    \caption{Point GPS des 17 virages.}
-\end{figure}
-
-\todo{photo des 17 virages}
-
-
-
-Les coordonnées GPS sont : 48.385171, 2.563108.
-
-\todo{mettre le diagramme}
 Voici le diagramme d'action de cette fonctionnalité:\\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png} 
+    \includegraphics[width=0.9\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png} 
     \caption{Diagramme d'action du Système de prévention de virages dangereux}
 \end{figure}
 
@@ -42,6 +28,17 @@ Pour réaliser un bout de code sur cette fonctionnalité, j'ai décidé d'utilis
 • osmnx\cite{osm_doc} : permet d’interroger OSM (OpenStreetMap) et de récupérer des graphes routiers.\\
 •	geodesic (de geopy \cite{geopy}) : mesure la distance réelle (en mètres) entre 2 points GPS.\\
 
+Il faut convertir le graphe routier G (au format NetworkX) en un GeoDataFrame (via GeoPandas), pour pouvoir manipuler les tronçons de route comme des objets géographiques (segments, courbes…). Cette partie est importante pour les calculs.
+\begin{lstlisting}[language=Python, caption={Conversion du graphe routier}]
+edges = ox.graph_to_gdfs(G, nodes=False)
+\end{lstlisting}
+Avec : \\
+\begin{itemize}
+    \item G : le graphe routier obtenu via \texttt{ox.graph\_from\_point} qui contient des nœuds (c'est-à-dire les intersections) et des arêtes qui représentent les routes.
+    \item nodes=False : car je ne prends que les arêtes (edges), c’est-à-dire les segments de route. Je n'ai pas besoin pour mon programme de tous les noeuds (par exemple une intersection à plusieurs routes, un arrefour, un croisement...)du réseau. Il peut être interessant pour calculer un plus court chemin. De plus, cela risquerait de sur-charger les données.
+\end{itemize}
+
+\vspace{0.5cm}
 L'interêt de calculer la courbure de la courbe est de pouvoir anticiper le virage et par conséquent, adapter la vitesse pour optimiser l'adhérence, la trajectoire où l'on se sentira le plus en sécurité. \\
 Le calcul de la courbure permettra d'identifier un virage s'il est dangereux à partir de données GPS cartographiques pour enfin adapter le comportement du système embarqué (alerte, adaptation de trajectoire, assistance..).
 Donc la courbure mesure à quel point une route peut changer de direction sur une courte distance, ici, dans un virage.\\
@@ -68,7 +65,29 @@ L’estimation “courbure > 0.1 = danger > 60 km/h” est une règle empirique,
 
 L'avantage d'avoir un calcul automatique et en amont, cela permet de prévenir avant même d'être dans le virage. Il peut remplacer un panneau quand celui-ci n'est pas visible. Elle ne remplace pas une analyse dynamique complète mais elle est suffisante pour alerter automatiquement le pilote ce qui est exactement l’objectif du système.
 
+Je commence par créer 3 points, p1, p2 et p3, notés respectivement A, B et C sur la Figure~\ref{schemaviragepoint}, à partir des premières coordonnées GPS \texttt{position\_actuelle}. Ces trois points forment un triangle géographique.
+\begin{lstlisting}[language=Python, caption={Calcul de points}]
+p1, p2, p3 = coords[mid - 1], coords[mid], coords[mid + 1]
+a = geodesic(p1, p2).meters
+b = geodesic(p2, p3).meters
+c = geodesic(p1, p3).meters
+\end{lstlisting}
 
+\todo{reformuler}
+Pour pouvoir analyser la courbure d’un virage situé à proximité immédiate du véhicule, il est essentiel de déterminer avec précision quel segment de route (tronçon) est le plus proche de la position GPS actuelle. Pour cela, le code suivant a été utilisé :
+\begin{lstlisting}[language=Python, caption={Calcul de points}]
+point_actuel = Point(position_actuelle[1], position_actuelle[0])  # (longitude, latitude)
+edges["distance"] = edges.geometry.distance(point_actuel)
+segment_proche = edges.loc[edges["distance"].idxmin()]
+\end{lstlisting}
+	1.	Création d’un point géométrique :
+La position actuelle, exprimée sous la forme (latitude, longitude), est convertie en un objet géométrique Point (au format (longitude, latitude), comme attendu par la bibliothèque shapely). Ce point représente la localisation du véhicule dans l’espace.
+	2.	Calcul des distances aux segments de route :
+La variable edges contient l’ensemble des segments de route extraits depuis OpenStreetMap, représentés sous forme de lignes géométriques (LineString). Pour chacun de ces segments, on calcule la distance entre sa géométrie et la position actuelle du véhicule à l’aide de la méthode .distance(). Ce calcul est réalisé sur l’ensemble du GeoDataFrame, et les distances obtenues sont stockées dans une nouvelle colonne nommée "distance".
+	3.	Identification du segment le plus proche :
+Grâce à la méthode .idxmin(), on récupère l’indice du segment présentant la plus petite distance au point courant. Ce segment est ensuite extrait via .loc[]. Il s’agit donc du segment de route le plus proche du véhicule à l’instant T.
+
+Cette opération est cruciale, car elle permet de concentrer les analyses (détection de virage, estimation de courbure, adaptation de la vitesse, etc.) sur la portion de route réellement pertinente dans le contexte de conduite.
 
 \begin{tcolorbox}[title=Calcul de la courbure]
 Courbure mathématique\cite{formule_curvature} d’un virage:
@@ -85,17 +104,17 @@ a + b = distance réelle parcourue en suivant la route \\
 c = distance directe entre le début et la fin (comme si on traçait une corde)
 \end{tcolorbox}
 
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png} 
     \caption{Schéma présentant une moto avant un virage}
+    \label{schemaviragepoint}
 \end{figure}
 
 
-\todo{illustration, développement}
 
-\todo{Détailler le code et les formules de vitesse}
-La vitesse recommandée se calcule grace à la courbure.
+La vitesse recommandée se calcule grace à la courbure. Pour calculer la vitesse recommandée, conseillée, deux solutions s'offraient à moi. La première : \\
 \begin{tcolorbox}[title=Vitesse recommandée]
 Calcul de la vitesse recommandée :
 \[
@@ -107,15 +126,32 @@ Le "20" permet d'éviter une vitesse trop basse. Ici, on la limite à 20 km/h.
 
 En dessous de 20km/h, il y a peu d'intêret. Même les plus grosses épingles peuvent se prendre à 20km/h. À cette vitesse, il n'y a pas d'effet gyroscopique\footnote{C'est la capacité (tendance) d'un corps en rotation à maintenir une direction constante de son axe de rotation selon le Larousse.}.
 Cependant, j'ai plutôt choisi de m'orienter sur des conditions simples pour catégoriser l'intensité du virage pour y associer une vitesse "maximale" qui peut être utilisée sans danger.\\
+\vspace{0.5cm}
 Voici comment j'ai classé la valeur de la courbure en fonction de la vitesse idéale: \\
 •	< 0.0005 → ligne droite → 80 km/h \\
 •	de 0.0005 à 0.002 → léger virage → 60 km/h\\
-•	>= 0.002 → virage serré → 30 km/h
+•	>= 0.002 → virage serré → 30 km/h\\
+\vspace{0.5cm}
+Le fait de catégoriser la valeur de la courbure, cela permet facilement d'y associer une vitesse. C'est une stratégie qui propose une solution plus globale en diminuant les erreurs en tests. Après avoir essayé plusieurs points GPS et analysé les virages, c'est pour moi la solution qui me convient le mieux à l'heure actuelle.
+\vspace{0.5cm}
 
 
 \vspace{0.5cm}
-Voici le code qui permet de récupérer une localisation GPS (latitude, longitude), qui calcule la valeur de la courbure pour après estimer une vitesse de sécurité.
+Ci-dessous le code qui permet de récupérer une localisation GPS (latitude, longitude), qui calcule la valeur de la courbure pour après estimer une vitesse de sécurité.
 \lstinputlisting[language=Python]{coeur_memoire/programme1.py}
+
+\subsubsection{Étude de cas}
+\underline{Contexte:} En balade dans le 77, un motard roule sur une départementale. Dans cette situation, il est équipé d'un boitié GPS qui récupère ses coordonnées en temps réel. Il arrive dans une portion de virages limitée à 70 km/h nommée "Les 17 virages", près d'Arbonne-La-Forêt. Cette série de virages est dangeureuse car la route n'est pas bonne, n'est pas large et l'adhérence n'est pas optimale. De plus, il y a un virage dangereux à l'équerre qui surgit au milieu de cette série. La trajectoire de sécurité est fortement recommandé. Par expérience, avoisiner les 70 km/h est déjà bien au vue de la portion qui y est technique.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png} 
+    \caption{Point GPS des 17 virages.}
+\end{figure}
+
+\todo{photo des 17 virages}
+
+Les coordonnées GPS sont : 48.385171, 2.563108.
 
 \begin{figure}[H]
     \centering
@@ -130,7 +166,19 @@ Voici le code qui permet de récupérer une localisation GPS (latitude, longitud
 \end{figure}
 
 \todo{mettre les points p1, p2, p3 sur la carte pour se donner une idée}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.43.21.png} 
+    \caption{Placement des points p1, p2 et p3.}
+    \label{fig:cartepoints}
+\end{figure}
+Comme nous avons comme coordonnées 48.385171, 2.563108, nous avons ces nouveaux points grace à notre programme:\\
+p1 : (48.3847394, 2.5636118)\\
+p2 : (48.3846809, 2.563653)\\
+p3 : ( 48.3845233, 2.56368)\\
+Ces points p1, p2 et p3 nous permettront d'évaluer la courbure sur ce segment afin d'estimer une vitesse sécurisée pour ce passage. Il y a de la distance entre \texttt{position\_actuelle} et p1, ce qui permet une bonne anticipation.
 
+\vspace{0.5cm}
 Pour la mise en situation réelle, les passages étudiés ont été réalisés bien avant l'expérience, par conséquent, il n'y a aucune notion de vitesse. Chaques passages ont été faits sur la capacité au moment "t" de l'usager et capturés avec une caméra embarquée. Voici un premier passage à 51 km/h.
 \begin{figure}[H]
     \centering
@@ -164,6 +212,16 @@ Prenons un dernier exemple avec une nouvelle situation, une ligne droite.
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png} 
     \caption{Réseau routier interprété par le programme aux points GPS 48.514114, 2.320894.}
 \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png} 
+    \caption{Placement des points p1, p2 et p3 en ligne droite pour les coordonnées 48.514114, 2.320894.}
+\end{figure}
+Idem que pour l'exemple précédent. Le programme nous génère des trois points. Avec les coordonnées 48.514114, 2.320894, voici les points que nous avons :\\
+p1 : (48.5144999, 2.3177499)\\
+p2 : (48.5149154, 2.3148266)\\
+p3 : (48.5151433, 2.3132539)\\
+
 Pour cette simulation au terminale, je décide de mettre deux vitesses, une à 80 km/h et une autre à 90 km/h. Ici je ne prends pas en compte la limitation de vitesse. Nous avons comme résultats :
 \begin{figure}[H]
     \centering
@@ -177,6 +235,7 @@ Pour cette simulation au terminale, je décide de mettre deux vitesses, une à 8
 \end{figure}
 Pour conclure, comme l'usager évolue sur une ligne droite, une courbure ayant comme valeur 0 ou proche de 0, il n'y aura pas de message d'erreur qui s'affiche.
 
+\subsubsection{Design technologique}
 Pour prévenir l'usager, je propose d'utiliser un logo universel. Évidemment, la disposition sera optimisée pour chaque écran. Nous pouvons également y ajouter un bip sonore, cela évitera de fixer en permanance le tableau de bord. Le son est désactivable pour les personnes plus à l'aise.
 \begin{figure}[H]
     \centering

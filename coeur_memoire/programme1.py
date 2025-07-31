@@ -7,46 +7,58 @@ from shapely.geometry import Point
 import math
 
 
-# Simule une position GPS (latitude, longitude) - 17 Virages
-# ok virage 60
-#position_actuelle = (48.385171, 2.563108)  
-#ok ligne droite
-position_actuelle = (48.514114, 2.320894) 
+# Exemple de simulation de positions GPS (latitude, longitude) pour le test
+# sucession de virages 
+position_actuelle = (48.385171, 2.563108)  
+# ligne droite
+#position_actuelle = (48.514114, 2.320894) 
 #position_actuelle = (48.380441, 2.565690) 
-# ok virage serre
+# virage serre
 #position_actuelle = (48.371103, 2.560765) 
+# virage moyen
 #position_actuelle = (48.358995, 2.534561)
-#coordonnee autoroute
+# autoroute
 #position_actuelle = (48.335448, 2.595849) 
 
-# Vitesse actuelle du vehicule (a connecter au ton GPS ou simulateur)
+# Vitesse actuelle du vehicule 
 vitesse_vehicule = 90
 
-# Rayon de recherche autour du vehicule (en metres)
+# Rayon de recherche autour de la position_actuelle (en metres)
 rayon_recherche = 1000
 
-# Chargement du reseau routier autour de la position
+# Chargement du reseau routier 
 G = ox.graph_from_point(position_actuelle, dist=rayon_recherche, network_type='all')
 
-# Convertir en geometrie de routes (lignes)
+# Conversion
 edges = ox.graph_to_gdfs(G, nodes=False)
 
-# Detecter les virages : on calcule la "courbure" des lignes du virage
+# Calcul de la courbure
 def compute_curvature(geometry):
+    
     coords = list(geometry.coords)
   
+    # controle des petits segments
     if geodesic(coords[0], coords[-1]).meters < 50:
-       return 0  # ignore les segments trop petits
+       return 0 
    
     if len(coords) < 3:
        return 0
-    p1, p2, p3 = coords[0], coords[len(coords)//2], coords[-1]
+    
+    mid = len(coords) // 2
+    if mid - 1 < 0 or mid + 1 >= len(coords):
+        return 0
+    
+    p1, p2, p3 = coords[mid-1], coords[mid], coords[mid+1]
     a = geodesic(p1, p2).meters
     b = geodesic(p2, p3).meters
     c = geodesic(p1, p3).meters
     if a + b == 0:
         return 0
+    
+    # formule de la courbure
     courbure = abs((a + b - c) / (a + b))
+   
+    # affichage
     print("Courbure calcul\u00e9e formule :", courbure)
     print("Position actuelle : ", position_actuelle)
     print("p1 :", p1)
@@ -68,6 +80,7 @@ courbure = compute_curvature(segment_proche.geometry)
 
 #vitesse_recommandee = 60 * math.exp(-300 * courbure) + 20
 
+# vitesse recommandee
 def vitesse_recommandee(courbure):
     if courbure < 0.0005:
         return 80  # Ligne droite
@@ -77,7 +90,7 @@ def vitesse_recommandee(courbure):
         return 30  # Virage serre
 vitesse_conseillee = vitesse_recommandee(courbure)
 
-
+# affichage des resultats
 print("==== Analyse du segment actuel ====")
 print(f"Courbure estim\u00e9e : {courbure:.4f}")
 print(f"Vitesse actuelle : {vitesse_vehicule} km/h")
