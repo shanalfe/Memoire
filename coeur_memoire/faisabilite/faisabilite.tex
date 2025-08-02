@@ -64,10 +64,66 @@ L’acceptabilité d’un tel système dépend également du profil du conducteu
 
 
 \subsubsection{Prototype et simulation}
+Le prototype logiciel développé offre plusieurs fonctionnalités clés :
+le chargement dynamique d’un réseau routier à partir d’un point GPS,
+l’identification du segment de route le plus proche,
+le calcul de la courbure de ce segment,
+la recommandation d’une vitesse adaptée à cette courbure,
+ainsi que la visualisation de l’environnement routier et de la position actuelle du véhicule.
+Ce prototype constitue une première base fonctionnelle, ouvrant la voie à de futures expérimentations sur le terrain.
+
+Les évolutions envisagées pour les prochaines étapes du projet sont les suivantes :
+l’intégration du système dans une plateforme embarquée,
+l’ajout d’un suivi GPS en temps réel,
+le développement d’une interface utilisateur, visuelle ou auditive,
+et la réalisation de simulations ou d’expérimentations sur circuit fermé.
 
 \subsubsection{Limites et contraintes}
+Lors de l’évaluation de la dangerosité d’un virage, la courbure n’est pas le seul facteur à prendre en compte. D’autres éléments jouent un rôle déterminant, tels que l’état de la chaussée, les conditions météorologiques, la visibilité, la signalisation ou encore la présence éventuelle d’obstacles. Ces paramètres peuvent considérablement modifier le niveau de risque perçu ou réel, même pour un virage à géométrie simple.
+Le système repose sur un algorithme volontairement simplifié afin de garantir une certaine robustesse. Cette approche permet une exécution rapide et stable dans divers contextes, mais elle peut entraîner un manque de précision, notamment lorsque les conditions réelles diffèrent des hypothèses de calcul. Par ailleurs, la fiabilité globale du système dépend fortement de deux facteurs externes : la fréquence de mise à jour de la cartographie utilisée et la précision du positionnement GPS. Une carte obsolète ou un signal GPS perturbé peut nuire à la qualité des recommandations fournies.
+Dans un contexte d’usage réel, le comportement du conducteur reste une variable essentielle. Il est possible que ce dernier ignore tout simplement les recommandations émises par le système, soit par choix, soit par inattention, soit par manque de confiance. Cela limite l’impact potentiel du dispositif sur la sécurité.
+Il est également crucial de prévenir toute dépendance excessive du conducteur à ce type de système d’assistance. Une automatisation trop poussée pourrait entraîner un relâchement de la vigilance ou une perte de capacité d’analyse en cas de situation imprévue. Enfin, en cas de dysfonctionnement du système ou de latence dans les calculs, l’information transmise pourrait être erronée ou inadaptée à la situation. Ce type de défaut présente un risque non négligeable, d’autant plus critique si l’utilisateur se repose entièrement sur la technologie pour prendre ses décisions de conduite.
 
+\subsubsection{confidentialité et données}
+%1. Cadre juridique international autour du GPS
+Le développement de technologies d’assistance à la conduite basées sur la géolocalisation, comme celle proposée dans ce projet, soulève d’importants enjeux juridiques, notamment en matière de souveraineté, d’accessibilité aux données cartographiques, et d’usage du GPS selon les pays.
+Dans certains États, l’accès aux données cartographiques est limité. Par exemple, la Chine impose l’utilisation de fournisseurs cartographiques agréés par l’État, avec des restrictions sur les données affichées ou exportables. En Autriche et en Allemagne, les dispositifs de géolocalisation sont autorisés, mais l’usage de détecteurs ou d'avertisseurs de radars est strictement interdit, y compris lorsqu'ils sont intégrés à un GPS. Le Japon autorise l’usage du GPS, mais certains dispositifs radiofréquence (RF), notamment ceux qui interfèrent avec d'autres systèmes, sont interdits.
 
+Ces exemples illustrent la diversité des contraintes réglementaires à l’échelle internationale, ce qui constitue un défi pour tout projet technologique visant un déploiement global.
+
+%2. Conformité avec le Code de la route français
+En France, l'utilisation d’un GPS est autorisée dans un véhicule, y compris à moto, tant qu’il ne compromet ni la visibilité, ni la sécurité du conducteur. Le Code de la route – Article R412-6 précise que "tout conducteur doit se tenir constamment en état et en position d'exécuter commodément et sans délai toutes les manœuvres qui lui incombent".
+Ainsi, tout système d’affichage (écran, casque connecté, retour haptique) devra être conçu de manière à ne pas distraire le conducteur ou gêner sa conduite. Ce point est d’autant plus crucial sur les deux-roues motorisés, où la perte d’attention ou une mauvaise visibilité peut avoir des conséquences graves.
+
+%3. Protection des données personnelles (RGPD)
+L'utilisation du GPS implique la collecte de données personnelles sensibles, notamment :
+la position géographique,
+la vitesse,
+l’horodatage de chaque relevé.
+Ces données permettent d’identifier des comportements individuels ou des trajets récurrents. Dès lors, tout dispositif embarqué ou toute application traitant ces informations doit respecter le Règlement Général sur la Protection des Données (RGPD), en vigueur au sein de l’Union européenne.
+Les principes à respecter sont :
+
+Minimisation des données : seules les données strictement nécessaires doivent être collectées.
+Consentement éclairé : l’usager (ici, le motard) doit être informé clairement de la finalité de la collecte, et donner son accord explicite.
+Sécurité du stockage : les données doivent être stockées dans une base sécurisée, chiffrée, et ne pas être conservées au-delà de la durée nécessaire.
+Transparence : une politique de confidentialité claire doit accompagner tout prototype, service ou démonstrateur.
+Exemple de données à conserver de manière conforme :
+Latitude / longitude,
+Vitesse instantanée,
+Timestamp (date et heure),
+Identifiant utilisateur pseudonymisé.
+
+%4. Contraintes techniques liées à la performance et à la sécurité
+Outre les aspects juridiques, la spécificité des motos implique des contraintes techniques supplémentaires. En effet, les deux-roues sont capables d’accélérations rapides et atteignent des vitesses élevées. Le système embarqué doit donc :
+Être capable de traiter et d’analyser les données en quasi temps réel,
+Offrir une précision suffisante des points GPS (idéalement < 2 m),
+Fournir des recommandations sans latence significative,
+Être résilient aux pertes de signal GPS, notamment dans les tunnels ou zones urbaines denses.
+Ces exigences imposent le choix d’un matériel performant, fiable, et optimisé pour des usages embarqués dans des conditions parfois extrêmes (vibrations, chaleur, humidité).
+
+%conclusion
+\vspace{0.5cm}
+Le développement d’un système d’assistance à la conduite basé sur la courbure routière et la géolocalisation soulève des enjeux techniques, légaux et éthiques. Il est impératif de concevoir un dispositif conforme à la réglementation locale, respectueux de la vie privée, et suffisamment robuste pour un usage en conditions réelles. Intégrer dès la phase de prototypage les dimensions de confidentialité, de sécurité des données et de respect des législations nationales constitue un levier essentiel pour la viabilité du projet, autant sur le plan juridique que sur celui de l’acceptabilité sociale.
 
 
 \todo{mon programme}

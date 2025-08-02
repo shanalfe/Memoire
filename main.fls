@@ -53,8 +53,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyphenat/hyphenat.sty
@@ -292,6 +290,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty

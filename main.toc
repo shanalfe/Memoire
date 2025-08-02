@@ -38,7 +38,8 @@
 \contentsline {subsubsection}{\numberline {5.4.3}Faisabilité d’implémentation sur un véhicule réel}{50}{subsubsection.5.4.3}%
 \contentsline {subsubsection}{\numberline {5.4.4}Prototype et simulation}{51}{subsubsection.5.4.4}%
 \contentsline {subsubsection}{\numberline {5.4.5}Limites et contraintes}{51}{subsubsection.5.4.5}%
-\contentsline {subsection}{\numberline {5.5}Apport personnel et positionnement}{53}{subsection.5.5}%
-\contentsline {section}{Références}{56}{section*.51}%
-\contentsline {section}{Annexes}{57}{section*.52}%
-\contentsline {section}{\numberline {A}Échange avec Hichem Arioui}{58}{appendix.A}%
+\contentsline {subsubsection}{\numberline {5.4.6}confidentialité et données}{52}{subsubsection.5.4.6}%
+\contentsline {subsection}{\numberline {5.5}Apport personnel et positionnement}{55}{subsection.5.5}%
+\contentsline {section}{Références}{58}{section*.51}%
+\contentsline {section}{Annexes}{59}{section*.52}%
+\contentsline {section}{\numberline {A}Échange avec Hichem Arioui}{60}{appendix.A}%
