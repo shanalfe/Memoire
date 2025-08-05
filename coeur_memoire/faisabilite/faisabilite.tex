@@ -9,58 +9,59 @@
 \subsubsection{Objectif de l'étude}
 Cette étude vise à évaluer la faisabilité de la mise en œuvre d’un système d’assistance à la conduite basé sur l’analyse de la courbure de la route, dans le but de recommander une vitesse adaptée. Le système exploite des données géographiques pour déterminer la géométrie des segments routiers en fonction de la position d’un véhicule. Puis, il applique un modèle simple de calcul de courbure pour estimer la dangerosité d’un virage et proposer une vitesse conseillée. Ce chapitre examine les obstacles techniques, les contraintes d’implémentation réelle, ainsi que les perspectives de développement.
 
+
 \subsubsection{Faisabilité technique}
 Mon programme utilise des données routières open source via OpenStreetMap (OSM). Ces données sont accessibles et gratuites cependant, on apperçoit un manque de précision surtout en milieu rural. Certains segments peuvent manquer de points ou contenir des simplifications qui faussent l’évaluation de la courbure.
 La méthode mise en œuvre repose sur le calcul géodésique entre trois points consécutifs, p1, p2 et p3 sur un segment de route à partir d'un point GPS, la position actuelle. Cela permet d’obtenir une estimation simple de la courbure.
 Cependant, cette approche reste sensible à la densité des points sur les segments (peu de points donc cela implique une mauvaise précision).
 
 \subsubsection{Faisabilité d’implémentation sur un véhicule réel}
-Le monde du deux-roues posent certaines contraintes matérielles et logicielles :\\
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Élément} & \textbf{Détail} \\
-\hline
-Capteurs & Nécessité d’un GPS de bonne précision, module RTK pour éviter les erreurs de localisation.\\
-Matériel embarqué & Un microcontrôleur\footnote{ (ex : Raspberry Pi, Arduino, ESP32) capable d’exécuter les traitements de calcul ou de les transmettre à une plateforme distante.}\\
-Consommation & Ne doit pas être trop importante car ça reste un "petit véhicule" \\
-Connectivité & Si les cartes ne sont pas embarquées, une connexion réseau est nécessaire, ce qui pose des limites en zone blanche.\\
-\hline
-\end{tabular}
-
-
+\todo{reformuler}
+Le monde du deux-roues posent certaines contraintes matérielles et logicielles. En effet, les capteurs nécessite d’un GPS de très bonne précision, d'un module RTK pour éviter les erreurs de localisation afin que les calculs soient optimisés. La connectivité doit être parfaite si les cartes ne sont pas embarquées, cela peut poser des limites en zone blanche. Une connexion réseau sera nécessaire. Concernant le matériel embarqué, nous pouvons utiliser un  microcontrôleur\footnote{ (ex : Raspberry Pi, Arduino, ESP32) capable d’exécuter les traitements de calcul ou de les transmettre à une plateforme distante.}. La consommation de ces appareils ne doivent pas être trop importante car ça reste un "petit véhicule" avec une petite batterie. Cela pourrait impliquer des pannes comme un alternateur ou une bobine HS.
 Les limites actuellement restent les prix. En effet, ajouter des fonctionnalités de sécurité ayant des prix trop important baissent l'attractivité des motos. 
 
 Comme il n’existe pas encore de produit commercial alliant GPS et l'alerte virage, on peut estimer sur la base des coûts de prototypes et de composants.\\
 
-\begin{tabular}{|l|l|}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{7cm}|c|}
 \hline
 \textbf{Élément} & \textbf{Estimation de coût} \\
 \hline
-Capteur GPS + IMU (accéléro/magnétomètre)  & 50–200 € \\
-Abonnement cartes HD (HERE, TomTom, etc.) &    10–30€ par mois   \\
-Interface casque ou écran moto (HUD/haptique) au besoin & 100–300€ \\
+Capteur GPS + IMU (accéléromètre / magnétomètre) & 50–200 € \\
+Abonnement cartes HD (HERE, TomTom, etc.) & 10–30 € / mois \\
+Interface casque ou écran moto (HUD / retour haptique) & 100–300 € \\
 \hline
 \end{tabular}
+\caption{Estimation des coûts des principaux composants d'un système d’assistance moto}
+\label{tab:couts-composants}
+\end{table}
+
 
 \vspace{0.5cm}
 Afin d'avoir un GPS précis et réactif. Il doit être accompané de la technologie IMU. IMU permet de compenser la latence et les imprécisions GPS en fournissant la vitesse angulaire (gyroscope) pour la courbure des virages, l'orientation (magnétomètre) et l'accélération linéaire (accéléromètre) pour les freinage. L'IMU peut fonctionner à 100-1000 Hz ce qui permet d'améliorer fortement le temps de réaction. Ces points sont crutiaux pour une fonctionnalité comme la notre, la prédiction d'abord de virages dangereux. La marge d'erreur n'est pas permise.
 
 \vspace{0.5cm}
 Voici un tableau comparatif:\\
-\begin{tabular}{|c|c|c|}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{4.5cm}|c|c|}
 \hline
-\textbf{Propriétés} & \textbf{GPS} & \textbf{GPS + IMU} \\
+\textbf{Propriété} & \textbf{GPS} & \textbf{GPS + IMU} \\
 \hline
-Précision position & Environ 3 à 5 m & Bonne \\
-Temps de réaction & Lent (de 0,5 à 1 seconde) & Rapide (<0,1 seconde)\\
+Précision de position & Environ 3 à 5 m & Bonne \\
+Temps de réaction & Lent (de 0,5 à 1 seconde) & Rapide (<0,1 seconde) \\
 Fiabilité en virage & Faible & Haute \\
-Sensibilité du signal & Oui & Moins critique \\
+Sensibilité au signal & Oui & Moins critique \\
 \hline
 \end{tabular}
+\caption{Comparaison des performances entre un GPS seul et un système GPS couplé à une centrale inertielle (IMU)}
+\label{tab:gps-vs-imu}
+\end{table}
+
 
 \vspace{0.5cm}
 L’acceptabilité d’un tel système dépend également du profil du conducteur. Un motard préfèrera un système non intrusif (affichage sur smartphone, retour haptique) et intuitif. Le système doit être discret afin de ne pas distraire l’attention ni le surcharger d’information. Un bip, un logo pourraient constituer une solution ergonomique.
-
 
 
 \subsubsection{Prototype et simulation}
@@ -84,80 +85,85 @@ Le système repose sur un algorithme volontairement simplifié afin de garantir 
 Dans un contexte d’usage réel, le comportement du conducteur reste une variable essentielle. Il est possible que ce dernier ignore tout simplement les recommandations émises par le système, soit par choix, soit par inattention, soit par manque de confiance. Cela limite l’impact potentiel du dispositif sur la sécurité.
 Il est également crucial de prévenir toute dépendance excessive du conducteur à ce type de système d’assistance. Une automatisation trop poussée pourrait entraîner un relâchement de la vigilance ou une perte de capacité d’analyse en cas de situation imprévue. Enfin, en cas de dysfonctionnement du système ou de latence dans les calculs, l’information transmise pourrait être erronée ou inadaptée à la situation. Ce type de défaut présente un risque non négligeable, d’autant plus critique si l’utilisateur se repose entièrement sur la technologie pour prendre ses décisions de conduite.
 
-\subsubsection{confidentialité et données}
+\subsubsection{Confidentialité et Données}
 %1. Cadre juridique international autour du GPS
 Le développement de technologies d’assistance à la conduite basées sur la géolocalisation, comme celle proposée dans ce projet, soulève d’importants enjeux juridiques, notamment en matière de souveraineté, d’accessibilité aux données cartographiques, et d’usage du GPS selon les pays.
-Dans certains États, l’accès aux données cartographiques est limité. Par exemple, la Chine impose l’utilisation de fournisseurs cartographiques agréés par l’État, avec des restrictions sur les données affichées ou exportables. En Autriche et en Allemagne, les dispositifs de géolocalisation sont autorisés, mais l’usage de détecteurs ou d'avertisseurs de radars est strictement interdit, y compris lorsqu'ils sont intégrés à un GPS. Le Japon autorise l’usage du GPS, mais certains dispositifs radiofréquence (RF), notamment ceux qui interfèrent avec d'autres systèmes, sont interdits.
+Dans certains États, l’accès aux données cartographiques est limité. Par exemple, la Chine impose l’utilisation de fournisseurs cartographiques agréés par l’État, avec des restrictions sur les données affichées ou exportables. En Autriche et en Allemagne, les dispositifs de géolocalisation sont autorisés, mais l’usage de détecteurs ou d'avertisseurs de radars est strictement interdit, y compris lorsqu'ils sont intégrés à un GPS. Le Japon autorise l’usage du GPS, mais certains dispositifs RF\footnote{Radio Fréquence : Ce sont des dispositifs qui émettent et recçoivent des ondes radio pour communiquer entre 3 kHz et 300 GHz.}, notamment ceux qui interfèrent avec d'autres systèmes, sont interdits.
 
-Ces exemples illustrent la diversité des contraintes réglementaires à l’échelle internationale, ce qui constitue un défi pour tout projet technologique visant un déploiement global.
+Ces exemples illustrent la diversité des contraintes réglementaires à l’échelle internationale, ce qui constitue un défi pour tout projet technologique visant un déploiement global.\\
 
+\vspace{0.5cm}
 %2. Conformité avec le Code de la route français
-En France, l'utilisation d’un GPS est autorisée dans un véhicule, y compris à moto, tant qu’il ne compromet ni la visibilité, ni la sécurité du conducteur. Le Code de la route – Article R412-6 précise que "tout conducteur doit se tenir constamment en état et en position d'exécuter commodément et sans délai toutes les manœuvres qui lui incombent".
+En France, l'utilisation d’un GPS est autorisée dans un véhicule, y compris à moto, tant qu’il ne compromet ni la visibilité, ni la sécurité du conducteur. Le Code de la route – Article R412-6\cite{loi_code_de_la_route} précise que "tout conducteur doit se tenir constamment en état et en position d'exécuter commodément et sans délai toutes les manœuvres qui lui incombent".
 Ainsi, tout système d’affichage (écran, casque connecté, retour haptique) devra être conçu de manière à ne pas distraire le conducteur ou gêner sa conduite. Ce point est d’autant plus crucial sur les deux-roues motorisés, où la perte d’attention ou une mauvaise visibilité peut avoir des conséquences graves.
-
+\vspace{0.5cm}
 %3. Protection des données personnelles (RGPD)
-L'utilisation du GPS implique la collecte de données personnelles sensibles, notamment :
-la position géographique,
-la vitesse,
-l’horodatage de chaque relevé.
-Ces données permettent d’identifier des comportements individuels ou des trajets récurrents. Dès lors, tout dispositif embarqué ou toute application traitant ces informations doit respecter le Règlement Général sur la Protection des Données (RGPD), en vigueur au sein de l’Union européenne.
-Les principes à respecter sont :
+L'utilisation d'un système GPS implique nécessairement la collecte de données personnelles sensibles, notamment :
+\begin{itemize}
+\item La position géographique (latitude et longitude),
+\item La vitesse instantanée,
+\item L'horodatage précis de chaque relevé (timestamp).
+\end{itemize}
+Ces informations peuvent permettre d'identifier les comportements individuels ou les trajets récurrents d'un utilisateur. Par conséquent, tout dispositif embarqué ou toute application qui traite ces données doit impérativement respecter le Règlement Général sur la Protection des Données (RGPD), en vigueur au sein de l'Union européenne.\\
+Afin d'approfondir et d'améliorer le fonctionnement du système, il sera nécessaire de collecter, de suivre et d'analyser ces données GPS. Cependant, avant toute collecte, il convient d'obtenir le consentement explicite et éclairé du motard. Ce consentement doit être associé à une déclaration ou une politique de confidentialité transparente, expliquant clairement la finalité de la collecte, l'utilisation prévue et les modalités de stockage des informations.\\
+\underline{Exemple d’organisation : expérience à Kappa Santé}\\
+Lors de mon alternance chez Kappa Santé, j'ai pu observer un exemple pertinent d'organisation pour le traitement rigoureux des données sensibles. Chaque collaborateur dispose d'un accès strictement limité aux données nécessaires à ses activités. Par exemple, les développeurs utilisent exclusivement des données fictives, évitant ainsi tout risque d'exposition accidentelle ou de manipulation involontaire de données confidentielles.
+Les données réelles, destinées aux analyses approfondies et aux études spécifiques, sont uniquement manipulées par des collaborateurs dûment habilités. Cette organisation repose sur l'utilisation de plusieurs bases de données distinctes, dont l'accès est soigneusement régulé selon les rôles et les droits attribués à chaque utilisateur.\\
+Ce type d'organisation présente plusieurs avantages majeurs, notamment la discrétion, la confidentialité accrue des informations, ainsi que la réduction significative des risques en matière de sécurité des données. Un tel modèle pourrait être envisagé comme une référence, en particulier dans d'autres contextes sensibles tels que la mobilité connectée ou la sécurité routière. En garantissant à la fois l'efficacité et la protection des informations personnelles, ce modèle renforce la confiance des utilisateurs et assure une conformité stricte aux réglementations en vigueur.\\
 
-Minimisation des données : seules les données strictement nécessaires doivent être collectées.
-Consentement éclairé : l’usager (ici, le motard) doit être informé clairement de la finalité de la collecte, et donner son accord explicite.
-Sécurité du stockage : les données doivent être stockées dans une base sécurisée, chiffrée, et ne pas être conservées au-delà de la durée nécessaire.
-Transparence : une politique de confidentialité claire doit accompagner tout prototype, service ou démonstrateur.
-Exemple de données à conserver de manière conforme :
-Latitude / longitude,
-Vitesse instantanée,
-Timestamp (date et heure),
-Identifiant utilisateur pseudonymisé.
+Principes clés à respecter :
+Dans le cadre du traitement de données personnelles, voici les principes fondamentaux à appliquer :
+\begin{itemize}
+\item Minimisation des données : collecter uniquement les données strictement nécessaires à la réalisation des objectifs fixés.
+\item Consentement éclairé : l'utilisateur (ici, le motard) doit être clairement informé de l'objectif précis de la collecte et fournir explicitement son accord.
+\item Sécurité du stockage : assurer le stockage des données dans une base sécurisée, idéalement chiffrée, et limiter la durée de conservation au strict minimum requis.
+\item Transparence : accompagner tout dispositif, service ou prototype d'une politique de confidentialité accessible et compréhensible par l'utilisateur.
+\end{itemize}
 
+Exemples de données pouvant être conservées conformément au RGPD :
+À titre indicatif, voici des exemples précis de données pertinentes, conservées de manière conforme et sécurisée :
+\begin{itemize}
+\item Latitude et longitude,
+\item Vitesse instantanée,
+\item Horodatage précis (timestamp),
+\item Identifiant utilisateur pseudonymisé (non directement identifiable).
+\end{itemize}
+
+Ces pratiques garantissent le respect de la vie privée des usagers tout en permettant d’exploiter les données efficacement dans le cadre de recherches ou d’améliorations technologiques.\\
+
+\vspace{0.5cm}
 %4. Contraintes techniques liées à la performance et à la sécurité
 Outre les aspects juridiques, la spécificité des motos implique des contraintes techniques supplémentaires. En effet, les deux-roues sont capables d’accélérations rapides et atteignent des vitesses élevées. Le système embarqué doit donc :
-Être capable de traiter et d’analyser les données en quasi temps réel,
-Offrir une précision suffisante des points GPS (idéalement < 2 m),
-Fournir des recommandations sans latence significative,
-Être résilient aux pertes de signal GPS, notamment dans les tunnels ou zones urbaines denses.
+\begin{itemize}
+  \item Être capable de traiter et d’analyser les données en quasi temps réel,
+  \item Offrir une précision suffisante des points GPS (idéalement < 2 m),
+  \item Fournir des recommandations sans latence significative,
+  \item Être résilient aux pertes de signal GPS, notamment dans les tunnels ou zones urbaines denses.
+\end{itemize}
 Ces exigences imposent le choix d’un matériel performant, fiable, et optimisé pour des usages embarqués dans des conditions parfois extrêmes (vibrations, chaleur, humidité).
-
-%conclusion
 \vspace{0.5cm}
-Le développement d’un système d’assistance à la conduite basé sur la courbure routière et la géolocalisation soulève des enjeux techniques, légaux et éthiques. Il est impératif de concevoir un dispositif conforme à la réglementation locale, respectueux de la vie privée, et suffisamment robuste pour un usage en conditions réelles. Intégrer dès la phase de prototypage les dimensions de confidentialité, de sécurité des données et de respect des législations nationales constitue un levier essentiel pour la viabilité du projet, autant sur le plan juridique que sur celui de l’acceptabilité sociale.
-
-
-\todo{mon programme}
-Le programme fonctionne dans la pluspart des cas. Cependant, les données liant la limitation de vitesse n'est pas toujours récupérée. Par conséquent, par défaut la limitation de vitesse est 80 km/h. Sur les portions d'autoroute, la limitation est de 130 km/h et la courbure a une valeur quasiment nulle. Prenons un cas où la limitation est 110 km/h, il faut que la courbure soit suffisamment élevée pour ne pas pouvoir prendre un virage à plus de 80 km/h. C'est un risque accepté et réfléchi pour ce programme.
-Concernant la fonctionnalité, certains motards peuvent percevoir cette aide comme trop "prévoyante". En effet, plus un motard roule et plus il acquière de l'expérience, sous condition qu'il varie les types de trajet. Il peut donc se dire que l'alerte arrive trop tôt. On peut donc prendre en concidération une variable de niveau qui propose un déclanchement de l'alerte selon une certaine vitesse. L'accélération est un facteur que l'on peut également prendre en compte. À un niveau de jet avant un virage peut suffir pour avertir d'un danger.
-De plus, on constate que le programme (Figure~\ref{fig:cartepoints}) se base uniquement sur l’instant présent, sans prendre en compte la trajectoire ou la direction future du motard.
-
-
-
-\todo{développer la partie loi + internationnal}
-L'utilisation du GPS est très réglementé, surtout dans les pays. Le défi ici c'est de se demander comment peut-on développer des technologies, des innovations qui respectent les règles, la confidentialité des usagers des pays concernés.\\
-
-Par exemple :\\
-La Chine autorise le GPS mais avec un accès limité à certains services cartographiques. Dans plusieurs pays comme l'Autriche, l'Allemagne n'autorise pas les GPS avec les avertisseurs ou détecteurs de radar. Au Japon, le GPS est autorisé mais certains appareils RF\footnote{Radio Fréquence : Ce sont des dispositifs qui émettent et recçoivent des ondes radio pour communiquer entre 3 kHz et 300 GHz.} sont interdits.
-
-
-\todo{défi affichage en respectant la loi}
-L'utilisation du GPS est autorisé quand celui-ci ne gêne ni la visibilité, ni la conduite d'après Code de la route français – Art. R412-6\cite{loi_code_de_la_route}.
-
-\todo{rgpd}
-Le GPS va recueillir des données, suivre l'usager. Pour approfondir et améliorer le système, des données seront collectées par conséquent, le consentement explicite du motard est nécessaire. Il faut également ajouter une déclaration ou une politique de confidentialité claire.
-\todo{kappa métier séparer}
-
-\todo{vitesse donc puissance max et reformuler}
-Comme certaines motos sont "rapides", il ne faut pas oublier que les motos sont des véhicules qui roulent beaucoup plus vite (accélération, vitesse). Cela impose donc d'avoir du matériel de qualité permettant d'avoir un temps de réactivité et une puissance de calcul qui répondent à cette caractéristique. De plus, comme la sécurité est un enjeu primordial, les points GPS ne peuvent pas forcément être précis, c'est un cas qu'il faut gérer.
-
-\todo{proposition rédaction rgpd}
-Il faudra collecter que les données nécessaires position, vitesse, horodatage. Les données doivent être stockées dans une base de données sécurisées et chifrées.
-
 \todo{choix, marque du produit}
 Voici des propositions de composants que nous pouvons utiliser : 	\\
 •	u-blox NEO-M8N : excellent rapport qualité/prix, ~40 € \\
 •	u-blox ZED-F9P : haute précision RTK, mais cher (~200–250 €) \\
 •	SparkFun GPS + IMU : combine ZED-F9P + BNO080 (IMU)\\
+\vspace{0.5cm}
+\todo{a relire +maj}
+Le programme développé fonctionne correctement dans la majorité des cas. Toutefois, certaines limites subsistent. En particulier, la récupération des données relatives aux limitations de vitesse ne se fait pas toujours de manière fiable. En conséquence, une limitation par défaut de 80 km/h est appliquée lorsqu’aucune information précise n’est disponible. Sur les portions d’autoroute, la limitation de vitesse est généralement de 130 km/h, et les valeurs calculées pour la courbure sont quasiment nulles, ce qui n’entraîne pas de recommandations particulières.
+Cependant, une situation spécifique peut se présenter sur des voies rapides limitées à 110 km/h : dans ce cas précis, la courbure du virage doit être suffisamment prononcée pour déclencher une alerte à 80 km/h. Cette décision représente un compromis assumé dans la conception du programme, fondé sur une approche prudente pour garantir la sécurité du conducteur.
+
+Du point de vue des utilisateurs, la fonctionnalité proposée pourrait être perçue comme trop « prévoyante » par certains motards expérimentés. En effet, plus le motard accumule de kilomètres et d'expérience, particulièrement s'il varie régulièrement ses trajets et types de routes, plus sa capacité à anticiper naturellement les dangers s'améliore. Ainsi, pour ces usagers aguerris, l'alerte pourrait sembler déclenchée prématurément.
+
+Pour remédier à cette perception, il pourrait être pertinent d’introduire une variable personnalisable définissant différents niveaux d’alerte. Cette adaptation permettrait de moduler le déclenchement en fonction d’une vitesse spécifique, ajustée selon l’expérience ou les préférences du motard. Un autre facteur pertinent à considérer serait l'accélération : une accélération soudaine ou inhabituelle avant un virage pourrait, par exemple, déclencher une alerte anticipée afin de prévenir tout danger potentiel.
+
+Enfin, il est important de souligner que le programme actuel (illustré en Figure~\ref{fig:cartepoints}) se base exclusivement sur les données de l’instant présent. Il ne prend pas encore en compte les données relatives à la trajectoire prévisionnelle ou à la direction future du véhicule. Cette dimension prédictive pourrait être intégrée dans une future évolution du programme, permettant ainsi une anticipation encore plus efficace et précise des situations à risque.
+\vspace{0.5cm}
+%conclusion
+\vspace{0.5cm}
+Le développement d’un système d’assistance à la conduite basé sur la courbure routière et la géolocalisation soulève des enjeux techniques, légaux et éthiques. Il est impératif de concevoir un dispositif conforme à la réglementation locale, respectueux de la vie privée, et suffisamment robuste pour un usage en conditions réelles. Intégrer dès la phase de prototypage les dimensions de confidentialité, de sécurité des données et de respect des législations nationales constitue un levier essentiel pour la viabilité du projet, autant sur le plan juridique que sur celui de l’acceptabilité sociale.
+
+
+
 
 
 
