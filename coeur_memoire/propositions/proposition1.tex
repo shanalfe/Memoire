@@ -1,8 +1,5 @@
-\todo{parler également de l'accélération}
-
 Pour pouvoir proposer de nouvelles fonctionnalités de prévention, il faut optimiser le tableau de bord. Il faut créer des logos communs à tous pour avoir le même langage. 
 
-\todo{ajout d'un tableau de bord connecté avec des capteurs et des alertes en temps réel.}
 L'idée serait d'intégrer dans les motos une puce GPS qui serait capable d'avertir en cas de virage dangeureux. L'alerte (sonore via un intercom et voyant au tableau de bord) serait envoyée via le tableau de bord connecté si la vitesse est supérieure à la vitesse recommandée. Cette vitesse sera calculée via la valeur de la courbure du virage. Des chercheurs Alex Liniger et Simon Hecker ont développé un prototype , Aegis Rider AG\cite{vitesse_virage_mcnews} permettant de prendre la meilleure trajectoire. Cependant, ce dernier ne prend pas en compte les autres facteurs de la route (autres usagers, état de la chaussée, etc.). Comme démontré ci-dessous, la trace bleu indiquant la trajectoire de sécurité et le compteur de vitesse masquent la qualité de la route par conséquent, le motard ne pourra pas anticiper les dangers de la route (gravillon, trous, ....). À l'heure d'aujourd'hui, cette solution reste extrêmement complexe. Ma solution permettra de fonctionner dans la pluspart des cas.
 
 \begin{figure}[H]
@@ -25,17 +22,18 @@ Voici le diagramme d'action de cette fonctionnalité:\\
 \end{figure}
 
 Pour réaliser un bout de code sur cette fonctionnalité, j'ai décidé d'utiliser ces bibliothèques :\\
-• osmnx\cite{osm_doc} : permet d’interroger OSM (OpenStreetMap) et de récupérer des graphes routiers.\\
-•	geodesic (de geopy \cite{geopy}) : mesure la distance réelle (en mètres) entre 2 points GPS.\\
+• \texttt{osmnx}\cite{osm_doc} : permet d’interroger OSM (OpenStreetMap) et de récupérer des graphes routiers.\\
+• \texttt{geodesic} (de geopy \cite{geopy}) : mesure la distance réelle (en mètres) entre 2 points GPS.
+\vspace{0.5cm}
 
-Il faut convertir le graphe routier G (au format NetworkX) en un GeoDataFrame (via GeoPandas), pour pouvoir manipuler les tronçons de route comme des objets géographiques (segments, courbes…). Cette partie est importante pour les calculs.
+Il faut convertir le graphe routier \texttt{G} (au format \texttt{NetworkX}) en un GeoDataFrame (via \texttt{GeoPandas}), pour pouvoir manipuler les tronçons de route comme des objets géographiques (segments, courbes…). Cette partie est importante pour les calculs.
 \begin{lstlisting}[language=Python, caption={Conversion du graphe routier}]
 edges = ox.graph_to_gdfs(G, nodes=False)
 \end{lstlisting}
 Avec : \\
 \begin{itemize}
-    \item G : le graphe routier obtenu via \texttt{ox.graph\_from\_point} qui contient des nœuds (c'est-à-dire les intersections) et des arêtes qui représentent les routes.
-    \item nodes=False : car je ne prends que les arêtes (edges), c’est-à-dire les segments de route. Je n'ai pas besoin pour mon programme de tous les noeuds (par exemple une intersection à plusieurs routes, un arrefour, un croisement...)du réseau. Il peut être interessant pour calculer un plus court chemin. De plus, cela risquerait de sur-charger les données.
+    \item \texttt{G} : le graphe routier obtenu via \texttt{ox.graph\_from\_point} qui contient des nœuds (c'est-à-dire les intersections) et des arêtes qui représentent les routes.
+    \item \texttt{nodes = False} : car je ne prends que les arêtes (edges), c’est-à-dire les segments de route. Je n'ai pas besoin pour mon programme de tous les noeuds (par exemple une intersection à plusieurs routes, un arrefour, un croisement...)du réseau. Il peut être interessant pour calculer un plus court chemin. De plus, cela risquerait de sur-charger les données.
 \end{itemize}
 
 \vspace{0.5cm}
@@ -73,8 +71,7 @@ b = geodesic(p2, p3).meters
 c = geodesic(p1, p3).meters
 \end{lstlisting}
 
-\todo{reformuler}
-Pour pouvoir analyser la courbure d’un virage situé à proximité immédiate du véhicule, il est essentiel de déterminer avec précision quel segment de route (tronçon) est le plus proche de la position GPS actuelle. Pour cela, le code suivant a été utilisé :
+Pour pouvoir analyser la courbure d’un virage situé à proximité immédiate du véhicule, il est essentiel de déterminer avec précision quel segment de route (tronçon) est le plus proche (dans ce programme) de la position GPS actuelle. Pour cela, le code suivant a été utilisé :
 \begin{lstlisting}[language=Python, caption={Calcul de points}]
 point_actuel = Point(position_actuelle[1], position_actuelle[0])  # (longitude, latitude)
 edges["distance"] = edges.geometry.distance(point_actuel)
@@ -188,7 +185,7 @@ Chaque passage a été réalisé selon les capacités du motard au moment t, en 
 Voici, un premier exemple, un premier passage où la vitesse mesurée atteint 51 km/h.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png} 
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png} 
     \caption{Premier passage dans Les 17 virages aux points GPS 48.385171, 2.563108.}
 \end{figure}
 
@@ -201,7 +198,7 @@ Résultat du premier passage avec le programme :
 On voit que le passage se fait à 51 km/h et que la valeur de la courbure est de 0.0006. C'est un léger virage. La vitesse estimée pour se virage est de 60 km/h. Donc il n'y aura pas d'alerte. Voici maintenant un second passage réalisé un peu plus vite.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png} 
+    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png} 
     \caption{Deuxième passage dans Les 17 virages aux points GPS 48.385171, 2.563108.}
 \end{figure}
 
@@ -271,7 +268,7 @@ Cela garantit une expérience utilisateur plus inclusive, tenant compte des prof
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png} 
+    \includegraphics[width=0.4\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png} 
     \caption{Génération d'un tableau de bord possible avec l'IA.}
 \end{figure}
 

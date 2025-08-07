@@ -2,7 +2,8 @@
 \commentaire{Idées en cours ainsi que re formulation}
 
 
-Plusieurs IOT existent sur les voitures et fonctionnent parfaitement sur les motos comme l'angle mort, l'ABS, l'anti-patinage, le contrôle de traction, etc. Cependant, il existe des différences notables entre les deux types de véhicules. Dans cette partie, je vais me consacrer sur l'analyse de la route et l'optimisation de la prise des trajectoires.
+De nombreux systèmes IoT déjà présents sur les voitures trouvent également leur place sur les motos, tels que l’alerte d’angle mort, l’ABS, l’anti-patinage ou encore le contrôle de traction. Toutefois, malgré ces points communs, des différences significatives subsistent entre ces deux types de véhicules, notamment dans leur comportement et leurs contraintes spécifiques. Dans cette partie, je vais concentrer mon analyse sur l’évaluation de la route et sur les moyens d’optimiser la prise de trajectoire.
+
 
 % faire des schémas avec les trajectoires pour souvelver les problèmes
 
@@ -15,25 +16,20 @@ Analyse des différences fondamentales : protection physique, stabilité, visibi
 •	Mise en évidence des lacunes spécifiques aux motos.
 }
 
-
-\commentaire{reformulation à faire}
 J’ai eu l’occasion d’expérimenter la pratique du deux-roues sous différents angles :\
 \begin{itemize}
     \item Les trajets du quotidien,
     \item Les balades entre ami(e)s,
     \item Les road trip de plus d'une dizaine de jours (environ 200 à 300 kms par jour), souvent en milieu montagneux.
 \end{itemize}
-
-\vspace{0.5cm}
-Avec plus de 35 000 km parcourus en deux ans, voici les constats que j’ai pu faire autour de moi :\\
-• Les trajets du quotidien peuvent paraître anodins, mais c’est justement la routine qui les rend dangereux. En connaissant la route par cœur, on a tendance à relâcher sa vigilance, alors que les risques restent bien réels (état de la chaussée, comportement imprévisible des autres usagers, etc.).\\
-•	Les balades entre ami(e)s apportent un vrai plaisir de conduite, mais l’effet de groupe peut parfois inciter à dépasser ses limites. On peut se retrouver à rouler à des vitesses inadaptées ou à prendre de mauvaises décisions sous l’influence de comportements plus audacieux. Le jugement individuel peut alors être altéré.\\
-•	Les road trips, quant à eux, demandent une grande endurance. La fatigue s’accumule rapidement, et avec elle, le temps de réaction s’allonge. Il est essentiel d’être pleinement en possession de ses capacités pour pouvoir réagir correctement en cas de situation imprévue.\\
-
+Avec plus de 35 000 km parcourus en deux ans, voici les constats que j’ai pu faire autour de moi :
+\begin{itemize}
+  \item Les trajets du quotidien peuvent paraître anodins, mais c’est justement la routine qui les rend dangereux. En connaissant la route par cœur, on a tendance à relâcher sa vigilance, alors que les risques restent bien réels (état de la chaussée, comportement imprévisible des autres usagers, etc.).
+  \item es balades entre ami(e)s apportent un vrai plaisir de conduite, mais l’effet de groupe peut parfois inciter à dépasser ses limites. On peut se retrouver à rouler à des vitesses inadaptées ou à prendre de mauvaises décisions sous l’influence de comportements plus audacieux. Le jugement individuel peut alors être altéré.
+  \item 	Les road trips, quant à eux, demandent une grande endurance. La fatigue s’accumule rapidement, et avec elle, le temps de réaction s’allonge. Il est essentiel d’être pleinement en possession de ses capacités pour pouvoir réagir correctement en cas de situation imprévue.
+\end{itemize}
 Enfin, un point important : lorsque la chaussée est mouillée, la majorité des motards adoptent naturellement une conduite plus prudente, vitesse réduite, prise d’angle limitée, meilleure anticipation. Cela montre que la perception du risque influence fortement le comportement. %transition
 Abordons maintenant une difficulté que beaucoup de deux-roues rencontres: les virages.
-
-\vspace{0.5cm}
 
 \subsubsection{Étude des virages}
 %TRAJECTOIRES SECURITÉ
@@ -99,32 +95,29 @@ Pour conclure sur ces schémas, il existe de nombreuses trajectoires possibles, 
 
 %ETUDE SONDAGE
 \subsubsection{Enquête auprès de motards - Recueil de ressenti}
-\todo{ajout des réponses d'une enquête partagé sur les réseaux, expériences etc...}
 J'ai réalisé une enquête dans différents groupes de motards sur les réseaux sociaux afin de récupérer leur ressenti. Il est très important pour comprendre la problématique de s'interessé à l'interessé. Cela m'a permis de mieux comprendre leurs besoins, leurs attendus afin d'avoir un oeil beaucoup plus objectif de ce que moi je peux vivre, ressentir. L'échantillon est composé d'une petite vingtaine de personnes avec 58,8 \% d'hommes contre 41,2 \% de femmes.
 Voici les différents profils des participants :
 \begin{figure}[H]
   \centering
-  \begin{subcaptionbox}{Age des participants}[0.7\linewidth]
+  \begin{subcaptionbox}{Age des participants}[0.5\linewidth]
     {\includegraphics[width=\linewidth]{coeur_memoire/graphique/age.png}}
   \end{subcaptionbox}
   \hfill
-  \begin{subcaptionbox}{Nombre d'années de permis}[0.7\linewidth]
+  \begin{subcaptionbox}{Nombre d'années de permis}[0.5\linewidth]
     {\includegraphics[width=\linewidth]{coeur_memoire/graphique/nb_annees_permis.png}}
   \end{subcaptionbox}
 
-  \begin{subcaptionbox}{Nombre de kms à l'année}[0.7\linewidth]
+  \begin{subcaptionbox}{Nombre de kms à l'année}[0.5\linewidth]
     {\includegraphics[width=\linewidth]{coeur_memoire/graphique/nb_km_an.png}}
   \end{subcaptionbox}
   \hfill
-  \begin{subcaptionbox}{Utilisation de la moto}[0.7\linewidth]
+  \begin{subcaptionbox}{Utilisation de la moto}[0.5\linewidth]
     {\includegraphics[width=\linewidth]{coeur_memoire/graphique/utilisation_moto.png}}
   \end{subcaptionbox}
   \caption{Profils des participants}
 \end{figure}
 
 Pour conclure, lors de cette enquête, il y a tous types de motards. Beaucoup roulent moins de 3 000 kms/an ce qui est très peu. C'est moins d'expérience sur la route.
-
-\todo{ajout bilan des retours de l'enquête}
 Lors de mon enquête, la plupart des usagers possèdent des deux-roues roadster comme des 400 cc à 600 cc. On retrouve des Honda, Kawasaki, Aprillia, KTM et Yamaha. Ce sont des motos qui sont inférieures à 10 000 euros.
 Pour les voyages, ou bien les voyages dans les Alpes, j'ai pu apercevoir une majorité de motards qui roulent en GS\footnote{Gelände/Straße : tout-terrain/route. C'est une moto conçue pour être à la fois confortable sur route et capable de rouler sur des chemins non gouderonnés. Premiers prix : 12 000 euros, haut de gamme : environ 30 000 euros.}. J'estime entre environ 50 et 70\% des motos rencontrées dans les Alpes (Suisse, Italie et France) sont des GS.\\
 Voici quelques retours d'expérience des motards en situation d'urgence selon l'enquête :\\
@@ -135,11 +128,11 @@ Voici quelques retours d'expérience des motards en situation d'urgence selon l'
 • "Évitement de personne qui tourne sans avoir mis de clignotant. Classique."
 \vspace{0.5cm}
 
-Pour la fin de l'étude, j'ai demandé aux participants quelles sont leurs attentes concernant les technologies IoT sur les motos. Certains ne souhaitent pas de technologie IoT, car ils estiment que cela peut nuire à la conduite et à la sensation de liberté. D'autres sont favorables à l'intégration de technologies IoT. Par exemple, un assistant virtuel qui indiquerait au pilote les dangers potentiels sur la route (chausée dégradée, virage dangereux, gravillon...). Les autres retours sont des technologies qui sont déjà présentes sur les motos du marché comme l'ABS, le contrôle de traction, l'anti-patinage, etc. Cependant, d'après certains motards, il faut mettre ces éléments de série et non en option comme l'appel d'urgence.\\
-
-
+Pour la fin de l'étude, j'ai demandé aux participants quelles sont leurs attentes concernant les technologies IoT sur les motos. Certains ne souhaitent pas de technologie IoT, car ils estiment que cela peut nuire à la conduite et à la sensation de liberté. D'autres sont favorables à l'intégration de technologies IoT. Par exemple, un assistant virtuel qui indiquerait au pilote les dangers potentiels sur la route (chausée dégradée, virage dangereux, gravillon...). Les autres retours sont des technologies qui sont déjà présentes sur les motos du marché comme l'ABS, le contrôle de traction, l'anti-patinage, etc. Cependant, d'après certains motards, il faut mettre ces éléments de série et non en option comme l'appel d'urgence.
 \vspace{0.5cm}
 
+De plus, les réseaux sociaux relaient régulièrement des actualités concernant des accidents impliquant des deux-roues, illustrant la vulnérabilité des motards. Par exemple, un article (Voir ~\ref{articlemoto}) récent publié par Ouest-France rapporte qu'une jeune femme de 26 ans a perdu tragiquement la vie lors d'une leçon de moto-école dans l’Ain. L'accident s'est produit le samedi 2 août 2025 près de Châtillon-la-Palud. Alors qu'elle circulait sur une portion de route comportant plusieurs virages, elle a perdu le contrôle de son véhicule et percuté violemment une glissière de sécurité. La jeune femme n’a pas survécu à ses blessures. Aucun autre véhicule ne serait impliqué. Ce tragique événement rappelle une fois de plus l’importance d'améliorer constamment la sécurité des motards et l'importance de savoir bien aborder un virage.
+\vspace{0.5cm}
 
 Le véritable défi réside dans la capacité à adapter la trajectoire en temps réel, en fonction d’un ensemble de paramètres dynamiques et interdépendants. Cette adaptation ne dépend pas uniquement de la courbure de la route, mais également de nombreux vecteurs qui rendent la situation complexe à modéliser et à anticiper. Parmi ces vecteurs, on peut citer :\\
 \begin{itemize}
@@ -170,26 +163,21 @@ Analyse de cas réels où les technologies IoT ont été adaptées à la moto (A
   lidar et radar ?\\
 }
 
-\todo{à relire}
 \subsubsection{Exemples d’IoT adaptés et développé pour la moto}
-Plusieurs dispositifs connectés ont été développés spécifiquement pour les motards ces dernières années. Voici quelques exemples :\\
+Plusieurs dispositifs connectés ont été développés spécifiquement pour les motards ces dernières années. Voici quelques exemples :
 \begin{itemize}
   \item Airbags connectés (ex. : Dainese Smart Jacket, In\&motion avec Ixon): Ces gilets intelligents détectent les mouvements anormaux (chute, décélération brutale) via accéléromètres et gyroscopes, et déclenchent un coussin gonflable. L’algorithme est souvent connecté à une plateforme cloud qui analyse les données de milliers d’utilisateurs pour améliorer la détection.
-  \item Casques connectés (ex. : CrossHelmet, Shoei IT-HT, Livall): Ils embarquent caméras arrière, GPS, commandes vocales, HUD (affichage tête haute), et parfois même des alertes de proximité de véhicules. Certains permettent la communication entre motards via Bluetooth ou 4G.
-  \item Systèmes d’aide à la navigation : Solutions telles que Beeline Moto ou TomTom Rider offrent une navigation simplifiée pensée pour les deux-roues, avec une interface minimaliste et résistante aux intempéries.
+  \item Casques connectés (ex. : CrossHelmet, Shoei IT-HT, Livall): Ils embarquent caméras arrière, GPS, commandes vocales, HUD\footnote{affichage tête haute} et parfois même des alertes de proximité de véhicules. Certaines marques permettent la communication entre motards via Bluetooth ou 4G.
+  \item Systèmes d’aide à la navigation : Solutions telles que Calimoto, TomTom Ride... Offrent une navigation simplifiée pensée pour les deux-roues, avec une interface minimaliste et résistante aux intempéries.
 \end{itemize}
-Ces exemples montrent que l’écosystème IoT dédié à la moto commence à s’étoffer mais reste bien moins développé que celui des voitures. Il serait pertinant d’évaluer l’impact réel de ces technologies sur la sécurité. Des données chiffrées, comme la réduction du taux de blessures graves grâce aux airbags intelligents, permettraient d’objectiver les bénéfices et de dépasser le simple argument technologique. La question de l’accessibilité mérite également d’être abordée. Le coût des équipements, souvent élevé (un casque connecté peut coûter entre 500 et 1500 euros), constitue un frein pour de nombreux utilisateurs. La complexité d’installation ou de mise à jour des systèmes peut aussi limiter leur adoption.
-
-
+Ces exemples illustrent que l’écosystème IoT appliqué à la moto progresse mais demeure nettement moins mature que celui dédié à l’automobile. Il serait donc pertinent de mesurer concrètement l’impact de ces technologies sur la sécurité, en s’appuyant sur des données chiffrées. Par exemple, quantifier la baisse du nombre de blessures graves grâce à l’utilisation d’airbags intelligents permettrait de dépasser le simple discours technologique pour appuyer les bénéfices réels.
+La question de l’accessibilité reste également centrale. Le coût élevé de certains équipements comme un casque connecté pouvant varier entre 500 et 1500 euros peut représenter un frein pour de nombreux motards. De plus, la complexité liée à l’installation, à la configuration ou à la mise à jour de ces dispositifs peut décourager leur adoption à grande échelle.
 
 \subsubsection{Les radars}
 Aujourd'hui, de nombreuses motos sont équipées de technologies directement issues de l’industrie automobile, telles que l’ABS (système antiblocage des roues), la détection d’angle mort ou encore le régulateur de vitesse adaptatif. Ces dispositifs ont été progressivement adaptés pour répondre aux contraintes spécifiques des deux-roues, en tenant compte des enjeux liés à l'équilibre, à la maniabilité et à la sécurité du motard.
 Après avoir expérimenté ces technologies, les retours des utilisateurs sont globalement très positifs. Ils mettent notamment en avant le gain en confort, particulièrement sur les longs trajets ou dans les conditions difficiles. Le régulateur adaptatif, par exemple, réduit significativement la fatigue en ajustant automatiquement la vitesse en fonction du véhicule qui précède. La détection d’angle mort accroît quant à elle la vigilance du conducteur, permettant une meilleure anticipation des dangers et réduisant ainsi les risques de collision.\\
-
-L'intégration de ces technologies améliore non seulement l’expérience de conduite, mais contribue également de manière concrète à la sécurité routière. Moins sollicités sur des tâches répétitives, les motards conservent une meilleure concentration et sont donc moins exposés aux erreurs liées à la fatigue ou à l’inattention. Ces progrès montrent clairement l'intérêt de continuer à développer et à adapter des technologies automobiles avancées aux besoins spécifiques des utilisateurs de deux-roues motorisés.
-
+L'intégration de ces technologies améliore non seulement l’expérience de conduite, mais contribue également de manière concrète à la sécurité routière. Moins sollicités sur des tâches répétitives, les motards conservent une meilleure concentration et sont donc moins exposés aux erreurs liées à la fatigue ou à l’inattention. Ces progrès montrent clairement l'intérêt de continuer à développer et à adapter des technologies automobiles avancées aux besoins spécifiques des utilisateurs de deux-roues motorisés.\\
 %LIDAR
-\todo{relecture}
 Les radars sont aujourd’hui intégrés aux modèles les plus récents de motos et remplissent efficacement leur fonction. Comme mentionné précédemment, la détection des éléments présents sur la route joue un rôle essentiel dans la sécurité du motard, tout comme les actions automatisées ou assistées qui en découlent. Ces technologies permettent notamment d’anticiper certains dangers, d’éviter des collisions ou de réguler la vitesse en fonction de l’environnement immédiat.\\
 Cependant, les radars présentent certaines limites. Leur capacité à différencier les types d’objets ou à analyser finement l’environnement reste restreinte. C’est dans ce contexte que l’utilisation du LiDAR (Light Detection and Ranging) s’avère particulièrement intéressante. Cette technologie repose sur l’émission de faisceaux laser pour mesurer avec grande précision les distances et modéliser l’environnement en trois dimensions. Elle est très performante pour la cartographie 3D et la classification des objets, ce qui en fait un atout majeur dans les systèmes d’aide à la conduite avancés.\\
 
@@ -235,6 +223,9 @@ Moto électrique & équiv. 50--125 cm³ & 4\,000 -- 12\,000 euros \\
 \caption{Prix moyen estimé des deux-roues neufs en 2025 (France/Europe) par The Market Reports}
 \end{table}
 
+\subsubsection{GPS}
+\todo{Petit chapire sur les gps voiture}
+
 \subsubsection{ Freins techniques à l’adoption des technologies IoT sur moto}
 Contrainte	Impact sur les technologies IoT
 Taille réduite	Moins d’espace pour intégrer des capteurs, antennes, processeurs ou batteries.
@@ -276,16 +267,13 @@ Miniaturisation : développer des capteurs IoT plus petits et moins gourmands, s
 Normes de résistance : généraliser des composants certifiés IP67 ou supérieurs.
 Interface modulaire : privilégier des alertes visuelles/sensorielles simples (LED, vibration, son), modulables par l’utilisateur.
 Systèmes d’analyse distribués : partager les calculs entre un smartphone, un capteur embarqué et le cloud pour alléger la charge locale.
-
-
 \vspace{0.5cm}
+
 Pour conclure, la technologie LIDAR peut représenter à elle seule entre 12\% et 84\% du prix d'un deux-roues neuf mais le pourcentage reste moindre pour des voitures haut de gamme avoisinant les 50 000 euros. Cela reste très élevé pour un motard, surtout si l'on considère que la majorité des motards ne changent pas de moto tous les ans. De plus, il faut prendre en compte le coût de l'assurance, de l'entretien, du carburant, etc. Il est donc essentiel de trouver un équilibre entre sécurité et coût pour rendre ces technologies accessibles à tous les motards.
 
 %Autre IOT
 Concernant les autres technologies que peuvent proposer les autres marques, elles sont très pertinentes car elles sont destinées pour la sécurité des deux-roues et parfois élaborées par des motards eux-mêmes. Je pense à Géoride par exemple, qui est une application complète.\\
 Ce qui peut être intéressant est d'avoir une interopérabilité entre les différents systèmes IoT. Prenons l'exemple de Géoride qui a un système de détection de chute, des motos peuvent l'avoir également ainsi que l'intercom Cardo. Cela permettrait d'éviter trois appels.
-
-\todo{Critique iot technologie et la spécificité des deux roues}
 
 \subsection{ Proposition d’adaptation technologique}
 \commentaire{	\\
