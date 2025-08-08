@@ -84,15 +84,13 @@ Les avancées en IA\footnote{Intelligence Artificielle} en connectivité comme l
 \subsubsection{Aide à la conduite et systèmes ADAS}
 %•Détection des obstacles et freinage automatique.
 %•Avertissements de collision et assistance au changement de voie.
-Dans un monde où la sécurité routière est une priorité, les systèmes avancés d’aide à la conduite (ADAS\footnote{Advanced Driver Assistance System}) révolutionnent la manière dont les véhicules interagissent avec leur environnement, réduisant ainsi les risques d’accidents et améliorant l’expérience de conduite.
+Dans un monde où la sécurité routière est une priorité, les systèmes avancés d’aide à la conduite (ADAS) révolutionnent la manière dont les véhicules interagissent avec leur environnement, réduisant ainsi les risques d’accidents et améliorant l’expérience de conduite.
 Selon le site du Gouvernement \cite{adas_gouv} "Ces technologies ouvrent la voie à des véhicules de plus en plus automatisés, mais ceux qui en sont équipés ne sont pas des véhicules dits « autonomes ». Les aides à la conduite ne remplacent pas le conducteur et ses obligations. Leur usage s’opère sous la surveillance permanente du conducteur, qui reste responsable de la tâche de conduite et de la maîtrise du véhicule."
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/ADAS_schéma.jpg} 
     \caption{Voiture embarquant des systèmes ADAS\cite{continental_adas}}
 \end{figure}
-
-
 
 
 \subsubsection{Analyse des données et prise de décision}
@@ -122,16 +120,13 @@ Voici un nouvel exemple de graphique avec de nouvelles données d’entrée :
 
 La pente passe par trois points sur quatre. Par conséquent, il faut trouver un compromis. On optera donc pour la solution où la droite passe au plus près des quatre points, comme modélisé précédemment. 
 
-
-
-
 %Conclusion Technologie voitures IOT
 En somme, l’IoT révolutionne l’industrie automobile en offrant des véhicules plus sûrs, plus efficaces et mieux entretenus, tout en ouvrant la voie à de nouvelles innovations dans le domaine de la mobilité.
 
 %conférence
 La mobilité autonome vise à garantir un confort et une fluidité optimaux, ce qui nécessite un système de surveillance pour mesurer diverses variables. Cela se fait principalement par l'utilisation de capteurs embarqués.
 L'orientation et la direction de la roue jouent un rôle crucial, tout comme la mesure des longitudes et l'utilisation d'unités de mesure inertielle (IMU). La mesure de la vitesse latérale, en revanche, requiert des capteurs très coûteux d'après la conférence\cite{ahmed_ali_synthese_2024} de Sofiane AHMED ALI.
-Pour réduire le nombre de capteurs nécessaires et, par conséquent, les coûts de développement, on peut utiliser des observateurs basés sur des modèles mathématiques pour déterminer les états du véhicule. Cette approche prometteuse présente toutefois des inconvénients, tels que la dynamique latérale du véhicule et les forces latérales agissant sur lui.
+Pour réduire le nombre de capteurs nécessaires et, par conséquent, les coûts de développement, on peut utiliser des observateurs\footnote{Observateur : Un outil mathématique ou algorithmique qui permet d’estimer des grandeurs internes d’un système (états) à partir de mesures disponibles et d’un modèle du système.} basés sur des modèles mathématiques pour déterminer les états du véhicule. Cette approche prometteuse présente toutefois des inconvénients, tels que la dynamique latérale du véhicule et les forces latérales agissant sur lui.
 L'utilisation de capteurs visuels présente des défis supplémentaires. Ces capteurs peuvent allonger le processus de collecte de données et introduire des délais dans la transmission des images, ayant ainsi un impact majeur sur le système.
 
 
@@ -172,19 +167,20 @@ Ces particularités expliquent pourquoi la sécurité des motos sur la route est
 
 \subsubsection{Les technologies IoT actuelles pour les motos}
 %georide 
-Aujourd'hui, de nouvelles marques, applications\cite{iot_accessoire_moto} apparaissent sur le marché de la moto. Cela créé également un écosystème permettant aux propriétaires de deux-roues de s'équiper à moindre frais (abonnement). Une des applications que nous pouvons exploiter sur le marché est Georide. Géoride une start-up française qui propose une solution de géolocalisation et de suivi des motos. Grâce à un boîtier connecté, les proches des motards peuvent suivre en temps réel leur trajet. Le boitité est connecté à un réseau et il a la capacité à détecter une chute puis de contacter l'assistance. 
+Aujourd'hui, de nouvelles marques, applications\cite{iot_accessoire_moto} apparaissent sur le marché de la moto. Cela créé également un écosystème permettant aux propriétaires de deux-roues de s'équiper à moindre frais (abonnement). Une des applications que nous pouvons exploiter sur le marché est Georide. Géoride une start-up française qui propose une solution de géolocalisation et de suivi des motos. Grâce à un boîtier connecté, les proches des motards peuvent suivre en temps réel leur trajet. Le boîtier est connecté à un réseau et il a la capacité à détecter une chute puis de contacter l'assistance. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/diag_etat_georide.png} 
-    \caption{Diagramme d'action du boitier Géoride concernant la sécurité du motard}
+    \caption{Diagramme d'action du boîtier Géoride concernant la sécurité du motard}
 \end{figure}
 Ci-dessous, un témoignage d'un utilisateur de l'application Georide à la suite d'un accident à moto. Ce dernier souligne l'importance et le poids que peut avoir la technologie dans la sécurité des motards. Il évoque également la rapidité d'intervention des secours grâce à l'application, ce qui a permis de lui sauver la vie.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{etat_art/images/témoignage géoride.png} 
     \caption{Témoignage d'un utilisateur de Georide sur le Discord de l'application réservé pour la communauté}
+    \label{temoignage}
 \end{figure}
-L’application mobile fournit des statistiques détaillées sur les performances du véhicule et des alertes en cas de vol ou de panne. Georide propose également des fonctionnalités de partage de trajet, des notifications sur l'entretien de la moto comme le graissage de chaine renforçant ainsi la sécurité et la convivialité de l’expérience de conduite.
+Les dommages corporels sont très violents, même à faible vitesse. La rapidité est un facteur clé dans la survie d'un usager. L’application mobile fournit également des statistiques détaillées sur les performances du véhicule et des alertes en cas de vol ou de panne. Georide propose également des fonctionnalités de partage de trajet, des notifications sur l'entretien de la moto comme le graissage de chaine renforçant ainsi la sécurité et la convivialité de l’expérience de conduite.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/notification_georide.jpg} 
@@ -215,29 +211,36 @@ Le système ARAS utilise des radars avant et arrière qui communiquent en perman
 
 %poursuivre avec la suite des tecnhologie
 %radar adaptatif
-Les radars adaptatifs, déjà utilisés dans l’automobile, font progressivement leur apparition sur les motos haut de gamme. Ce système utilise des capteurs radar pour :\\
-- Maintenir une distance de sécurité avec les véhicules qui précèdent.\\
-- Avertir le conducteur en cas de risque de collision.\\
-- Ajuste le freinage en fonction de l'inclinaison.\\
-- Adapter automatiquement la vitesse et la distance de freinage.\\
-- Détection d'angles morts.\\
+Les radars adaptatifs, déjà utilisés dans l’automobile, font progressivement leur apparition sur les motos haut de gamme. Ce système utilise des capteurs radar pour :
+\begin{itemize}
+    \item Maintenir une distance de sécurité avec les véhicules qui précèdent.
+    \item Avertir le conducteur en cas de risque de collision.
+    \item Ajuste le freinage en fonction de l'inclinaison.
+    \item Adapter automatiquement la vitesse et la distance de freinage.
+    \item Détection d'angles morts.
+\end{itemize}
 Des constructeurs comme Ducati, BMW et KTM intègrent désormais ce type de radar sur certains modèles, améliorant ainsi l’expérience de conduite, notamment sur autoroute.
 
 %perspectives
-Plusieurs nouvelles aides et alertes sont en cours de développement pour les motos. Parmi elles, on retrouve :\\
-- Group Ride Assist : Aide à la conduite en groupe.\\
-- Régulateur de vitesse adaptatif + Stop and Go : Maintien automatique de la distance de sécurité.\\
-- Emergency Brake Assist: Freinage d’urgence en cas de risque de collision.\\
+Plusieurs nouvelles aides et alertes sont en cours de développement pour les motos. Parmis elles, on retrouve :
+\begin{itemize}
+    \item Group Ride Assist : Aide à la conduite en groupe.
+    \item Régulateur de vitesse adaptatif + Stop and Go : Maintien automatique de la distance de sécurité.
+    \item Emergency Brake Assist: Illustré par la Figure~\ref{detecteuravant} freinage d’urgence en cas de risque de collision.
+\end{itemize}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/ktm_detecteur_dev.png} 
     \caption{Moto avec la technologie ARAS pour un freinage d'urgence}
+    \label{detecteuravant}
 \end{figure}
-- Rear Collision Warning: Détecte si un véhicule s'approche trop près par l'arrière et active les feux de détresse en cas de risque de collision. 
+- Rear Collision Warning: Illustré par la Figure~\ref{detecteurarriere} détecte si un véhicule s'approche trop près par l'arrière et active les feux de détresse en cas de risque de collision. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/ktm_detecteur.png} 
     \caption{Moto avec la technologie ARAS pour alerter en cas de collision arrière}
+    \label{detecteurarriere}
 \end{figure}
 
 "L'objectif est d'avoir cette technologie pour une dizaine d'euros par moto. Cela pourrait réellement avoir un impact significatif sur la réduction des accidents." d'après Geoff Liersch.\\
@@ -265,8 +268,7 @@ Avec l’essor des technologies embarquées et connectées, les motos modernes g
 Selon Bosch, les systèmes d’assistance basés sur le radar pourraient prévenir un accident de moto sur six \cite{aras_bosh_site_off}, en réagissant plus rapidement que le pilote dans des situations critiques. 
 
 
-Des projets comme Dymoa (Cerema) exploitent les données collectées lors des trajets réels pour mieux comprendre les risques propres aux deux-roues et adapter les politiques de sécurité routière.
-\\
+Des projets comme Dymoa (Cerema) exploitent les données collectées lors des trajets réels pour mieux comprendre les risques propres aux deux-roues et adapter les politiques de sécurité routière.\\
 Dans le cadre de mon alternance chez Kappa Santé, une entreprise spécialisée dans le traitement de données de santé sensibles, la protection des données personnelles est une priorité absolue. Des formations obligatoires sur le RGPD sont mises en place afin de sensibiliser les employés à ces enjeux. Cette exigence de rigueur en matière de sécurité m’a permis de mieux appréhender les enjeux liés à la collecte et à l’utilisation des données dans d’autres domaines, comme celui des motos connectées. Il est donc essentiel que les données générées par ces véhicules soient traitées avec le même niveau d’exigence : elles doivent être anonymisées, sécurisées et utilisées de manière responsable afin d’éviter toute fuite ou dérive dans leur exploitation.
 
 
