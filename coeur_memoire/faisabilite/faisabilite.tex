@@ -8,7 +8,7 @@
 
 \subsubsection{Objectif de l'étude}
 Cette étude vise à évaluer la faisabilité de la mise en œuvre d’un système d’assistance à la conduite basé sur l’analyse de la courbure de la route, dans le but de recommander une vitesse adaptée. Le système exploite des données géographiques pour déterminer la géométrie des segments routiers en fonction de la position d’un véhicule. Puis, il applique un modèle simple de calcul de courbure pour estimer la dangerosité d’un virage et proposer une vitesse conseillée. Ce chapitre examine les obstacles techniques, les contraintes d’implémentation réelle, ainsi que les perspectives de développement.
-
+De plus, comme évoqué précédemment, cette assistance n’agit pas directement sur le contrôle du véhicule. D’un point de vue légal, cela rend l’analyse des responsabilités plus simple et limite les zones d’ombre en cas d’incident.
 
 \subsubsection{Faisabilité technique}
 Mon programme utilise des données routières open source via OpenStreetMap (OSM). Ces données sont accessibles et gratuites cependant, on apperçoit un manque de précision surtout en milieu rural. Certains segments peuvent manquer de points ou contenir des simplifications qui faussent l’évaluation de la courbure.
@@ -141,10 +141,13 @@ Outre les aspects juridiques, la spécificité des motos implique des contrainte
 \end{itemize}
 Ces exigences imposent le choix d’un matériel performant, fiable, et optimisé pour des usages embarqués dans des conditions parfois extrêmes (vibrations, chaleur, humidité).
 \vspace{0.5cm}
-Voici des propositions de composants que nous pourrons utiliser : 	\\
-•	u-blox NEO-M8N : excellent rapport qualité/prix, ~40 € \\
-•	u-blox ZED-F9P : haute précision RTK, mais cher (~200–250 €) \\
-•	SparkFun GPS + IMU : combine ZED-F9P + BNO080 (IMU)
+
+Voici des propositions de composants que nous pourrons utiliser : 
+\begin{itemize}
+  \item u-blox NEO-M8N : excellent rapport qualité/prix, ~ 40 €
+  \item u-blox ZED-F9P : haute précision RTK\footnote{Real Time Kinematic: obtention d'une précision de l’ordre du centimètre.}, mais cher (~ 200 – 250 €)
+  \item SparkFun GPS + IMU : combine ZED-F9P + BNO080 (IMU) : 450 €
+\end{itemize}
 \vspace{0.5cm}
 
 Le programme développé fonctionne correctement dans la majorité des cas. Toutefois, certaines limites subsistent. En particulier, la récupération des données relatives aux limitations de vitesse ne se fait pas toujours de manière fiable. En conséquence, une limitation par défaut de 80 km/h est appliquée. Sur les portions d’autoroute, la limitation de vitesse est généralement de 130 km/h, et les valeurs calculées pour la courbure sont quasiment nulles, ce qui n’entraîne pas de recommandations particulières.\\

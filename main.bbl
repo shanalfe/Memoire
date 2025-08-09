@@ -109,6 +109,35 @@
       \field{title}{Synthèse d’un observateur neuro-adaptatif hybride pour l’estimation de la dynamique latérale d’un véhicule autonome terrestre}
       \field{year}{2024}
     \endentry
+    \entry{avocat}{report}{}
+      \name{author}{1}{}{%
+        {{hash=5008a3566b977f5b66ed724b4bf0ecb0}{%
+           family={Bensemhoun-Gonzalez},
+           familyi={B\bibinithyphendelim G\bibinitperiod},
+           given={Maître},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5008a3566b977f5b66ed724b4bf0ecb0}
+      \strng{fullhash}{5008a3566b977f5b66ed724b4bf0ecb0}
+      \strng{bibnamehash}{5008a3566b977f5b66ed724b4bf0ecb0}
+      \strng{authorbibnamehash}{5008a3566b977f5b66ed724b4bf0ecb0}
+      \strng{authornamehash}{5008a3566b977f5b66ed724b4bf0ecb0}
+      \strng{authorfullhash}{5008a3566b977f5b66ed724b4bf0ecb0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Avocat accident Toulouse : Qui est responsable en cas d'accident impliquant une voiture autonome ?}
+      \field{type}{techreport}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sharongonzalezavocat.fr/post/avocat-accident-toulouse-voiture-autonome-responsable
+      \endverb
+      \verb{url}
+      \verb https://www.sharongonzalezavocat.fr/post/avocat-accident-toulouse-voiture-autonome-responsable
+      \endverb
+    \endentry
     \entry{bmw_adas}{report}{}
       \name{author}{1}{}{%
         {{hash=e438ab818a828e32f8d06ba05aaf7be0}{%
@@ -365,6 +394,33 @@
       \endverb
       \verb{url}
       \verb https://motards.net/articles/accessoires-moto/moto-adas/
+      \endverb
+    \endentry
+    \entry{tesla_condamnation}{report}{}
+      \name{author}{1}{}{%
+        {{hash=4871dc81352a90e36ac59ff887079f03}{%
+           family={{France 24}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{4871dc81352a90e36ac59ff887079f03}
+      \strng{fullhash}{4871dc81352a90e36ac59ff887079f03}
+      \strng{bibnamehash}{4871dc81352a90e36ac59ff887079f03}
+      \strng{authorbibnamehash}{4871dc81352a90e36ac59ff887079f03}
+      \strng{authornamehash}{4871dc81352a90e36ac59ff887079f03}
+      \strng{authorfullhash}{4871dc81352a90e36ac59ff887079f03}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Conduite autonome : Tesla condamné à payer 242 millions de dollars pour un accident mortel}
+      \field{type}{techreport}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.france24.com/fr/%C3%A9co-tech/20250802-tesla-condamn%C3%A9-%C3%A0-payer-242-millions-de-dollars-pour-un-accident-mortel-li%C3%A9-%C3%A0-la-conduite-autonome
+      \endverb
+      \verb{url}
+      \verb https://www.france24.com/fr/%C3%A9co-tech/20250802-tesla-condamn%C3%A9-%C3%A0-payer-242-millions-de-dollars-pour-un-accident-mortel-li%C3%A9-%C3%A0-la-conduite-autonome
       \endverb
     \endentry
     \entry{continental_adas}{report}{}

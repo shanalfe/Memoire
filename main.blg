@@ -1,21 +1,21 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.blg'
-[51] biber-darwin:340> INFO - === Tue Jul 22, 2025, 16:23:28
-[190] Biber.pm:419> INFO - Reading '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bcf'
-[252] Biber.pm:979> INFO - Found 31 citekeys in bib section 0
-[262] Biber.pm:4419> INFO - Processing section 0
-[269] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[271] bibtex.pm:1713> INFO - LaTeX decoding ...
-[290] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[380] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[380] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[380] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'fr-FR'
-[380] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
-[402] bbl.pm:660> INFO - Writing '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.bbl' with encoding 'UTF-8'
-[410] bbl.pm:763> INFO - Output to /Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.bbl
-[410] Biber.pm:131> WARN - Duplicate entry key: 'capteur' in file 'bibliography.bib', skipping ...
-[410] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_YV1Z/f4d088b3f9f145b5c3058da33afd57d4_39047.utf8, line 212, warning: undefined macro "fev"
-[410] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_YV1Z/f4d088b3f9f145b5c3058da33afd57d4_39047.utf8, line 271, warning: undefined macro "sept"
-[410] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_YV1Z/f4d088b3f9f145b5c3058da33afd57d4_39047.utf8, line 285, warning: undefined macro "sept"
-[410] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_YV1Z/f4d088b3f9f145b5c3058da33afd57d4_39047.utf8, line 293, warning: undefined macro "juill"
-[410] Biber.pm:133> INFO - WARNINGS: 5
+[38] biber-darwin:340> INFO - === Sat Aug  9, 2025, 16:42:29
+[160] Biber.pm:419> INFO - Reading '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/Mémoire M2/Memoire/main.bcf'
+[211] Biber.pm:979> INFO - Found 37 citekeys in bib section 0
+[219] Biber.pm:4419> INFO - Processing section 0
+[225] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[227] bibtex.pm:1713> INFO - LaTeX decoding ...
+[245] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[324] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[324] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[324] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'fr-FR'
+[324] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[342] bbl.pm:660> INFO - Writing '/Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.bbl' with encoding 'UTF-8'
+[349] bbl.pm:763> INFO - Output to /Users/shanalefevre/Library/CloudStorage/OneDrive-UniversiteEvryVald'Essonne/M2 MIAGE/MÃ©moire M2/Memoire/main.bbl
+[349] Biber.pm:131> WARN - Duplicate entry key: 'capteur' in file 'bibliography.bib', skipping ...
+[349] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_1kiC/f4d088b3f9f145b5c3058da33afd57d4_23702.utf8, line 212, warning: undefined macro "fev"
+[349] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_1kiC/f4d088b3f9f145b5c3058da33afd57d4_23702.utf8, line 271, warning: undefined macro "sept"
+[349] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_1kiC/f4d088b3f9f145b5c3058da33afd57d4_23702.utf8, line 285, warning: undefined macro "sept"
+[349] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/b_/hkfnbs5n4ssf295xwlshzs6m0000gn/T/biber_tmp_1kiC/f4d088b3f9f145b5c3058da33afd57d4_23702.utf8, line 293, warning: undefined macro "juill"
+[349] Biber.pm:133> INFO - WARNINGS: 5
