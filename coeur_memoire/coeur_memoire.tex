@@ -224,42 +224,52 @@ Moto électrique & équiv. 50--125 cm³ & 4\,000 -- 12\,000 euros \\
 \end{table}
 
 \subsubsection{GPS}
-\todo{Petit chapire sur les gps voiture}
-Contrairement à la voiture, la moto n’offre pas de protection contre la pluie, la poussière, les vibrations, et les chocs.
+Aujourd’hui, les systèmes GPS intégrés aux voitures ont atteint un haut niveau de maturité. Ils offrent une expérience fluide, fiable et parfaitement adaptée aux besoins de la conduite automobile. Les GPS modernes embarquent des composants hautement performants : un récepteur GNSS\footnote{Global Navigation Satellite System : capte les signaux émis par les satellites GPS, Galileo, GLONASS ou BeiDou pour calculer la position.}, des antennes optimisées, ainsi que des processeurs et chipsets de navigation capables d’interpréter rapidement les données satellites et d’exécuter des algorithmes de positionnement précis. L’ensemble est complété par des haut-parleurs intégrés, permettant de recevoir des instructions vocales sans quitter la route des yeux.
+La situation est bien différente pour les motos. Ici, aucun habitacle ne protège contre la pluie, la poussière, les vibrations ou les chocs. Un GPS moto doit donc être conçu pour résister à ces contraintes. Cela implique l’utilisation d’un boîtier étanche et renforcé, conforme aux normes IP67/IP68\footnote{Les indices IP67 et IP68, définis par la norme IEC 60529, indiquent le niveau de protection d’un appareil contre la pénétration de poussière et d’eau.}, ainsi qu’un système de fixation robuste pour supporter les conditions de roulage. Les vibrations du moteur et de la route peuvent en effet détériorer des composants qui, dans un environnement automobile stable, ne subiraient aucun dommage.
 
-\subsubsection{ Freins techniques à l’adoption des technologies IoT sur moto}
-Contrainte	Impact sur les technologies IoT
-Taille réduite	Moins d’espace pour intégrer des capteurs, antennes, processeurs ou batteries.
-Alimentation électrique limitée	Les motos ont moins de réserve électrique. Chaque dispositif doit être très économe.
-Exposition aux intempéries	La pluie, le soleil, la poussière imposent une étanchéité totale (norme IP67 minimum).
-Vibrations intenses	Les capteurs doivent être fixés solidement, et les composants doivent résister aux chocs et aux variations de température.
-Position de conduite	L’affichage tête haute ou l’utilisation d’écrans doit être ergonomiquement adapté pour ne pas nuire à la concentration.
-De plus, la complexité d’intégrer des technologies sans modifier l’équilibre ou l’esthétique du deux-roues rend les innovations plus délicates à généraliser.
+\subsubsection{Contraintes techniques et comparaison voitures vs motos dans l’adoption des technologies IoT}
 
+L’intégration de solutions IoT diffère fortement entre voitures et motos, en raison de contraintes physiques, énergétiques et environnementales propres à chaque type de véhicule. Le tableau \ref{tab:comparaison_iot_voiture_moto} présente une vue d’ensemble, suivie d’une analyse détaillée des points clés pour les deux-roues.
 
-\subsubsection{Analyse comparative voitures vs motos}
 \begin{table}[H]
 \centering
-\caption{Analyse comparative des technologies IoT entre voitures et motos}
-\begin{tabular}{|p{4.5cm}|p{5.5cm}|p{5.5cm}|}
+\caption{Comparaison des conditions d’intégration des technologies IoT entre voitures et motos}
+\label{tab:comparaison_iot_voiture_moto}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{|p{3.2cm}|p{6.5cm}|p{6.5cm}|}
 \hline
 \textbf{Critère} & \textbf{Voiture} & \textbf{Moto} \\
 \hline
-\textbf{Espace disponible} & Suffisant pour intégrer de nombreux composants électroniques (capteurs, unités de calcul, caméras, etc.) & Très limité, surtout sur les modèles sportifs ou compacts. Intégration plus contraignante. \\
+\textbf{Espace disponible} &
+Suffisant pour intégrer de nombreux composants électroniques (capteurs, unités de calcul, caméras, etc.) &
+Très limité, surtout sur les modèles sportifs ou compacts ; intégration plus contraignante \\
 \hline
-\textbf{Alimentation électrique} & Batterie de forte capacité alimentant l’ensemble des systèmes embarqués & Batterie plus petite, nécessitant des dispositifs peu gourmands en énergie \\
+\textbf{Alimentation électrique} &
+Batterie de forte capacité alimentant de multiples systèmes &
+Batterie réduite, imposant des dispositifs sobres en énergie \\
 \hline
-\textbf{Protection matérielle} & Composants protégés dans un habitacle fermé & Composants exposés aux intempéries, aux vibrations, à la poussière et aux variations thermiques \\
+\textbf{Protection matérielle} &
+Composants protégés par un habitacle fermé &
+Composants exposés aux intempéries, à la poussière, aux vibrations et aux variations thermiques \\
 \hline
-\textbf{Sécurité passive} & Ceintures, airbags frontaux et latéraux, zones de déformation & Gilet airbag externe, protections mécaniques personnelles (casque, dorsale) \\
+\textbf{Sécurité passive} &
+Ceintures, airbags frontaux et latéraux, zones de déformation &
+Gilet airbag externe, casque et protections mécaniques personnelles \\
 \hline
-\textbf{Ergonomie d'affichage} & Écrans tactiles, affichage tête haute (HUD), commandes vocales & Affichage minimaliste via smartphone, casque connecté, ou retour haptique/sonore \\
+\textbf{Ergonomie d’affichage} &
+Écrans tactiles, HUD, commandes vocales &
+Affichage minimaliste via smartphone, casque connecté ou retour haptique/sonore \\
 \hline
-\textbf{Maturité des technologies IoT} & Très avancée (ADAS, V2X, LIDAR, conduite autonome partielle) & Émergente, avec développement récent des casques connectés, gilets intelligents et radars adaptatifs \\
+\textbf{Maturité des technologies IoT} &
+Avancée (ADAS, V2X, LIDAR, conduite autonome partielle) &
+Émergente (casques connectés, gilets intelligents, radars adaptatifs) \\
 \hline
 \end{tabular}
-\label{tab:comparaison_iot_voiture_moto}
 \end{table}
+
+Pour les motos, la compacité des composants est un enjeu majeur : chaque capteur, antenne ou processeur doit être discret pour préserver l’esthétique et la maniabilité. La faible capacité électrique impose l’utilisation de modules économes en énergie. Les équipements doivent également résister à un environnement exigeant : exposition directe à la pluie, aux rayons UV, à la poussière et aux projections, avec un indice de protection d’au moins IP67 pour garantir la fiabilité.
+Les vibrations et chocs, dus au moteur et à l’état de la route, nécessitent des fixations robustes et des matériaux résistants à l’usure. L’ergonomie est aussi déterminante : l’affichage des données, qu’il soit intégré au tableau de bord ou au casque, doit rester lisible et non distrayant. Ces contraintes cumulées expliquent que, malgré un fort potentiel en matière de sécurité et de confort, certaines innovations IoT restent encore peu démocratisées sur deux-roues.
+
 
 \subsubsection{Pistes pour intégrer l’IoT dans les deux-roues}
 Pour surmonter les limites actuelles, plusieurs pistes peuvent être envisagées :

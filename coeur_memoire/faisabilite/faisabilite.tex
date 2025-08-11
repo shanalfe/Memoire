@@ -77,26 +77,20 @@ Les évolutions qui peuvent être envisagées pour les prochaines étapes du pro
   \item la réalisation de simulations ou d’expérimentations plus poussées sur circuit fermé
 \end{itemize}
 
-\subsubsection{Limites et contraintes}
-Lorsqu’il s’agit d’évaluer la dangerosité d’un virage, la courbure n’est qu’un élément parmi d’autres. L’état de la chaussée, les conditions météo, la visibilité, la signalisation ou encore la présence d’obstacles peuvent tous influencer, parfois fortement, le niveau de risque réel ou perçu. Même un virage apparemment simple peut devenir délicat si ces facteurs sont défavorables.
-Le système que j’ai conçu s’appuie sur un algorithme volontairement simplifié. Cette approche a l’avantage d’être robuste, rapide et stable dans des contextes variés, mais elle présente aussi ses limites : un manque de précision peut apparaître lorsque les conditions réelles diffèrent des hypothèses de calcul. La fiabilité dépend en grande partie de deux paramètres extérieurs : la fréquence de mise à jour de la cartographie et la précision du positionnement GPS. Une carte obsolète ou un signal perturbé peut altérer la qualité des recommandations.
-En situation réelle, le comportement du conducteur reste un facteur clé. Certains motards pourraient ignorer l’alerte, par choix, par inattention ou simplement par manque de confiance. À l’inverse, un excès de confiance dans le système peut mener à une dépendance excessive, ce qui réduit la vigilance et les capacités d’analyse face à l’imprévu.
-Enfin, un dysfonctionnement ou un retard dans les calculs pourrait fournir une information inadaptée au contexte, ce qui représente un risque, surtout si l’utilisateur se repose entièrement sur l’assistance pour prendre ses décisions.
-
 \subsubsection{Confidentialité et Données}
-%1. Cadre juridique international autour du GPS
+\commentaire{Cadre juridique international autour du GPS}
 Le développement de technologies d’assistance à la conduite basées sur la géolocalisation, comme celle proposée dans ce projet, soulève d’importants enjeux juridiques, notamment en matière de souveraineté, d’accessibilité aux données cartographiques, et d’usage du GPS selon les pays.
 Dans certains États, l’accès aux données cartographiques est limité. Par exemple, la Chine impose l’utilisation de fournisseurs cartographiques agréés par l’État, avec des restrictions sur les données affichées ou exportables. En Autriche et en Allemagne, les dispositifs de géolocalisation sont autorisés, mais l’usage de détecteurs ou d'avertisseurs de radars est strictement interdit, y compris lorsqu'ils sont intégrés à un GPS. Le Japon autorise l’usage du GPS, mais certains dispositifs RF\footnote{Radio Fréquence : Ce sont des dispositifs qui émettent et recçoivent des ondes radio pour communiquer entre 3 kHz et 300 GHz.}, notamment ceux qui interfèrent avec d'autres systèmes, sont interdits.
 
 Ces exemples illustrent la diversité des contraintes réglementaires à l’échelle internationale, ce qui constitue un défi pour tout projet technologique visant un déploiement global.
 \vspace{0.5cm}
 
-%2. Conformité avec le Code de la route français
+\commentaire{Conformité avec le Code de la route français}
 En France, l'utilisation d’un GPS est autorisée dans un véhicule, y compris à moto, tant qu’il ne compromet ni la visibilité, ni la sécurité du conducteur. Le Code de la route, Article R412-6\cite{loi_code_de_la_route} précise que "tout conducteur doit se tenir constamment en état et en position d'exécuter commodément et sans délai toutes les manœuvres qui lui incombent".
 Ainsi, tout système d’affichage (écran, casque connecté, ...) devra être conçu de manière à ne pas distraire le conducteur ou gêner sa conduite. Ce point est d’autant plus crucial sur les deux-roues motorisés, où la perte d’attention ou une mauvaise visibilité peut avoir des conséquences graves.
 \vspace{0.5cm}
 
-%3. Protection des données personnelles (RGPD)
+\commentaire{Protection des données personnelles (RGPD)}
 L'utilisation d'un système GPS implique nécessairement la collecte de données personnelles sensibles, notamment :
 \begin{itemize}
 \item La position géographique (latitude et longitude),
@@ -129,9 +123,9 @@ Exemples de données pouvant être conservées conformément au RGPD : Voici des
 \end{itemize}
 
 Ces pratiques garantissent le respect de la vie privée des usagers tout en permettant d’exploiter les données efficacement dans le cadre de recherches ou d’améliorations technologiques.
-
 \vspace{0.5cm}
-%4. Contraintes techniques liées à la performance et à la sécurité
+
+\commentaire{Contraintes techniques liées à la performance et à la sécurité}
 Outre les aspects juridiques, la spécificité des motos implique des contraintes techniques supplémentaires. En effet, les deux-roues sont capables d’accélérations rapides et atteignent des vitesses élevées. Le système embarqué doit donc :
 \begin{itemize}
   \item Être capable de traiter et d’analyser les données en quasi temps réel,
@@ -150,14 +144,18 @@ Voici des propositions de composants que nous pourrons utiliser :
 \end{itemize}
 \vspace{0.5cm}
 
-Le programme développé fonctionne correctement dans la majorité des cas. Toutefois, certaines limites subsistent. En particulier, la récupération des données relatives aux limitations de vitesse ne se fait pas toujours de manière fiable. En conséquence, une limitation par défaut de 80 km/h est appliquée. Sur les portions d’autoroute, la limitation de vitesse est généralement de 130 km/h, et les valeurs calculées pour la courbure sont quasiment nulles, ce qui n’entraîne pas de recommandations particulières.\\
-Cependant, une situation spécifique peut se présenter sur des voies rapides limitées à 110 km/h : dans ce cas précis, la courbure du virage doit être suffisamment prononcée pour déclencher une alerte à 80 km/h. Cette décision représente un compromis assumé dans la conception du programme, fondé sur une approche prudente pour garantir la sécurité du conducteur.\\
-Du point de vue des utilisateurs, la fonctionnalité proposée pourrait être perçue comme trop « prévoyante » par certains motards expérimentés. En effet, plus le motard accumule de kilomètres et d'expérience, particulièrement s'il varie régulièrement ses trajets et types de routes, plus sa capacité à anticiper naturellement les dangers s'améliore. Ainsi, pour ces usagers aguerris, l'alerte pourrait sembler déclenchée prématurément.\\
-Pour remédier à cette perception, il pourrait être pertinent d’introduire une variable personnalisable définissant différents niveaux d’alerte. Cette adaptation permettrait de moduler le déclenchement en fonction d’une vitesse spécifique, ajustée selon l’expérience ou les préférences du motard. Un autre facteur pertinent à considérer serait l'accélération : une accélération soudaine ou inhabituelle avant un virage pourrait, par exemple, déclencher une alerte anticipée afin de prévenir tout danger potentiel.\\
-Enfin, il est important de souligner que le programme actuel (illustré en Figure~\ref{fig:cartepoints}) se base exclusivement sur les données de l’instant présent. Il ne prend pas encore en compte les données relatives à la trajectoire prévisionnelle ou à la direction future du véhicule. Cette dimension prédictive pourrait être intégrée dans une future évolution du programme, permettant ainsi une anticipation encore plus efficace et précise des situations à risque.
 
-%conclusion
+
+\subsubsection{Limites et contraintes}
+Lorsqu’il s’agit d’évaluer la dangerosité d’un virage, la courbure n’est qu’un élément parmi d’autres. L’état de la chaussée, les conditions météo, la visibilité, la signalisation, la présence d'un passager ou encore la présence d’obstacles peuvent tous influencer, parfois fortement, le niveau de risque réel ou perçu. Même un virage apparemment simple peut devenir délicat si ces facteurs sont défavorables.
+Le système que j’ai conçu s’appuie sur un algorithme volontairement simplifié. Cette approche a l’avantage d’être robuste, rapide et stable dans des contextes variés, mais elle présente aussi ses limites : un manque de précision peut apparaître lorsque les conditions réelles diffèrent des hypothèses de calcul. La fiabilité dépend en grande partie de deux paramètres extérieurs : la fréquence de mise à jour de la cartographie et la précision du positionnement GPS. Une carte obsolète ou un signal perturbé peut altérer la qualité des recommandations.
+En situation réelle, le comportement du conducteur reste un facteur clé. Certains motards pourraient ignorer l’alerte, par choix, par inattention ou simplement par manque de confiance. À l’inverse, un excès de confiance dans le système peut mener à une dépendance excessive, ce qui réduit la vigilance et les capacités d’analyse face à l’imprévu.
+Enfin, un dysfonctionnement ou un retard dans les calculs pourrait fournir une information inadaptée au contexte, ce qui représente un risque, surtout si l’utilisateur se repose entièrement sur l’assistance pour prendre ses décisions.
 \vspace{0.5cm}
-Le développement d’un système d’assistance à la conduite basé sur la courbure routière et la géolocalisation soulève des enjeux techniques, légaux et éthiques. Il est impératif de concevoir un dispositif conforme à la réglementation locale, respectueux de la vie privée et suffisamment robuste pour un usage en conditions réelles. Intégrer dès la phase de prototypage les dimensions de confidentialité, de sécurité des données et de respect des législations nationales constitue un levier essentiel pour la viabilité du projet, autant sur le plan juridique que sur celui de l’acceptabilité sociale.
 
-
+\commentaire{Conclusion}
+Le développement d’un système d’assistance à la conduite basé sur la courbure routière et la géolocalisation soulève à la fois des enjeux techniques, légaux et éthiques. Pour être viable, un tel dispositif doit impérativement respecter la réglementation en vigueur, protéger la vie privée des utilisateurs et offrir une robustesse suffisante pour fonctionner en conditions réelles. Intégrer, dès la phase de prototypage, des mesures garantissant la confidentialité et la sécurité des données, ainsi que la conformité aux législations nationales, constitue un levier essentiel pour assurer la crédibilité du projet et favoriser son acceptabilité sociale.
+Le programme développé fonctionne correctement dans la majorité des situations. Toutefois, certaines limites persistent. Par exemple, la récupération des données relatives aux limitations de vitesse n’est pas toujours fiable. En conséquence, une valeur par défaut de 80 km/h est appliquée. Sur autoroute, où la limitation est de 130 km/h, la courbure calculée est généralement très faible, ce qui ne déclenche aucune recommandation particulière. Cependant, sur des voies rapides limitées à 110 km/h, une courbure suffisamment prononcée peut entraîner l’émission d’une alerte à 80 km/h. Ce choix résulte d’un compromis assumé, visant à privilégier la prudence et à garantir la sécurité du conducteur.
+Du point de vue des utilisateurs, certains motards expérimentés peuvent percevoir cette assistance comme trop « prévoyante ». En effet, plus un motard accumule d’expérience et diversifie ses trajets, plus il développe une capacité d’anticipation naturelle face aux dangers. Pour ces profils aguerris, l’alerte peut donc sembler déclenchée trop tôt.
+Pour répondre à cette critique, il serait pertinent d’intégrer une variable personnalisable permettant de définir différents niveaux d’alerte, ajustés selon l’expérience ou les préférences du motard. L’accélération pourrait également constituer un paramètre déclencheur : une variation brutale avant un virage pourrait par exemple générer une alerte anticipée, renforçant ainsi la prévention des risques.
+Enfin, il convient de souligner que le programme actuel (Figure~\ref{fig:cartepoints}) s’appuie uniquement sur les données disponibles à l’instant présent. Il ne prend pas encore en compte la trajectoire prévisionnelle ni la direction future du véhicule. L’intégration d’une dimension prédictive dans une version ultérieure permettrait d’améliorer considérablement la pertinence des recommandations et d’anticiper avec plus de précision les situations à risque.

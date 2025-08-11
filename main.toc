@@ -30,11 +30,10 @@
 \contentsline {subsubsection}{\numberline {5.2.1}Exemples d’IoT adaptés et développé pour la moto}{36}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Les radars}{36}{subsubsection.5.2.2}%
 \contentsline {subsubsection}{\numberline {5.2.3}GPS}{38}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4} Freins techniques à l’adoption des technologies IoT sur moto}{38}{subsubsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.5}Analyse comparative voitures vs motos}{38}{subsubsection.5.2.5}%
-\contentsline {subsubsection}{\numberline {5.2.6}Pistes pour intégrer l’IoT dans les deux-roues}{39}{subsubsection.5.2.6}%
-\contentsline {subsection}{\numberline {5.3} Proposition d’adaptation technologique}{39}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Programme d'alerte de virages}{40}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.4}Contraintes techniques et comparaison voitures vs motos dans l’adoption des technologies IoT}{38}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}Pistes pour intégrer l’IoT dans les deux-roues}{39}{subsubsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.3} Proposition d’adaptation technologique}{40}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Programme d'alerte de virages}{41}{subsubsection.5.3.1}%
 \contentsline {subsubsection}{\numberline {5.3.2}Étude de cas}{47}{subsubsection.5.3.2}%
 \contentsline {subsubsection}{\numberline {5.3.3}Design technologique}{53}{subsubsection.5.3.3}%
 \contentsline {subsection}{\numberline {5.4} Étude de faisabilité et limites}{55}{subsection.5.4}%
@@ -42,8 +41,8 @@
 \contentsline {subsubsection}{\numberline {5.4.2}Faisabilité technique}{55}{subsubsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.3}Faisabilité d’implémentation sur un véhicule réel}{55}{subsubsection.5.4.3}%
 \contentsline {subsubsection}{\numberline {5.4.4}Prototype et simulation}{56}{subsubsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.5}Limites et contraintes}{57}{subsubsection.5.4.5}%
-\contentsline {subsubsection}{\numberline {5.4.6}Confidentialité et Données}{57}{subsubsection.5.4.6}%
+\contentsline {subsubsection}{\numberline {5.4.5}Confidentialité et Données}{57}{subsubsection.5.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.6}Limites et contraintes}{59}{subsubsection.5.4.6}%
 \contentsline {subsection}{\numberline {5.5}Apport personnel et positionnement}{61}{subsection.5.5}%
 \contentsline {section}{\numberline {6}Conclusion}{63}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Conclusion mémoire}{63}{subsection.6.1}%
