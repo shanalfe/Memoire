@@ -146,10 +146,17 @@ Voici des propositions de composants que nous pourrons utiliser :
 
 
 \subsubsection{Limites et contraintes}
-Lorsqu’il s’agit d’évaluer la dangerosité d’un virage, la courbure n’est qu’un élément parmi d’autres. L’état de la chaussée, les conditions météo, la visibilité, la signalisation, la présence d'un passager ou encore la présence d’obstacles peuvent tous influencer, parfois fortement, le niveau de risque réel ou perçu. Même un virage apparemment simple peut devenir délicat si ces facteurs sont défavorables.
-Le système que j’ai conçu s’appuie sur un algorithme volontairement simplifié. Cette approche a l’avantage d’être robuste, rapide et stable dans des contextes variés, mais elle présente aussi ses limites : un manque de précision peut apparaître lorsque les conditions réelles diffèrent des hypothèses de calcul. La fiabilité dépend en grande partie de deux paramètres extérieurs : la fréquence de mise à jour de la cartographie et la précision du positionnement GPS. Une carte obsolète ou un signal perturbé peut altérer la qualité des recommandations.
+\commentaire{programme}
+Lorsqu’il s’agit d’évaluer la dangerosité d’un virage, la courbure n’est qu’un élément parmi d’autres. L’état de la chaussée, les conditions météo, la visibilité, la signalisation, la présence d'un passager craintif ou non, ou encore la présence d’obstacles peuvent tous influencer, parfois fortement, le niveau de risque réel ou perçu. Même un virage apparemment simple peut devenir délicat si ces facteurs sont défavorables.
+Le système que j’ai conçu s’appuie sur un algorithme volontairement simplifié, il ne prend pas en compte ces variables. Cette approche a l’avantage d’être robuste, rapide et stable dans des contextes variés, mais elle présente aussi ses limites : un manque de précision peut apparaître lorsque les conditions réelles diffèrent des hypothèses de calcul. La fiabilité dépend en grande partie de deux paramètres extérieurs : la fréquence de mise à jour de la cartographie et la précision du positionnement GPS. Une carte obsolète ou un signal perturbé peut altérer la qualité des recommandations.
 En situation réelle, le comportement du conducteur reste un facteur clé. Certains motards pourraient ignorer l’alerte, par choix, par inattention ou simplement par manque de confiance. À l’inverse, un excès de confiance dans le système peut mener à une dépendance excessive, ce qui réduit la vigilance et les capacités d’analyse face à l’imprévu.
 Enfin, un dysfonctionnement ou un retard dans les calculs pourrait fournir une information inadaptée au contexte, ce qui représente un risque, surtout si l’utilisateur se repose entièrement sur l’assistance pour prendre ses décisions.
+\vspace{0.5cm}
+
+\commentaire{iot et réprise yann lecun}
+Bien que des avancées significatives aient été réalisées depuis plusieurs années grâce aux travaux pionniers de Yann LeCun, figure majeure du deep learning, l’adaptation de ces technologies au domaine de la moto demeure un défi particulièrement complexe. En effet, automatiser la prise de décision en temps réel, déterminer si une trajectoire est sécurisante ou non implique une précision extrême et une capacité d’analyse rapide dans un environnement hautement variable.
+Prévoir une trajectoire « sécurisante » ne se limite pas à calculer un simple tracé : cela nécessite de prendre en compte une multitude de paramètres.
+Aujourd’hui, de nombreux chercheurs soulignent que la complexité et la variabilité de ces conditions rendent cette anticipation quasiment impossible avec les technologies actuelles. Le moindre retard dans le traitement ou la moindre approximation dans la modélisation pourrait entraîner une recommandation inadaptée, voire dangereuse.
 \vspace{0.5cm}
 
 \commentaire{Conclusion}

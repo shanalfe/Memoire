@@ -47,6 +47,5 @@
 \contentsline {subsection}{\numberline {6.2}Conclusion année d'alternance}{64}{subsection.6.2}%
 \contentsline {section}{Références}{67}{section*.55}%
 \contentsline {section}{Annexes}{68}{section*.56}%
-\contentsline {section}{\numberline {A}Échange avec Hichem Arioui}{69}{appendix.A}%
-\contentsline {section}{\numberline {B}Article 1}{74}{appendix.B}%
-\contentsline {section}{\numberline {C}Article 2}{75}{appendix.C}%
+\contentsline {section}{\numberline {A}Article 1}{69}{appendix.A}%
+\contentsline {section}{\numberline {B}Article 2}{70}{appendix.B}%
