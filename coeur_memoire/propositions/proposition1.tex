@@ -21,23 +21,25 @@ Voici le diagramme d'action de cette fonctionnalité:\\
     \caption{Diagramme d'action du Système de prévention de virages dangereux}
 \end{figure}
 
-Pour réaliser un bout de code sur cette fonctionnalité, j'ai décidé d'utiliser ces bibliothèques :\\
-• \texttt{osmnx}\cite{osm_doc} : permet d’interroger OSM (OpenStreetMap) et de récupérer des graphes routiers.\\
-• \texttt{geodesic} (de geopy \cite{geopy}) : mesure la distance réelle (en mètres) entre 2 points GPS.
+Pour réaliser un bout de code sur cette fonctionnalité, j'ai décidé d'utiliser ces bibliothèques :
+\begin{itemize}
+    \item \texttt{osmnx}\cite{osm_doc} : permet d’interroger OSM (OpenStreetMap) et de récupérer des graphes routiers.
+    \item \texttt{geodesic} (de geopy \cite{geopy}) : mesure la distance réelle (en mètres) entre 2 points GPS.
+\end{itemize}
 \vspace{0.5cm}
 
 Il faut convertir le graphe routier \texttt{G} (au format \texttt{NetworkX}) en un GeoDataFrame (via \texttt{GeoPandas}), pour pouvoir manipuler les tronçons de route comme des objets géographiques (segments, courbes…). Cette partie est importante pour les calculs.
 \begin{lstlisting}[language=Python, caption={Conversion du graphe routier}]
 edges = ox.graph_to_gdfs(G, nodes=False)
 \end{lstlisting}
-Avec : \\
+Avec :
 \begin{itemize}
     \item \texttt{G} : le graphe routier obtenu via \texttt{ox.graph\_from\_point} qui contient des nœuds (c'est-à-dire les intersections) et des arêtes qui représentent les routes.
-    \item \texttt{nodes = False} : car je ne prends que les arêtes (edges), c’est-à-dire les segments de route. Je n'ai pas besoin pour mon programme de tous les noeuds (par exemple une intersection à plusieurs routes, un arrefour, un croisement...)du réseau. Il peut être interessant pour calculer un plus court chemin. De plus, cela risquerait de sur-charger les données.
+    \item \texttt{nodes = False} : car je ne prends que les arêtes (edges), c’est-à-dire les segments de route. Je n'ai pas besoin pour mon programme de tous les noeuds (par exemple une intersection à plusieurs routes, un arrefour, un croisement...) du réseau. Il peut être intéressant pour calculer un plus court chemin. De plus, cela risquerait de sur-charger les données.
 \end{itemize}
 
 \vspace{0.5cm}
-L'interêt de calculer la courbure de la courbe est de pouvoir anticiper le virage et par conséquent, adapter la vitesse pour optimiser l'adhérence, la trajectoire où l'on se sentira le plus en sécurité. \\
+L'intérêt de calculer la courbure de la courbe est de pouvoir anticiper le virage et par conséquent, adapter la vitesse pour optimiser l'adhérence, la trajectoire où l'on se sentira le plus en sécurité. \\
 Le calcul de la courbure permettra d'identifier un virage s'il est dangereux à partir de données GPS cartographiques pour enfin adapter le comportement du système embarqué (alerte, adaptation de trajectoire, assistance..).
 Donc la courbure mesure à quel point une route peut changer de direction sur une courte distance, ici, dans un virage.\\
 Une route droite a une courbure environ égale à 0. Une route qui tourne fort (virage serré) a une courbure élevée.
@@ -58,7 +60,7 @@ Virage serré en montagne & 30 m & Forte (0.1–0.2) & Élevé \\
 
 Un virage serré avec une courbure > 0.1 est souvent dangereux à +60 km/h, surtout à moto.
 Plusieurs études indiquent que les rayons < 50 m sont classés comme virages dangereux pour les motos. À plus de 60 km/h, une moto doit pencher à plus de 35°à 40° dans le virage ce qui augmente énormément le risque de chute, surtout s’il y a du gravier, pluie, vent latéral…
-L’estimation “courbure > 0.1 = danger > 60 km/h” est une règle empirique, basée sur des données de sécurité moto reonnues, des normes d'ingénierie routière et des approximations géométriques issues de GPS.
+L’estimation “courbure > 0.1 = danger > 60 km/h” est une règle empirique, basée sur des données de sécurité moto reconnues, des normes d'ingénierie routière et des approximations géométriques issues de GPS.
 
 
 L'avantage d'avoir un calcul automatique et en amont, cela permet de prévenir avant même d'être dans le virage. Il peut remplacer un panneau quand celui-ci n'est pas visible. Elle ne remplace pas une analyse dynamique complète mais elle est suffisante pour alerter automatiquement le pilote ce qui est exactement l’objectif du système.
@@ -111,7 +113,7 @@ c = distance directe entre le début et la fin (comme si on traçait une corde)
 
 
 
-La vitesse recommandée se calcule grace à la courbure. Pour calculer la vitesse recommandée, conseillée, deux solutions s'offraient à moi. La première : \\
+La vitesse recommandée se calcule grâce à la courbure. Pour calculer la vitesse recommandée, conseillée, deux solutions s'offraient à moi. La première : \\
 \begin{tcolorbox}[title=Vitesse recommandée]
 Calcul de la vitesse recommandée :
 \[
@@ -121,14 +123,17 @@ Le "20" permet d'éviter une vitesse trop basse. Ici, on la limite à 20 km/h.
 
 \end{tcolorbox}
 
-En dessous de 20km/h, il y a peu d'intêret. Même les plus grosses épingles peuvent se prendre à 20km/h. À cette vitesse, il n'y a pas d'effet gyroscopique\footnote{C'est la capacité (tendance) d'un corps en rotation à maintenir une direction constante de son axe de rotation selon le Larousse.}.
+En dessous de 20km/h, il y a peu d'intérêt. Même les plus grosses épingles peuvent se prendre à 20km/h. À cette vitesse, il n'y a pas d'effet gyroscopique\footnote{C'est la capacité (tendance) d'un corps en rotation à maintenir une direction constante de son axe de rotation selon le Larousse.}.
 Cependant, j'ai plutôt choisi de m'orienter sur des conditions simples pour catégoriser l'intensité du virage pour y associer une vitesse "maximale" qui peut être utilisée sans danger.\\
 \vspace{0.5cm}
-Voici comment j'ai classé la valeur de la courbure en fonction de la vitesse idéale: \\
-•	< 0.0005 → ligne droite → 80 km/h \\
-•	de 0.0005 à 0.002 → léger virage → 60 km/h\\
-•	>= 0.002 → virage serré → 30 km/h\\
+Voici comment j'ai classé la valeur de la courbure en fonction de la vitesse idéale: 
+\begin{itemize}
+    \item < 0.0005 → ligne droite → 80 km/h
+    \item de 0.0005 à 0.002 → léger virage → 60 km/h
+    \item >= 0.002 → virage serré → 30 km/h
+\end{itemize}
 \vspace{0.5cm}
+
 Le fait de catégoriser la valeur de la courbure, cela permet facilement d'y associer une vitesse. C'est une stratégie qui propose une solution plus globale en diminuant les erreurs en tests. Après avoir essayé plusieurs points GPS et analysé les virages, c'est pour moi la solution qui me convient le mieux à l'heure actuelle.
 \vspace{0.5cm}
 
@@ -150,12 +155,12 @@ Voici ci-dessous, une image satellite de l'endroit.
     \caption{Point GPS des 17 virages.}
 \end{figure}
 
-Les coordonnées GPS sont : 48.385171, 2.563108. Afin de s'assurer de l'exactitude et du bon débuggage, voici l'interprétation du réseau routier par le programme.
+Les coordonnées GPS sont : 48.385171, 2.563108. Afin de s'assurer de l'exactitude et du bon débogage, voici l'interprétation du réseau routier par le programme.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png} 
-    \caption{Réseau routier interprété par le programme pour la postion 48.385171, 2.563108.}
+    \caption{Réseau routier interprété par le programme pour la position 48.385171, 2.563108.}
 \end{figure}
 Voici la carte issue du traceur Géoride, attestant que l’expérience a bien été réalisée.
 \begin{figure}[H]
@@ -164,10 +169,12 @@ Voici la carte issue du traceur Géoride, attestant que l’expérience a bien �
     \caption{Carte du traceur Géoride arrivant sur la position 48.385171, 2.563108.}
 \end{figure}
 Maintenant que nous disposons du point GPS de référence, il s'agit de définir les trois points nécessaires au calcul de la courbure : p1, p2 et p3. La carte ci-dessous illustre leur positionnement précis autour du point initial.
-À partir des coordonnées GPS obtenues — ici 48.385171, 2.563108 — notre programme génère automatiquement les trois points suivants :\\
-p1 : (48.3847394, 2.5636118)\\
-p2 : (48.3846809, 2.563653)\\
-p3 : ( 48.3845233, 2.56368)\\
+À partir des coordonnées GPS obtenues — ici 48.385171, 2.563108 — notre programme génère automatiquement les trois points suivants :
+\begin{itemize}
+    \item p1 : (48.3847394, 2.5636118)
+    \item p2 : (48.3846809, 2.563653)
+    \item p3 : ( 48.3845233, 2.56368)
+\end{itemize}
 
 \begin{figure}[H]
     \centering
@@ -208,7 +215,7 @@ On voit que le passage se fait à 51 km/h et que la valeur de la courbure est de
     \caption{Deuxième passage dans Les 17 virages aux points GPS  48.385171, 2.563108.}
 \end{figure}
 
-Le deuxième passage est réalisé plus rapidemment (sans excès de vitesse), cependant, la vitesse est trop "rapide" pour ce virage avec une courbure de 0.0006 et il nécessite de meilleures capacités pour le passer. Il faut que le motard soit à un niveau intermédiaire. Comme l'objectif du programme est de faire de la prévention, j'ai décidé de me baser sur un niveau de débutant. Pour conclure, il y a un message qui apparaîtra.\\
+Le deuxième passage est réalisé plus rapidement (sans excès de vitesse), cependant, la vitesse est trop "rapide" pour ce virage avec une courbure de 0.0006 et il nécessite de meilleures capacités pour le passer. Il faut que le motard soit à un niveau intermédiaire. Comme l'objectif du programme est de faire de la prévention, j'ai décidé de me baser sur un niveau de débutant. Pour conclure, il y a un message qui apparaîtra.\\
 Prenons un dernier exemple avec une nouvelle situation, une ligne droite.
 \begin{figure}[H]
     \centering
@@ -220,10 +227,12 @@ Prenons un dernier exemple avec une nouvelle situation, une ligne droite.
     \includegraphics[width=0.7\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png} 
     \caption{Placement des points p1, p2 et p3 en ligne droite pour les coordonnées 48.514114, 2.320894.}
 \end{figure}
-Idem que pour l'exemple précédent. Le programme nous génère des trois points. Avec les coordonnées 48.514114, 2.320894, voici les points que nous avons :\\
-p1 : (48.5144999, 2.3177499)\\
-p2 : (48.5149154, 2.3148266)\\
-p3 : (48.5151433, 2.3132539)\\
+Idem que pour l'exemple précédent. Le programme nous génère des trois points. Avec les coordonnées 48.514114, 2.320894, voici les points que nous avons :
+\begin{itemize}
+    \item p1 : (48.5144999, 2.3177499)
+    \item p2 : (48.5149154, 2.3148266)
+    \item p3 : (48.5151433, 2.3132539)
+\end{itemize}
 
 Pour cette simulation au terminale, je décide de mettre deux vitesses, une à 80 km/h et une autre à 90 km/h. Ici je ne prends pas en compte la limitation de vitesse. Nous avons comme résultats :
 \begin{figure}[H]
@@ -239,31 +248,28 @@ Pour cette simulation au terminale, je décide de mettre deux vitesses, une à 8
 Pour conclure, comme l'usager évolue sur une ligne droite, une courbure ayant comme valeur 0 ou proche de 0, il n'y aura pas de message d'erreur qui s'affiche.
 
 \subsubsection{Design technologique}
-Afin de garantir l’efficacité du système de recommandation de vitesse sans perturber la conduite, une attention particulière doit être portée à la manière dont l’information est transmise à l’usager. Deux canaux complémentaires peuvent être mobilisés : le retour visuel et le retour sonore.
-5.1. Un affichage visuel universel et optimisé
-Pour prévenir l’usager d’un virage nécessitant une adaptation de la vitesse, il est proposé d’utiliser des pictogrammes universels, compréhensibles instantanément, sans nécessiter de lecture textuelle ou de concentration prolongée. Ces icônes pourront s’inspirer de la signalisation routière standard (ex. : virage serré, limitation de vitesse conseillée, alerte danger).
-L’interface visuelle devra s’adapter au support utilisé :
-
-Sur smartphone ou GPS dédié : affichage discret dans un coin de l’écran, en contraste fort pour assurer la lisibilité en plein jour.
-Sur écran tête haute (HUD) : intégration dans le champ de vision sans gêner la route.
-Sur casque connecté : affichage minimaliste, par exemple avec une jauge de courbure ou un code couleur (vert = ok, orange = attention, rouge = ralentir).
+Afin de garantir l’efficacité du système de recommandation de vitesse sans perturber la conduite, une attention particulière doit être portée à la manière dont l’information est transmise à l’usager. Deux canaux complémentaires peuvent être mobilisés : le retour visuel et le retour sonore.\\
+Pour prévenir l’usager d’un virage nécessitant une adaptation de la vitesse, il est proposé d’utiliser des pictogrammes universels, compréhensibles instantanément, sans nécessiter de lecture textuelle ou de concentration prolongée. Ces icônes pourront s’inspirer de la signalisation routière standard, par exemple un virage serré, une limitation de vitesse conseillée, une alerte "danger".
 L'objectif est de minimiser le temps d’attention visuelle requis, et ainsi éviter que le motard détourne les yeux de la route.
-5.2. Complément sonore : alerte rapide et personnalisable
 En complément de l’affichage, un signal sonore court et identifiable peut être émis lorsque la courbure détectée dépasse un certain seuil et que la vitesse du motard est jugée excessive par rapport à la situation.
 Ce bip peut remplir plusieurs fonctions :
-
-Alerte préventive : inciter le motard à lever le pied dans un virage moyen ou serré.
-Alerte critique : signaler un danger si la vitesse est clairement inadaptée.
+\begin{itemize}
+    \item Alerte préventive : inciter le motard à lever le pied dans un virage moyen ou serré.
+    \item Alerte critique : signaler un danger si la vitesse est clairement inadaptée.
+\end{itemize}
 Pour ne pas créer de gêne ou de stress, le signal doit :
-Être court, non strident et facilement reconnaissable,
-Être désactivable ou réglable par l’utilisateur (volume, type de son),
-Ne pas se répéter en boucle inutilement, afin de respecter l’attention du conducteur.
+\begin{itemize}
+    \item Être court, non strident et facilement reconnaissable,
+    \item Être désactivable ou réglable par l’utilisateur (volume, type de son),
+    \item Ne pas se répéter en boucle inutilement, afin de respecter l’attention du motard.
+\end{itemize}
 L’ajout de ce canal auditif permet d’éviter la dépendance au visuel et s’adresse particulièrement aux utilisateurs préférant rester concentrés sur la route sans consulter un écran.
-5.3. Accessibilité et personnalisation
 Le système devra permettre une personnalisation des retours utilisateur, afin de s’adapter aux préférences et aux besoins de chacun :
-Possibilité d’activer ou désactiver le son,
-Choix du mode d’alerte (visuel seul, sonore seul, ou les deux),
-Réglage de la sensibilité des alertes (par exemple, activer uniquement pour les virages très serrés).
+\begin{itemize}
+    \item Possibilité d’activer ou désactiver le son,
+    \item Choix du mode d’alerte (visuel seul, sonore seul, ou les deux),
+    \item Réglage de la sensibilité des alertes (par exemple, activer uniquement pour les virages très serrés).
+\end{itemize}
 Cela garantit une expérience utilisateur plus inclusive, tenant compte des profils variés : motards expérimentés, jeunes conducteurs, ou encore personnes malentendantes.
 
 \begin{figure}[H]
@@ -272,7 +278,9 @@ Cela garantit une expérience utilisateur plus inclusive, tenant compte des prof
     \caption{Génération d'un tableau de bord possible avec l'IA.}
 \end{figure}
 
-Il pourrait être interessant de poursuivre le développement sur une action sur les freins afin de ralentir légèrement la moto ou bien empêcher ou couper l'accélération. C'est une piste interessante mais cependant, il faut prendre en concidération plusieurs facteurs : \\
-• Ne pas surprendre le motard,\\
-• Ne pas dimunuer l'adhérence des pneus,\\
-• Ne pas inflencer sur la trajectoire de sécurité, or la vitesse joue un rôle crutial dans la trajectoire.
+Il pourrait être interessant de poursuivre le développement sur une action sur les freins afin de ralentir légèrement la moto ou bien empêcher ou couper l'accélération. C'est une piste interessante mais cependant, il faut prendre en considération plusieurs facteurs : 
+\begin{itemize}
+    \item Ne pas surprendre le motard,
+    \item Ne pas dimunuer l'adhérence des pneus,
+    \item Ne pas inflencer sur la trajectoire de sécurité, or la vitesse joue un rôle crutial dans la trajectoire.
+\end{itemize}

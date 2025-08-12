@@ -554,10 +554,10 @@
       \field{title}{Cette moto électrique promet une sécurité maximale grâce à l’{IA}}
       \field{year}{2024}
       \verb{urlraw}
-      \verb https://www.phonandroid.com/cette-moto-electrique-promet-une-securite-maximale-grace-a-lia.html
+      \verb https://www.phonandroid.com/cette-moto-electrique-promet-une-securite-maximale-grâce-a-lia.html
       \endverb
       \verb{url}
-      \verb https://www.phonandroid.com/cette-moto-electrique-promet-une-securite-maximale-grace-a-lia.html
+      \verb https://www.phonandroid.com/cette-moto-electrique-promet-une-securite-maximale-gr%C3%A2ce-a-lia.html
       \endverb
     \endentry
     \entry{liberty_rider}{report}{}
@@ -666,29 +666,6 @@
       \verb{url}
       \verb https://www.bmw-motorrad.fr/fr/engineering/innovation/innovation.html
       \endverb
-    \endentry
-    \entry{journal_de_quebec_motocycliste_nodate}{article}{}
-      \name{author}{1}{}{%
-        {{hash=a9f10d7654c3e4ae11d7c68773b47fee}{%
-           family={Name},
-           familyi={N\bibinitperiod},
-           given={Author},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{a9f10d7654c3e4ae11d7c68773b47fee}
-      \strng{fullhash}{a9f10d7654c3e4ae11d7c68773b47fee}
-      \strng{bibnamehash}{a9f10d7654c3e4ae11d7c68773b47fee}
-      \strng{authorbibnamehash}{a9f10d7654c3e4ae11d7c68773b47fee}
-      \strng{authornamehash}{a9f10d7654c3e4ae11d7c68773b47fee}
-      \strng{authorfullhash}{a9f10d7654c3e4ae11d7c68773b47fee}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal de Québec}
-      \field{note}{Accessed: 2024-08-01}
-      \field{title}{Title of the article}
-      \field{year}{2024}
     \endentry
     \entry{osm_doc}{report}{}
       \field{sortinit}{O}

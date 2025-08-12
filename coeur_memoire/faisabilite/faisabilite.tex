@@ -15,10 +15,9 @@ Mon programme utilise des données routières open source via OpenStreetMap (OSM
 La méthode mise en œuvre repose sur le calcul géodésique entre trois points consécutifs, p1, p2 et p3 sur un segment de route à partir d'un point GPS, la position actuelle. Cela permet d’obtenir une estimation simple de la courbure.
 Cependant, cette approche reste sensible à la densité des points sur les segments (peu de points donc cela implique une mauvaise précision).
 
-\subsubsection{Faisabilité d’implémentation sur un véhicule réel}
-Le monde du deux-roues posent certaines contraintes matérielles et logicielles. En effet, les capteurs nécessite d’un GPS de très bonne précision, d'un module RTK\footnote{Real-Time Kinematic : Améliore la précision du GPS en temps réel. Utilisé en topographie, drones, agriculture...} pour éviter les erreurs de localisation afin que les calculs soient optimisés. La connectivité doit être parfaite si les cartes ne sont pas embarquées, cela peut poser des limites en zone blanche. Une connexion réseau sera nécessaire. Concernant le matériel embarqué, nous pouvons utiliser un  microcontrôleur\footnote{ (ex : Raspberry Pi, Arduino, ESP32) capable d’exécuter les traitements de calcul ou de les transmettre à une plateforme distante.}. La consommation de ces appareils ne doivent pas être trop importante car ça reste un "petit véhicule" avec une petite batterie. Cela pourrait impliquer des pannes comme un alternateur ou une bobine\footnote{bobine d’allumage : Agit comme un transformateur entre la batterie et les bougies, et sans elle, le moteur ne peut pas démarrer} HS.
-Les limites actuellement restent les prix. En effet, ajouter des fonctionnalités de sécurité ayant des prix trop important baissent l'attractivité des motos. 
-
+\commentaire{Faisabilité d’implémentation sur un véhicule réel}
+Le monde du deux-roues posent certaines contraintes matérielles et logicielles. En effet, les capteurs nécessite d’un GPS de très bonne précision, d'un module RTK\footnote{Real-Time Kinematic : Améliore la précision du GPS en temps réel. Utilisé en topographie, drones, agriculture...} pour éviter les erreurs de localisation afin que les calculs soient optimisés. La connectivité doit être parfaite si les cartes ne sont pas embarquées, cela peut poser des limites en zone blanche. Une connexion réseau sera nécessaire. Concernant le matériel embarqué, nous pouvons utiliser un  microcontrôleur\footnote{ (Par exemple : Raspberry Pi, Arduino, ESP32) : Capable d’exécuter les traitements de calcul ou de les transmettre à une plateforme distante.}. La consommation de ces appareils ne doivent pas être trop importante car ça reste un "petit véhicule" avec une petite batterie. Cela pourrait impliquer des pannes comme un alternateur ou une bobine\footnote{Bobine d’allumage : Agit comme un transformateur entre la batterie et les bougies, et sans elle, le moteur ne peut pas démarrer.} HS.
+Les limites actuellement restent les prix. En effet, ajouter des fonctionnalités de sécurité ayant des prix trop important baissent l'attractivité des motos. \\
 Comme il n’existe pas encore de produit commercial alliant GPS et l'alerte virage, on peut estimer sur la base des coûts de prototypes et de composants.
 
 \begin{table}[h!]
@@ -32,10 +31,10 @@ Abonnement cartes HD (HERE, TomTom, etc.) & 10–30 € / mois \\
 Interface casque ou écran moto (HUD / retour haptique) & 100–300 € \\
 \hline
 \end{tabular}
-\caption{Estimation des coûts des principaux composants d'un système d’assistance moto}
+\caption{Estimation des coûts des principaux composants d'un système d’assistance moto.}
 \label{tab:couts-composants}
 \end{table}
-Afin d'avoir un GPS précis et réactif. Il doit être accompané de la technologie IMU. IMU permet de compenser la latence et les imprécisions GPS en fournissant la vitesse angulaire (gyroscope) pour la courbure des virages, l'orientation (magnétomètre) et l'accélération linéaire (accéléromètre) pour les freinage. L'IMU peut fonctionner à 100-1000 Hz ce qui permet d'améliorer fortement le temps de réaction. Ces points sont crutiaux pour une fonctionnalité comme la notre, la prédiction d'abord de virages dangereux. La marge d'erreur n'est pas permise.
+Afin d'avoir un GPS précis et réactif. Il doit être accompagné de la technologie IMU. IMU permet de compenser la latence et les imprécisions GPS en fournissant la vitesse angulaire (gyroscope) pour la courbure des virages, l'orientation (magnétomètre) et l'accélération linéaire (accéléromètre) pour les freinages. L'IMU peut fonctionner à 100-1000 Hz ce qui permet d'améliorer fortement le temps de réaction. Ces points sont cruciaux pour une fonctionnalité comme la notre, la prédiction d'abord de virages dangereux. La marge d'erreur n'est pas permise.
 
 \vspace{0.5cm}
 Voici un tableau comparatif:
@@ -51,14 +50,14 @@ Fiabilité en virage & Faible & Haute \\
 Sensibilité au signal & Oui & Moins critique \\
 \hline
 \end{tabular}
-\caption{Comparaison des performances entre un GPS seul et un système GPS couplé à une centrale inertielle (IMU)}
+\caption{Comparaison des performances entre un GPS seul et un système GPS couplé à une centrale inertielle (IMU).}
 \label{tab:gps-vs-imu}
 \end{table}
 
 L’acceptabilité d’un tel système dépend également du profil du conducteur. Un motard préfèrera un système non intrusif (affichage sur smartphone, retour haptique) et intuitif. Le système doit être discret afin de ne pas distraire l’attention ni le surcharger d’information. Un bip, un logo pourraient constituer une solution ergonomique.
 
 
-\subsubsection{Prototype et simulation}
+\commentaire{Prototype et simulation}
 Le prototype logiciel développé offre plusieurs fonctionnalités clés :
 \begin{itemize}
   \item la position actuelle du véhicule,
@@ -80,7 +79,7 @@ Les évolutions qui peuvent être envisagées pour les prochaines étapes du pro
 \subsubsection{Confidentialité et Données}
 \commentaire{Cadre juridique international autour du GPS}
 Le développement de technologies d’assistance à la conduite basées sur la géolocalisation, comme celle proposée dans ce projet, soulève d’importants enjeux juridiques, notamment en matière de souveraineté, d’accessibilité aux données cartographiques, et d’usage du GPS selon les pays.
-Dans certains États, l’accès aux données cartographiques est limité. Par exemple, la Chine impose l’utilisation de fournisseurs cartographiques agréés par l’État, avec des restrictions sur les données affichées ou exportables. En Autriche et en Allemagne, les dispositifs de géolocalisation sont autorisés, mais l’usage de détecteurs ou d'avertisseurs de radars est strictement interdit, y compris lorsqu'ils sont intégrés à un GPS. Le Japon autorise l’usage du GPS, mais certains dispositifs RF\footnote{Radio Fréquence : Ce sont des dispositifs qui émettent et recçoivent des ondes radio pour communiquer entre 3 kHz et 300 GHz.}, notamment ceux qui interfèrent avec d'autres systèmes, sont interdits.
+Dans certains États, l’accès aux données cartographiques est limité. Par exemple, la Chine impose l’utilisation de fournisseurs cartographiques agréés par l’État, avec des restrictions sur les données affichées ou exportables. En Autriche et en Allemagne, les dispositifs de géolocalisation sont autorisés, mais l’usage de détecteurs ou d'avertisseurs de radars est strictement interdit, y compris lorsqu'ils sont intégrés à un GPS. Le Japon autorise l’usage du GPS, mais certains dispositifs RF\footnote{Radio Fréquence : Ce sont des dispositifs qui émettent et reçoivent des ondes radio pour communiquer entre 3 kHz et 300 GHz.}, notamment ceux qui interfèrent avec d'autres systèmes, sont interdits.
 
 Ces exemples illustrent la diversité des contraintes réglementaires à l’échelle internationale, ce qui constitue un défi pour tout projet technologique visant un déploiement global.
 \vspace{0.5cm}
