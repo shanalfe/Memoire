@@ -33,7 +33,7 @@ G = ox.graph_from_point(position_actuelle, dist=rayon_recherche, network_type='a
 edges = ox.graph_to_gdfs(G, nodes=False)
 
 # Calcul de la courbure
-def compute_curvature(geometry):
+def calcul_courbure(geometry):
     
     coords = list(geometry.coords)
   
@@ -74,7 +74,7 @@ edges["distance"] = edges.geometry.distance(point_actuel)
 segment_proche = edges.loc[edges["distance"].idxmin()]
 
 # Calcul de la courbure du segment
-courbure = compute_curvature(segment_proche.geometry)
+courbure = calcul_courbure(segment_proche.geometry)
 
 # evaluer la vitesse conseillee
 
