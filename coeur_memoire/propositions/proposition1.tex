@@ -1,17 +1,17 @@
-Pour pouvoir proposer de nouvelles fonctionnalités de prévention, il faut optimiser le tableau de bord. Il faut créer des logos communs à tous pour avoir le même langage. 
+Pour pouvoir proposer de nouvelles fonctionnalités de prévention, il faut optimiser le tableau de bord et créer des logos communs à tous pour avoir le même langage. 
 
-L'idée serait d'intégrer dans les motos une puce GPS qui serait capable d'avertir en cas de virage dangeureux. L'alerte (sonore via un intercom et voyant au tableau de bord) serait envoyée via le tableau de bord connecté si la vitesse est supérieure à la vitesse recommandée. Cette vitesse sera calculée via la valeur de la courbure du virage. Des chercheurs Alex Liniger et Simon Hecker ont développé un prototype , Aegis Rider AG\cite{vitesse_virage_mcnews} permettant de prendre la meilleure trajectoire. Cependant, ce dernier ne prend pas en compte les autres facteurs de la route (autres usagers, état de la chaussée, etc.). Comme démontré ci-dessous, la trace bleu indiquant la trajectoire de sécurité et le compteur de vitesse masquent la qualité de la route par conséquent, le motard ne pourra pas anticiper les dangers de la route (gravillon, trous, ....). À l'heure d'aujourd'hui, cette solution reste extrêmement complexe. Ma solution permettra de fonctionner dans la pluspart des cas.
+L'idée serait d'intégrer dans les motos une puce GPS qui serait capable d'avertir en cas de virage dangereux. L'alerte (sonore via un intercom et voyant au tableau de bord) serait envoyée via le tableau de bord connecté si la vitesse est supérieure à la vitesse recommandée. Cette vitesse sera calculée via la valeur de la courbure du virage. Des chercheurs Alex Liniger et Simon Hecker ont développé un prototype , Aegis Rider AG\cite{vitesse_virage_mcnews} permettant de prendre la meilleure trajectoire. Cependant, ce dernier ne prend pas en compte les autres facteurs de la route (autres usagers, état de la chaussée, etc.). Comme démontré ci-dessous, la trace bleu indiquant la trajectoire de sécurité et le compteur de vitesse masquent la qualité de la route par conséquent, le motard ne pourra pas anticiper les dangers de la route (gravillons, feuilles, trous et autres). À l'heure d'aujourd'hui, cette solution reste extrêmement complexe. La solution que je propose ici permettrait de fonctionner dans la plupart des cas.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{coeur_memoire/images/aegis.png} 
     \caption{Prototype Aegis Rider AG pour la détection de virages dangereux.}
 \end{figure}
-Cette fonctionnalité est très interessante mais elle empêche une bonne visibilité de la surface de la route et elle peut fausser une prise de décision.
+Cette fonctionnalité est très intéressante mais elle empêche une bonne visibilité de la surface de la route et elle peut fausser une prise de décision.
 Comme illustré dans la Figure~\ref{fig:trajectoire_securite_difficulte}, le processus ne pourra pas adapter sur des virages dit "imparfaits".
 
 \subsubsection{Programme d'alerte de virages}
-Le programme permet de savoir si la vitesse à l'instant t est trop rapide pour le virage. Je me base sur la valeur de la courbure.
+Le programme permet de savoir si la vitesse à l'instant T est trop rapide pour le virage. Je me base sur la valeur de la courbure.
 
 Voici le diagramme d'action de cette fonctionnalité:\\
 
@@ -35,11 +35,11 @@ edges = ox.graph_to_gdfs(G, nodes=False)
 Avec :
 \begin{itemize}
     \item \texttt{G} : le graphe routier obtenu via \texttt{ox.graph\_from\_point} qui contient des nœuds (c'est-à-dire les intersections) et des arêtes qui représentent les routes.
-    \item \texttt{nodes = False} : car je ne prends que les arêtes (edges), c’est-à-dire les segments de route. Je n'ai pas besoin pour mon programme de tous les noeuds (par exemple une intersection à plusieurs routes, un arrefour, un croisement...) du réseau. Il peut être intéressant pour calculer un plus court chemin. De plus, cela risquerait de sur-charger les données.
+    \item \texttt{nodes = False} : car je ne prends que les arêtes (edges), c’est-à-dire les segments de route. Je n'ai pas besoin pour mon programme de tous les noeuds (par exemple une intersection à plusieurs routes, un carrefour, un croisement...) du réseau. Il peut être intéressant pour calculer un plus court chemin. De plus, cela risquerait de sur-charger les données.
 \end{itemize}
 
 \vspace{0.5cm}
-L'intérêt de calculer la courbure de la courbe est de pouvoir anticiper le virage et par conséquent, adapter la vitesse pour optimiser l'adhérence, la trajectoire où l'on se sentira le plus en sécurité. \\
+L'intérêt de calculer la courbure de la trajectoire est de pouvoir anticiper le virage et par conséquent, adapter la vitesse pour optimiser l'adhérence et de définir la trajectoire où l'on se sentira le plus en sécurité. \\
 Le calcul de la courbure permettra d'identifier un virage s'il est dangereux à partir de données GPS cartographiques pour enfin adapter le comportement du système embarqué (alerte, adaptation de trajectoire, assistance..).
 Donc la courbure mesure à quel point une route peut changer de direction sur une courte distance, ici, dans un virage.\\
 Une route droite a une courbure environ égale à 0. Une route qui tourne fort (virage serré) a une courbure élevée.
@@ -63,7 +63,7 @@ Plusieurs études indiquent que les rayons < 50 m sont classés comme virages da
 L’estimation “courbure > 0.1 = danger > 60 km/h” est une règle empirique, basée sur des données de sécurité moto reconnues, des normes d'ingénierie routière et des approximations géométriques issues de GPS.
 
 
-L'avantage d'avoir un calcul automatique et en amont, cela permet de prévenir avant même d'être dans le virage. Il peut remplacer un panneau quand celui-ci n'est pas visible. Elle ne remplace pas une analyse dynamique complète mais elle est suffisante pour alerter automatiquement le pilote ce qui est exactement l’objectif du système.
+L'avantage d'avoir un calcul automatique et en amont permet de prévenir avant même d'être dans le virage. Il peut remplacer un panneau quand celui-ci n'est pas visible. Elle ne remplace pas une analyse dynamique complète mais elle est suffisante pour alerter automatiquement le pilote ce qui est exactement l’objectif du système.
 
 Je commence par créer 3 points, p1, p2 et p3, notés respectivement A, B et C sur la Figure~\ref{schemaviragepoint}, à partir des premières coordonnées GPS \texttt{position\_actuelle}. Ces trois points forment un triangle géographique.
 \begin{lstlisting}[language=Python, caption={Calcul de points}]
@@ -79,14 +79,12 @@ point_actuel = Point(position_actuelle[1], position_actuelle[0])  # (longitude, 
 edges["distance"] = edges.geometry.distance(point_actuel)
 segment_proche = edges.loc[edges["distance"].idxmin()]
 \end{lstlisting}
-	1.	Création d’un point géométrique :
-La position actuelle, exprimée sous la forme (latitude, longitude), est convertie en un objet géométrique Point (au format (longitude, latitude), comme attendu par la bibliothèque shapely). Ce point représente la localisation du véhicule dans l’espace.
-	2.	Calcul des distances aux segments de route :
-La variable edges contient l’ensemble des segments de route extraits depuis OpenStreetMap, représentés sous forme de lignes géométriques (LineString). Pour chacun de ces segments, on calcule la distance entre sa géométrie et la position actuelle du véhicule à l’aide de la méthode .distance(). Ce calcul est réalisé sur l’ensemble du GeoDataFrame, et les distances obtenues sont stockées dans une nouvelle colonne nommée "distance".
-	3.	Identification du segment le plus proche :
-Grâce à la méthode .idxmin(), on récupère l’indice du segment présentant la plus petite distance au point courant. Ce segment est ensuite extrait via .loc[]. Il s’agit donc du segment de route le plus proche du véhicule à l’instant T.
+Pour déterminer sur quel tronçon de route se situe le véhicule, plusieurs étapes sont nécessaires.
+Tout d’abord, la position GPS actuelle (latitude, longitude) est convertie en un objet géométrique de type Point, dans le format attendu par la bibliothèque shapely (longitude, latitude). Ce point matérialise la localisation du véhicule dans l’espace.
+Ensuite, les segments de route issus d’OpenStreetMap (contenus dans la variable edges) sont parcourus. Chaque segment est représenté sous forme de LineString et l’on calcule sa distance par rapport au point du véhicule. Ces valeurs sont enregistrées dans une nouvelle colonne appelée distance.
+Enfin, on identifie le tronçon le plus proche à l’instant T. Pour cela, on recherche simplement la distance minimale dans le tableau, puis on extrait le segment correspondant. Celui-ci représente la portion de route la plus proche de la position actuelle du véhicule.
 
-Cette opération est cruciale, car elle permet de concentrer les analyses (détection de virage, estimation de courbure, adaptation de la vitesse, etc.) sur la portion de route réellement pertinente dans le contexte de conduite.
+Cette opération est cruciale car elle permet de concentrer les analyses (détection de virage, estimation de courbure, adaptation de la vitesse, etc.) sur la portion de route réellement pertinente dans le contexte de conduite.
 
 \begin{tcolorbox}[title=Calcul de la courbure]
 Courbure mathématique\cite{formule_curvature} d’un virage:
@@ -113,7 +111,7 @@ c = distance directe entre le début et la fin (comme si on traçait une corde)
 
 
 
-La vitesse recommandée se calcule grâce à la courbure. Pour calculer la vitesse recommandée, conseillée, deux solutions s'offraient à moi. La première : \\
+La vitesse recommandée se calcule grâce à la courbure. Pour calculer la vitesse recommandée, conseillée, deux solutions s'offrent à moi. La première : \\
 \begin{tcolorbox}[title=Vitesse recommandée]
 Calcul de la vitesse recommandée :
 \[
@@ -134,7 +132,7 @@ Voici comment j'ai classé la valeur de la courbure en fonction de la vitesse id
 \end{itemize}
 \vspace{0.5cm}
 
-Le fait de catégoriser la valeur de la courbure, cela permet facilement d'y associer une vitesse. C'est une stratégie qui propose une solution plus globale en diminuant les erreurs en tests. Après avoir essayé plusieurs points GPS et analysé les virages, c'est pour moi la solution qui me convient le mieux à l'heure actuelle.
+Le fait de catégoriser la valeur de la courbure permet facilement d'y associer une vitesse. C'est une stratégie qui propose une solution plus globale en diminuant les erreurs en tests. Après avoir essayé plusieurs points GPS et analysé les virages, c'est pour moi la solution qui me convient le mieux à l'heure actuelle.
 \vspace{0.5cm}
 
 
@@ -187,7 +185,7 @@ On remarque qu'une certaine distance sépare la position actuelle (\texttt{posit
 
 \vspace{0.5cm}
 Dans le cadre de cette mise en situation réelle, il est important de souligner que les passages étudiés ont été effectués bien avant le lancement de l’expérimentation. Ainsi, aucune donnée de vitesse n’a été relevée de manière systématique ou avec un dispositif de mesure précis à ce moment-là.\\
-Chaque passage a été réalisé selon les capacités du motard au moment t, en fonction de son ressenti, de la configuration de la route et des conditions de circulation. L’objectif était avant tout d’observer un comportement naturel, sans contrainte technique imposée. Pour assurer un suivi, chaque passage a été enregistré à l’aide d’une caméra embarquée.
+Chaque passage a été réalisé selon les capacités du motard au moment T, en fonction de son ressenti, de la configuration de la route et des conditions de circulation. L’objectif était avant tout d’observer un comportement naturel, sans contrainte technique imposée. Pour assurer un suivi, chaque passage a été enregistré à l’aide d’une caméra embarquée.
 
 Voici, un premier exemple, un premier passage où la vitesse mesurée atteint 51 km/h.
 \begin{figure}[H]
@@ -202,7 +200,7 @@ Résultat du premier passage avec le programme :
     \includegraphics[width=0.7\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png} 
     \caption{Premier passage dans Les 17 virages aux points GPS 48.385171, 2.563108.}
 \end{figure}
-On voit que le passage se fait à 51 km/h et que la valeur de la courbure est de 0.0006. C'est un léger virage. La vitesse estimée pour se virage est de 60 km/h. Donc il n'y aura pas d'alerte. Voici maintenant un second passage réalisé un peu plus vite.
+On voit que le passage se fait à 51 km/h et que la valeur de la courbure est de 0.0006. C'est un léger virage. La vitesse estimée pour ce virage est de 60 km/h. Donc il n'y aura pas d'alerte. Voici maintenant un second passage réalisé un peu plus vite.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png} 
@@ -215,7 +213,7 @@ On voit que le passage se fait à 51 km/h et que la valeur de la courbure est de
     \caption{Deuxième passage dans Les 17 virages aux points GPS  48.385171, 2.563108.}
 \end{figure}
 
-Le deuxième passage est réalisé plus rapidement (sans excès de vitesse), cependant, la vitesse est trop "rapide" pour ce virage avec une courbure de 0.0006 et il nécessite de meilleures capacités pour le passer. Il faut que le motard soit à un niveau intermédiaire. Comme l'objectif du programme est de faire de la prévention, j'ai décidé de me baser sur un niveau de débutant. Pour conclure, il y a un message qui apparaîtra.\\
+Le deuxième passage est réalisé plus rapidement (sans excès de vitesse), cependant, la vitesse est trop "rapide" pour ce virage avec une courbure de 0.0006 et il nécessite de meilleures capacités pour l'aborder. Il faut que le motard soit à un niveau intermédiaire. Comme l'objectif du programme est de faire de la prévention, j'ai décidé de me baser sur un niveau de débutant. Pour conclure, il y a un message qui apparaîtra.\\
 Prenons un dernier exemple avec une nouvelle situation, une ligne droite.
 \begin{figure}[H]
     \centering
@@ -227,13 +225,13 @@ Prenons un dernier exemple avec une nouvelle situation, une ligne droite.
     \includegraphics[width=0.7\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png} 
     \caption{Placement des points p1, p2 et p3 en ligne droite pour les coordonnées 48.514114, 2.320894.}
 \end{figure}
-Idem que pour l'exemple précédent. Le programme nous génère des trois points. Avec les coordonnées 48.514114, 2.320894, voici les points que nous avons :
+Idem que pour l'exemple précédent, le programme nous génère des trois points. Avec les coordonnées 48.514114, 2.320894, voici les points que nous avons :
 \begin{itemize}
     \item p1 : (48.5144999, 2.3177499)
     \item p2 : (48.5149154, 2.3148266)
     \item p3 : (48.5151433, 2.3132539)
 \end{itemize}
-
+\vspace{0.5cm}
 Pour cette simulation au terminale, je décide de mettre deux vitesses, une à 80 km/h et une autre à 90 km/h. Ici je ne prends pas en compte la limitation de vitesse. Nous avons comme résultats :
 \begin{figure}[H]
     \centering
@@ -278,9 +276,9 @@ Cela garantit une expérience utilisateur plus inclusive, tenant compte des prof
     \caption{Génération d'un tableau de bord possible avec l'IA.}
 \end{figure}
 
-Il pourrait être interessant de poursuivre le développement sur une action sur les freins afin de ralentir légèrement la moto ou bien empêcher ou couper l'accélération. C'est une piste interessante mais cependant, il faut prendre en considération plusieurs facteurs : 
+Il pourrait être intéressant de poursuivre le développement sur une action sur les freins afin de ralentir légèrement la moto ou bien empêcher ou couper l'accélération. C'est une piste intéressant  mais cependant, il faut prendre en considération plusieurs facteurs : 
 \begin{itemize}
     \item Ne pas surprendre le motard,
-    \item Ne pas dimunuer l'adhérence des pneus,
-    \item Ne pas inflencer sur la trajectoire de sécurité, or la vitesse joue un rôle crutial dans la trajectoire.
+    \item Ne pas diminuer l'adhérence des pneus,
+    \item Ne pas influencer sur la trajectoire de sécurité, or la vitesse joue un rôle crucial dans la trajectoire.
 \end{itemize}

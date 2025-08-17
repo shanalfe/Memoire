@@ -11,12 +11,12 @@ Cette étude vise à évaluer la faisabilité de la mise en œuvre d’un systè
 De plus, comme évoqué précédemment, cette assistance n’agit pas directement sur le contrôle du véhicule. D’un point de vue légal, cela rend l’analyse des responsabilités plus simple et limite les zones d’ombre en cas d’incident.
 
 \subsubsection{Faisabilité technique}
-Mon programme utilise des données routières open source via OpenStreetMap (OSM). Ces données sont accessibles et gratuites cependant, on apperçoit un manque de précision surtout en milieu rural. Certains segments peuvent manquer de points ou contenir des simplifications qui faussent l’évaluation de la courbure.
+Le programme que je propose utilise des données routières open source via OpenStreetMap (OSM). Ces données sont accessibles et gratuites. Cependant, on peut mettre en évidence un manque de précision surtout en milieu rural. Certains segments peuvent manquer de points ou contenir des simplifications qui faussent l’évaluation de la courbure.
 La méthode mise en œuvre repose sur le calcul géodésique entre trois points consécutifs, p1, p2 et p3 sur un segment de route à partir d'un point GPS, la position actuelle. Cela permet d’obtenir une estimation simple de la courbure.
 Cependant, cette approche reste sensible à la densité des points sur les segments (peu de points donc cela implique une mauvaise précision).
 
 \commentaire{Faisabilité d’implémentation sur un véhicule réel}
-Le monde du deux-roues posent certaines contraintes matérielles et logicielles. En effet, les capteurs nécessite d’un GPS de très bonne précision, d'un module RTK\footnote{Real-Time Kinematic : Améliore la précision du GPS en temps réel. Utilisé en topographie, drones, agriculture...} pour éviter les erreurs de localisation afin que les calculs soient optimisés. La connectivité doit être parfaite si les cartes ne sont pas embarquées, cela peut poser des limites en zone blanche. Une connexion réseau sera nécessaire. Concernant le matériel embarqué, nous pouvons utiliser un  microcontrôleur\footnote{ (Par exemple : Raspberry Pi, Arduino, ESP32) : Capable d’exécuter les traitements de calcul ou de les transmettre à une plateforme distante.}. La consommation de ces appareils ne doivent pas être trop importante car ça reste un "petit véhicule" avec une petite batterie. Cela pourrait impliquer des pannes comme un alternateur ou une bobine\footnote{Bobine d’allumage : Agit comme un transformateur entre la batterie et les bougies, et sans elle, le moteur ne peut pas démarrer.} HS.
+Le monde du deux-roues posent certaines contraintes matérielles et logicielles. En effet, les capteurs nécessite d’un GPS de très bonne précision, d'un module RTK\footnote{Real-Time Kinematic : Améliore la précision du GPS en temps réel. Utilisé en topographie, drones, agriculture...} pour éviter les erreurs de localisation afin que les calculs soient optimisés. La connectivité doit être parfaite si les cartes ne sont pas embarquées, cela peut poser des limites en zone blanche. Une connexion réseau serait nécessaire. Concernant le matériel embarqué, nous pouvons utiliser un  microcontrôleur\footnote{ (Par exemple : Raspberry Pi, Arduino, ESP32) : Capable d’exécuter les traitements de calcul ou de les transmettre à une plateforme distante.}. La consommation de ces appareils ne doivent pas être trop importante car cela reste un "petit véhicule" avec une petite batterie. Cela pourrait impliquer des pannes comme un alternateur ou une bobine\footnote{Bobine d’allumage : Agit comme un transformateur entre la batterie et les bougies, et sans elle, le moteur ne peut pas démarrer.} HS.
 Les limites actuellement restent les prix. En effet, ajouter des fonctionnalités de sécurité ayant des prix trop important baissent l'attractivité des motos. \\
 Comme il n’existe pas encore de produit commercial alliant GPS et l'alerte virage, on peut estimer sur la base des coûts de prototypes et de composants.
 
@@ -34,7 +34,7 @@ Interface casque ou écran moto (HUD / retour haptique) & 100–300 € \\
 \caption{Estimation des coûts des principaux composants d'un système d’assistance moto.}
 \label{tab:couts-composants}
 \end{table}
-Afin d'avoir un GPS précis et réactif. Il doit être accompagné de la technologie IMU. IMU permet de compenser la latence et les imprécisions GPS en fournissant la vitesse angulaire (gyroscope) pour la courbure des virages, l'orientation (magnétomètre) et l'accélération linéaire (accéléromètre) pour les freinages. L'IMU peut fonctionner à 100-1000 Hz ce qui permet d'améliorer fortement le temps de réaction. Ces points sont cruciaux pour une fonctionnalité comme la notre, la prédiction d'abord de virages dangereux. La marge d'erreur n'est pas permise.
+Afin d'avoir un GPS précis et réactif, il doit être accompagné de la technologie IMU. IMU permet de compenser la latence et les imprécisions GPS en fournissant la vitesse angulaire (gyroscope) pour la courbure des virages, l'orientation (magnétomètre) et l'accélération linéaire (accéléromètre) pour les freinages. L'IMU peut fonctionner à 100-1000 Hz ce qui permet d'améliorer fortement le temps de réaction. Ces points sont cruciaux pour une fonctionnalité de prédiction d'abord de virages dangereux. La marge d'erreur n'est pas permise dans le domaine de la sécurité d'un usager.
 
 \vspace{0.5cm}
 Voici un tableau comparatif:
@@ -60,20 +60,20 @@ L’acceptabilité d’un tel système dépend également du profil du conducteu
 \commentaire{Prototype et simulation}
 Le prototype logiciel développé offre plusieurs fonctionnalités clés :
 \begin{itemize}
-  \item la position actuelle du véhicule,
-  \item le chargement dynamique d’un réseau routier à partir d’un point GPS,
-  \item l’identification du segment de route le plus proche avec une visualisation de l’environnement routier,
-  \item le calcul de la courbure de ce segment,
-  \item la recommandation d’une vitesse adaptée à cette courbure,
+  \item La position actuelle du véhicule,
+  \item Le chargement dynamique d’un réseau routier à partir d’un point GPS,
+  \item L’identification du segment de route le plus proche avec une visualisation de l’environnement routier,
+  \item Le calcul de la courbure de ce segment,
+  \item La recommandation d’une vitesse adaptée à cette courbure,
 \end{itemize}
 Ce prototype constitue une première base fonctionnelle, ouvrant la voie à de futures expérimentations sur le terrain.
 
 Les évolutions qui peuvent être envisagées pour les prochaines étapes du projet sont les suivantes :
 \begin{itemize}
-  \item l’intégration du système dans une plateforme embarquée,
-  \item l’ajout d’un suivi GPS en temps réel,
-  \item le développement d’une interface utilisateur, visuelle ou auditive,
-  \item la réalisation de simulations ou d’expérimentations plus poussées sur circuit fermé
+  \item L’intégration du système dans une plateforme embarquée,
+  \item L’ajout d’un suivi GPS en temps réel,
+  \item Le développement d’une interface utilisateur, visuelle ou auditive,
+  \item La réalisation de simulations ou d’expérimentations plus poussées sur circuit fermé
 \end{itemize}
 
 \subsubsection{Confidentialité et Données}
@@ -135,15 +135,13 @@ Outre les aspects juridiques, la spécificité des motos implique des contrainte
 Ces exigences imposent le choix d’un matériel performant, fiable, et optimisé pour des usages embarqués dans des conditions parfois extrêmes (vibrations, chaleur, humidité).
 \vspace{0.5cm}
 
-Voici des propositions de composants que nous pourrons utiliser : 
+Voici des propositions de composants que nous pourrions utiliser : 
 \begin{itemize}
   \item u-blox NEO-M8N : excellent rapport qualité/prix, ~ 40 €
   \item u-blox ZED-F9P : haute précision RTK\footnote{Real Time Kinematic: obtention d'une précision de l’ordre du centimètre.}, mais cher (~ 200 – 250 €)
   \item SparkFun GPS + IMU : combine ZED-F9P + BNO080 (IMU) : 450 €
 \end{itemize}
 \vspace{0.5cm}
-
-
 
 \subsubsection{Limites et contraintes}
 \commentaire{programme}
@@ -160,7 +158,7 @@ Aujourd’hui, de nombreux chercheurs soulignent que la complexité et la variab
 \vspace{0.5cm}
 
 \commentaire{Conclusion}
-Le développement d’un système d’assistance à la conduite basé sur la courbure routière et la géolocalisation soulève à la fois des enjeux techniques, légaux et éthiques. Pour être viable, un tel dispositif doit impérativement respecter la réglementation en vigueur, protéger la vie privée des utilisateurs et offrir une robustesse suffisante pour fonctionner en conditions réelles. Intégrer, dès la phase de prototypage, des mesures garantissant la confidentialité et la sécurité des données, ainsi que la conformité aux législations nationales, constitue un levier essentiel pour assurer la crédibilité du projet et favoriser son acceptabilité sociale.
+Le développement d’un système d’assistance à la conduite basé sur la courbure routière et la géolocalisation soulève à la fois des enjeux techniques, légaux et éthiques. Pour être viable, un tel dispositif doit impérativement respecter la réglementation en vigueur, protéger la vie privée des utilisateurs et offrir une robustesse suffisante pour fonctionner en conditions réelles.
 Le programme développé fonctionne correctement dans la majorité des situations. Toutefois, certaines limites persistent. Par exemple, la récupération des données relatives aux limitations de vitesse n’est pas toujours fiable. En conséquence, une valeur par défaut de 80 km/h est appliquée. Sur autoroute, où la limitation est de 130 km/h, la courbure calculée est généralement très faible, ce qui ne déclenche aucune recommandation particulière. Cependant, sur des voies rapides limitées à 110 km/h, une courbure suffisamment prononcée peut entraîner l’émission d’une alerte à 80 km/h. Ce choix résulte d’un compromis assumé, visant à privilégier la prudence et à garantir la sécurité du conducteur.
 Du point de vue des utilisateurs, certains motards expérimentés peuvent percevoir cette assistance comme trop « prévoyante ». En effet, plus un motard accumule d’expérience et diversifie ses trajets, plus il développe une capacité d’anticipation naturelle face aux dangers. Pour ces profils aguerris, l’alerte peut donc sembler déclenchée trop tôt.
 Pour répondre à cette critique, il serait pertinent d’intégrer une variable personnalisable permettant de définir différents niveaux d’alerte, ajustés selon l’expérience ou les préférences du motard. L’accélération pourrait également constituer un paramètre déclencheur : une variation brutale avant un virage pourrait par exemple générer une alerte anticipée, renforçant ainsi la prévention des risques.
