@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Particularités des motos sur la route}{18}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Les technologies IoT actuelles pour les motos}{20}{subsubsection.4.2.2}%
 \contentsline {subsubsection}{\numberline {4.2.3}L'exploitation des données pour les motos}{25}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Freins des technologies IoT actuelles pour les motos}{25}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4}Freins des technologies IoT actuelles pour les motos}{26}{subsubsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.3}Conclusion}{29}{subsection.4.3}%
 \contentsline {section}{\numberline {5}Mémoire}{30}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Pratique de la route - Analyse comparative des besoins de sécurité entre voitures et motos}{30}{subsection.5.1}%
@@ -45,7 +45,7 @@
 \contentsline {section}{\numberline {6}Conclusion}{66}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Conclusion mémoire}{66}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Conclusion année d'alternance}{66}{subsection.6.2}%
-\contentsline {section}{Références}{69}{section*.55}%
-\contentsline {section}{Annexes}{70}{section*.56}%
+\contentsline {section}{Références}{69}{section*.54}%
+\contentsline {section}{Annexes}{70}{section*.55}%
 \contentsline {section}{\numberline {A}Article 1}{71}{appendix.A}%
 \contentsline {section}{\numberline {B}Article 2}{72}{appendix.B}%

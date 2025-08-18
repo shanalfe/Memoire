@@ -23,6 +23,7 @@
 \onehalfspacing %interlignes
 
 
+
 \lstdefinestyle{mystyle}{
   backgroundcolor=\color{gray!10},
   basicstyle=\ttfamily\small,
@@ -57,36 +58,61 @@
 \begin{document}
 
 \begin{titlepage}
-    \begin{center}
-        
-        \begin{figure}[H]
-            \centering
-            \begin{minipage}[c]{0.45\textwidth}
-                \centering
-                \includegraphics[width=1\textwidth]{images/logo_paris_saclay.png}
-            \end{minipage}
-            \hfill
-            \begin{minipage}[c]{0.45\textwidth}
-                \centering
-                \includegraphics[width=1\textwidth]{images/logo_kappasante.jpg}
-            \end{minipage}
-        \end{figure}
-   
+  \centering
+  %-------------------- Logos (alignés sur une ligne) --------------------
+  \noindent\makebox[\textwidth][s]{%
+    \begin{minipage}[c]{0.45\textwidth}\centering
+      \includegraphics[width=0.9\linewidth]{images/logo_paris_saclay.png}
+    \end{minipage}\hfill
+    \begin{minipage}[c]{0.45\textwidth}\centering
+      \includegraphics[width=0.9\linewidth]{images/logo_kappasante.jpg}
+    \end{minipage}
+  }
 
-        {\Large \textbf{Université d'Évry Paris-Saclay}}\\[0.5cm]
-        {\Large \textbf{Mémoire de Master MIAGE}}\\[2cm]
+  \vspace{1.8cm}
 
-        {\huge \textbf{Dans quelles mesures les technologies IoT des voitures peuvent-elles être adaptées pour répondre aux besoins spécifiques de la sécurité des motos sur les routes ? }}\\[1cm]
-        {\Large\textbf{Année universitaire :}} \\[0.5cm]
-        {\Large \textbf{2024/2025}}\\[1cm]
-        {\Large \textbf{Shana LEFEVRE}}\\[2cm]
-        {\Large Maître d'apprentissage: \textbf{Clément LECLERCQ}}\\[0.5cm]
-        {\Large Tutrice enseignante: \textbf{Farida ZEHRAOUI}}\\[3cm]
-        {\Large{4 rue Cléry, 75002 Paris}} \\
-        {\Large{23 Bd François Mitterrand, 91000 Évry-Courcouronnes}} \\[0.5cm]
-    \end{center}
+  %-------------------- Etablissement / type de document -----------------
+  {\large \textbf{Université d'Évry Paris-Saclay}}\\[0.4cm]
+  {\large \textbf{Mémoire de Master MIAGE}}%
+
+  \vspace{1.4cm}
+
+  %-------------------- Titre & sous-titre -------------------------------
+  {\LARGE \bfseries L’IoT et les deux-roues\par}
+  \vspace{0.7cm}
+  \begin{minipage}{0.9\textwidth}
+    \centering
+    {\large
+    Dans quelles mesures les technologies IoT des voitures peuvent-elles être
+    adaptées pour répondre aux besoins spécifiques de la sécurité des motos sur les routes ?%
+    }
+  \end{minipage}
+
+  \vspace{1.4cm}
+
+  %-------------------- Année & auteur -----------------------------------
+  {\large \textbf{Année universitaire :} 2024/2025\par}
+  \vspace{0.5cm}
+  {\large \textbf{Shana \MakeUppercase{Lefevre}}\par}
+
+  \vspace{1.2cm}
+
+  %-------------------- Encadrants (table propre) ------------------------
+  \centering
+  \begin{tabular}{@{}l l@{}}
+    \large Maître d’apprentissage : & \large \textbf{Clément LECLERCQ} \\
+    \large Tutrice enseignante :    & \large \textbf{Farida ZEHRAOUI} \\
+  \end{tabular}
+
+  % Espace élastique : pousse le bloc adresses en bas de page
+  \vfill
+
+  %-------------------- Adresses en bas de page --------------------------
+  {\small
+    4 rue Cléry, 75002 Paris \par
+    23 Bd François Mitterrand, 91000 Évry-Courcouronnes
+  }
 \end{titlepage}
-
 
 \tableofcontents % Table des matières
 
@@ -106,6 +132,7 @@
 \newpage
 \printbibliography
 \addcontentsline{toc}{section}{Références}
+
 
 \newpage
 \appendix

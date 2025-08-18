@@ -11,31 +11,22 @@ Par ailleurs, la connectivité IoT facilite l’intégration des smartphones et 
 
 
 \subsubsection{Systèmes de communication et d’échange de données}
-\todo{A DÉVELOPPER ?}
-"Depuis longtemps une voiture collecte des données, ces données sont collectées via les capteurs et traitées par les calculateurs du véhicule." par Innovauto \cite{donnees_echange}. Les premiers calculateurs électroniques embarqués (ECU) ont été introduits à la fin des années 1970, principalement pour la gestion du moteur. Leur présence s’est progressivement renforcée, et l’utilisation généralisée de capteurs et de calculateurs s’est imposée dans les années 1990 et 2000 avec l’apparition de systèmes comme l’ABS, l’ESP ou encore l’injection électronique. Aujourd’hui, les véhicules modernes intègrent plusieurs dizaines, voire plusieurs centaines de capteurs et de calculateurs, qui assurent le fonctionnement et la sécurité de l’ensemble du véhicule. \\
+"Depuis longtemps une voiture collecte des données, ces données sont collectées via les capteurs et traitées par les calculateurs du véhicule." par Innovauto \cite{donnees_echange}. Les premiers calculateurs électroniques embarqués\footnote{ECU : Petits ordinateurs présents dans les véhicules. Ils collectent les informations transmises par différents capteurs et envoient ensuite des ordres aux actionneurs comme l'injection de carburant, ABS ...} ont été introduits à la fin des années 1970, principalement pour la gestion du moteur. Leur présence s’est progressivement renforcée, et l’utilisation généralisée de capteurs et de calculateurs s’est imposée dans les années 1990 et 2000 avec l’apparition de systèmes comme l’ABS\footnote{Antiblockiersystem : Évite le blocage des roues.}, l’ESP\footnote{Electronic Stability Program : C'est un système d’aide à la conduite qui agit automatiquement lors d'une perte d’adhérence, un virage mal négocié ... sur le freinage de chaque roue et parfois sur le moteur pour aider le conducteur à garder le contrôle du véhicule.} ou encore l’injection électronique\footnote{L’injection électronique : Règle automatiquement la quantité de carburant envoyée dans le moteur selon différents paramètres comme la vitesse, la température, la pression ou la position de l’accélérateur. Grâce aux capteurs et à un calculateur (ECU), elle permet d’optimiser la combustion.}. Aujourd’hui, les véhicules modernes intègrent plusieurs dizaines, voire plusieurs centaines de capteurs et de calculateurs, qui assurent le fonctionnement et la sécurité de l’ensemble du véhicule. \\
 Les différentes données émises par un véhicule peuvent être \textbf{techniques} (par exemple : état de charge de la batterie, autonomie restante ...), \textbf{usage} (par exemple : type de trajet, style de conduite...) et \textbf{personnelles} (par exemple : titulaire de la carte grise, agenda du conducteur,...).
-%cycle de vie de la donnée
 Un véhicule autonome échange des données avec son environnement, et ces données suivent un cycle de vie comportant plusieurs étapes :
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/schéma_cycle_vie_donneées.png} 
-    \caption{Cycle de vie de la donnée}
-\end{figure}
-Les étapes du cycle de vie des données doivent respecter le RGPD\footnote{Règlement Général sur la Protection des Données : Il établit un cadre juridique unifié pour la collecte, le traitement et la protection des données personnelles au sein de l’Union européenne} sans être spécifiquement adaptées à la pratique automobile. De plus, si des véhicules sont commercialisés, ils doivent se conformer aux normes de chaque pays, telles que le RGPD en Europe, le Cloud Act aux États-Unis, et le PIPL\footnote{ Personal Information Protection Law : C’est la loi chinoise entrée en vigueur le 1er novembre 2021, qui encadre la collecte, l’utilisation, le stockage et le partage des données personnelles.} en Chine. Voici un exemple comparatif :
 \begin{table}[H]
 \centering
-\caption{Comparaison entre le RGPD (Union européenne) et le PIPL (Chine)}
+\caption{Comparaison simplifiée entre le RGPD (UE) et le PIPL (Chine)}
 \begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
 \hline
 \textbf{Critère} & \textbf{RGPD (UE)} & \textbf{PIPL (Chine)} \\ \hline
-\textbf{Date d'entrée en vigueur} & 25 mai 2018 & 1er novembre 2021 \\ \hline
-\textbf{Champ d'application} & Toutes les organisations qui traitent des données personnelles de résidents de l’UE, peu importe leur localisation. & Toutes les organisations qui traitent des données personnelles de résidents chinois, y compris à l’étranger si cela concerne leurs droits et intérêts. \\ \hline
-\textbf{Consentement} & Doit être libre, spécifique, éclairé et univoque. & Doit être clair, volontaire et informé, avec un accord explicite requis dans certains cas (par ex. données sensibles). \\ \hline
-\textbf{Principes clés} & Licéité, loyauté, transparence, limitation des finalités, minimisation, exactitude, limitation de la conservation, intégrité, confidentialité. & Finalité claire, minimisation, transparence, sécurité, responsabilité, respect des droits individuels. \\ \hline
-\textbf{Droits des individus} & Accès, rectification, effacement, limitation, opposition, portabilité des données. & Accès, copie, correction, suppression, limitation, opposition, explication du traitement. \\ \hline
-\textbf{Données sensibles} & Traitement soumis à des conditions strictes (santé, biométriques, opinions politiques...). & Nécessite un consentement explicite et des mesures renforcées (santé, biométriques, localisation, données financières...). \\ \hline
-\textbf{Transfert international} & Autorisé vers pays disposant d’un niveau de protection adéquat ou via clauses contractuelles types. & Soumis à une évaluation de sécurité par l'autorité chinoise et, parfois, à une autorisation préalable. \\ \hline
-\textbf{Sanctions} & Jusqu’à 20 millions € ou 4\% du chiffre d’affaires annuel mondial (le plus élevé des deux). & Jusqu’à 50 millions CNY (\textasciitilde 7 millions €) ou 5\% du chiffre d’affaires annuel. \\ \hline
+\textbf{Entrée en vigueur} & 25 mai 2018 & 1er novembre 2021 \\ \hline
+\textbf{Champ d’application} & Données personnelles des résidents de l’UE, où que soit l’entreprise. & Données personnelles des résidents chinois, y compris par des entreprises étrangères. \\ \hline
+\textbf{Consentement} & Doit être clair et explicite. & Doit être volontaire et informé, explicite pour données sensibles. \\ \hline
+\textbf{Droits des individus} & Accès, rectification, effacement, opposition, portabilité. & Accès, copie, correction, suppression, explication du traitement. \\ \hline
+\textbf{Données sensibles} & Conditions strictes (santé, biométriques, opinions...). & Consentement explicite et mesures renforcées (santé, localisation, finances...). \\ \hline
+\textbf{Transferts internationaux} & Vers pays « adéquats » ou avec clauses contractuelles. & Évaluation de sécurité et parfois autorisation de l’autorité chinoise. \\ \hline
+\textbf{Sanctions} & Jusqu’à 20 M€ ou 4\% du chiffre d'affaires. & Jusqu’à 50 M CNY (\textasciitilde 7 M€) ou 5\% du chiffre d'affaires. \\ \hline
 \end{tabular}
 \end{table}
 En résumé, bien que le RGPD et le PIPL partagent un objectif commun de protection des données personnelles, leurs approches diffèrent sur plusieurs points, notamment dans la portée territoriale, le rôle des autorités de contrôle et le niveau de centralisation des obligations. Le RGPD se concentre sur la transparence et le consentement explicite, 
@@ -43,7 +34,7 @@ tandis que le PIPL intègre des exigences plus strictes en matière de transfert
 Les données collectées par les véhicules autonomes sont considérées comme des données personnelles et doivent être protégées conformément à la réglementation en vigueur d'après la Thèse de Nolwen LE GUENNEC\cite{le_gennec_machine_2023}.\\
 La connectivité des véhicules autonomes pose également des problèmes de sécurité, notamment la vulnérabilité aux attaques informatiques. Des questions se posent sur la manière de protéger ces systèmes contre de telles menaces. Comment peut-on sécuriser ces informations sensibles face aux cyberattaques ?\\
 Les programmes informatiques consomment de l’énergie et l'impact environnemental de ces technologies doit être pris en compte.\\
-Grâce à la technologie IoT, les véhicules peuvent échanger des données. Voici les 3 modes de fonctionnement des STI\footnote{Système de Transport Intelligent} :
+Grâce à la technologie IoT, les véhicules peuvent échanger des données et leur impact environnemental varie. Voici les 3 modes de fonctionnement des STI\footnote{Système de Transport Intelligent} :
 \begin{itemize}
     \item \textbf{Communication véhicule à véhicule (V2V)} : Les véhicules équipés de l’IoT échangent des informations telles que leur vitesse et leur position. Cette communication permet de signaler des accidents ou des pannes, aidant les conducteurs à anticiper les problèmes de circulation et à se déplacer plus efficacement.
     \item \textbf{Communication véhicule à infrastructure (V2I)} : Les véhicules connectés interagissent avec des éléments d’infrastructure routière comme les feux de circulation, les lampadaires et les caméras. L’analyse de ces données peut conduire à des ajustements tels que la modification des limites de vitesse ou la facilitation du passage des véhicules de secours, améliorant ainsi la sécurité routière pour tous les usagers.
@@ -58,21 +49,47 @@ Grâce à la technologie IoT, les véhicules peuvent échanger des données. Voi
 
 La technologie basée sur les opérateurs mobiles permet une communication avec un serveur distant, mais ne prend pas en charge directement la communication entre véhicules et infrastructures : 
 \begin{itemize}
-    \item Le ITS-G5 (Wi-Fi) fonctionne sur la bande 5,9 GHz et permet une communication locale et directe entre les véhicules, les infrastructures et les piétons.
-    \item Le C-V2X (Cellular-V2X) combine les deux approches, offrant à la fois une communication via les réseaux mobiles et une communication directe entre les véhicules et infrastructures.
-    \item Le C-V2X est la solution la plus complète, intégrant les avantages des réseaux mobiles et de la communication directe, ce qui le rend plus adapté aux véhicules autonomes et à la gestion du trafic intelligent.
+    \item Le ITS-G5 (Wi-Fi) fonctionne sur la bande 5,9 GHz et permet une communication locale et directe entre les véhicules, les infrastructures et les piétons. Sa consommation en énergie est faible.
+    \item Le C-V2X (Cellular-V2X) combine les deux approches, offrant à la fois une communication via les réseaux mobiles et une communication directe entre les véhicules et infrastructures. Le C-V2X est la solution la plus complète, intégrant les avantages des réseaux mobiles et de la communication directe, ce qui le rend plus adapté aux véhicules autonomes et à la gestion du trafic intelligent. Cependant, il est plus coûteux en énergie que le ITS-G5.
 \end{itemize}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3cm}|p{4cm}|p{4cm}|p{3cm}|}
+\hline
+\textbf{Technologie} & \textbf{Avantages} & \textbf{Inconvénients} & \textbf{Consommation} \\
+\hline
+\textbf{Réseaux cellulaires (2G, 3G, 4G, 5G)} 
+& Large couverture géographique ; accès aux serveurs distants ; 5G : faible latence et hauts débits 
+& Dépend de l’opérateur ; pas de communication directe véhicule-véhicule 
+& Élevée (surtout 4G/5G), optimisée avec la 5G \\
+\hline
+\textbf{ITS-G5 (Wi-Fi, 5,9 GHz)} 
+& Communication directe locale (V2V, V2I, V2P) ; très faible latence ; pas besoin d’opérateur 
+& Portée limitée (~300 m) ; saturation possible en milieu urbain ; pas de connexion native au cloud 
+& Faible (similaire au Wi-Fi) \\
+\hline
+\textbf{C-V2X (Cellular V2X)} 
+& Combine communication locale et cellulaire ; haute fiabilité et évolutif ; adapté aux véhicules autonomes 
+& Déploiement complexe ; coût plus élevé (infrastructures + équipements) 
+& Moyenne à élevée (double interface radio), mais optimisée en 5G \\
+\hline
+\end{tabular}
+\caption{Comparaison des technologies V2X.}
+\end{table}
 
 \subsubsection{Capteurs et perception environnementale}
 L'évolution des véhicules intelligents repose sur des systèmes de capteurs avancés et de perception environnementale. "Un capteur IoT est un dispositif qui mesure une ou plusieurs variables physiques de l'environnement et envoie les données à un réseau ou à une plateforme IoT pour une utilisation ultérieure." selon le site de l'entreprise IoT\cite{iot_capteur}.\\
 Ces technologies permettent aux véhicules de collecter, d'analyser et d'interpréter en temps réel leur environnement afin d'améliorer leur utilisation.
 Les principaux capteurs utilisés sont les caméras, les radars, les lidars et les ultrasons.
-Ces données permettent de :\\
-- Détecter les pannes. \\
-- Alerter les propriétaires en cas de dysfonctionnement. \\
-- Optimiser la maintenance. \\
-- Simplifier les procédures de réparation. \\
-- Gérer les flottes de véhicules. \\
+Ces données permettent de :
+\begin{itemize}
+    \item Détecter les pannes,
+    \item Alerter les propriétaires en cas de dysfonctionnement,
+    \item Optimiser la maintenance,
+    \item Simplifier les procédures de réparation,
+    \item Gérer les flottes de véhicules. 
+\end{itemize}
 
 %Par exemple, Lormauto, un constructeur français spécialisé dans le rétrofit de véhicules, utilise la connectivité cellulaire 4G pour optimiser l’expérience utilisateur. Cette technologie permet de transmettre de grands volumes d’informations et de surveiller l’état de santé des véhicules et de leurs batteries en temps réel.
 
@@ -99,7 +116,7 @@ Selon le site du Gouvernement \cite{adas_gouv} "Ces technologies ouvrent la voie
 
 
 \subsubsection{Analyse des données et prise de décision}
-L'entreprise Valeo a conçu un radar Lidar « Scala ». D'après LeParisien \cite{le_parisien_radar_2019}, l'entreprise, en 2020 produit 200 000 exemplaires par an. Cette technologie permet grâce à cette technologie, la voiture peut circuler sans l’intervention d’un conducteur.\\
+L'entreprise Valeo a conçu un radar Lidar « Scala ». D'après LeParisien \cite{le_parisien_radar_2019}, l'entreprise, en 2020 produit 200 000 exemplaires par an. Grâce à cette technologie, la voiture peut circuler sans l’intervention d’un conducteur.\\
 \commentaire{yann lecun}
 Les recherches sur l'utilisation et l'interprétation des données recueillies par les capteurs sont au coeur des sujets depuis quelques années. Yann LeCun, précurseur du deep learning\footnote{L'apprentissage automatique.} nous présente l'interprétation et l'utilisation de données recueillies.
 Ce graphe ci-dessous présente la relation entre l’écart de position d’une voiture sur la voie et l’angle du volant pour ramener la voiture au milieu. 
@@ -136,7 +153,7 @@ Les motos présentent plusieurs particularités sur la route qui impactent leur 
 Une moto, c'est un véhicule de petite taille monté sur deux roues. Cela implique alors qu'elle est encore moins visible, surtout dans les angles morts d'un autre véhicule. Les motos sont agiles, possèdent une forte accélération et leur trajectoire est souvent imprévisible.  Cela accroît le risque de collision, les motos pouvant surprendre les autres usagers de la route. De plus, la configuration du véhicule expose directement le conducteur deux-roues lors d'un accident par son manque de carrosserie. Les conditions météorologiques et la surface de la route jouent un rôle important dans l'adhérence des véhicules. Les conséquences matérielles et corporelles sont beaucoup plus importantes pour un deux-roues car la chute est inévitable.
 La puissance de la machine demande beaucoup d'anticipation et une conduite plus exigeante face à tous les dangers.\\
 
-Avec M. Arioui, vice-président de l’innovation et des relations internationales, nous avons abordé la manière dont le regard influence la maîtrise des trajectoires. En effet, le regard est essentiel pour anticiper les dangers et choisir la bonne trajectoire. De plus, tous les facteurs comme l'accélération, quand solliciter\footnote{Solliciter la moto désigne le fait de mettre à contribution, de forcer ou de demander un effort particulier à la machine, par exemple, changer l'inclinaison de la moto de droite à gauche.} la moto influencent la trajectoire. 
+Avec M. ARIOUI, vice-président de l’innovation et des relations internationales, nous avons abordé la manière dont le regard influence la maîtrise des trajectoires. En effet, le regard est essentiel pour anticiper les dangers et choisir la bonne trajectoire. De plus, tous les facteurs comme l'accélération, quand solliciter\footnote{Solliciter la moto désigne le fait de mettre à contribution, de forcer ou de demander un effort particulier à la machine, par exemple, changer l'inclinaison de la moto de droite à gauche.} la moto influencent la trajectoire. 
 La sécurité routière\cite{trajectoire_securite} met en avant cette technique nommée EDSR pour "Entrée, Découverte, Sollicitation de la moto, Reprise de stabilité" permet de prendre un virage en toute sécurité en augmentant le champ de vision afin d'anticiper les dangers. 
 \begin{figure}[H]
     \centering
@@ -186,17 +203,33 @@ Les dommages corporels sont très violents, même à faible vitesse. La rapidit�
 Pour des motos qui n'ont pas l'option, il est possible d'y ajouter "Live Weel" qui permet de surveiller la pression et la température des pneus. Cela permet de réduire les risques de crevaison.
 \vspace{0.5cm}
 
-%Sena, cardo
+\commentaire{Sena, cardo}
 Des dispositifs de communication sans fil sont également disponibles pour les motards. Des marques comme Sena et Cardo\cite{cardo} proposent des systèmes de communication mains libres qui permettent aux motards de rester connectés tout en conduisant. Ces appareils se fixent sur le casque et offrent des fonctionnalités telles que la communication intercom, la musique en streaming et les appels téléphoniques. Ils sont compatibles avec les smartphones et les systèmes de navigation, améliorant ainsi la sécurité et le confort des motards sur la route. Les dernières mise à jour concernent la détection de collision. Concernant le Packtalk Pro de chez Cardo, il est équipé de capteurs qui permettent de détecter une chute et d'envoyer un message d'urgence à un contact prédéfini.\\
-%application
-D'autres technologies sont plus accessibles comme celle qui est liée au téléphone. En effet, il existe des applications mobiles qui permettent de suivre son trajet, de partager sa position en temps réel et de recevoir des alertes en cas de danger. Ces applications sont souvent gratuites et faciles à utiliser et peuvent être prises en charge par les assurances: c'est le cas de Liberty Rider \cite{liberty_rider}. Cette application utilise les capteurs du smartphone pour détecter les chutes et envoyer automatiquement un message d'alerte à un contact d’urgence. Elle propose également des fonctionnalités de navigation, prévention des virages dangereux, de partage de trajet et de statistiques de conduite, améliorant ainsi la sécurité et la convivialité de l’expérience de conduite. D'autres applications comme Calimoto, 68 Degrés sont également disponibles et offrent des fonctionnalités similaires pour les motards.\\
+
+\commentaire{application}
+D'autres technologies sont plus accessibles comme celle qui est liée au téléphone. En effet, il existe des applications mobiles qui permettent de suivre son trajet, de partager sa position en temps réel et de recevoir des alertes en cas de danger. Ces applications sont souvent gratuites et faciles à utiliser et peuvent être prises en charge par les assurances: c'est le cas de Liberty Rider \cite{liberty_rider}. Cette application utilise les capteurs du smartphone pour détecter les chutes et envoyer automatiquement un message d'alerte à un contact d’urgence. Elle propose également des fonctionnalités de navigation, prévention des virages dangereux, de partage de trajet et de statistiques de conduite, améliorant ainsi la sécurité et la convivialité de l’expérience de conduite. D'autres applications comme Calimoto, 68 Degrés sont également disponibles et offrent des fonctionnalités similaires pour les motards.
 \vspace{0.5cm}
 
-%BMW
-Pour des motos plus modernes, par exemple, BMW propose des motos connectées\cite{bmw_adas}. La moto est équipée de l’option « Connectivity » qui permet de connecter le smartphone à la moto via Bluetooth. L’écran TFT affiche les informations de navigation, les appels téléphoniques et la musique en streaming. La moto peut aussi être contrôlée via l’application mobile BMW Motorrad Connected, offrant des fonctionnalités de suivi, de maintenance et de partage de trajet. Ces technologies améliorent la sécurité et le confort des motards en leur permettant de rester connectés tout en conduisant.
-%ADAS MOTO
-Concernant les systèmes ADAS des motos\cite{moto_adas}, il y a des systèmes de freinage ABS,\footnote{Évite le blocage des roues.} de contrôle de traction et de suspension électronique qui sont de plus en plus courants sur les motos modernes. Ces technologies améliorent la stabilité, la maniabilité et la sécurité des motards en ajustant automatiquement les paramètres du véhicule en fonction des conditions de conduite. "De plus, tous les ADAS sur les voitures ne sont pas compatibles et ne seront pas d’une grande utilité sur les motos." d'après l'article de Moto-Net \cite{moto_adas}.
-D'après une étude britannique, la technologie ADAS permet de réduire de 20 à 30\%\cite{moto_aras} les accidents de la route. Cependant, ces systèmes ne sont pas encore généralisés sur les motos et leur efficacité dépend de leur intégration et de leur compatibilité avec les spécificités de la conduite à deux-roues. La technologie équivalente à ADAS et ARAS\footnote{Advanced Rider Assistance System} est en cours de développement pour les motos et devrait être déployée dans les prochaines années.
+\commentaire{transition}
+Ces applications mobiles représentent une première étape vers une conduite plus sûre et connectée. Toutefois, des solutions plus avancées comme la communication V2X offrent des perspectives encore plus complètes pour renforcer la sécurité des motards.
+\vspace{0.5cm}
+
+\commentaire{V2X moto}
+Le concept est exactement le même que pour les voitures : Il s’agit de permettre aux motos de communiquer avec leur environnement via des technologies sans fil (ITS-G5, C-V2X).
+On parle alors de :
+\begin{itemize}
+    \item M2V (Motorcycle-to-Vehicle) : C'est la communication moto entre d'autres véhicules comme la voiture, le camion, le bus, etc,
+    \item M2I (Motorcycle-to-Infrastructure) : C'est la communication moto avec les feux de circulation, les panneaux, les radars de vitesse, etc,
+    \item M2P (Motorcycle-to-Pedestrian) : C'est la communication moto avec les piétons pour avertir ou être averti des piétons proches.
+\end{itemize}
+La communication V2X pour motos existe déjà sous forme de projets pilotes et de standards en cours de normalisation (CMC\footnote{Connected Motorcycle Consortium : C'est une organisation internationale créée par plusieurs constructeurs (BMW, Honda, Yamaha, KTM, etc.) et équipementiers. Son objectif est de développer et harmoniser les technologies de communication connectée (V2X) adaptées aux motos}, 5GAA\footnote{5G Automotive Association : C'est une organisation mondiale réunissant constructeurs automobiles, opérateurs télécoms et fournisseurs de technologies. Elle travaille sur l’intégration des réseaux cellulaires 4G/5G dans la mobilité connectée, en particulier pour les systèmes C-V2X et la conduite automatisée.}). Elle fonctionne comme pour les voitures mais adaptée aux contraintes spécifiques des deux-roues : taille, consommation, sécurité. Elle est vue comme un élément clé de l’ARAS\footnote{Advanced Rider Assistance System : Désigne l’ensemble des dispositifs électroniques et logiciels conçus pour améliorer la sécurité et le confort des conducteurs de deux-roues motorisés.} de demain.
+\vspace{0.5cm}
+
+\commentaire{bmw}
+Pour des motos plus modernes, par exemple, BMW propose des motos connectées\cite{bmw_adas}. La moto est équipée de l’option « Connectivity » qui permet de connecter le smartphone à la moto via Bluetooth. L’écran TFT affiche les informations de navigation, les appels téléphoniques et la musique en streaming. La moto peut aussi être contrôlée via l’application mobile BMW Motorrad Connected, offrant des fonctionnalités de suivi, de maintenance et de partage de trajet. Ces technologies améliorent la sécurité et le confort des motards en leur permettant de rester connectés tout en conduisant.\\
+\commentaire{ADAS MOTO}
+Concernant les systèmes ADAS des motos\cite{moto_adas}, il y a des systèmes de freinage ABS, de contrôle de traction et de suspension électronique qui sont de plus en plus courants sur les motos modernes. Ces technologies améliorent la stabilité, la maniabilité et la sécurité des motards en ajustant automatiquement les paramètres du véhicule en fonction des conditions de conduite. "De plus, tous les ADAS sur les voitures ne sont pas compatibles et ne seront pas d’une grande utilité sur les motos." d'après l'article de Moto-Net \cite{moto_adas}.
+D'après une étude britannique, la technologie ADAS permet de réduire de 20 à 30\%\cite{moto_aras} les accidents de la route. Cependant, ces systèmes ne sont pas encore généralisés sur les motos et leur efficacité dépend de leur intégration et de leur compatibilité avec les spécificités de la conduite à deux-roues. La technologie équivalente à ADAS et ARAS est en cours de développement pour les motos et devrait être déployée dans les prochaines années.
 Selon Geoff Liersch, président de la division Deux-roues et sports motorisés chez Bosch, "nous voulons améliorer la sécurité sans retirer le plaisir de la conduite"\cite{aras_bosh}.
 Le système ARAS utilise des radars avant et arrière qui communiquent en permanence avec l’Unité de contrôle du moteur (ECU) et divers capteurs.
 
@@ -274,22 +307,22 @@ Au sein de Kappa Santé, où j’effectue mon alternance, la sécurité et la co
 
 \commentaire{Problème de détection}
 Le progrès côté deux-roues est très intéressant et évolue de façon significative.
-La Verge TS Ultra est une moto électrique \cite{lenoir_cette_2024} haut de gamme intégrant des technologies avancées pour assurer une sécurité maximale à son pilote. Présentée lors du CES 2024, cette superbike est équipée du système Starmatter Vision, qui comprend six caméras et deux radars haute résolution, offrant une vision à 360 degrés de son environnement. Grâce à l’intelligence artificielle et au machine learning, la TS Ultra analyse en temps réel les risques potentiels et alerte le conducteur, notamment lors des changements de voie. Un écran agrandi sur le réservoir affiche des informations claires, comme la vue arrière lors de l’activation du clignotant. Côté performances, la moto à un moteur de plus de 204 chevaux, permettant une accélération de 0 à 100 km/h en 2,5 secondes. La Verge TS Ultra est disponible à partir de 54 880 euros.
+La Verge TS Ultra est une moto électrique \cite{lenoir_cette_2024} haut de gamme intégrant des technologies avancées pour assurer une sécurité maximale à son pilote. Présentée lors du CES 2024, cette superbike est équipée du système Starmatter Vision, qui comprend six caméras et deux radars haute résolution, offrant une vision à 360 degrés de son environnement. Grâce à l’intelligence artificielle et à la machine learning, la TS Ultra analyse en temps réel les risques potentiels et alerte le conducteur, notamment lors des changements de voie. Un écran agrandi sur le réservoir affiche des informations claires, comme la vue arrière lors de l’activation du clignotant. Côté performances, la moto à un moteur de plus de 204 chevaux, permettant une accélération de 0 à 100 km/h en 2,5 secondes. La Verge TS Ultra est disponible à partir de 54 880 euros.
 Les technologies qu'embarquent les motos sont à la pointe mais coûtent très chères et ne sont pas encore accessibles à tous.\\
 %yamaha
 Yamaha, en collaboration avec Netflix, a donné vie à la moto futuriste Y/AI \cite{texier_quand_2024} , initialement imaginée dans la série animée “Tokyo Override”. Ce prototype a été exposé au Motor Expo 2024 en Thaïlande, illustrant la vision de Yamaha sur l’intégration de l’intelligence artificielle dans les motos de demain.\\
 
 \commentaire{moto electrique}
-Avec Mr Arioui, vice-président de l’innovation et des relations internationales, nous avons également abordé le sujet des motos électriques. Prenons l'exemple des voitures électriques.
+Avec Mr ARIOUI, vice-président de l’innovation et des relations internationales, nous avons également abordé le sujet des motos électriques. Prenons l'exemple des voitures électriques.
 D'après le site Ilek \cite{voiture_electrique}, le moteur électrique "Celui-ci est capable de fournir un couple instantané\footnote{Un couple instantané c’est la mesure du couple à un moment donné qui peut varier en fonction du régime moteur, de la position du piston ou de la charge appliquée.} pour des accélérations fluides et dynamiques". Les voitures électriques ont les mêmes comportements que les motos électriques. Elles sont puissantes, réagissent instantanément. Leur couple\footnote{Plus un moteur est coupleux (qui possède du couple), plus sa capacité à tirer le poids total de la voiture ou d'une moto sera grande.} est élevé.
-À la suite d’un échange avec Monsieur Arioui, il ressort que les motos électriques présentent un comportement radicalement différent de celui des motos thermiques. En effet, la puissance est délivrée de manière instantanée, sans aucun temps de latence entre l’action sur l’accélérateur et la réaction de la moto. Ce mode de fonctionnement requiert une phase d’adaptation de la part du motard, tant en termes de maîtrise que d’anticipation des réactions de la machine. Cela demande une adaptation du motard. Une étude présentée lors de la 3ème réunion  \cite{reunionProjet2025} à Nantes a démontré que, selon les usagers, les performances des motos électriques équivalentes à 125 cc seraient comparables à celles de modèles thermiques de 600 cc. La question soulevée est la suivante: "Faudrait-il un permis spécifique pour les motos électriques ?".
+À la suite d’un échange avec Monsieur ARIOUI, il ressort que les motos électriques présentent un comportement radicalement différent de celui des motos thermiques. En effet, la puissance est délivrée de manière instantanée, sans aucun temps de latence entre l’action sur l’accélérateur et la réaction de la moto. Ce mode de fonctionnement requiert une phase d’adaptation de la part du motard, tant en termes de maîtrise que d’anticipation des réactions de la machine. Cela demande une adaptation du motard. Une étude présentée lors de la 3ème réunion  \cite{reunionProjet2025} à Nantes a démontré que, selon les usagers, les performances des motos électriques équivalentes à 125 cc seraient comparables à celles de modèles thermiques de 600 cc. La question soulevée est la suivante: "Faudrait-il un permis spécifique pour les motos électriques ?".
 Il a été souligné que de nombreux motards privilégient le mode « économie ». Contrairement à ce que son nom laisse penser, ce choix n’est pas uniquement motivé par la volonté de réduire la consommation d'énergie. En réalité, ce mode est souvent utilisé pour abaisser la puissance délivrée et limiter le couple disponible, ce qui rend la moto plus souple, plus "facile à contrôler" et moins dangereuse. 
 De plus, le poids de la batterie est important et cela change totalement le comportement de la moto. Ce sont des points à prendre en considération pour la technologie de demain.
 Une autre étude a été menée et présentée\cite{reunionProjet2025} sur le retour sensoriel de la vitesse des motards de moto électrique. Cette expérience a été réalisée sur un simulateur. Les différentes expériences ont été réalisées avec ou sans vibration moteur, avec ou sans son... Une expérience avec l'absence visuelle montre une sur estimation de la vitesse. Par exemple, pour une vitesse de 50 km/h, les participants estiment la vitesse à environ plus de 65 km/h. Sans l'audition, la perception de la vitesse est faussée. Pour conclure cette étude, les étudiants ont noté que le visuel représente 41\%, le bruit du moteur représente 21\% enfin, la vibration, 14\%. Le défi ici est d'améliorer les zones d'attention. La décélération d'une moto thermique est de 3,8 km/h contre 5,5 km/h pour une moto thermique.
 \vspace{0.5cm} %conclusion
 
 \commentaire{transition}
-Les motos électriques intègrent de plus en plus de technologies connectées mais leur adoption peut être freinée par la mentalité de certains motards, encore attachés à une approche plus traditionnelle de la conduite. \\
+Les motos électriques intègrent de plus en plus de technologies connectées mais leur adoption peut être freinée par la mentalité de certains motards, encore attachés à une approche plus traditionnelle de la conduite.
 \vspace{0.5cm}
 
 \commentaire{la mentalité}
@@ -324,4 +357,8 @@ Bien que l’IoT offre de nombreuses opportunités pour améliorer la sécurité
 Chaque pays a sa propre réglementation et il est difficile de mettre en place une norme commune. Les constructeurs doivent donc s'adapter à chaque marché et respecter les lois en vigueur.\\
 La sécurité des données est un enjeu majeur pour les véhicules connectés. Les données collectées par les capteurs et les systèmes embarqués peuvent être sensibles et nécessitent une protection adéquate contre les cyberattaques et les violations de la vie privée.\\
 Enfin, l'interopérabilité entre les différents systèmes et véhicules est essentielle pour garantir une communication efficace et une coordination optimale entre les usagers de la route. Les technologies IoT offrent des solutions pour relever ces défis, mais leur mise en œuvre nécessite une collaboration étroite entre les constructeurs, les autorités et les utilisateurs pour garantir une mobilité plus sûre, plus intelligente et plus durable.
-Pour conclure, chaque véhicule a des besoins spécifiques et le défi est de trouver des solutions adaptées à chaque type de véhicule. Les technologies IoT offrent des opportunités pour répondre à ces enjeux.\\
+Pour conclure, chaque véhicule a des besoins spécifiques et le défi est de trouver des solutions adaptées à chaque type de véhicule. Les technologies IoT offrent des opportunités pour répondre à ces enjeux.
+\vspace{0.5cm}
+
+\commentaire{Transition vers l'analyse appliquée}
+À l’issue de cet état de l’art, le mémoire s’oriente vers une analyse appliquée. Il s’agit d’examiner les besoins spécifiques des motards, de confronter les apports théoriques aux retours du terrain, puis d’évaluer les solutions existantes afin d’identifier des pistes d’adaptation et d’innovation.
