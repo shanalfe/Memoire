@@ -19,12 +19,12 @@ Un véhicule autonome échange des données avec son environnement et ces donné
     \includegraphics[width=0.7\textwidth]{images/schéma_cycle_vie_donneées.png} 
     \caption{Cycle vie de la données.}
 \end{figure}
+\vspace{0.5cm}
 
-\todo{phrase de transition}
+La gestion des données ne constitue pas uniquement un enjeu technique : elle est également soumise à un encadrement juridique strict. Or, les réglementations en matière de protection des données personnelles diffèrent selon les pays et doivent être respectées dans le contexte territorial où circulent les véhicules. À titre d’illustration, on peut comparer le RGPD en Europe et le PIPL en Chine. 
 
 \begin{table}[H]
 \centering
-\caption{Comparaison simplifiée entre le RGPD (UE) et le PIPL (Chine)}
 \begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
 \hline
 \textbf{Critère} & \textbf{RGPD (UE)} & \textbf{PIPL (Chine)} \\ \hline
@@ -36,6 +36,7 @@ Un véhicule autonome échange des données avec son environnement et ces donné
 \textbf{Transferts internationaux} & Vers pays « adéquats » ou avec clauses contractuelles. & Évaluation de sécurité et parfois autorisation de l’autorité chinoise. \\ \hline
 \textbf{Sanctions} & Jusqu’à 20 M€ ou 4\% du chiffre d'affaires. & Jusqu’à 50 M CNY (\textasciitilde 7 M€) ou 5\% du chiffre d'affaires. \\ \hline
 \end{tabular}
+\caption{Comparaison simplifiée entre le RGPD (UE) et le PIPL (Chine).}
 \end{table}
 En résumé, bien que le RGPD et le PIPL partagent un objectif commun de protection des données personnelles, leurs approches diffèrent sur plusieurs points, notamment dans la portée territoriale, le rôle des autorités de contrôle et le niveau de centralisation des obligations. Le RGPD se concentre sur la transparence et le consentement explicite, 
 tandis que le PIPL intègre des exigences plus strictes en matière de transfert transfrontalier et un contrôle accru de l’État.\\
@@ -52,10 +53,10 @@ Grâce à la technologie IoT, les véhicules peuvent échanger des données et l
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{images/schéma_systeme_communication_donnees.png} 
-    \caption{Tableau comparatif du système de communication V2X d'Innovauto}
+    \caption{Tableau comparatif du système de communication V2X d'Innovauto.}
 \end{figure}
 
-La technologie basée sur les opérateurs mobiles permet une communication avec un serveur distant, mais ne prend pas en charge directement la communication entre véhicules et infrastructures : 
+La technologie basée sur les opérateurs mobiles permet une communication avec un serveur distant mais ne prend pas en charge directement la communication entre véhicules et infrastructures : 
 \begin{itemize}
     \item Le ITS-G5 (Wi-Fi) fonctionne sur la bande 5,9 GHz et permet une communication locale et directe entre les véhicules, les infrastructures et les piétons. Sa consommation en énergie est faible.
     \item Le C-V2X (Cellular-V2X) combine les deux approches, offrant à la fois une communication via les réseaux mobiles et une communication directe entre les véhicules et infrastructures. Le C-V2X est la solution la plus complète, intégrant les avantages des réseaux mobiles et de la communication directe, ce qui le rend plus adapté aux véhicules autonomes et à la gestion du trafic intelligent. Cependant, il est plus coûteux en énergie que le ITS-G5.
@@ -80,14 +81,14 @@ La technologie basée sur les opérateurs mobiles permet une communication avec 
 \textbf{C-V2X (Cellular V2X)} 
 & Combine communication locale et cellulaire ; haute fiabilité et évolutif ; adapté aux véhicules autonomes 
 & Déploiement complexe ; coût plus élevé (infrastructures + équipements) 
-& Moyenne à élevée (double interface radio), mais optimisée en 5G \\
+& Moyenne à élevée (double interface radio) mais optimisée en 5G \\
 \hline
 \end{tabular}
 \caption{Comparaison des technologies V2X.}
 \end{table}
 
 \subsubsection{Capteurs et perception environnementale}
-L'évolution des véhicules intelligents repose sur des systèmes de capteurs avancés et de perception environnementale. "Un capteur IoT est un dispositif qui mesure une ou plusieurs variables physiques de l'environnement et envoie les données à un réseau ou à une plateforme IoT pour une utilisation ultérieure." selon le site de l'entreprise IoT\cite{iot_capteur}. \emph{(Les différents types de capteurs Partie~\ref{capteurs})}\\
+L'évolution des véhicules intelligents repose sur des systèmes de capteurs avancés et de perception environnementale. "Un capteur IoT est un dispositif qui mesure une ou plusieurs variables physiques de l'environnement et envoie les données à un réseau ou à une plateforme IoT pour une utilisation ultérieure." selon le site de l'entreprise IoT\cite{iot_capteur}. \emph{(Les différents types de capteurs voir Partie~\ref{capteurs})}\\
 Ces technologies permettent aux véhicules de collecter, d'analyser et d'interpréter en temps réel leur environnement afin d'améliorer leur utilisation.
 Les principaux capteurs utilisés sont les caméras, les radars, les lidars et les ultrasons.
 Ces données permettent de :
@@ -115,7 +116,7 @@ Les avancées en IA en connectivité comme la 5G et la V2X et en traitement des 
 %•Détection des obstacles et freinage automatique.
 %•Avertissements de collision et assistance au changement de voie.
 Dans un monde où la sécurité routière est une priorité, les systèmes avancés d’aide à la conduite (ADAS) révolutionnent la manière dont les véhicules interagissent avec leur environnement, réduisant ainsi les risques d’accidents et améliorant l’expérience de conduite.
-Selon le site du Gouvernement \cite{adas_gouv} "Ces technologies ouvrent la voie à des véhicules de plus en plus automatisés, mais ceux qui en sont équipés ne sont pas des véhicules dits « autonomes ». Les aides à la conduite ne remplacent pas le conducteur et ses obligations. Leur usage s’opère sous la surveillance permanente du conducteur, qui reste responsable de la tâche de conduite et de la maîtrise du véhicule."
+Selon le site du Gouvernement \cite{adas_gouv} "Ces technologies ouvrent la voie à des véhicules de plus en plus automatisés mais ceux qui en sont équipés ne sont pas des véhicules dits « autonomes ». Les aides à la conduite ne remplacent pas le conducteur et ses obligations. Leur usage s’opère sous la surveillance permanente du conducteur, qui reste responsable de la tâche de conduite et de la maîtrise du véhicule."
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/ADAS_schéma.jpg} 
@@ -141,12 +142,12 @@ Voici un nouvel exemple de graphique avec de nouvelles données d’entrée :
     \includegraphics[width=0.7\textwidth]{images/graph2_yannLeCun.jpg} 
     \caption{Graphe page 88 du livre "Quand la machine apprend".}
 \end{figure}
-La pente passe par trois points sur quatre. Par conséquent, il faut trouver un compromis. On optera donc pour la solution où la droite passe au plus près des quatre points, comme modélisé précédemment. \\
+La pente passe par un point sur quatre. Par conséquent, il faut trouver un compromis. On optera donc pour la solution où la droite passe au plus près des quatre points, comme modélisé précédemment. \\
 \commentaire{Conclusion Technologie voitures IOT}
 En somme, l’IoT révolutionne l’industrie automobile en offrant des véhicules plus sûrs, plus efficaces et mieux entretenus, tout en ouvrant la voie à de nouvelles innovations dans le domaine de la mobilité.\\
 \commentaire{conférence}
 La mobilité autonome vise à garantir un confort et une fluidité optimaux, ce qui nécessite un système de surveillance pour mesurer diverses variables. Cela se fait principalement par l'utilisation de capteurs embarqués.\\
-L'orientation et la direction de la roue jouent un rôle crucial, tout comme la mesure des longitudes et l'utilisation d'unités de mesure inertielle (IMU). La mesure de la vitesse latérale, en revanche, requiert des capteurs très coûteux d'après la conférence\cite{ahmed_ali_synthese_2024} de Sofiane AHMED ALI.\\
+L'orientation et la direction de la roue jouent un rôle crucial, tout comme la mesure des longitudes et l'utilisation d'unités de mesure inertielle (IMU). La mesure de la vitesse latérale, en revanche, requiert des capteurs très coûteux d'après la conférence\cite{ahmed_ali_synthese_2024} de Monsieur Sofiane AHMED ALI.\\
 Pour réduire le nombre de capteurs nécessaires et, par conséquent, les coûts de développement, on peut utiliser des observateurs\footnote{Observateur : Un outil mathématique ou algorithmique qui permet d’estimer des grandeurs internes d’un système (états) à partir de mesures disponibles et d’un modèle du système.} basés sur des modèles mathématiques pour déterminer les états du véhicule. Cette approche prometteuse présente toutefois des inconvénients, tels que la dynamique latérale du véhicule et les forces latérales agissant sur lui.
 L'utilisation de capteurs visuels présente des défis supplémentaires. Ces capteurs peuvent allonger le processus de collecte de données et introduire des délais dans la transmission des images, ayant ainsi un impact majeur sur le système.
 
@@ -161,12 +162,13 @@ Les motos présentent plusieurs particularités sur la route qui impactent leur 
 Une moto, c'est un véhicule de petite taille monté sur deux roues. Cela implique alors qu'elle est encore moins visible, surtout dans les angles morts d'un autre véhicule. Les motos sont agiles, possèdent une forte accélération et leur trajectoire est souvent imprévisible.  Cela accroît le risque de collision, les motos pouvant surprendre les autres usagers de la route. De plus, la configuration du véhicule expose directement le conducteur deux-roues lors d'un accident par son manque de carrosserie. Les conditions météorologiques et la surface de la route jouent un rôle important dans l'adhérence des véhicules. Les conséquences matérielles et corporelles sont beaucoup plus importantes pour un deux-roues car la chute est inévitable.
 La puissance de la machine demande beaucoup d'anticipation et une conduite plus exigeante face à tous les dangers.\\
 
-Avec M. ARIOUI, vice-président de l’innovation et des relations internationales, nous avons abordé la manière dont le regard influence la maîtrise des trajectoires. En effet, le regard est essentiel pour anticiper les dangers et choisir la bonne trajectoire. De plus, tous les facteurs comme l'accélération, quand solliciter\footnote{Solliciter la moto désigne le fait de mettre à contribution, de forcer ou de demander un effort particulier à la machine, par exemple, changer l'inclinaison de la moto de droite à gauche.} la moto influencent la trajectoire. 
+Avec Monsieur Hichem ARIOUI, vice-président de l’innovation et des relations internationales, nous avons abordé la manière dont le regard influence la maîtrise des trajectoires. En effet, le regard est essentiel pour anticiper les dangers et choisir la bonne trajectoire. De plus, tous les facteurs comme l'accélération, quand solliciter\footnote{Solliciter la moto désigne le fait de mettre à contribution, de forcer ou de demander un effort particulier à la machine, par exemple, changer l'inclinaison de la moto de droite à gauche.} la moto influencent la trajectoire. 
 La sécurité routière\cite{trajectoire_securite} met en avant cette technique nommée EDSR pour "Entrée, Découverte, Sollicitation de la moto, Reprise de stabilité" permet de prendre un virage en toute sécurité en augmentant le champ de vision afin d'anticiper les dangers. 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{etat_art/images/trajectoire_securité.jpg} 
-    \caption{Trajectoire de sécurité.}
+    \includegraphics[width=0.5\textwidth]{etat_art/images/trajectoire_securité.jpg} 
+    \caption{Schéma de la trajectoire de sécurité présenté par la sécurité routière, les gendarmes...}
+    \label{fig:trajectoire_securite}
 \end{figure}
 Ci-dessous, l'importance de l'utilisation des trajectoires de sécurité. Cela permet d'anticiper les évènements qui arrivent en face de nous. Attention, c’est un exemple et bien d’autres facteurs rentrent en jeux en terme de sécurité  (graviers, cyclistes, camions, bus, tracteur...).
 \begin{figure}[H]
@@ -202,13 +204,13 @@ Ci-dessous, un témoignage d'un utilisateur de l'application Georide à la suite
     \caption{Témoignage d'un utilisateur de Georide sur le Discord de l'application réservé pour la communauté.}
     \label{temoignage}
 \end{figure}
-Les dommages corporels sont très violents, même à faible vitesse. La rapidité est un facteur clé dans la survie d'un usager. L’application mobile fournit également des statistiques détaillées sur les performances du véhicule et des alertes en cas de vol ou de panne. Georide propose également des fonctionnalités de partage de trajet, des notifications sur l'entretien de la moto comme le graissage de chaine renforçant ainsi la sécurité et la convivialité de l’expérience de conduite.
+Les dommages corporels sont très violents, même à faible vitesse. La rapidité est un facteur clé dans la survie d'un usager. L’application mobile fournit également des statistiques détaillées sur les performances du véhicule et des alertes en cas de vol ou de panne. Georide propose également des fonctionnalités de partage de trajet, des notifications sur l'entretien de la moto comme le graissage de chaine renforçant ainsi la sécurité, la rigueur et la convivialité de l’expérience de conduite.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/notification_georide.jpg} 
     \caption{Exemple de notification de l'application Georide.}
 \end{figure}
-Pour des motos qui n'ont pas l'option, il est possible d'y ajouter "Live Weel" qui permet de surveiller la pression et la température des pneus. Cela permet de réduire les risques de crevaison.
+Pour des motos qui n'ont pas l'option, il est possible d'y ajouter "Live Weel", des capteurs qui sont placés sur les valves des pneus. Ils permettent de surveiller la pression et la température des pneus en temps réel. Une alerte est émise en cas d'une anomalie.
 \vspace{0.5cm}
 
 \commentaire{Sena, cardo}
@@ -298,7 +300,7 @@ Ce modèle intègre des technologies avancées telles que la conduite autonome, 
 
 \commentaire{Conclusion}
 L’intégration de ces technologies dans les motos modernes montre que l’innovation continue d’évoluer pour protéger les motards. Entre les radars adaptatifs, la gestion des gaz en cas de perte d’adhérence et l’ABS spécifique, ces avancées offrent une meilleure stabilité, un freinage plus efficace et une anticipation des dangers sur la route. L’avenir pourrait encore voir l’émergence de nouvelles solutions, comme la communication V2X (Véhicule à Tout) pour améliorer l’interaction entre motos, voitures et infrastructures routières.\\
-Avec ces innovations, la moto de demain ne sera pas seulement plus rapide et plus performante, mais surtout plus sûre et plus intelligente. 
+Avec ces innovations, la moto de demain ne sera pas seulement plus rapide et plus performante mais surtout plus sûre et plus intelligente. 
 
 \subsubsection{L'exploitation des données pour les motos}
 Avec l’essor des technologies embarquées et connectées, les motos modernes génèrent un volume croissant de données, dont l’analyse permet d’améliorer la sécurité, la maintenance et l’expérience de conduite.
@@ -321,9 +323,9 @@ Les technologies qu'embarquent les motos sont à la pointe mais coûtent très c
 Yamaha, en collaboration avec Netflix, a donné vie à la moto futuriste Y/AI \cite{texier_quand_2024} , initialement imaginée dans la série animée “Tokyo Override”. Ce prototype a été exposé au Motor Expo 2024 en Thaïlande, illustrant la vision de Yamaha sur l’intégration de l’intelligence artificielle dans les motos de demain.\\
 
 \commentaire{moto electrique}
-Avec Mr ARIOUI, vice-président de l’innovation et des relations internationales, nous avons également abordé le sujet des motos électriques \emph{(Voir Annexe~\ref{echangeArioui})}. Prenons l'exemple des voitures électriques.
+Avec Mr ARIOUI, vice-président de l’innovation et des relations internationales, nous avons également abordé le sujet des motos électriques \emph{(voir Annexe~\ref{echangeArioui})}. Prenons l'exemple des voitures électriques.
 D'après le site Ilek \cite{voiture_electrique}, le moteur électrique "Celui-ci est capable de fournir un couple instantané\footnote{Un couple instantané c’est la mesure du couple à un moment donné qui peut varier en fonction du régime moteur, de la position du piston ou de la charge appliquée.} pour des accélérations fluides et dynamiques". Les voitures électriques ont les mêmes comportements que les motos électriques. Elles sont puissantes, réagissent instantanément. Leur couple\footnote{Plus un moteur est coupleux (qui possède du couple), plus sa capacité à tirer le poids total de la voiture ou d'une moto sera grande.} est élevé.
-À la suite d’un échange avec Monsieur ARIOUI, il ressort que les motos électriques présentent un comportement radicalement différent de celui des motos thermiques. En effet, la puissance est délivrée de manière instantanée, sans aucun temps de latence entre l’action sur l’accélérateur et la réaction de la moto. Ce mode de fonctionnement requiert une phase d’adaptation de la part du motard, tant en termes de maîtrise que d’anticipation des réactions de la machine. Cela demande une adaptation du motard. Une étude présentée lors de la 3ème réunion  \cite{reunionProjet2025} à Nantes a démontré que, selon les usagers, les performances des motos électriques équivalentes à 125 cc seraient comparables à celles de modèles thermiques de 600 cc. La question soulevée est la suivante: "Faudrait-il un permis spécifique pour les motos électriques ?".
+À la suite d’un échange avec Monsieur Hichem ARIOUI, il ressort que les motos électriques présentent un comportement radicalement différent de celui des motos thermiques. En effet, la puissance est délivrée de manière instantanée, sans aucun temps de latence entre l’action sur l’accélérateur et la réaction de la moto. Ce mode de fonctionnement requiert une phase d’adaptation de la part du motard, tant en termes de maîtrise que d’anticipation des réactions de la machine. Cela demande une adaptation du motard. Une étude présentée lors de la 3ème réunion  \cite{reunionProjet2025} à Nantes a démontré que, selon les usagers, les performances des motos électriques équivalentes à 125 cc seraient comparables à celles de modèles thermiques de 600 cc. La question soulevée est la suivante: "Faudrait-il un permis spécifique pour les motos électriques ?".
 Il a été souligné que de nombreux motards privilégient le mode « économie ». Contrairement à ce que son nom laisse penser, ce choix n’est pas uniquement motivé par la volonté de réduire la consommation d'énergie. En réalité, ce mode est souvent utilisé pour abaisser la puissance délivrée et limiter le couple disponible, ce qui rend la moto plus souple, plus "facile à contrôler" et moins dangereuse. 
 De plus, le poids de la batterie est important et cela change totalement le comportement de la moto. Ce sont des points à prendre en considération pour la technologie de demain.
 Une autre étude a été menée et présentée\cite{reunionProjet2025} sur le retour sensoriel de la vitesse des motards de moto électrique. Cette expérience a été réalisée sur un simulateur. Les différentes expériences ont été réalisées avec ou sans vibration moteur, avec ou sans son... Une expérience avec l'absence visuelle montre une sur estimation de la vitesse. Par exemple, pour une vitesse de 50 km/h, les participants estiment la vitesse à environ plus de 65 km/h. Sans l'audition, la perception de la vitesse est faussée. Pour conclure cette étude, les étudiants ont noté que le visuel représente 41\%, le bruit du moteur représente 21\% enfin, la vibration, 14\%. Le défi ici est d'améliorer les zones d'attention. La décélération d'une moto thermique est de 3,8 km/h contre 5,5 km/h pour une moto thermique.
@@ -340,7 +342,7 @@ De plus, les médias et les réseaux sociaux ont un impact important sur la perc
 
 \commentaire{les accidents}
 Les réseaux sociaux nous informent en temps réel des événements qui se déroulent dans notre pays ou à travers le monde. 
-Récemment, j'ai lu un article (Annexe~\ref{articlevoiture}) daté du jeudi 1er août 2024, relatant un incident survenu en avril dernier. Il s'agit d'un motocycliste de 28 ans, percuté par une voiture en conduite autonome, une Tesla Model S de 2022. Selon les données recueillies, la voiture aurait effectué une embardée après avoir perçu un bruit, ce qui a conduit à la collision. Le fabricant rappelle que ces véhicules ne sont pas entièrement autonomes et que le conducteur doit toujours être prêt à reprendre le contrôle en cas de problème. Selon l'Administration de la sécurité routière des États-Unis, 75 autres accidents impliquant des voitures autonomes ont été recensés. 
+Récemment, j'ai lu un article \emph{(voir Annexe~\ref{articlevoiture})} daté du jeudi 1er août 2024, relatant un incident survenu en avril dernier. Il s'agit d'un motocycliste de 28 ans, percuté par une voiture en conduite autonome, une Tesla Model S de 2022. Selon les données recueillies, la voiture aurait effectué une embardée après avoir perçu un bruit, ce qui a conduit à la collision. Le fabricant rappelle que ces véhicules ne sont pas entièrement autonomes et que le conducteur doit toujours être prêt à reprendre le contrôle en cas de problème. Selon l'Administration de la sécurité routière des États-Unis, 75 autres accidents impliquant des voitures autonomes ont été recensés. 
 La semaine dernière, Elon Musk, PDG de Tesla, a déclaré que d'ici la fin de l'année, les systèmes de "conduite autonome" devraient être capables de fonctionner sans la supervision constante de son conducteur.
 \commentaire{limite juridiques}
 En cas d'accident, les lois concernant l'intégration d'aide à la conduite est complexe. Nous pouvons nous demander si les règles seront les mêmes que celles soumises aux voitures. Un décret de 2021 précise que si le conducteur respecte les conditions d’utilisation, il peut être dégagé de responsabilité pénale. Le constructeur devient alors pénalement responsable. Toutefois, le conducteur doit rester prêt à reprendre le contrôle lorsqu’il lui est demandé. Selon  Maître Sharon Bensemhoun-Gonzalez sur son site\cite{avocat}, les véhicules autonomes, aujourd’hui utilisés à divers niveaux d’autonomie (jusqu’au niveau 3 selon la norme SAE), soulèvent d’importantes questions en cas d’accident, notamment concernant l’attribution de la responsabilité entre conducteur, constructeur, ou fournisseur de logiciel. Le cadre juridique français reste flou en 2025, malgré les réflexions en cours au niveau européen. Chaque accident nécessite une analyse au cas par cas, souvent complexe pour les victimes. L’indemnisation reste un droit fondamental, notamment via la loi Badinter (1985), et ne peut être remise en question par l’innovation technique.\\
@@ -356,7 +358,7 @@ Les responsables peuvent être :
     \item Constructeur ou fournisseur : en cas de défaut technique ou vice, une responsabilité contractuelle ou liée à la responsabilité du produit peut être recherchée.
     \item Responsabilité pénale : possible en cas de négligence, désactivation de dispositifs de sécurité ou défaut d’entretien volontaire.
 \end{itemize}
-Enfin, la victime peut porter plainte ou bien établir un procès-verbal, réaliser des expertises (médicales, matérielle), demander une indemnisation et ou engager une action envers le constructeur. L'utilisation de boîtes noires sont utiles pour l’attribution des faits après accident. L'article\cite{tesla_condamnation} du 1er août 2025, un jury en Floride a condamné Tesla à ~243 M\$ dans un dossier d’accident mortel lié à « Autopilot ». Ce n’est pas du droit UE, mais c’est souvent cité en Europe car il illustre la façon dont des preuves logicielles et de conception sont discutées.\\
+Enfin, la victime peut porter plainte ou bien établir un procès-verbal, réaliser des expertises (médicales, matérielle), demander une indemnisation et ou engager une action envers le constructeur. L'utilisation de boîtes noires sont utiles pour l’attribution des faits après accident. L'article\cite{tesla_condamnation} du 1er août 2025, un jury en Floride a condamné Tesla à ~243 M\$ dans un dossier d’accident mortel lié à « Autopilot ». Ce n’est pas du droit UE mais c’est souvent cité en Europe car il illustre la façon dont des preuves logicielles et de conception sont discutées.\\
 Même si l'évolution et le progrès de cette technologie impressionnent et présentent de bons résultats, la technologie montre de nombreuses limites et n'est pas totalement au point.
 
 \newpage
@@ -364,7 +366,7 @@ Même si l'évolution et le progrès de cette technologie impressionnent et pré
 Bien que l’IoT offre de nombreuses opportunités pour améliorer la sécurité et l’efficacité des transports, il présente également des limites et des défis à relever. Ces limites peuvent être liées à la technologie, la réglementation, la sécurité et à la confidentialité des données.\\
 Chaque pays a sa propre réglementation et il est difficile de mettre en place une norme commune. Les constructeurs doivent donc s'adapter à chaque marché et respecter les lois en vigueur.\\
 La sécurité des données est un enjeu majeur pour les véhicules connectés. Les données collectées par les capteurs et les systèmes embarqués peuvent être sensibles et nécessitent une protection adéquate contre les cyberattaques et les violations de la vie privée.\\
-Enfin, l'interopérabilité entre les différents systèmes et véhicules est essentielle pour garantir une communication efficace et une coordination optimale entre les usagers de la route. Les technologies IoT offrent des solutions pour relever ces défis, mais leur mise en œuvre nécessite une collaboration étroite entre les constructeurs, les autorités et les utilisateurs pour garantir une mobilité plus sûre, plus intelligente et plus durable.
+Enfin, l'interopérabilité entre les différents systèmes et véhicules est essentielle pour garantir une communication efficace et une coordination optimale entre les usagers de la route. Les technologies IoT offrent des solutions pour relever ces défis mais leur mise en œuvre nécessite une collaboration étroite entre les constructeurs, les autorités et les utilisateurs pour garantir une mobilité plus sûre, plus intelligente et plus durable.
 Pour conclure, chaque véhicule a des besoins spécifiques et le défi est de trouver des solutions adaptées à chaque type de véhicule. Les technologies IoT offrent des opportunités pour répondre à ces enjeux.
 \vspace{0.5cm}
 
