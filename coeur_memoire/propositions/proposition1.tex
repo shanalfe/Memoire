@@ -18,7 +18,7 @@ Voici le diagramme d'action de cette fonctionnalité:\\
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png} 
-    \caption{Diagramme d'action du Système de prévention de virages dangereux}
+    \caption{Diagramme d'action du Système de prévention de virages dangereux.}
 \end{figure}
 
 Pour réaliser un bout de code sur cette fonctionnalité, j'ai décidé d'utiliser ces bibliothèques :
@@ -29,7 +29,7 @@ Pour réaliser un bout de code sur cette fonctionnalité, j'ai décidé d'utilis
 \vspace{0.5cm}
 
 Il faut convertir le graphe routier \texttt{G} (au format \texttt{NetworkX}) en un GeoDataFrame (via \texttt{GeoPandas}), pour pouvoir manipuler les tronçons de route comme des objets géographiques (segments, courbes…). Cette partie est importante pour les calculs.
-\begin{lstlisting}[language=Python, caption={Conversion du graphe routier}]
+\begin{lstlisting}[language=Python, caption={Conversion du graphe routier.}]
 edges = ox.graph_to_gdfs(G, nodes=False)
 \end{lstlisting}
 Avec :
@@ -74,7 +74,7 @@ c = geodesic(p1, p3).meters
 \end{lstlisting}
 
 Pour pouvoir analyser la courbure d’un virage situé à proximité immédiate du véhicule, il est essentiel de déterminer avec précision quel segment de route (tronçon) est le plus proche (dans ce programme) de la position GPS actuelle. Pour cela, le code suivant a été utilisé :
-\begin{lstlisting}[language=Python, caption={Calcul de points}]
+\begin{lstlisting}[language=Python, caption={Calcul de points.}]
 point_actuel = Point(position_actuelle[1], position_actuelle[0])  # (longitude, latitude)
 edges["distance"] = edges.geometry.distance(point_actuel)
 segment_proche = edges.loc[edges["distance"].idxmin()]
@@ -105,7 +105,7 @@ c = distance directe entre le début et la fin (comme si on traçait une corde)
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png} 
-    \caption{Schéma présentant une moto avant un virage}
+    \caption{Schéma présentant une moto avant un virage.}
     \label{schemaviragepoint}
 \end{figure}
 
@@ -138,7 +138,7 @@ Le fait de catégoriser la valeur de la courbure permet facilement d'y associer 
 
 \vspace{0.5cm}
 Ci-dessous le code qui permet de récupérer une localisation GPS (latitude, longitude), qui calcule la valeur de la courbure pour après estimer une vitesse de sécurité.
-\lstinputlisting[language=Python]{coeur_memoire/programme1.py}
+\lstinputlisting[language=Python, caption={Programme de calcul de la courbure et de la vitesse recommandée.}] {coeur_memoire/programme1.py}
 
 \subsubsection{Étude de cas}
 \underline{Contexte:} Lors d’une balade dans le département de Seine-et-Marne (77), un motard circule sur une route départementale. Dans ce contexte, il est équipé d’un boîtier GPS capable de récupérer ses coordonnées en temps réel, ce qui permet de suivre précisément sa position sur le réseau routier. En progressant sur son itinéraire, il arrive à proximité d’un secteur bien connu des motards locaux : la portion dite des "17 virages", située près d’Arbonne-La-Forêt.\\

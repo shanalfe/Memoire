@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  18 AUG 2025 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  20 AUG 2025 11:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -833,7 +833,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
- (./main.aux (./remerciements/remerciements.aux) (./fiche_bilan/fiche_bilan.aux) (./introduction/introduction.aux) (./etat_art/etat_art.aux) (./coeur_memoire/coeur_memoire.aux) (./conclusion/conclusion.aux) (./annexe/annexe2.aux))
+ (./main.aux (./remerciements/remerciements.aux) (./fiche_bilan/fiche_bilan.aux) (./introduction/introduction.aux) (./etat_art/etat_art.aux) (./coeur_memoire/coeur_memoire.aux) (./conclusion/conclusion.aux) (./annexe/annexe1.aux) (./annexe/annexe2.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -958,12 +958,12 @@ Package biblatex Info: Reference segment=0 on input line 58.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count472
-<images/logo_paris_saclay.png, id=208, 1027.84pt x 516.93124pt>
+<images/logo_paris_saclay.png, id=212, 1027.84pt x 516.93124pt>
 File: images/logo_paris_saclay.png Graphic file (type png)
 <use images/logo_paris_saclay.png>
 Package pdftex.def Info: images/logo_paris_saclay.png  used on input line 70.
 (pdftex.def)             Requested size: 172.84813pt x 86.93062pt.
-<images/logo_kappasante.jpg, id=209, 803.0pt x 361.35pt>
+<images/logo_kappasante.jpg, id=213, 803.0pt x 361.35pt>
 File: images/logo_kappasante.jpg Graphic file (type jpg)
 <use images/logo_kappasante.jpg>
 Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 70.
@@ -974,7 +974,7 @@ Package pdftex.def Info: images/logo_kappasante.jpg  used on input line 70.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 ...ilité technique}{58}{subsubsection.5.4.2}
+l.41 ...ilité technique}{59}{subsubsection.5.4.2}
                                                   % [1])
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -988,12 +988,12 @@ l.41 ...ilité technique}{58}{subsubsection.5.4.2}
 \openout2 = `fiche_bilan/fiche_bilan.aux'.
 
  (./fiche_bilan/fiche_bilan.tex
-<fiche_bilan/fiche_bilan_images/organigramme_info.png, id=286, 136.3275pt x 169.506pt>
+<fiche_bilan/fiche_bilan_images/organigramme_info.png, id=291, 136.3275pt x 169.506pt>
 File: fiche_bilan/fiche_bilan_images/organigramme_info.png Graphic file (type png)
 <use fiche_bilan/fiche_bilan_images/organigramme_info.png>
 Package pdftex.def Info: fiche_bilan/fiche_bilan_images/organigramme_info.png  used on input line 34.
 (pdftex.def)             Requested size: 170.71393pt x 212.28287pt.
-<fiche_bilan/fiche_bilan_images/intégration_jpa.png, id=288, 104.3097pt x 132.495pt>
+<fiche_bilan/fiche_bilan_images/intégration_jpa.png, id=293, 104.3097pt x 132.495pt>
 File: fiche_bilan/fiche_bilan_images/intégration_jpa.png Graphic file (type png)
 <use fiche_bilan/fiche_bilan_images/intégration_jpa.png>
 Package pdftex.def Info: fiche_bilan/fiche_bilan_images/intégration_jpa.png  used on input line 44.
@@ -1003,13 +1003,13 @@ Package pdftex.def Info: fiche_bilan/fiche_bilan_images/intégration_jpa.png  u
 
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./fiche_bilan/fiche_bilan_images/organigramme_info.png>]
-<fiche_bilan/images/Capture d’écran 2025-07-30 à 09.38.36.png, id=297, 757.83125pt x 353.32pt>
+<fiche_bilan/images/Capture d’écran 2025-07-30 à 09.38.36.png, id=302, 757.83125pt x 353.32pt>
 File: fiche_bilan/images/Capture d’écran 2025-07-30 à 09.38.36.png Graphic file (type png)
 <use fiche_bilan/images/Capture d’écran 2025-07-30 à 09.38.36.png>
 Package pdftex.def Info: fiche_bilan/images/Capture d’écran 2025-07-30 à 09.38.36.png  used on input line 56.
 (pdftex.def)             Requested size: 341.43437pt x 159.18661pt.
  [5 <./fiche_bilan/fiche_bilan_images/intégration_jpa.png> <./fiche_bilan/images/Capture d’écran 2025-07-30 à 09.38.36.png>] [6]
-<fiche_bilan/images/Capture d’écran 2025-07-30 à 10.44.02.png, id=317, 1429.34pt x 162.6075pt>
+<fiche_bilan/images/Capture d’écran 2025-07-30 à 10.44.02.png, id=322, 1429.34pt x 162.6075pt>
 File: fiche_bilan/images/Capture d’écran 2025-07-30 à 10.44.02.png Graphic file (type png)
 <use fiche_bilan/images/Capture d’écran 2025-07-30 à 10.44.02.png>
 Package pdftex.def Info: fiche_bilan/images/Capture d’écran 2025-07-30 à 10.44.02.png  used on input line 102.
@@ -1018,12 +1018,12 @@ Package pdftex.def Info: fiche_bilan/images/Capture d’écran 2025-07-30 à 1
 \openout2 = `introduction/introduction.aux'.
 
  (./introduction/introduction.tex
-<images/evolution_mortalite_securite_routiere_france.png, id=329, 386.44376pt x 172.645pt>
+<images/evolution_mortalite_securite_routiere_france.png, id=334, 386.44376pt x 172.645pt>
 File: images/evolution_mortalite_securite_routiere_france.png Graphic file (type png)
 <use images/evolution_mortalite_securite_routiere_france.png>
 Package pdftex.def Info: images/evolution_mortalite_securite_routiere_france.png  used on input line 14.
 (pdftex.def)             Requested size: 341.43437pt x 152.53659pt.
-<images/camambert_accidents_differents_vehicules.png, id=330, 516.93124pt x 102.3825pt>
+<images/camambert_accidents_differents_vehicules.png, id=335, 516.93124pt x 102.3825pt>
 File: images/camambert_accidents_differents_vehicules.png Graphic file (type png)
 <use images/camambert_accidents_differents_vehicules.png>
 Package pdftex.def Info: images/camambert_accidents_differents_vehicules.png  used on input line 22.
@@ -1037,19 +1037,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
-<images/capteur.png, id=344, 548.0475pt x 496.85625pt>
+<images/capteur.png, id=349, 548.0475pt x 496.85625pt>
 File: images/capteur.png Graphic file (type png)
 <use images/capteur.png>
-Package pdftex.def Info: images/capteur.png  used on input line 38.
+Package pdftex.def Info: images/capteur.png  used on input line 47.
 (pdftex.def)             Requested size: 298.75264pt x 270.8533pt.
 [9 <./images/camambert_accidents_differents_vehicules.png>]
-<images/schema_v2.png, id=353, 1284.8pt x 775.89874pt>
+<images/schema_v2.png, id=358, 1284.8pt x 775.89874pt>
 File: images/schema_v2.png Graphic file (type png)
 <use images/schema_v2.png>
-Package pdftex.def Info: images/schema_v2.png  used on input line 50.
+Package pdftex.def Info: images/schema_v2.png  used on input line 59.
 (pdftex.def)             Requested size: 341.43437pt x 206.1923pt.
  [10 <./images/capteur.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
@@ -1057,303 +1057,302 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 \openout2 = `etat_art/etat_art.aux'.
 
  (./etat_art/etat_art.tex
-Underfull \hbox (badness 3769) in paragraph at lines 28--28
-[]\T1/cmr/bx/n/10 (+20) Transferts in-ter-na-tio-
- []
-
-
-Overfull \hbox (7.54723pt too wide) in paragraph at lines 20--31
- [][] 
- []
-
-[12
-
-
-
-] [13]
-<images/schéma_systeme_communication_donnees.png, id=398, 586.19pt x 306.14375pt>
-File: images/schéma_systeme_communication_donnees.png Graphic file (type png)
-<use images/schéma_systeme_communication_donnees.png>
-Package pdftex.def Info: images/schéma_systeme_communication_donnees.png  used on input line 46.
-(pdftex.def)             Requested size: 384.1096pt x 200.60269pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-[]\T1/cmr/bx/n/10 (+20) R�seaux cel-lu-
- []
-
-
-Underfull \hbox (badness 2359) in paragraph at lines 62--63
-\T1/cmr/bx/n/10 (+20) laires (2G, 3G,
- []
-
-
-Underfull \hbox (badness 3815) in paragraph at lines 64--65
-[]\T1/cmr/m/n/10 (+20) D�pend de l'op�-ra-teur ;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-[]\T1/cmr/m/n/10 (+20) �lev�e (sur-tout
- []
-
-
-Underfull \hbox (badness 5446) in paragraph at lines 67--68
-[]\T1/cmr/bx/n/10 (+20) ITS-G5 (Wi-Fi,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-[]\T1/cmr/m/n/10 (+20) D�ploiement com-plexe ;
- []
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 75--76
-[]\T1/cmr/m/n/10 (+20) Moyenne � �le-v�e
- []
-
-
-Overfull \hbox (19.54721pt too wide) in paragraph at lines 58--78
- [][] 
- []
-
-[14 <./images/schéma_systeme_communication_donnees.png>]
-<images/ADAS_schéma.jpg, id=408, 1927.2pt x 1084.05pt>
-File: images/ADAS_schéma.jpg Graphic file (type jpg)
-<use images/ADAS_schéma.jpg>
-Package pdftex.def Info: images/ADAS_schéma.jpg  used on input line 113.
-(pdftex.def)             Requested size: 341.43437pt x 192.0439pt.
- [15]
-<images/graph1_yannLeCun.png, id=420, 232.87pt x 155.58125pt>
-File: images/graph1_yannLeCun.png Graphic file (type png)
-<use images/graph1_yannLeCun.png>
-Package pdftex.def Info: images/graph1_yannLeCun.png  used on input line 126.
-(pdftex.def)             Requested size: 298.75264pt x 199.61809pt.
-<images/graph2_yannLeCun.jpg, id=421, 455.7025pt x 307.1475pt>
-File: images/graph2_yannLeCun.jpg Graphic file (type jpg)
-<use images/graph2_yannLeCun.jpg>
-Package pdftex.def Info: images/graph2_yannLeCun.jpg  used on input line 133.
-(pdftex.def)             Requested size: 298.75264pt x 201.36351pt.
- [16 <./images/ADAS_schéma.jpg> <./images/graph1_yannLeCun.png>] [17 <./images/graph2_yannLeCun.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 151--155
-
- []
-
-<etat_art/images/trajectoire_securité.jpg, id=443, 569.12625pt x 788.9475pt>
-File: etat_art/images/trajectoire_securité.jpg Graphic file (type jpg)
-<use etat_art/images/trajectoire_securité.jpg>
-Package pdftex.def Info: etat_art/images/trajectoire_securité.jpg  used on input line 160.
-(pdftex.def)             Requested size: 170.71393pt x 236.64995pt.
-<etat_art/images/morvan.png, id=444, 1651.16875pt x 712.6625pt>
-File: etat_art/images/morvan.png Graphic file (type png)
-<use etat_art/images/morvan.png>
-Package pdftex.def Info: etat_art/images/morvan.png  used on input line 166.
-(pdftex.def)             Requested size: 256.07741pt x 110.51591pt.
-[18 <./etat_art/images/trajectoire_securité.jpg>]
-<etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg, id=453, 1204.5pt x 803.0pt>
-File: etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg Graphic file (type jpg)
-<use etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg>
-Package pdftex.def Info: etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg  used on input line 173.
-(pdftex.def)             Requested size: 256.07741pt x 170.71794pt.
- [19 <./etat_art/images/morvan.png> <./etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg>]
-<images/diag_etat_georide.png, id=462, 459.7175pt x 500.87125pt>
-File: images/diag_etat_georide.png Graphic file (type png)
-<use images/diag_etat_georide.png>
-Package pdftex.def Info: images/diag_etat_georide.png  used on input line 187.
-(pdftex.def)             Requested size: 341.43437pt x 372.02223pt.
-<etat_art/images/témoignage géoride.png, id=463, 758.835pt x 331.2375pt>
-File: etat_art/images/témoignage géoride.png Graphic file (type png)
-<use etat_art/images/témoignage géoride.png>
-Package pdftex.def Info: etat_art/images/témoignage géoride.png  used on input line 193.
-(pdftex.def)             Requested size: 384.1096pt x 167.67036pt.
- [20 <./images/diag_etat_georide.png>]
-<images/notification_georide.jpg, id=471, 1129.21875pt x 1342.01375pt>
-File: images/notification_georide.jpg Graphic file (type jpg)
-<use images/notification_georide.jpg>
-Package pdftex.def Info: images/notification_georide.jpg  used on input line 200.
-(pdftex.def)             Requested size: 213.39568pt x 253.59279pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
-
- []
-
-[21 <./etat_art/images/témoignage géoride.png> <./images/notification_georide.jpg>] [22]
-<images/aras_moto.jpeg, id=498, 1284.8pt x 574.145pt>
-File: images/aras_moto.jpeg Graphic file (type jpg)
-<use images/aras_moto.jpeg>
-Package pdftex.def Info: images/aras_moto.jpeg  used on input line 238.
-(pdftex.def)             Requested size: 298.75264pt x 133.50485pt.
- [23 <./images/aras_moto.jpeg>]
-<images/ktm_detecteur_dev.png, id=510, 571.13374pt x 378.41376pt>
-File: images/ktm_detecteur_dev.png Graphic file (type png)
-<use images/ktm_detecteur_dev.png>
-Package pdftex.def Info: images/ktm_detecteur_dev.png  used on input line 264.
-(pdftex.def)             Requested size: 298.75264pt x 197.94266pt.
-<images/ktm_detecteur.png, id=512, 534.99875pt x 362.35374pt>
-File: images/ktm_detecteur.png Graphic file (type png)
-<use images/ktm_detecteur.png>
-Package pdftex.def Info: images/ktm_detecteur.png  used on input line 271.
-(pdftex.def)             Requested size: 298.75264pt x 202.35274pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--279
-
- []
-
-[24 <./images/ktm_detecteur_dev.png> <./images/ktm_detecteur.png>]
-<etat_art/images/bmw.jpeg, id=524, 1927.2pt x 1084.05pt>
-File: etat_art/images/bmw.jpeg Graphic file (type jpg)
-<use etat_art/images/bmw.jpeg>
-Package pdftex.def Info: etat_art/images/bmw.jpeg  used on input line 286.
-(pdftex.def)             Requested size: 298.75264pt x 168.04256pt.
- [25 <./etat_art/images/bmw.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 308--314
-
- []
-
-[26]
-
-Package caption Warning: \label without proper reference on input line 17.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `articlevoiture' on page 27 undefined on input line 335.
-
-[27] [28]) [29]
-\openout2 = `coeur_memoire/coeur_memoire.aux'.
-
- (./coeur_memoire/coeur_memoire.tex
-<coeur_memoire/schéma/trajectoire_sécurité_1.png, id=569, 353.32pt x 369.38pt>
-File: coeur_memoire/schéma/trajectoire_sécurité_1.png Graphic file (type png)
-<use coeur_memoire/schéma/trajectoire_sécurité_1.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_1.png  used on input line 36.
-(pdftex.def)             Requested size: 170.71393pt x 178.47272pt.
- [30
+<images/schéma_cycle_vie_donneées.png, id=381, 398.48875pt x 121.45375pt>
+File: images/schéma_cycle_vie_donneées.png Graphic file (type png)
+<use images/schéma_cycle_vie_donneées.png>
+Package pdftex.def Info: images/schéma_cycle_vie_donneées.png  used on input line 19.
+(pdftex.def)             Requested size: 298.75264pt x 91.05856pt.
+ [12
 
 
 
 ]
-<coeur_memoire/schéma/trajectoire_sécurité_4.png, id=576, 500.87125pt x 486.81876pt>
+Underfull \hbox (badness 3769) in paragraph at lines 36--36
+[]\T1/cmr/bx/n/10 (+20) Transferts in-ter-na-tio-
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in paragraph at lines 28--39
+ [][] 
+ []
+
+[13 <./images/schéma_cycle_vie_donneées.png>]
+<images/schéma_systeme_communication_donnees.png, id=405, 586.19pt x 306.14375pt>
+File: images/schéma_systeme_communication_donnees.png Graphic file (type png)
+<use images/schéma_systeme_communication_donnees.png>
+Package pdftex.def Info: images/schéma_systeme_communication_donnees.png  used on input line 54.
+(pdftex.def)             Requested size: 384.1096pt x 200.60269pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[]\T1/cmr/bx/n/10 (+20) R�seaux cel-lu-
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 70--71
+\T1/cmr/bx/n/10 (+20) laires (2G, 3G,
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 72--73
+[]\T1/cmr/m/n/10 (+20) D�pend de l'op�-ra-teur ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+[]\T1/cmr/m/n/10 (+20) �lev�e (sur-tout
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 75--76
+[]\T1/cmr/bx/n/10 (+20) ITS-G5 (Wi-Fi,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+[]\T1/cmr/m/n/10 (+20) D�ploiement com-plexe ;
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 83--84
+[]\T1/cmr/m/n/10 (+20) Moyenne � �le-v�e
+ []
+
+
+Overfull \hbox (19.54721pt too wide) in paragraph at lines 66--86
+ [][] 
+ []
+
+[14 <./images/schéma_systeme_communication_donnees.png>]
+<images/ADAS_schéma.jpg, id=416, 1927.2pt x 1084.05pt>
+File: images/ADAS_schéma.jpg Graphic file (type jpg)
+<use images/ADAS_schéma.jpg>
+Package pdftex.def Info: images/ADAS_schéma.jpg  used on input line 121.
+(pdftex.def)             Requested size: 341.43437pt x 192.0439pt.
+ [15]
+<images/graph1_yannLeCun.png, id=429, 232.87pt x 155.58125pt>
+File: images/graph1_yannLeCun.png Graphic file (type png)
+<use images/graph1_yannLeCun.png>
+Package pdftex.def Info: images/graph1_yannLeCun.png  used on input line 134.
+(pdftex.def)             Requested size: 298.75264pt x 199.61809pt.
+ [16 <./images/ADAS_schéma.jpg>]
+<images/graph2_yannLeCun.jpg, id=439, 455.7025pt x 307.1475pt>
+File: images/graph2_yannLeCun.jpg Graphic file (type jpg)
+<use images/graph2_yannLeCun.jpg>
+Package pdftex.def Info: images/graph2_yannLeCun.jpg  used on input line 141.
+(pdftex.def)             Requested size: 298.75264pt x 201.36351pt.
+ [17 <./images/graph1_yannLeCun.png> <./images/graph2_yannLeCun.jpg>] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
+
+ []
+
+<etat_art/images/trajectoire_securité.jpg, id=458, 569.12625pt x 788.9475pt>
+File: etat_art/images/trajectoire_securité.jpg Graphic file (type jpg)
+<use etat_art/images/trajectoire_securité.jpg>
+Package pdftex.def Info: etat_art/images/trajectoire_securité.jpg  used on input line 168.
+(pdftex.def)             Requested size: 170.71393pt x 236.64995pt.
+<etat_art/images/morvan.png, id=459, 1651.16875pt x 712.6625pt>
+File: etat_art/images/morvan.png Graphic file (type png)
+<use etat_art/images/morvan.png>
+Package pdftex.def Info: etat_art/images/morvan.png  used on input line 174.
+(pdftex.def)             Requested size: 256.07741pt x 110.51591pt.
+[19 <./etat_art/images/trajectoire_securité.jpg>]
+<etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg, id=467, 1204.5pt x 803.0pt>
+File: etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg Graphic file (type jpg)
+<use etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg>
+Package pdftex.def Info: etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg  used on input line 181.
+(pdftex.def)             Requested size: 256.07741pt x 170.71794pt.
+ [20 <./etat_art/images/morvan.png> <./etat_art/images/trajectoire-route-voie-bus-conduite_hd.jpg>]
+<images/diag_etat_georide.png, id=476, 459.7175pt x 500.87125pt>
+File: images/diag_etat_georide.png Graphic file (type png)
+<use images/diag_etat_georide.png>
+Package pdftex.def Info: images/diag_etat_georide.png  used on input line 195.
+(pdftex.def)             Requested size: 341.43437pt x 372.02223pt.
+<etat_art/images/témoignage géoride.png, id=477, 758.835pt x 331.2375pt>
+File: etat_art/images/témoignage géoride.png Graphic file (type png)
+<use etat_art/images/témoignage géoride.png>
+Package pdftex.def Info: etat_art/images/témoignage géoride.png  used on input line 201.
+(pdftex.def)             Requested size: 384.1096pt x 167.67036pt.
+ [21 <./images/diag_etat_georide.png>]
+<images/notification_georide.jpg, id=485, 1129.21875pt x 1342.01375pt>
+File: images/notification_georide.jpg Graphic file (type jpg)
+<use images/notification_georide.jpg>
+Package pdftex.def Info: images/notification_georide.jpg  used on input line 208.
+(pdftex.def)             Requested size: 213.39568pt x 253.59279pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
+
+ []
+
+[22 <./etat_art/images/témoignage géoride.png> <./images/notification_georide.jpg>] [23]
+<images/aras_moto.jpeg, id=513, 1284.8pt x 574.145pt>
+File: images/aras_moto.jpeg Graphic file (type jpg)
+<use images/aras_moto.jpeg>
+Package pdftex.def Info: images/aras_moto.jpeg  used on input line 246.
+(pdftex.def)             Requested size: 298.75264pt x 133.50485pt.
+ [24 <./images/aras_moto.jpeg>]
+<images/ktm_detecteur_dev.png, id=525, 571.13374pt x 378.41376pt>
+File: images/ktm_detecteur_dev.png Graphic file (type png)
+<use images/ktm_detecteur_dev.png>
+Package pdftex.def Info: images/ktm_detecteur_dev.png  used on input line 272.
+(pdftex.def)             Requested size: 298.75264pt x 197.94266pt.
+<images/ktm_detecteur.png, id=527, 534.99875pt x 362.35374pt>
+File: images/ktm_detecteur.png Graphic file (type png)
+<use images/ktm_detecteur.png>
+Package pdftex.def Info: images/ktm_detecteur.png  used on input line 279.
+(pdftex.def)             Requested size: 298.75264pt x 202.35274pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--287
+
+ []
+
+[25 <./images/ktm_detecteur_dev.png> <./images/ktm_detecteur.png>]
+<etat_art/images/bmw.jpeg, id=538, 1927.2pt x 1084.05pt>
+File: etat_art/images/bmw.jpeg Graphic file (type jpg)
+<use etat_art/images/bmw.jpeg>
+Package pdftex.def Info: etat_art/images/bmw.jpeg  used on input line 294.
+(pdftex.def)             Requested size: 298.75264pt x 168.04256pt.
+ [26 <./etat_art/images/bmw.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 316--322
+
+ []
+
+[27] [28] [29]) [30]
+\openout2 = `coeur_memoire/coeur_memoire.aux'.
+
+ (./coeur_memoire/coeur_memoire.tex
+<coeur_memoire/schéma/trajectoire_sécurité_1.png, id=584, 353.32pt x 369.38pt>
+File: coeur_memoire/schéma/trajectoire_sécurité_1.png Graphic file (type png)
+<use coeur_memoire/schéma/trajectoire_sécurité_1.png>
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_1.png  used on input line 36.
+(pdftex.def)             Requested size: 170.71393pt x 178.47272pt.
+ [31
+
+
+
+]
+<coeur_memoire/schéma/trajectoire_sécurité_4.png, id=590, 500.87125pt x 486.81876pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_4.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_4.png>
 Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_4.png  used on input line 44.
 (pdftex.def)             Requested size: 170.71393pt x 165.92473pt.
- [31 <./coeur_memoire/schéma/trajectoire_sécurité_1.png>]
-<coeur_memoire/schéma/trajectoire_sécurité_2.png, id=583, 471.7625pt x 449.68pt>
+ [32 <./coeur_memoire/schéma/trajectoire_sécurité_1.png>]
+<coeur_memoire/schéma/trajectoire_sécurité_2.png, id=597, 471.7625pt x 449.68pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_2.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_2.png>
 Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_2.png  used on input line 51.
 (pdftex.def)             Requested size: 170.71393pt x 162.72177pt.
-<coeur_memoire/schéma/trajectoire_sécurité_3.png, id=584, 559.08875pt x 537.00626pt>
+<coeur_memoire/schéma/trajectoire_sécurité_3.png, id=598, 559.08875pt x 537.00626pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_3.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_3.png>
 Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_3.png  used on input line 57.
 (pdftex.def)             Requested size: 170.71393pt x 163.97102pt.
- [32 <./coeur_memoire/schéma/trajectoire_sécurité_4.png> <./coeur_memoire/schéma/trajectoire_sécurité_2.png>]
-<coeur_memoire/schéma/trajectoire_sécurité_7.png, id=593, 366.36874pt x 389.455pt>
+ [33 <./coeur_memoire/schéma/trajectoire_sécurité_4.png> <./coeur_memoire/schéma/trajectoire_sécurité_2.png>]
+<coeur_memoire/schéma/trajectoire_sécurité_7.png, id=607, 366.36874pt x 389.455pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_7.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_7.png>
 Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_7.png  used on input line 65.
 (pdftex.def)             Requested size: 170.71393pt x 181.47502pt.
-<coeur_memoire/schéma/trajectoire_sécurité_6.png, id=594, 571.13374pt x 565.11125pt>
+<coeur_memoire/schéma/trajectoire_sécurité_6.png, id=608, 571.13374pt x 565.11125pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_6.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_6.png>
 Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_6.png  used on input line 69.
 (pdftex.def)             Requested size: 170.71393pt x 168.91383pt.
-<coeur_memoire/schéma/trajectoire_sécurité_5.png, id=595, 481.8pt x 519.9425pt>
+<coeur_memoire/schéma/trajectoire_sécurité_5.png, id=609, 481.8pt x 519.9425pt>
 File: coeur_memoire/schéma/trajectoire_sécurité_5.png Graphic file (type png)
 <use coeur_memoire/schéma/trajectoire_sécurité_5.png>
-Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_5.png  used on input line 75.
+Package pdftex.def Info: coeur_memoire/schéma/trajectoire_sécurité_5.png  used on input line 74.
 (pdftex.def)             Requested size: 170.71393pt x 184.22783pt.
- [33 <./coeur_memoire/schéma/trajectoire_sécurité_3.png>] [34 <./coeur_memoire/schéma/trajectoire_sécurité_7.png> <./coeur_memoire/schéma/trajectoire_sécurité_6.png> <./coeur_memoire/schéma/trajectoire_sécurité_5.png>]
-<coeur_memoire/graphique/age.png, id=610, 461.725pt x 212.795pt>
+ [34 <./coeur_memoire/schéma/trajectoire_sécurité_3.png>] [35 <./coeur_memoire/schéma/trajectoire_sécurité_7.png> <./coeur_memoire/schéma/trajectoire_sécurité_6.png> <./coeur_memoire/schéma/trajectoire_sécurité_5.png>]
+<coeur_memoire/graphique/age.png, id=624, 461.725pt x 212.795pt>
 File: coeur_memoire/graphique/age.png Graphic file (type png)
 <use coeur_memoire/graphique/age.png>
-Package pdftex.def Info: coeur_memoire/graphique/age.png  used on input line 98.
+Package pdftex.def Info: coeur_memoire/graphique/age.png  used on input line 95.
 (pdftex.def)             Requested size: 213.39568pt x 98.34795pt.
-<coeur_memoire/graphique/nb_annees_permis.png, id=611, 499.8675pt x 224.84pt>
+<coeur_memoire/graphique/nb_annees_permis.png, id=625, 499.8675pt x 224.84pt>
 File: coeur_memoire/graphique/nb_annees_permis.png Graphic file (type png)
 <use coeur_memoire/graphique/nb_annees_permis.png>
-Package pdftex.def Info: coeur_memoire/graphique/nb_annees_permis.png  used on input line 102.
+Package pdftex.def Info: coeur_memoire/graphique/nb_annees_permis.png  used on input line 99.
 (pdftex.def)             Requested size: 213.39568pt x 95.9863pt.
-<coeur_memoire/graphique/nb_km_an.png, id=612, 580.1675pt x 222.8325pt>
+<coeur_memoire/graphique/nb_km_an.png, id=626, 580.1675pt x 222.8325pt>
 File: coeur_memoire/graphique/nb_km_an.png Graphic file (type png)
 <use coeur_memoire/graphique/nb_km_an.png>
-Package pdftex.def Info: coeur_memoire/graphique/nb_km_an.png  used on input line 106.
+Package pdftex.def Info: coeur_memoire/graphique/nb_km_an.png  used on input line 103.
 (pdftex.def)             Requested size: 213.39568pt x 81.96051pt.
-<coeur_memoire/graphique/utilisation_moto.png, id=613, 573.14125pt x 230.8625pt>
+<coeur_memoire/graphique/utilisation_moto.png, id=627, 573.14125pt x 230.8625pt>
 File: coeur_memoire/graphique/utilisation_moto.png Graphic file (type png)
 <use coeur_memoire/graphique/utilisation_moto.png>
-Package pdftex.def Info: coeur_memoire/graphique/utilisation_moto.png  used on input line 110.
+Package pdftex.def Info: coeur_memoire/graphique/utilisation_moto.png  used on input line 107.
 (pdftex.def)             Requested size: 213.39568pt x 85.95674pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--117
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
-[35 <./coeur_memoire/graphique/age.png> <./coeur_memoire/graphique/nb_annees_permis.png> <./coeur_memoire/graphique/nb_km_an.png> <./coeur_memoire/graphique/utilisation_moto.png>]
+[36 <./coeur_memoire/graphique/age.png> <./coeur_memoire/graphique/nb_annees_permis.png> <./coeur_memoire/graphique/nb_km_an.png> <./coeur_memoire/graphique/utilisation_moto.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
-Package caption Warning: \label without proper reference on input line 5.
+ []
+
+[37] [38] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 174--180
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+[41]
+
+Package caption Warning: \label without proper reference on input line 236.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `articlemoto' on page 36 undefined on input line 129.
+LaTeX Warning: Reference `tab:comparaison_iot_voiture_moto' on page 42 undefined on input line 232.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-[36] [37]
-Underfull \hbox (badness 10000) in paragraph at lines 175--181
-
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
-[39] [40]
-Underfull \hbox (badness 2717) in paragraph at lines 252--252
+Underfull \hbox (badness 2717) in paragraph at lines 250--250
 []\T1/cmr/bx/n/10 (+20) Protection ma-t�-
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 260--260
+Underfull \hbox (badness 1708) in paragraph at lines 258--258
 []\T1/cmr/bx/n/10 (+20) Ergonomie d'af-fi-
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 262--263
+Underfull \hbox (badness 3250) in paragraph at lines 260--261
 []\T1/cmr/m/n/10 (+20) Affichage mi-ni-ma-liste via smart-phone,
  []
 
 
-Overfull \hbox (70.14317pt too wide) in paragraph at lines 240--269
+Overfull \hbox (70.14317pt too wide) in paragraph at lines 238--267
  [][] 
  []
 
-[41] (./coeur_memoire/propositions/proposition1.tex
-<coeur_memoire/images/aegis.png, id=666, 521.95pt x 326.21875pt>
+[42] [43] (./coeur_memoire/propositions/proposition1.tex
+<coeur_memoire/images/aegis.png, id=684, 521.95pt x 326.21875pt>
 File: coeur_memoire/images/aegis.png Graphic file (type png)
 <use coeur_memoire/images/aegis.png>
 Package pdftex.def Info: coeur_memoire/images/aegis.png  used on input line 7.
 (pdftex.def)             Requested size: 298.75264pt x 186.72313pt.
- [42]
+
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-<coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png, id=674, 698.61pt x 739.76375pt>
+<coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png, id=686, 698.61pt x 739.76375pt>
 File: coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png Graphic file (type png)
 <use coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png>
 Package pdftex.def Info: coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png  used on input line 20.
 (pdftex.def)             Requested size: 384.1096pt x 406.73586pt.
-[43 <./coeur_memoire/images/aegis.png>]
+[44 <./coeur_memoire/images/aegis.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 26.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -1363,145 +1362,167 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 32.
- [44 <./coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png>] [45]
+ [45 <./coeur_memoire/schéma/Capture d’écran 2025-07-24 à 17.48.10.png>] [46]
 Underfull \hbox (badness 10000) in paragraph at lines 93--97
 
  []
 
-<coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png, id=712, 663.47874pt x 497.86pt>
+<coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png, id=725, 663.47874pt x 497.86pt>
 File: coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png Graphic file (type png)
 <use coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png>
 Package pdftex.def Info: coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png  used on input line 107.
 (pdftex.def)             Requested size: 298.75264pt x 224.17926pt.
-[46]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 114--122
 
  []
 
-[47 <./coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png>] (./coeur_memoire/programme1.py [48] [49])
+[48 <./coeur_memoire/schéma/Capture d’écran 2025-07-22 à 16.27.35.png>] (./coeur_memoire/programme1.py [49] [50])
 Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
-[50]
-<coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png, id=865, 392.46625pt x 338.26375pt>
+[51]
+<coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png, id=878, 392.46625pt x 338.26375pt>
 File: coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png Graphic file (type png)
 <use coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png>
 Package pdftex.def Info: coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png  used on input line 152.
 (pdftex.def)             Requested size: 298.75264pt x 257.50635pt.
-<coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png, id=866, 956.57375pt x 913.4125pt>
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png, id=879, 956.57375pt x 913.4125pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png  used on input line 160.
 (pdftex.def)             Requested size: 298.75264pt x 285.27345pt.
- [51 <./coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png>]
-<coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png, id=873, 1075.01625pt x 629.35126pt>
+ [52 <./coeur_memoire/schéma/Capture d’écran 2025-07-24 à 15.45.48.png>]
+<coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png, id=886, 1075.01625pt x 629.35126pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png  used on input line 166.
 (pdftex.def)             Requested size: 298.75264pt x 174.90152pt.
-<coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.43.21.png, id=874, 672.5125pt x 455.7025pt>
+<coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.43.21.png, id=887, 672.5125pt x 455.7025pt>
 File: coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.43.21.png Graphic file (type png)
 <use coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.43.21.png>
 Package pdftex.def Info: coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.43.21.png  used on input line 179.
 (pdftex.def)             Requested size: 256.07741pt x 173.52336pt.
- [52 <./coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png> <./coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png>]
-<coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png, id=883, 1659.19875pt x 936.49875pt>
+ [53 <./coeur_memoire/images/Capture d’écran 2025-07-29 à 11.39.00.png> <./coeur_memoire/images/Capture d’écran 2025-07-28 à 12.07.50.png>]
+<coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png, id=897, 1659.19875pt x 936.49875pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png  used on input line 193.
 (pdftex.def)             Requested size: 256.07741pt x 144.52705pt.
-<coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png, id=884, 403.5075pt x 85.31876pt>
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png, id=898, 403.5075pt x 85.31876pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png  used on input line 200.
 (pdftex.def)             Requested size: 298.75264pt x 63.17001pt.
- [53 <./coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.43.21.png> <./coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png>]
-<coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png, id=893, 1670.24pt x 939.51pt>
+ [54 <./coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.43.21.png> <./coeur_memoire/images/Capture d’écran 2025-07-28 à 15.56.58.png>]
+<coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png, id=908, 1670.24pt x 939.51pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png  used on input line 206.
 (pdftex.def)             Requested size: 256.07741pt x 144.03127pt.
-<coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png, id=894, 486.81876pt x 108.405pt>
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png, id=909, 486.81876pt x 108.405pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png  used on input line 212.
 (pdftex.def)             Requested size: 298.75264pt x 66.52559pt.
-<coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png, id=895, 959.585pt x 758.835pt>
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png, id=910, 959.585pt x 758.835pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png  used on input line 220.
 (pdftex.def)             Requested size: 298.75264pt x 236.25536pt.
-<coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png, id=896, 890.32625pt x 391.4625pt>
+<coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png, id=911, 890.32625pt x 391.4625pt>
 File: coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png Graphic file (type png)
 <use coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png>
 Package pdftex.def Info: coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png  used on input line 225.
 (pdftex.def)             Requested size: 298.75264pt x 131.35727pt.
- [54 <./coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png> <./coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png> <./coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png>]
-<coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png, id=909, 484.81125pt x 128.48pt>
+ [55 <./coeur_memoire/images/Capture d’écran 2025-07-29 à 19.53.01.png> <./coeur_memoire/images/Capture d’écran 2025-07-28 à 16.35.23.png> <./coeur_memoire/images/Capture d’écran 2025-07-29 à 15.37.58.png>]
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png, id=922, 484.81125pt x 128.48pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png  used on input line 238.
 (pdftex.def)             Requested size: 256.07741pt x 67.86665pt.
-<coeur_memoire/images/Capture d’écran 2025-07-29 à 20.02.18.png, id=910, 342.27875pt x 69.25874pt>
+<coeur_memoire/images/Capture d’écran 2025-07-29 à 20.02.18.png, id=923, 342.27875pt x 69.25874pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-29 à 20.02.18.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-29 à 20.02.18.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-29 à 20.02.18.png  used on input line 243.
 (pdftex.def)             Requested size: 256.07741pt x 51.82027pt.
- [55 <./coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png> <./coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png>]
-<coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png, id=919, 848.16875pt x 855.195pt>
+ [56 <./coeur_memoire/images/Capture d’écran 2025-07-29 à 14.33.08.png> <./coeur_memoire/schéma/Capture d’écran 2025-07-30 à 15.59.08.png>]
+<coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png, id=932, 848.16875pt x 855.195pt>
 File: coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png Graphic file (type png)
 <use coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png>
 Package pdftex.def Info: coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png  used on input line 275.
 (pdftex.def)             Requested size: 170.71393pt x 172.11905pt.
- [56 <./coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png> <./coeur_memoire/images/Capture d’écran 2025-07-29 à 20.02.18.png>]) [57 <./coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png>] (./coeur_memoire/faisabilite/faisabilite.tex [58] [59]
+ [57 <./coeur_memoire/images/Capture d’écran 2025-07-29 à 14.32.49.png> <./coeur_memoire/images/Capture d’écran 2025-07-29 à 20.02.18.png>]) [58 <./coeur_memoire/images/Capture d’écran 2025-07-25 à 14.42.42.png>] (./coeur_memoire/faisabilite/faisabilite.tex [59] [60]
 Underfull \hbox (badness 10000) in paragraph at lines 103--107
 
  []
 
-[60] [61]) [62] [63] (./coeur_memoire/apport_personnel/apport_personnel.tex)) [64] [65]
+[61] [62]) [63] [64] (./coeur_memoire/apport_personnel/apport_personnel.tex)) [65] [66]
 \openout2 = `conclusion/conclusion.aux'.
 
- (./conclusion/conclusion.tex) [66
+ (./conclusion/conclusion.tex) [67
 
 
 
-] [67
+] [68
 
 
-] [68] [69] [70]
+] [69] [70] [71]
+\openout2 = `annexe/annexe1.aux'.
+
+ (./annexe/annexe1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--44
+
+ []
+
+[72
+
+] [73]
+Underfull \hbox (badness 10000) in paragraph at lines 44--96
+
+ []
+
+[74] [75] [76]
+Underfull \hbox (badness 10000) in paragraph at lines 96--104
+
+ []
+
+) [77]
 \openout2 = `annexe/annexe2.aux'.
 
  (./annexe/annexe2.tex
-<annexe/images/Capture d’écran 2025-08-07 à 08.43.20.png, id=1068, 930.47626pt x 838.13126pt>
+<annexe/images/Capture d’écran 2025-08-07 à 08.43.20.png, id=1106, 930.47626pt x 838.13126pt>
 File: annexe/images/Capture d’écran 2025-08-07 à 08.43.20.png Graphic file (type png)
 <use annexe/images/Capture d’écran 2025-08-07 à 08.43.20.png>
-Package pdftex.def Info: annexe/images/Capture d’écran 2025-08-07 à 08.43.20.png  used on input line 4.
+Package pdftex.def Info: annexe/images/Capture d’écran 2025-08-07 à 08.43.20.png  used on input line 5.
 (pdftex.def)             Requested size: 426.79135pt x 384.43243pt.
-<annexe/images/Capture d’écran 2025-08-07 à 08.43.41.png, id=1069, 983.675pt x 509.905pt>
+<annexe/images/Capture d’écran 2025-08-07 à 08.43.41.png, id=1107, 983.675pt x 509.905pt>
 File: annexe/images/Capture d’écran 2025-08-07 à 08.43.41.png Graphic file (type png)
 <use annexe/images/Capture d’écran 2025-08-07 à 08.43.41.png>
 Package pdftex.def Info: annexe/images/Capture d’écran 2025-08-07 à 08.43.41.png  used on input line 9.
 (pdftex.def)             Requested size: 426.79135pt x 221.23112pt.
-<annexe/images/Capture d’écran 2025-08-11 à 15.42.06.png, id=1070, 578.16pt x 744.7825pt>
+<annexe/images/Capture d’écran 2025-08-11 à 15.42.06.png, id=1108, 578.16pt x 744.7825pt>
 File: annexe/images/Capture d’écran 2025-08-11 à 15.42.06.png Graphic file (type png)
 <use annexe/images/Capture d’écran 2025-08-11 à 15.42.06.png>
-Package pdftex.def Info: annexe/images/Capture d’écran 2025-08-11 à 15.42.06.png  used on input line 16.
+Package pdftex.def Info: annexe/images/Capture d’écran 2025-08-11 à 15.42.06.png  used on input line 17.
 (pdftex.def)             Requested size: 213.39568pt x 274.8947pt.
-<annexe/images/Capture d’écran 2025-08-11 à 15.42.23.png, id=1071, 509.905pt x 885.3075pt>
+<annexe/images/Capture d’écran 2025-08-11 à 15.42.23.png, id=1109, 509.905pt x 885.3075pt>
 File: annexe/images/Capture d’écran 2025-08-11 à 15.42.23.png Graphic file (type png)
 <use annexe/images/Capture d’écran 2025-08-11 à 15.42.23.png>
 Package pdftex.def Info: annexe/images/Capture d’écran 2025-08-11 à 15.42.23.png  used on input line 21.
 (pdftex.def)             Requested size: 213.39568pt x 370.50276pt.
- [71
+ [78
+
+
 
  <./annexe/images/Capture d’écran 2025-08-07 à 08.43.20.png> <./annexe/images/Capture d’écran 2025-08-07 à 08.43.41.png>]
-<annexe/images/Capture d’écran 2025-08-11 à 15.42.32.png, id=1079, 517.935pt x 508.90125pt>
+<annexe/images/Capture d’écran 2025-08-11 à 15.42.32.png, id=1119, 517.935pt x 508.90125pt>
 File: annexe/images/Capture d’écran 2025-08-11 à 15.42.32.png Graphic file (type png)
 <use annexe/images/Capture d’écran 2025-08-11 à 15.42.32.png>
 Package pdftex.def Info: annexe/images/Capture d’écran 2025-08-11 à 15.42.32.png  used on input line 25.
 (pdftex.def)             Requested size: 213.39568pt x 209.67587pt.
- [72 <./annexe/images/Capture d’écran 2025-08-11 à 15.42.06.png>]) [73 <./annexe/images/Capture d’écran 2025-08-11 à 15.42.23.png> <./annexe/images/Capture d’écran 2025-08-11 à 15.42.32.png>] (./main.aux (./remerciements/remerciements.aux) (./fiche_bilan/fiche_bilan.aux) (./introduction/introduction.aux) (./etat_art/etat_art.aux) (./coeur_memoire/coeur_memoire.aux) (./conclusion/conclusion.aux) (./annexe/annexe2.aux))
+ [79 <./annexe/images/Capture d’écran 2025-08-11 à 15.42.06.png>]) [80 <./annexe/images/Capture d’écran 2025-08-11 à 15.42.23.png> <./annexe/images/Capture d’écran 2025-08-11 à 15.42.32.png>] (./main.aux (./remerciements/remerciements.aux) (./fiche_bilan/fiche_bilan.aux) (./introduction/introduction.aux) (./etat_art/etat_art.aux) (./coeur_memoire/coeur_memoire.aux) (./conclusion/conclusion.aux) (./annexe/annexe1.aux) (./annexe/annexe2.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1511,19 +1532,19 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F380D85E2935D2D88BA55BF46776A440;11193.
+(rerunfilecheck)             Checksum: E3C7A85B1BA09705B19CACC9753A3423;11380.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36374 strings out of 474116
- 694103 string characters out of 5743682
+ 36418 strings out of 474116
+ 695123 string characters out of 5743682
  2235187 words of memory out of 5000000
- 57582 multiletter control sequences out of 15000+600000
+ 57610 multiletter control sequences out of 15000+600000
  578496 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,11n,87p,1815b,2286s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,11n,87p,2710b,2286s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not exist, replaced by a fixed one
 
@@ -1618,10 +1639,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (74 pages, 20752714 bytes).
+Output written on main.pdf (81 pages, 20820445 bytes).
 PDF statistics:
- 1257 PDF objects out of 1440 (max. 8388607)
- 1032 compressed objects within 11 object streams
- 382 named destinations out of 1000 (max. 500000)
- 40629 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1298 PDF objects out of 1440 (max. 8388607)
+ 1064 compressed objects within 11 object streams
+ 391 named destinations out of 1000 (max. 500000)
+ 40642 words of extra memory for PDF output out of 42996 (max. 10000000)
 
