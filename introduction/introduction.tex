@@ -3,11 +3,12 @@
 \subsection{Contexte et enjeux}
 %Abord IOT
 L'IoT\footnote{Internet des objets.} a révolutionné de nombreux aspects de notre société: la santé, l'agriculture, l'industrie 4.0, en passant par les transports et les communications.
-Les \textbf{technologies embarquées et connectées} désignent l’ensemble des systèmes électroniques intégrés aux véhicules (voitures et motos) permettant d’améliorer la sécurité, le confort et la connectivité. Ces technologies incluent : les systèmes de communication, les capteurs, les caméras, les radars, les lidars\footnote{Light Detection And Ranging : C'est un système de mesure qui utilise un faisceau laser pour calculer avec précision la distance d’un objet.}, les systèmes d’aide à la conduite (ADAS\footnote{Advanced Driver Assistance System : Désigne l’ensemble des technologies embarquées dans un véhicule destinées à améliorer la sécurité, le confort et l’efficacité de conduite. }) et les plateformes de gestion des données.\\
+Les \textbf{technologies embarquées et connectées} désignent l’ensemble des systèmes électroniques intégrés aux véhicules (voitures, motos, bus, etc) permettant d’améliorer la sécurité, le confort et la connectivité. Ces technologies incluent : les systèmes de communication, les capteurs, les caméras, les radars, les lidars\footnote{Light Detection And Ranging : C'est un système de mesure qui utilise un faisceau laser pour calculer avec précision la distance d’un objet.}, les systèmes d’aide à la conduite (ADAS\footnote{Advanced Driver Assistance System : Désigne l’ensemble des technologies embarquées dans un véhicule destinées à améliorer la sécurité, le confort et l’efficacité de conduite. }) et les plateformes de gestion des données.\\
 %enjeux -> sécurité routière
 L’accidentalité routière en France reste un enjeu majeur de sécurité publique, avec des milliers d’accidents chaque année causant des pertes humaines et matérielles importantes. Malgré les avancées en matière de prévention et de réglementation, les comportements à risque et les conditions de circulation continuent d’alimenter cette problématique.
-En France, il y a environ 2,3 à 2,5 millions de motards\cite{actiEouteNbMotardFr}, ce qui représente 2\%  du trafic.
-Le document\cite{la_securite_routiere_accidentalite_2024} fournit des informations et des statistiques sur les accidents de la route. Les données définitives datent du 31 mai 2024.
+En France, il y a environ 2,3 à 2,5 millions de motards\cite{actiEouteNbMotardFr} sur nos routes, ce qui représente 2\%  du trafic.
+\todo{orthographe phrase}
+Le document\cite{la_securite_routiere_accidentalite_2024} fournit des informations et des statistiques sur tous les accidents de la route, tous véhicules confondus. Les données définitives datent du 31 mai 2024.
 
 \begin{figure}[h]
     \centering
@@ -15,7 +16,7 @@ Le document\cite{la_securite_routiere_accidentalite_2024} fournit des informatio
     \caption{ONISR données relatives aux accidents corporels enregistrés par les forces de l'ordre en France métropolitaine.}
 \end{figure}
 
-Grâce au graphe précédent, on constate qu’il y a une diminution sensible du nombre d’accidents mortels sur la dernière décennie surtout entre 2011 et 2013. Différents paramètres expliquent cette évolution : nouvelles infrastructures routières, les dernières technologies de sécurité (casques, ABS…), les renforcements de la règlementation, mise en place de radars et nombreuses campagnes de sensibilisation… L’ensemble de ces éléments ont contribué à réduire la mortalité bien que chaque année, on enregistre, encore, autour de 3500 morts sur les routes tous véhicules confondus. 
+Grâce au graphe précédent, on constate qu’il y a une diminution sensible du nombre d’accidents mortels sur la dernière décennie surtout entre 2011 et 2013. Différents paramètres expliquent cette évolution : nouvelles infrastructures routières, les dernières technologies de sécurité (casques, ABS…), les renforcements de la règlementation, mise en place de radars et nombreuses campagnes de sensibilisation… L’ensemble de ces éléments ont contribué à réduire la mortalité bien que chaque année, on enregistre, encore, autour de 3 500 morts sur les routes tous véhicules confondus. 
 
 \begin{figure}[H]
     \centering
@@ -50,9 +51,9 @@ L'IoT est un réseau d’objets physiques connectés à Internet qui sont capabl
     Ils fonctionnent de manière autonome tout en intégrant des réseaux connectés. Les éléments à identifier en premier lieu sont donc : leur taille, leur consommation d’énergie, leur capacité de traitement local, leur autonomie, leur capacité de communication.
     \item \textbf{Les systèmes d’aide à la conduite (ADAS)} : Aident le conducteur en régulant la vitesse, le freinage d’urgence ou le maintien de trajectoire. C'est une technologie qui lie la sécurité et le confort.
     \item \textbf{Les modules de connectivité (4G, 5G, Wi-Fi, Bluetooth)} : Permettent l’échange de données en temps réel entre le véhicule et d’autres systèmes comme les infrastructures routières ou les smartphones.
-    \item \textbf{Les plateformes de gestion des données} : Les plateformes de gestion des données : Elles gèrent les informations recueillies afin de proposer des services tels que la navigation intelligente, l'alerte en cas d'embouteillage ou la maintenance prédictive. Ces technologies sont cruciales pour l'évolution des véhicules intelligents et autonomes, de même que pour améliorer la sécurité des motocyclistes qui sont souvent plus exposés aux dangers routiers.
-Ces technologies sont essentielles pour le développement des véhicules intelligents et autonomes, ainsi que pour renforcer la sécurité des motards, souvent plus vulnérables sur la route.
-    \item Les \textbf{communications V2V (e) et V2I (Vehicle-to-Infrastructure)} font partie des technologies de transport intelligent (ITS)\footnote{Infrastructure Technology Services.} qui permettent aux véhicules et aux infrastructures routières comme les feux de signalisation, les panneaux d’échanger des informations en temps réel.
+    \item \textbf{Les plateformes de gestion des données} : Permettent d’exploiter les informations collectées pour proposer des services comme la navigation intelligente, la détection et l’alerte en cas d’embouteillage, ou encore la maintenance prédictive. Elles représentent un élément clé dans l’évolution des véhicules connectés et autonomes. Pour les motards, qui restent particulièrement exposés aux dangers de la route, ces solutions peuvent constituer un atout majeur en renforçant leur sécurité et en améliorant leur expérience de conduite.\\
+\todo{orthographe}
+    \item Les \textbf{communications V2V (e) et V2I (Vehicle-to-Infrastructure)} : Font partie des technologies de transport intelligent (ITS)\footnote{Infrastructure Technology Services.} qui permettent aux véhicules et aux infrastructures routières comme les feux de signalisation, les panneaux d’échanger des informations en temps réel.
 
     \begin{figure}[H]
         \centering
@@ -60,8 +61,9 @@ Ces technologies sont essentielles pour le développement des véhicules intelli
         \caption{La communication V2X}
     \end{figure}
 
-Ce dispositif de communication fournit des informations actualisées en direct sur l'état du trafic, les incidents routiers, la météo et la disponibilité des places de parking, contribuant ainsi à accroître la sécurité et l'efficience des déplacements.\cite{joberty_blog}.\\
+Ce dispositif de communication fournit des informations actualisées en direct sur l'état du trafic, les incidents routiers, la météo et la disponibilité des places de parking, contribuant ainsi à accroître la sécurité et le confort lors des déplacements.\cite{joberty_blog}.\\
 
 \end{itemize}
+Ces technologies sont essentielles pour le développement des véhicules intelligents et autonomes, ainsi que pour renforcer la sécurité des motards, souvent plus vulnérables sur la route.
 \vspace{0.5cm}
 
