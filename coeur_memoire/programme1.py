@@ -9,9 +9,9 @@ import math
 
 # Exemple de simulation de positions GPS (latitude, longitude) pour le test
 # sucession de virages 
-#position_actuelle = (48.385171, 2.563108)  
+position_actuelle = (48.385171, 2.563108)  
 # ligne droite
-position_actuelle = (48.514114, 2.320894) 
+#position_actuelle = (48.514114, 2.320894) 
 #position_actuelle = (48.380441, 2.565690) 
 # virage serre
 #position_actuelle = (48.371103, 2.560765) 
